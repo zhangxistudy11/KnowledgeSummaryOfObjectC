@@ -13,10 +13,19 @@
 		33673CEC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673CEB1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCTests.m */; };
 		33673CF71F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673CF61F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCUITests.m */; };
 		33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673D141F58FC1C00ECE5D4 /* UIView+Extension.m */; };
-		33673D201F5902B100ECE5D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673D1F1F5902B100ECE5D4 /* ViewController.m */; };
 		33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673D251F59035000ECE5D4 /* AppDelegate.m */; };
-		33673D321F59060600ECE5D4 /* MemoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673D2F1F59060600ECE5D4 /* MemoryManageViewController.m */; };
-		33673D381F590F7700ECE5D4 /* AboutCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673D371F590F7700ECE5D4 /* AboutCopyViewController.m */; };
+		3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */; };
+		3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCC81F63FC2400D7A872 /* CAGradientLayerViewController.m */; };
+		3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCCA1F63FC2400D7A872 /* CAShaplayerViewController.m */; };
+		3398DCFB1F63FC2400D7A872 /* EarningsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCCC1F63FC2400D7A872 /* EarningsViewController.m */; };
+		3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCCE1F63FC2400D7A872 /* KeyFrameViewController.m */; };
+		3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCD11F63FC2400D7A872 /* TransformViewController.m */; };
+		3398DCFE1F63FC2400D7A872 /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCD31F63FC2400D7A872 /* UIBezierPathViewController.m */; };
+		3398DCFF1F63FC2400D7A872 /* UIBezierPathCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCD61F63FC2400D7A872 /* UIBezierPathCustomView.m */; };
+		3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCDE1F63FC2400D7A872 /* BaseViewController.m */; };
+		3398DD011F63FC2400D7A872 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCE21F63FC2400D7A872 /* ViewController.m */; };
+		3398DD021F63FC2400D7A872 /* AboutCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCEA1F63FC2400D7A872 /* AboutCopyViewController.m */; };
+		3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +59,32 @@
 		33673CF81F58FA6400ECE5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33673D131F58FC1C00ECE5D4 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		33673D141F58FC1C00ECE5D4 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		33673D1E1F5902B100ECE5D4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		33673D1F1F5902B100ECE5D4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		33673D241F59035000ECE5D4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33673D251F59035000ECE5D4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		33673D2E1F59060600ECE5D4 /* MemoryManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryManageViewController.h; sourceTree = "<group>"; };
-		33673D2F1F59060600ECE5D4 /* MemoryManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManageViewController.m; sourceTree = "<group>"; };
-		33673D361F590F7700ECE5D4 /* AboutCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutCopyViewController.h; sourceTree = "<group>"; };
-		33673D371F590F7700ECE5D4 /* AboutCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutCopyViewController.m; sourceTree = "<group>"; };
+		3398DCC51F63FC2400D7A872 /* AnimationAndDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationAndDrawViewController.h; sourceTree = "<group>"; };
+		3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationAndDrawViewController.m; sourceTree = "<group>"; };
+		3398DCC71F63FC2400D7A872 /* CAGradientLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerViewController.h; sourceTree = "<group>"; };
+		3398DCC81F63FC2400D7A872 /* CAGradientLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerViewController.m; sourceTree = "<group>"; };
+		3398DCC91F63FC2400D7A872 /* CAShaplayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShaplayerViewController.h; sourceTree = "<group>"; };
+		3398DCCA1F63FC2400D7A872 /* CAShaplayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShaplayerViewController.m; sourceTree = "<group>"; };
+		3398DCCB1F63FC2400D7A872 /* EarningsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarningsViewController.h; sourceTree = "<group>"; };
+		3398DCCC1F63FC2400D7A872 /* EarningsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarningsViewController.m; sourceTree = "<group>"; };
+		3398DCCD1F63FC2400D7A872 /* KeyFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyFrameViewController.h; sourceTree = "<group>"; };
+		3398DCCE1F63FC2400D7A872 /* KeyFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyFrameViewController.m; sourceTree = "<group>"; };
+		3398DCD01F63FC2400D7A872 /* TransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformViewController.h; sourceTree = "<group>"; };
+		3398DCD11F63FC2400D7A872 /* TransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformViewController.m; sourceTree = "<group>"; };
+		3398DCD21F63FC2400D7A872 /* UIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathViewController.h; sourceTree = "<group>"; };
+		3398DCD31F63FC2400D7A872 /* UIBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathViewController.m; sourceTree = "<group>"; };
+		3398DCD51F63FC2400D7A872 /* UIBezierPathCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathCustomView.h; sourceTree = "<group>"; };
+		3398DCD61F63FC2400D7A872 /* UIBezierPathCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCustomView.m; sourceTree = "<group>"; };
+		3398DCDD1F63FC2400D7A872 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3398DCDE1F63FC2400D7A872 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3398DCE11F63FC2400D7A872 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3398DCE21F63FC2400D7A872 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3398DCE91F63FC2400D7A872 /* AboutCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutCopyViewController.h; sourceTree = "<group>"; };
+		3398DCEA1F63FC2400D7A872 /* AboutCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutCopyViewController.m; sourceTree = "<group>"; };
+		3398DCEB1F63FC2400D7A872 /* MemoryManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryManageViewController.h; sourceTree = "<group>"; };
+		3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +135,11 @@
 		33673CCD1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC */ = {
 			isa = PBXGroup;
 			children = (
+				3398DCC01F63FC2400D7A872 /* Class */,
 				33673D231F59033300ECE5D4 /* Appdelegate */,
 				33673D211F59030600ECE5D4 /* Library */,
 				33673D221F59030600ECE5D4 /* Resource */,
 				33673D121F58FC1C00ECE5D4 /* Additions */,
-				33673D041F58FB6200ECE5D4 /* Class */,
 				33673CDD1F58FA6400ECE5D4 /* Assets.xcassets */,
 				33673CE21F58FA6400ECE5D4 /* Info.plist */,
 				33673CDA1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld */,
@@ -147,15 +174,6 @@
 			path = KnowledgeSummaryOfObjectCUITests;
 			sourceTree = "<group>";
 		};
-		33673D041F58FB6200ECE5D4 /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				33673D161F5901B400ECE5D4 /* CommonPart */,
-				33673D281F59050200ECE5D4 /* MemoryManagement */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
 		33673D121F58FC1C00ECE5D4 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,47 +181,6 @@
 				33673D141F58FC1C00ECE5D4 /* UIView+Extension.m */,
 			);
 			path = Additions;
-			sourceTree = "<group>";
-		};
-		33673D161F5901B400ECE5D4 /* CommonPart */ = {
-			isa = PBXGroup;
-			children = (
-				33673D171F59024500ECE5D4 /* Model */,
-				33673D181F59024500ECE5D4 /* View */,
-				33673D191F59024500ECE5D4 /* ViewController */,
-				33673D1D1F59024500ECE5D4 /* ViewModel */,
-			);
-			path = CommonPart;
-			sourceTree = "<group>";
-		};
-		33673D171F59024500ECE5D4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		33673D181F59024500ECE5D4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		33673D191F59024500ECE5D4 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				33673D1E1F5902B100ECE5D4 /* ViewController.h */,
-				33673D1F1F5902B100ECE5D4 /* ViewController.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		33673D1D1F59024500ECE5D4 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		33673D211F59030600ECE5D4 /* Library */ = {
@@ -229,67 +206,279 @@
 			path = Appdelegate;
 			sourceTree = "<group>";
 		};
-		33673D281F59050200ECE5D4 /* MemoryManagement */ = {
+		3398DCC01F63FC2400D7A872 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				33673D291F59060600ECE5D4 /* Model */,
-				33673D2A1F59060600ECE5D4 /* View */,
-				33673D2B1F59060600ECE5D4 /* ViewController */,
-				33673D311F59060600ECE5D4 /* ViewModel */,
+				3398DCC11F63FC2400D7A872 /* AnimationAndDraw */,
+				3398DCD91F63FC2400D7A872 /* CommonPart */,
+				3398DCE51F63FC2400D7A872 /* MemoryManagement */,
+				3398DCF11F63FC2400D7A872 /* Model */,
+				3398DCF21F63FC2400D7A872 /* View */,
+				3398DCF31F63FC2400D7A872 /* ViewController */,
+				3398DCF71F63FC2400D7A872 /* ViewModel */,
 			);
-			path = MemoryManagement;
+			path = Class;
 			sourceTree = "<group>";
 		};
-		33673D291F59060600ECE5D4 /* Model */ = {
+		3398DCC11F63FC2400D7A872 /* AnimationAndDraw */ = {
+			isa = PBXGroup;
+			children = (
+				3398DCC21F63FC2400D7A872 /* Model */,
+				3398DCC31F63FC2400D7A872 /* View */,
+				3398DCC41F63FC2400D7A872 /* ViewController */,
+				3398DCD81F63FC2400D7A872 /* ViewModel */,
+			);
+			path = AnimationAndDraw;
+			sourceTree = "<group>";
+		};
+		3398DCC21F63FC2400D7A872 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		33673D2A1F59060600ECE5D4 /* View */ = {
+		3398DCC31F63FC2400D7A872 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		33673D2B1F59060600ECE5D4 /* ViewController */ = {
+		3398DCC41F63FC2400D7A872 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				33673D2C1F59060600ECE5D4 /* Model */,
-				33673D2D1F59060600ECE5D4 /* View */,
-				33673D2E1F59060600ECE5D4 /* MemoryManageViewController.h */,
-				33673D2F1F59060600ECE5D4 /* MemoryManageViewController.m */,
-				33673D361F590F7700ECE5D4 /* AboutCopyViewController.h */,
-				33673D371F590F7700ECE5D4 /* AboutCopyViewController.m */,
-				33673D301F59060600ECE5D4 /* ViewModel */,
+				3398DCC51F63FC2400D7A872 /* AnimationAndDrawViewController.h */,
+				3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */,
+				3398DCC71F63FC2400D7A872 /* CAGradientLayerViewController.h */,
+				3398DCC81F63FC2400D7A872 /* CAGradientLayerViewController.m */,
+				3398DCC91F63FC2400D7A872 /* CAShaplayerViewController.h */,
+				3398DCCA1F63FC2400D7A872 /* CAShaplayerViewController.m */,
+				3398DCCB1F63FC2400D7A872 /* EarningsViewController.h */,
+				3398DCCC1F63FC2400D7A872 /* EarningsViewController.m */,
+				3398DCCD1F63FC2400D7A872 /* KeyFrameViewController.h */,
+				3398DCCE1F63FC2400D7A872 /* KeyFrameViewController.m */,
+				3398DCCF1F63FC2400D7A872 /* Model */,
+				3398DCD01F63FC2400D7A872 /* TransformViewController.h */,
+				3398DCD11F63FC2400D7A872 /* TransformViewController.m */,
+				3398DCD21F63FC2400D7A872 /* UIBezierPathViewController.h */,
+				3398DCD31F63FC2400D7A872 /* UIBezierPathViewController.m */,
+				3398DCD41F63FC2400D7A872 /* View */,
+				3398DCD71F63FC2400D7A872 /* ViewModel */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		33673D2C1F59060600ECE5D4 /* Model */ = {
+		3398DCCF1F63FC2400D7A872 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		33673D2D1F59060600ECE5D4 /* View */ = {
+		3398DCD41F63FC2400D7A872 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3398DCD51F63FC2400D7A872 /* UIBezierPathCustomView.h */,
+				3398DCD61F63FC2400D7A872 /* UIBezierPathCustomView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		33673D301F59060600ECE5D4 /* ViewModel */ = {
+		3398DCD71F63FC2400D7A872 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		33673D311F59060600ECE5D4 /* ViewModel */ = {
+		3398DCD81F63FC2400D7A872 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3398DCD91F63FC2400D7A872 /* CommonPart */ = {
+			isa = PBXGroup;
+			children = (
+				3398DCDA1F63FC2400D7A872 /* Model */,
+				3398DCDB1F63FC2400D7A872 /* View */,
+				3398DCDC1F63FC2400D7A872 /* ViewController */,
+				3398DCE41F63FC2400D7A872 /* ViewModel */,
+			);
+			path = CommonPart;
+			sourceTree = "<group>";
+		};
+		3398DCDA1F63FC2400D7A872 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3398DCDB1F63FC2400D7A872 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3398DCDC1F63FC2400D7A872 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3398DCDD1F63FC2400D7A872 /* BaseViewController.h */,
+				3398DCDE1F63FC2400D7A872 /* BaseViewController.m */,
+				3398DCDF1F63FC2400D7A872 /* Model */,
+				3398DCE01F63FC2400D7A872 /* View */,
+				3398DCE11F63FC2400D7A872 /* ViewController.h */,
+				3398DCE21F63FC2400D7A872 /* ViewController.m */,
+				3398DCE31F63FC2400D7A872 /* ViewModel */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3398DCDF1F63FC2400D7A872 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3398DCE01F63FC2400D7A872 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3398DCE31F63FC2400D7A872 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3398DCE41F63FC2400D7A872 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3398DCE51F63FC2400D7A872 /* MemoryManagement */ = {
+			isa = PBXGroup;
+			children = (
+				3398DCE61F63FC2400D7A872 /* Model */,
+				3398DCE71F63FC2400D7A872 /* View */,
+				3398DCE81F63FC2400D7A872 /* ViewController */,
+				3398DCF01F63FC2400D7A872 /* ViewModel */,
+			);
+			path = MemoryManagement;
+			sourceTree = "<group>";
+		};
+		3398DCE61F63FC2400D7A872 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3398DCE71F63FC2400D7A872 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3398DCE81F63FC2400D7A872 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3398DCE91F63FC2400D7A872 /* AboutCopyViewController.h */,
+				3398DCEA1F63FC2400D7A872 /* AboutCopyViewController.m */,
+				3398DCEB1F63FC2400D7A872 /* MemoryManageViewController.h */,
+				3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */,
+				3398DCED1F63FC2400D7A872 /* Model */,
+				3398DCEE1F63FC2400D7A872 /* View */,
+				3398DCEF1F63FC2400D7A872 /* ViewModel */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3398DCED1F63FC2400D7A872 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3398DCEE1F63FC2400D7A872 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3398DCEF1F63FC2400D7A872 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3398DCF01F63FC2400D7A872 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3398DCF11F63FC2400D7A872 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3398DCF21F63FC2400D7A872 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3398DCF31F63FC2400D7A872 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3398DCF41F63FC2400D7A872 /* Model */,
+				3398DCF51F63FC2400D7A872 /* View */,
+				3398DCF61F63FC2400D7A872 /* ViewModel */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3398DCF41F63FC2400D7A872 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3398DCF51F63FC2400D7A872 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3398DCF61F63FC2400D7A872 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3398DCF71F63FC2400D7A872 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -430,13 +619,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33673D321F59060600ECE5D4 /* MemoryManageViewController.m in Sources */,
+				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
+				3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */,
+				3398DCFF1F63FC2400D7A872 /* UIBezierPathCustomView.m in Sources */,
+				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
+				3398DCFE1F63FC2400D7A872 /* UIBezierPathViewController.m in Sources */,
+				3398DCFB1F63FC2400D7A872 /* EarningsViewController.m in Sources */,
 				33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */,
-				33673D381F590F7700ECE5D4 /* AboutCopyViewController.m in Sources */,
+				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
+				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
+				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
+				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
+				3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */,
 				33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,
-				33673D201F5902B100ECE5D4 /* ViewController.m in Sources */,
+				3398DD021F63FC2400D7A872 /* AboutCopyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

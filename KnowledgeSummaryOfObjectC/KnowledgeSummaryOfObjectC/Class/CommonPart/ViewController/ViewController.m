@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIView+Extension.h"
 #import "MemoryManageViewController.h"
+#import "AnimationAndDrawViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -54,7 +55,10 @@
             cell.textLabel.text = @"1-内存管理";
             return cell;
             break;
-            
+        case 1:
+            cell.textLabel.text = @"2-绘图与动画";
+            return cell;
+            break;
         default:
             break;
     }
@@ -76,7 +80,8 @@
             break;
         case 1:
         {
-           
+            AnimationAndDrawViewController * vc = [[AnimationAndDrawViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
             
         }
             break;
