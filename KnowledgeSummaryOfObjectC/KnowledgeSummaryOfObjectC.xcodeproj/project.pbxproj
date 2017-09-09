@@ -21,11 +21,11 @@
 		3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCCE1F63FC2400D7A872 /* KeyFrameViewController.m */; };
 		3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCD11F63FC2400D7A872 /* TransformViewController.m */; };
 		3398DCFE1F63FC2400D7A872 /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCD31F63FC2400D7A872 /* UIBezierPathViewController.m */; };
-		3398DCFF1F63FC2400D7A872 /* UIBezierPathCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCD61F63FC2400D7A872 /* UIBezierPathCustomView.m */; };
 		3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCDE1F63FC2400D7A872 /* BaseViewController.m */; };
 		3398DD011F63FC2400D7A872 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCE21F63FC2400D7A872 /* ViewController.m */; };
 		3398DD021F63FC2400D7A872 /* AboutCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCEA1F63FC2400D7A872 /* AboutCopyViewController.m */; };
 		3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */; };
+		3398DD061F640E0000D7A872 /* UIBezierPathCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +75,6 @@
 		3398DCD11F63FC2400D7A872 /* TransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformViewController.m; sourceTree = "<group>"; };
 		3398DCD21F63FC2400D7A872 /* UIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathViewController.h; sourceTree = "<group>"; };
 		3398DCD31F63FC2400D7A872 /* UIBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathViewController.m; sourceTree = "<group>"; };
-		3398DCD51F63FC2400D7A872 /* UIBezierPathCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathCustomView.h; sourceTree = "<group>"; };
-		3398DCD61F63FC2400D7A872 /* UIBezierPathCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCustomView.m; sourceTree = "<group>"; };
 		3398DCDD1F63FC2400D7A872 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3398DCDE1F63FC2400D7A872 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		3398DCE11F63FC2400D7A872 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -85,6 +83,8 @@
 		3398DCEA1F63FC2400D7A872 /* AboutCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutCopyViewController.m; sourceTree = "<group>"; };
 		3398DCEB1F63FC2400D7A872 /* MemoryManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryManageViewController.h; sourceTree = "<group>"; };
 		3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManageViewController.m; sourceTree = "<group>"; };
+		3398DD041F640E0000D7A872 /* UIBezierPathCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathCustomView.h; sourceTree = "<group>"; };
+		3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +241,8 @@
 		3398DCC31F63FC2400D7A872 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3398DD041F640E0000D7A872 /* UIBezierPathCustomView.h */,
+				3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,38 +260,12 @@
 				3398DCCC1F63FC2400D7A872 /* EarningsViewController.m */,
 				3398DCCD1F63FC2400D7A872 /* KeyFrameViewController.h */,
 				3398DCCE1F63FC2400D7A872 /* KeyFrameViewController.m */,
-				3398DCCF1F63FC2400D7A872 /* Model */,
 				3398DCD01F63FC2400D7A872 /* TransformViewController.h */,
 				3398DCD11F63FC2400D7A872 /* TransformViewController.m */,
 				3398DCD21F63FC2400D7A872 /* UIBezierPathViewController.h */,
 				3398DCD31F63FC2400D7A872 /* UIBezierPathViewController.m */,
-				3398DCD41F63FC2400D7A872 /* View */,
-				3398DCD71F63FC2400D7A872 /* ViewModel */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		3398DCCF1F63FC2400D7A872 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3398DCD41F63FC2400D7A872 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3398DCD51F63FC2400D7A872 /* UIBezierPathCustomView.h */,
-				3398DCD61F63FC2400D7A872 /* UIBezierPathCustomView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3398DCD71F63FC2400D7A872 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3398DCD81F63FC2400D7A872 /* ViewModel */ = {
@@ -621,10 +597,10 @@
 			files = (
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
 				3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */,
-				3398DCFF1F63FC2400D7A872 /* UIBezierPathCustomView.m in Sources */,
 				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
 				3398DCFE1F63FC2400D7A872 /* UIBezierPathViewController.m in Sources */,
 				3398DCFB1F63FC2400D7A872 /* EarningsViewController.m in Sources */,
+				3398DD061F640E0000D7A872 /* UIBezierPathCustomView.m in Sources */,
 				33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
