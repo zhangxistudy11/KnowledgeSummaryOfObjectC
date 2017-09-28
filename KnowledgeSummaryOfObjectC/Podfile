@@ -1,0 +1,7 @@
+platform :ios, '7.0'
+target 'KnowledgeSummaryOfObjectC' do
+    pod 'MJRefresh'
+    pod 'ReactiveCocoa’,'~> 2.4.7’
+    pod 'Masonry’,'~> 1.1.0’
+    pod 'WebViewJavascriptBridge’,'~> 6.0.2’
+end
