@@ -10,6 +10,9 @@
 #import "UIView+Extension.h"
 #import "MemoryManageViewController.h"
 #import "AnimationAndDrawViewController.h"
+#import "CrashLocationViewController.h"
+#import "WebPracticeViewController.h"
+#import "RACViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -59,6 +62,18 @@
             cell.textLabel.text = @"2-绘图与动画";
             return cell;
             break;
+        case 2:
+            cell.textLabel.text = @"3-闪退定位";
+            return cell;
+            break;
+        case 3:
+            cell.textLabel.text = @"4-WebView交互";
+            return cell;
+            break;
+        case 4:
+            cell.textLabel.text = @"5-ReactiveCocoa交互";
+            return cell;
+            break;
         default:
             break;
     }
@@ -87,14 +102,20 @@
             break;
         case 2:
         {
-            
-            
+            CrashLocationViewController * vc = [[CrashLocationViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 3:
         {
-           
-            
+            WebPracticeViewController * vc = [[WebPracticeViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            RACViewController * vc = [[RACViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         default:
