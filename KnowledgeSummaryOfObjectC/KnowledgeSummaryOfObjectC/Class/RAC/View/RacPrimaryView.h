@@ -10,6 +10,13 @@
 
 @interface RacPrimaryView : BaseView
 
-@property (nonatomic,strong) UIButton * redBtn;
+@property (nonatomic,strong) UIButton *redBtn;
 
+@property (nonatomic,strong) UITextField *nameTF;
+
+@property (nonatomic,strong) UIButton * greenBtn;
+
+@property (nonatomic,strong) UIButton * yellowBtn;
+
+@property (nonatomic,strong) UIScrollView * scrollView;
 @end

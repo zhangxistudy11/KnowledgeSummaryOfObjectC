@@ -21,6 +21,14 @@
 		33673CF71F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673CF61F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCUITests.m */; };
 		33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673D141F58FC1C00ECE5D4 /* UIView+Extension.m */; };
 		33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673D251F59035000ECE5D4 /* AppDelegate.m */; };
+		336EFCFD1F7DF24200B8246F /* RacAdvanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFCFC1F7DF24200B8246F /* RacAdvanceController.m */; };
+		336EFD001F7DF50C00B8246F /* RacAdvanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFCFF1F7DF50C00B8246F /* RacAdvanceView.m */; };
+		336EFD0B1F7E1CB700B8246F /* CustomPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD0A1F7E1CB700B8246F /* CustomPopViewController.m */; };
+		336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD0D1F7E1E1100B8246F /* PopViewOneController.m */; };
+		336EFD111F7E1EC400B8246F /* PopViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD101F7E1EC400B8246F /* PopViewOne.m */; };
+		336EFD141F7E377700B8246F /* PopViewTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD131F7E377700B8246F /* PopViewTwoController.m */; };
+		336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD191F7E388800B8246F /* PopViewTwo.m */; };
+		336EFD1D1F7E410900B8246F /* UIView+FITBackViewAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */; };
 		3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */; };
 		3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCC81F63FC2400D7A872 /* CAGradientLayerViewController.m */; };
 		3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCCA1F63FC2400D7A872 /* CAShaplayerViewController.m */; };
@@ -84,6 +92,22 @@
 		33673D141F58FC1C00ECE5D4 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		33673D241F59035000ECE5D4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33673D251F59035000ECE5D4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		336EFCFB1F7DF24200B8246F /* RacAdvanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacAdvanceController.h; sourceTree = "<group>"; };
+		336EFCFC1F7DF24200B8246F /* RacAdvanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacAdvanceController.m; sourceTree = "<group>"; };
+		336EFCFE1F7DF50C00B8246F /* RacAdvanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacAdvanceView.h; sourceTree = "<group>"; };
+		336EFCFF1F7DF50C00B8246F /* RacAdvanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacAdvanceView.m; sourceTree = "<group>"; };
+		336EFD091F7E1CB700B8246F /* CustomPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPopViewController.h; sourceTree = "<group>"; };
+		336EFD0A1F7E1CB700B8246F /* CustomPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPopViewController.m; sourceTree = "<group>"; };
+		336EFD0C1F7E1E1100B8246F /* PopViewOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewOneController.h; sourceTree = "<group>"; };
+		336EFD0D1F7E1E1100B8246F /* PopViewOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewOneController.m; sourceTree = "<group>"; };
+		336EFD0F1F7E1EC400B8246F /* PopViewOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewOne.h; sourceTree = "<group>"; };
+		336EFD101F7E1EC400B8246F /* PopViewOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewOne.m; sourceTree = "<group>"; };
+		336EFD121F7E377700B8246F /* PopViewTwoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewTwoController.h; sourceTree = "<group>"; };
+		336EFD131F7E377700B8246F /* PopViewTwoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewTwoController.m; sourceTree = "<group>"; };
+		336EFD181F7E388800B8246F /* PopViewTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewTwo.h; sourceTree = "<group>"; };
+		336EFD191F7E388800B8246F /* PopViewTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewTwo.m; sourceTree = "<group>"; };
+		336EFD1B1F7E410900B8246F /* UIView+FITBackViewAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FITBackViewAddition.h"; sourceTree = "<group>"; };
+		336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FITBackViewAddition.m"; sourceTree = "<group>"; };
 		3398DCC51F63FC2400D7A872 /* AnimationAndDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationAndDrawViewController.h; sourceTree = "<group>"; };
 		3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationAndDrawViewController.m; sourceTree = "<group>"; };
 		3398DCC71F63FC2400D7A872 /* CAGradientLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerViewController.h; sourceTree = "<group>"; };
@@ -227,6 +251,8 @@
 			children = (
 				334839A41F7CF02E00BD17EE /* RacPrimaryView.h */,
 				334839A51F7CF02E00BD17EE /* RacPrimaryView.m */,
+				336EFCFE1F7DF50C00B8246F /* RacAdvanceView.h */,
+				336EFCFF1F7DF50C00B8246F /* RacAdvanceView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +265,8 @@
 				334839A91F7CF02E00BD17EE /* RacPrimaryController.m */,
 				334839AA1F7CF02E00BD17EE /* RACViewController.h */,
 				334839AB1F7CF02E00BD17EE /* RACViewController.m */,
+				336EFCFB1F7DF24200B8246F /* RacAdvanceController.h */,
+				336EFCFC1F7DF24200B8246F /* RacAdvanceController.m */,
 				334839AC1F7CF02E00BD17EE /* View */,
 				334839AD1F7CF02E00BD17EE /* ViewModel */,
 			);
@@ -342,6 +370,8 @@
 			children = (
 				33673D131F58FC1C00ECE5D4 /* UIView+Extension.h */,
 				33673D141F58FC1C00ECE5D4 /* UIView+Extension.m */,
+				336EFD1B1F7E410900B8246F /* UIView+FITBackViewAddition.h */,
+				336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -355,9 +385,59 @@
 			path = Appdelegate;
 			sourceTree = "<group>";
 		};
+		336EFD011F7E1C0F00B8246F /* CustomPopView */ = {
+			isa = PBXGroup;
+			children = (
+				336EFD021F7E1C7D00B8246F /* Model */,
+				336EFD031F7E1C7D00B8246F /* View */,
+				336EFD041F7E1C7D00B8246F /* ViewController */,
+				336EFD071F7E1C7D00B8246F /* ViewModel */,
+			);
+			path = CustomPopView;
+			sourceTree = "<group>";
+		};
+		336EFD021F7E1C7D00B8246F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		336EFD031F7E1C7D00B8246F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				336EFD0F1F7E1EC400B8246F /* PopViewOne.h */,
+				336EFD101F7E1EC400B8246F /* PopViewOne.m */,
+				336EFD181F7E388800B8246F /* PopViewTwo.h */,
+				336EFD191F7E388800B8246F /* PopViewTwo.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		336EFD041F7E1C7D00B8246F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				336EFD091F7E1CB700B8246F /* CustomPopViewController.h */,
+				336EFD0A1F7E1CB700B8246F /* CustomPopViewController.m */,
+				336EFD0C1F7E1E1100B8246F /* PopViewOneController.h */,
+				336EFD0D1F7E1E1100B8246F /* PopViewOneController.m */,
+				336EFD121F7E377700B8246F /* PopViewTwoController.h */,
+				336EFD131F7E377700B8246F /* PopViewTwoController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		336EFD071F7E1C7D00B8246F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3398DCC01F63FC2400D7A872 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				336EFD011F7E1C0F00B8246F /* CustomPopView */,
 				334839A11F7CF02300BD17EE /* RAC */,
 				3398DCD91F63FC2400D7A872 /* CommonPart */,
 				3398DCE51F63FC2400D7A872 /* MemoryManagement */,
@@ -757,6 +837,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336EFD001F7DF50C00B8246F /* RacAdvanceView.m in Sources */,
 				334839B01F7CF02E00BD17EE /* RacPrimaryController.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
@@ -764,22 +845,29 @@
 				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
 				334839AF1F7CF02E00BD17EE /* RacPrimaryView.m in Sources */,
 				3398DCFE1F63FC2400D7A872 /* UIBezierPathViewController.m in Sources */,
+				336EFD141F7E377700B8246F /* PopViewTwoController.m in Sources */,
 				33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */,
 				3398DCFB1F63FC2400D7A872 /* EarningsViewController.m in Sources */,
 				3398DD061F640E0000D7A872 /* UIBezierPathCustomView.m in Sources */,
+				336EFD111F7E1EC400B8246F /* PopViewOne.m in Sources */,
 				33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
+				336EFD1D1F7E410900B8246F /* UIView+FITBackViewAddition.m in Sources */,
+				336EFCFD1F7DF24200B8246F /* RacAdvanceController.m in Sources */,
 				334839B11F7CF02E00BD17EE /* RACViewController.m in Sources */,
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
+				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
 				3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */,
+				336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */,
 				33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,
 				3398DD021F63FC2400D7A872 /* AboutCopyViewController.m in Sources */,
 				332B8A2D1F7B7DB100DE9C1A /* JSCallNativeViewController.m in Sources */,
+				336EFD0B1F7E1CB700B8246F /* CustomPopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

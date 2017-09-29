@@ -13,6 +13,7 @@
 #import "CrashLocationViewController.h"
 #import "WebPracticeViewController.h"
 #import "RACViewController.h"
+#import "CustomPopViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -55,23 +56,27 @@
     }
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"1-内存管理";
+            cell.textLabel.text = @"0-内存管理";
             return cell;
             break;
         case 1:
-            cell.textLabel.text = @"2-绘图与动画";
+            cell.textLabel.text = @"1-绘图与动画";
             return cell;
             break;
         case 2:
-            cell.textLabel.text = @"3-闪退定位";
+            cell.textLabel.text = @"2-闪退定位";
             return cell;
             break;
         case 3:
-            cell.textLabel.text = @"4-WebView交互";
+            cell.textLabel.text = @"3-WebView交互";
             return cell;
             break;
         case 4:
-            cell.textLabel.text = @"5-ReactiveCocoa交互";
+            cell.textLabel.text = @"4-ReactiveCocoa交互";
+            return cell;
+            break;
+        case 5:
+            cell.textLabel.text = @"5-PopView的使用";
             return cell;
             break;
         default:
@@ -115,6 +120,12 @@
         case 4:
         {
             RACViewController * vc = [[RACViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 5:
+        {
+            CustomPopViewController * vc = [[CustomPopViewController  alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

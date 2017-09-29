@@ -1,27 +1,28 @@
 //
-//  RACViewController.m
+//  CustomPopViewController.m
 //  KnowledgeSummaryOfObjectC
 //
-//  Created by 张玺 on 2017/9/26.
+//  Created by 张玺 on 2017/9/29.
 //  Copyright © 2017年 张玺. All rights reserved.
 //
 
-#import "RACViewController.h"
-#import "RacPrimaryController.h"
-#import "RacAdvanceController.h"
-@interface RACViewController ()<UITableViewDataSource,UITableViewDelegate>
+#import "CustomPopViewController.h"
+#import "PopViewOneController.h"
+#import "PopViewTwoController.h"
+@interface CustomPopViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
 }
 
+
 @end
 
-@implementation RACViewController
+@implementation CustomPopViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"ReactiveCocoa使用";
+    self.navigationItem.title = @"PopView的使用";
     self.view.backgroundColor = [UIColor  whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
@@ -51,11 +52,11 @@
     }
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"1-RAC初步了解";
+            cell.textLabel.text = @"1-PopView方法一";
             return cell;
             break;
         case 1:
-            cell.textLabel.text = @"2-RAC进阶使用";
+            cell.textLabel.text = @"2-PopView方法二";
             return cell;
             break;
         default:
@@ -72,13 +73,13 @@
     switch (indexPath.row) {
         case 0:
         {
-            RacPrimaryController * vc = [[RacPrimaryController alloc]init];
+            PopViewOneController * vc = [[PopViewOneController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 1:
         {
-            RacAdvanceController * vc = [[RacAdvanceController alloc]init];
+            PopViewTwoController * vc = [[PopViewTwoController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

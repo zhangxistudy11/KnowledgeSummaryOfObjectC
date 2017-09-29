@@ -44,6 +44,44 @@
     [[self.primaryView.redBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         NSLog(@"点击了按钮");
     }];
+    
+    [[self.primaryView.nameTF rac_signalForControlEvents:UIControlEventEditingChanged]subscribeNext:^(id x) {
+        UITextField * tf = (UITextField *)x;
+        NSLog(@"%@",tf.text);
+    }];
+    
+    [[self.primaryView.nameTF rac_textSignal] subscribeNext:^(id x) {
+       NSLog(@"--%@",x);
+    }];
+    
+    [[self.primaryView.greenBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        [self showAlertGreenView];
+    }];
+    
+    [RACObserve(self.primaryView.scrollView, contentOffset)subscribeNext:^(id x) {
+        NSNumber * aa = (NSNumber *)x;
+//        CGPoint offset = [x];
+        NSLog(@"gg");
+       // NSLog(@"offY:%f",offset.y);
+    } ];
+}
+#pragma mark - Target Methods
+- (void)showAlertGreenView
+{
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"弹出框" message:@"aa" preferredStyle:UIAlertControllerStyleAlert];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"cancle" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [alert dismissViewControllerAnimated:YES completion:nil];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"sure" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"确定");
+    }]];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"wait" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"待定");
+    }]];
+    
 }
 #pragma mark - Getter Methods
 - (RacPrimaryView *)primaryView

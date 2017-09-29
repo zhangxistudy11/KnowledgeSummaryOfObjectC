@@ -9,7 +9,6 @@
 #import "RacPrimaryView.h"
 @interface RacPrimaryView()
 
-
 @end
 @implementation RacPrimaryView
 
@@ -26,6 +25,11 @@
 - (void)initView
 {
     [self addSubview:self.redBtn];
+    [self addSubview:self.nameTF];
+    [self addSubview:self.greenBtn];
+    [self addSubview:self.yellowBtn];
+    
+    [self addTestView];
 }
 - (void)layoutSubviews
 {
@@ -36,6 +40,33 @@
         make.height.equalTo(@40);
         make.width.equalTo(@80);
     }];
+    
+    [self.nameTF mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.redBtn.mas_bottom).offset(10);
+        make.left.right.height.equalTo(self.redBtn);
+    }];
+    
+    [self.greenBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.redBtn.mas_right).offset(20);
+        make.top.equalTo(self.redBtn.mas_top);
+        make.height.equalTo(@40);
+        make.width.equalTo(@80);
+    }];
+    
+    [self.yellowBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.greenBtn.mas_left);
+        make.top.equalTo(self.redBtn.mas_bottom).offset(10);
+        make.height.equalTo(@40);
+        make.width.equalTo(@80);
+    }];
+    
+}
+- (void)addTestView
+{
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 150, 100, 200)];
+    _scrollView.contentSize = CGSizeMake(200, 700);
+    _scrollView.backgroundColor = [UIColor greenColor];
+    [self addSubview:_scrollView];
 }
 #pragma mark - Getter Methods
 - (UIButton *)redBtn
@@ -46,5 +77,32 @@
         [_redBtn setTitle:@"测试一" forState:UIControlStateNormal];
     }
     return _redBtn;
+}
+
+- (UIButton *)greenBtn
+{
+    if (!_greenBtn) {
+        _greenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _greenBtn.backgroundColor = [UIColor greenColor];
+        [_greenBtn setTitle:@"测试二" forState:UIControlStateNormal];
+    }
+    return _greenBtn;
+}
+- (UIButton *)yellowBtn
+{
+    if (!_yellowBtn) {
+        _yellowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _yellowBtn.backgroundColor = [UIColor yellowColor];
+        [_yellowBtn setTitle:@"测试三" forState:UIControlStateNormal];
+    }
+    return _yellowBtn;
+}
+- (UITextField *)nameTF
+{
+    if (!_nameTF) {
+        _nameTF = [[UITextField alloc]init];
+        _nameTF.backgroundColor = [UIColor cyanColor];
+    }
+    return _nameTF;
 }
 @end
