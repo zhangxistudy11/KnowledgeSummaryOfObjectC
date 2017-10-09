@@ -14,6 +14,7 @@
 #import "WebPracticeViewController.h"
 #import "RACViewController.h"
 #import "CustomPopViewController.h"
+#import "sys/utsname.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -28,6 +29,9 @@
     self.title = @"Object_C知识总结";
     self.view.backgroundColor = [UIColor  whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStylePlain target:self action:@selector(rightclick:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
     
     [self  setUpView];
 }
@@ -133,9 +137,14 @@
             break;
     }
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Target Methods
+- (void)rightclick:(UIBarButtonItem *)sender
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    
+    NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
+    NSLog(@"platform:%@",platform);
 }
 
 @end

@@ -721,7 +721,7 @@
 				TargetAttributes = {
 					33673CCA1F58FA6300ECE5D4 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 3CJP9ZFY26;
+						DevelopmentTeam = 8A4DC3EVW4;
 						ProvisioningStyle = Automatic;
 					};
 					33673CE61F58FA6400ECE5D4 = {
@@ -1000,12 +1000,14 @@
 			baseConfigurationReference = 0B1FBABE29897B8DFDBCA683 /* Pods-KnowledgeSummaryOfObjectC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3CJP9ZFY26;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8A4DC3EVW4;
 				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1014,12 +1016,14 @@
 			baseConfigurationReference = BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3CJP9ZFY26;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8A4DC3EVW4;
 				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
