@@ -36,12 +36,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KnowledgeSummaryOfObjectC/Class/CommonPart/ViewController/ViewController.m"
-            timestampString = "529212150.062075"
+            timestampString = "529911324.720313"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "-rightclick:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/Controller/DynamicImageViewController.m"
+            timestampString = "530522362.976865"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-test1"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/Controller/DynamicImageViewController.m"
+            timestampString = "530522362.977163"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "-test1"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

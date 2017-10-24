@@ -29,6 +29,8 @@
 		336EFD141F7E377700B8246F /* PopViewTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD131F7E377700B8246F /* PopViewTwoController.m */; };
 		336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD191F7E388800B8246F /* PopViewTwo.m */; };
 		336EFD1D1F7E410900B8246F /* UIView+FITBackViewAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */; };
+		339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339884AE1F95B26C008C5646 /* CustomComplicateController.m */; };
+		339884B21F95B48F008C5646 /* LoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339884B11F95B48F008C5646 /* LoopViewController.m */; };
 		3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */; };
 		3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCC81F63FC2400D7A872 /* CAGradientLayerViewController.m */; };
 		3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCCA1F63FC2400D7A872 /* CAShaplayerViewController.m */; };
@@ -41,7 +43,10 @@
 		3398DD021F63FC2400D7A872 /* AboutCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCEA1F63FC2400D7A872 /* AboutCopyViewController.m */; };
 		3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */; };
 		3398DD061F640E0000D7A872 /* UIBezierPathCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */; };
+		33A201E51F9F1FB900137336 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E41F9F1FB900137336 /* aaa.png */; };
+		33A201E71F9F203900137336 /* Speed_Gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E61F9F203900137336 /* Speed_Gif.gif */; };
 		33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BB26981F669E5300CDFA92 /* WebPracticeViewController.m */; };
+		33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +113,10 @@
 		336EFD191F7E388800B8246F /* PopViewTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewTwo.m; sourceTree = "<group>"; };
 		336EFD1B1F7E410900B8246F /* UIView+FITBackViewAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FITBackViewAddition.h"; sourceTree = "<group>"; };
 		336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FITBackViewAddition.m"; sourceTree = "<group>"; };
+		339884AD1F95B26C008C5646 /* CustomComplicateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomComplicateController.h; sourceTree = "<group>"; };
+		339884AE1F95B26C008C5646 /* CustomComplicateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomComplicateController.m; sourceTree = "<group>"; };
+		339884B01F95B48F008C5646 /* LoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopViewController.h; sourceTree = "<group>"; };
+		339884B11F95B48F008C5646 /* LoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopViewController.m; sourceTree = "<group>"; };
 		3398DCC51F63FC2400D7A872 /* AnimationAndDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationAndDrawViewController.h; sourceTree = "<group>"; };
 		3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationAndDrawViewController.m; sourceTree = "<group>"; };
 		3398DCC71F63FC2400D7A872 /* CAGradientLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerViewController.h; sourceTree = "<group>"; };
@@ -132,8 +141,12 @@
 		3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManageViewController.m; sourceTree = "<group>"; };
 		3398DD041F640E0000D7A872 /* UIBezierPathCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathCustomView.h; sourceTree = "<group>"; };
 		3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCustomView.m; sourceTree = "<group>"; };
+		33A201E41F9F1FB900137336 /* aaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aaa.png; sourceTree = "<group>"; };
+		33A201E61F9F203900137336 /* Speed_Gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Speed_Gif.gif; sourceTree = "<group>"; };
 		33BB26971F669E5300CDFA92 /* WebPracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPracticeViewController.h; sourceTree = "<group>"; };
 		33BB26981F669E5300CDFA92 /* WebPracticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPracticeViewController.m; sourceTree = "<group>"; };
+		33EABABD1F9EE22A00EEA2FC /* DynamicImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicImageViewController.h; sourceTree = "<group>"; };
+		33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicImageViewController.m; sourceTree = "<group>"; };
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
 		F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -208,6 +221,7 @@
 		332B8A2E1F7B80CB00DE9C1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				33A201DF1F9F185700137336 /* Gif */,
 				332B8A2F1F7B80DA00DE9C1A /* Html */,
 			);
 			path = Resources;
@@ -217,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				332B8A301F7B80E200DE9C1A /* index.html */,
+				33A201E41F9F1FB900137336 /* aaa.png */,
 			);
 			path = Html;
 			sourceTree = "<group>";
@@ -260,38 +275,14 @@
 		334839A61F7CF02E00BD17EE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				334839A71F7CF02E00BD17EE /* Model */,
 				334839A81F7CF02E00BD17EE /* RacPrimaryController.h */,
 				334839A91F7CF02E00BD17EE /* RacPrimaryController.m */,
 				334839AA1F7CF02E00BD17EE /* RACViewController.h */,
 				334839AB1F7CF02E00BD17EE /* RACViewController.m */,
 				336EFCFB1F7DF24200B8246F /* RacAdvanceController.h */,
 				336EFCFC1F7DF24200B8246F /* RacAdvanceController.m */,
-				334839AC1F7CF02E00BD17EE /* View */,
-				334839AD1F7CF02E00BD17EE /* ViewModel */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		334839A71F7CF02E00BD17EE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		334839AC1F7CF02E00BD17EE /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		334839AD1F7CF02E00BD17EE /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		334839AE1F7CF02E00BD17EE /* ViewModel */ = {
@@ -434,9 +425,39 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		339884AA1F95B222008C5646 /* CustomComplicatedUI */ = {
+			isa = PBXGroup;
+			children = (
+				339884AB1F95B222008C5646 /* Controller */,
+				339884AC1F95B222008C5646 /* View */,
+			);
+			path = CustomComplicatedUI;
+			sourceTree = "<group>";
+		};
+		339884AB1F95B222008C5646 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				339884AD1F95B26C008C5646 /* CustomComplicateController.h */,
+				339884AE1F95B26C008C5646 /* CustomComplicateController.m */,
+				339884B01F95B48F008C5646 /* LoopViewController.h */,
+				339884B11F95B48F008C5646 /* LoopViewController.m */,
+				33EABABD1F9EE22A00EEA2FC /* DynamicImageViewController.h */,
+				33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		339884AC1F95B222008C5646 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3398DCC01F63FC2400D7A872 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				339884AA1F95B222008C5646 /* CustomComplicatedUI */,
 				336EFD011F7E1C0F00B8246F /* CustomPopView */,
 				334839A11F7CF02300BD17EE /* RAC */,
 				3398DCD91F63FC2400D7A872 /* CommonPart */,
@@ -589,6 +610,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33A201DF1F9F185700137336 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				33A201E61F9F203900137336 /* Speed_Gif.gif */,
+			);
+			path = Gif;
 			sourceTree = "<group>";
 		};
 		33BB268F1F669DFE00CDFA92 /* HtmlInteractive */ = {
@@ -763,8 +792,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A201E51F9F1FB900137336 /* aaa.png in Resources */,
 				33673CDE1F58FA6400ECE5D4 /* Assets.xcassets in Resources */,
 				332B8A311F7B80E200DE9C1A /* index.html in Resources */,
+				33A201E71F9F203900137336 /* Speed_Gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,13 +822,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnowledgeSummaryOfObjectC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8BAE6832FFC9287F72231C28 /* [CP] Copy Pods Resources */ = {
@@ -806,9 +840,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -837,11 +874,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */,
 				336EFD001F7DF50C00B8246F /* RacAdvanceView.m in Sources */,
 				334839B01F7CF02E00BD17EE /* RacPrimaryController.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
 				3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */,
+				339884B21F95B48F008C5646 /* LoopViewController.m in Sources */,
 				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
 				334839AF1F7CF02E00BD17EE /* RacPrimaryView.m in Sources */,
 				3398DCFE1F63FC2400D7A872 /* UIBezierPathViewController.m in Sources */,
@@ -860,6 +899,7 @@
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
+				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
 				3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */,
