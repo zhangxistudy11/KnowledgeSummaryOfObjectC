@@ -51,6 +51,9 @@
 		33A201E51F9F1FB900137336 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E41F9F1FB900137336 /* aaa.png */; };
 		33A201E71F9F203900137336 /* Speed_Gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E61F9F203900137336 /* Speed_Gif.gif */; };
 		33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BB26981F669E5300CDFA92 /* WebPracticeViewController.m */; };
+		33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D61FBC6FFC0082B934 /* BaseTableViewCell.m */; };
+		33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D91FBC73680082B934 /* SlideTableViewCell.m */; };
+		33CD24DD1FBC772B0082B934 /* SlideSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24DC1FBC772B0082B934 /* SlideSubView.m */; };
 		33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 /* End PBXBuildFile section */
@@ -161,6 +164,12 @@
 		33A201E61F9F203900137336 /* Speed_Gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Speed_Gif.gif; sourceTree = "<group>"; };
 		33BB26971F669E5300CDFA92 /* WebPracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPracticeViewController.h; sourceTree = "<group>"; };
 		33BB26981F669E5300CDFA92 /* WebPracticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPracticeViewController.m; sourceTree = "<group>"; };
+		33CD24D51FBC6FFC0082B934 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		33CD24D61FBC6FFC0082B934 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		33CD24D81FBC73680082B934 /* SlideTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideTableViewCell.h; sourceTree = "<group>"; };
+		33CD24D91FBC73680082B934 /* SlideTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTableViewCell.m; sourceTree = "<group>"; };
+		33CD24DB1FBC772B0082B934 /* SlideSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideSubView.h; sourceTree = "<group>"; };
+		33CD24DC1FBC772B0082B934 /* SlideSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideSubView.m; sourceTree = "<group>"; };
 		33EABABD1F9EE22A00EEA2FC /* DynamicImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicImageViewController.h; sourceTree = "<group>"; };
 		33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicImageViewController.m; sourceTree = "<group>"; };
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
@@ -483,6 +492,10 @@
 			children = (
 				334957891FBBE0E6006E89F7 /* SlideView.h */,
 				3349578A1FBBE0E6006E89F7 /* SlideView.m */,
+				33CD24D81FBC73680082B934 /* SlideTableViewCell.h */,
+				33CD24D91FBC73680082B934 /* SlideTableViewCell.m */,
+				33CD24DB1FBC772B0082B934 /* SlideSubView.h */,
+				33CD24DC1FBC772B0082B934 /* SlideSubView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -582,6 +595,8 @@
 				3348385B1F7CEA3100BD17EE /* BaseView.m */,
 				3343CF721FBAF85700653468 /* BaseTableView.h */,
 				3343CF731FBAF85700653468 /* BaseTableView.m */,
+				33CD24D51FBC6FFC0082B934 /* BaseTableViewCell.h */,
+				33CD24D61FBC6FFC0082B934 /* BaseTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -931,11 +946,13 @@
 				33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
+				33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */,
 				336EFD1D1F7E410900B8246F /* UIView+FITBackViewAddition.m in Sources */,
 				336EFCFD1F7DF24200B8246F /* RacAdvanceController.m in Sources */,
 				334839B11F7CF02E00BD17EE /* RACViewController.m in Sources */,
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
+				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
@@ -946,6 +963,7 @@
 				336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */,
 				33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,
 				3398DD021F63FC2400D7A872 /* AboutCopyViewController.m in Sources */,
+				33CD24DD1FBC772B0082B934 /* SlideSubView.m in Sources */,
 				332B8A2D1F7B7DB100DE9C1A /* JSCallNativeViewController.m in Sources */,
 				336EFD0B1F7E1CB700B8246F /* CustomPopViewController.m in Sources */,
 			);

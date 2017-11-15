@@ -9,9 +9,13 @@
 #import "SlideView.h"
 #import "BaseTableView.h"
 #import "SFLabel.h"
+#import "SlideTableViewCell.h"
 #define TopHeight  50
 #define TableHeaderImaHeight  180
 #define SectionHeight 50
+#define SubCellHeight 48
+#define SubCellCount  20
+
 @interface SlideView() <UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 @property (nonatomic,strong)UIView *topView;
 @property (nonatomic,strong)BaseTableView *tableView;
@@ -39,9 +43,9 @@
     _topTitle = [[SFLabel alloc]initWithFrame:CGRectMake(0, 0, screen_width, _topView.height)];
     [_topView addSubview:_topTitle];
     _topTitle.textAlignment = NSTextAlignmentCenter;
-    _topTitle.text = @"隐身导航栏";
-    _topTitle.textColor = [UIColor blueColor];
-    _topTitle.font = [UIFont systemFontOfSize:20];
+    _topTitle.text = @"滑动悬浮";
+    _topTitle.textColor = [UIColor blackColor];
+    _topTitle.font = [UIFont boldSystemFontOfSize:18];
     _topTitle.edgeInsets = UIEdgeInsetsMake(20, 0, 0, 0);
 }
 #pragma makr - Getter Methods
@@ -83,7 +87,7 @@
 #pragma mark - UITableVIewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 100;
+    return 1;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -91,19 +95,15 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 48;
+    return SubCellCount*SubCellHeight;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"idea"];
-    cell.textLabel.text = [NSString stringWithFormat:@"SubCell-%zi",indexPath.row];
-    /*
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"idea"];
-        cell.textLabel.text = [NSString stringWithFormat:@"SubCell-%zi",indexPath.row];
-    }
-     */
+//    UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"idea"];
+//    cell.textLabel.text = [NSString stringWithFormat:@"SubCell-%zi",indexPath.row];
+    SlideTableViewCell * cell = [[SlideTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"slide"];
     return cell;
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -130,15 +130,19 @@
         float tempH = TopHeight *scale;
         NSLog(@"scale %f",scale);
         NSLog(@"tempH %f",tempH);
-        _topView.frame = CGRectMake(_topView.x, _topView.y, screen_width, tempH);
-    }else if (diff<=0)
+        //_topView.frame = CGRectMake(_topView.x, _topView.y, screen_width, tempH);
+        _topView.transform = CGAffineTransformMakeTranslation(0,-diff);
+}
+    else if (diff<=0)
     {
-        _topView.frame = CGRectMake(_topView.x, _topView.y, screen_width, TopHeight);
+    _topView.transform = CGAffineTransformIdentity;
+       // _topView.frame = CGRectMake(_topView.x, _topView.y, screen_width, TopHeight);
     }else if (diff>=TopHeight)
     {
-        _topView.frame = CGRectMake(_topView.x, _topView.y, screen_width, 0);
+        _topView.transform =  CGAffineTransformMakeTranslation(0,-TopHeight);
+        //_topView.frame = CGRectMake(_topView.x, _topView.y, screen_width, 0);
     }
-    _topTitle.frame = CGRectMake(_topTitle.x, _topTitle.y, screen_width, _topView.height);
+//    _topTitle.frame = CGRectMake(_topTitle.x, _topTitle.y, screen_width, _topView.height);
 }
 
 @end

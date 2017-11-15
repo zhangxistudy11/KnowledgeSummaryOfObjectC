@@ -100,12 +100,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KnowledgeSummaryOfObjectC/Class/CommonPart/View/BaseTableView.m"
-            timestampString = "532418330.716772"
+            timestampString = "532418330.71682"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-settingContentInsetAdjustmentNever"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-initWithFrame:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -115,13 +115,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KnowledgeSummaryOfObjectC/Class/CommonPart/View/BaseTableView.m"
-            timestampString = "532418330.71682"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/View/SlideTableViewCell.m"
+            timestampString = "532447852.497226"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-initWithFrame:"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-createSubViewWithIndex:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
