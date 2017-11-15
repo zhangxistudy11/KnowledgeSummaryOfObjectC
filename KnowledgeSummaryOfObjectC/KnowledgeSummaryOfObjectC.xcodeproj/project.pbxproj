@@ -10,10 +10,15 @@
 		33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33021DD01F65763500E49A29 /* CrashLocationViewController.m */; };
 		332B8A2D1F7B7DB100DE9C1A /* JSCallNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332B8A2C1F7B7DB100DE9C1A /* JSCallNativeViewController.m */; };
 		332B8A311F7B80E200DE9C1A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 332B8A301F7B80E200DE9C1A /* index.html */; };
+		3343CF741FBAF85700653468 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3343CF731FBAF85700653468 /* BaseTableView.m */; };
 		3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3348385B1F7CEA3100BD17EE /* BaseView.m */; };
 		334839AF1F7CF02E00BD17EE /* RacPrimaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 334839A51F7CF02E00BD17EE /* RacPrimaryView.m */; };
 		334839B01F7CF02E00BD17EE /* RacPrimaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334839A91F7CF02E00BD17EE /* RacPrimaryController.m */; };
 		334839B11F7CF02E00BD17EE /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334839AB1F7CF02E00BD17EE /* RACViewController.m */; };
+		334957851FBBDF5D006E89F7 /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334957841FBBDF5D006E89F7 /* SlideViewController.m */; };
+		3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3349578A1FBBE0E6006E89F7 /* SlideView.m */; };
+		334957921FBBEAA5006E89F7 /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 334957911FBBEAA5006E89F7 /* header.jpg */; };
+		334957951FBC4738006E89F7 /* SFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 334957941FBC4737006E89F7 /* SFLabel.m */; };
 		33673CD01F58FA6400ECE5D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673CCF1F58FA6400ECE5D4 /* main.m */; };
 		33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33673CDA1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld */; };
 		33673CDE1F58FA6400ECE5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33673CDD1F58FA6400ECE5D4 /* Assets.xcassets */; };
@@ -74,6 +79,10 @@
 		332B8A2B1F7B7DB100DE9C1A /* JSCallNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCallNativeViewController.h; sourceTree = "<group>"; };
 		332B8A2C1F7B7DB100DE9C1A /* JSCallNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCallNativeViewController.m; sourceTree = "<group>"; };
 		332B8A301F7B80E200DE9C1A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		3343CF701FBAF2CE00653468 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3343CF711FBAF55400653468 /* CommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		3343CF721FBAF85700653468 /* BaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		3343CF731FBAF85700653468 /* BaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		3348385A1F7CEA3100BD17EE /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		3348385B1F7CEA3100BD17EE /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		334839A41F7CF02E00BD17EE /* RacPrimaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacPrimaryView.h; sourceTree = "<group>"; };
@@ -82,6 +91,13 @@
 		334839A91F7CF02E00BD17EE /* RacPrimaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacPrimaryController.m; sourceTree = "<group>"; };
 		334839AA1F7CF02E00BD17EE /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
 		334839AB1F7CF02E00BD17EE /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		334957831FBBDF5D006E89F7 /* SlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideViewController.h; sourceTree = "<group>"; };
+		334957841FBBDF5D006E89F7 /* SlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideViewController.m; sourceTree = "<group>"; };
+		334957891FBBE0E6006E89F7 /* SlideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideView.h; sourceTree = "<group>"; };
+		3349578A1FBBE0E6006E89F7 /* SlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideView.m; sourceTree = "<group>"; };
+		334957911FBBEAA5006E89F7 /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
+		334957931FBC4737006E89F7 /* SFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLabel.h; sourceTree = "<group>"; };
+		334957941FBC4737006E89F7 /* SFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLabel.m; sourceTree = "<group>"; };
 		33673CCB1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowledgeSummaryOfObjectC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33673CCF1F58FA6400ECE5D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33673CDB1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KnowledgeSummaryOfObjectC.xcdatamodel; sourceTree = "<group>"; };
@@ -221,6 +237,7 @@
 		332B8A2E1F7B80CB00DE9C1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3349578C1FBBE957006E89F7 /* Image */,
 				33A201DF1F9F185700137336 /* Gif */,
 				332B8A2F1F7B80DA00DE9C1A /* Html */,
 			);
@@ -290,6 +307,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3349578C1FBBE957006E89F7 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				334957911FBBEAA5006E89F7 /* header.jpg */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		33673CC21F58FA6300ECE5D4 = {
@@ -363,6 +388,8 @@
 				33673D141F58FC1C00ECE5D4 /* UIView+Extension.m */,
 				336EFD1B1F7E410900B8246F /* UIView+FITBackViewAddition.h */,
 				336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */,
+				334957931FBC4737006E89F7 /* SFLabel.h */,
+				334957941FBC4737006E89F7 /* SFLabel.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -372,6 +399,8 @@
 			children = (
 				33673D241F59035000ECE5D4 /* AppDelegate.h */,
 				33673D251F59035000ECE5D4 /* AppDelegate.m */,
+				3343CF701FBAF2CE00653468 /* PrefixHeader.pch */,
+				3343CF711FBAF55400653468 /* CommonMacro.h */,
 			);
 			path = Appdelegate;
 			sourceTree = "<group>";
@@ -443,6 +472,8 @@
 				339884B11F95B48F008C5646 /* LoopViewController.m */,
 				33EABABD1F9EE22A00EEA2FC /* DynamicImageViewController.h */,
 				33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */,
+				334957831FBBDF5D006E89F7 /* SlideViewController.h */,
+				334957841FBBDF5D006E89F7 /* SlideViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -450,6 +481,8 @@
 		339884AC1F95B222008C5646 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				334957891FBBE0E6006E89F7 /* SlideView.h */,
+				3349578A1FBBE0E6006E89F7 /* SlideView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -547,6 +580,8 @@
 			children = (
 				3348385A1F7CEA3100BD17EE /* BaseView.h */,
 				3348385B1F7CEA3100BD17EE /* BaseView.m */,
+				3343CF721FBAF85700653468 /* BaseTableView.h */,
+				3343CF731FBAF85700653468 /* BaseTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -795,6 +830,7 @@
 				33A201E51F9F1FB900137336 /* aaa.png in Resources */,
 				33673CDE1F58FA6400ECE5D4 /* Assets.xcassets in Resources */,
 				332B8A311F7B80E200DE9C1A /* index.html in Resources */,
+				334957921FBBEAA5006E89F7 /* header.jpg in Resources */,
 				33A201E71F9F203900137336 /* Speed_Gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,10 +913,13 @@
 				33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */,
 				336EFD001F7DF50C00B8246F /* RacAdvanceView.m in Sources */,
 				334839B01F7CF02E00BD17EE /* RacPrimaryController.m in Sources */,
+				3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
 				3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */,
 				339884B21F95B48F008C5646 /* LoopViewController.m in Sources */,
+				3343CF741FBAF85700653468 /* BaseTableView.m in Sources */,
+				334957851FBBDF5D006E89F7 /* SlideViewController.m in Sources */,
 				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
 				334839AF1F7CF02E00BD17EE /* RacPrimaryView.m in Sources */,
 				3398DCFE1F63FC2400D7A872 /* UIBezierPathViewController.m in Sources */,
@@ -902,6 +941,7 @@
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
+				334957951FBC4738006E89F7 /* SFLabel.m in Sources */,
 				3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */,
 				336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */,
 				33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,
@@ -974,6 +1014,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zhangxi/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1021,6 +1063,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zhangxi/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1041,6 +1085,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8A4DC3EVW4;
 				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1057,6 +1102,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8A4DC3EVW4;
 				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

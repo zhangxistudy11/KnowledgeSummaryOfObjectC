@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  KnowledgeSummaryOfObjectC
+//
+//  Created by zhangxi on 2017/11/14.
+//  Copyright © 2017年 张玺. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "UIView+Extension.h"
+#import "CommonMacro.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

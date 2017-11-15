@@ -17,8 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    
+    self.navigationItem.title = @"复杂UI的定制";
     
 }
 

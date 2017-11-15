@@ -9,6 +9,7 @@
 #import "CustomComplicateController.h"
 #import "LoopViewController.h"
 #import "DynamicImageViewController.h"
+#import "SlideViewController.h"
 @interface CustomComplicateController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -57,6 +58,10 @@
             cell.textLabel.text = @"2-gif动图";
             return cell;
             break;
+        case 2:
+            cell.textLabel.text = @"3-滑动悬停效果";
+            return cell;
+            break;
         default:
             break;
     }
@@ -83,8 +88,8 @@
             break;
         case 2:
         {
-            
-            
+            SlideViewController * vc = [[SlideViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 3:
