@@ -9,7 +9,7 @@
 #import "SlideTableViewCell.h"
 #import "SlideSubView.h"
 @interface SlideTableViewCell()<UIScrollViewDelegate>
-@property (nonatomic,strong)UIScrollView *scrollView;
+
 @property (nonatomic,strong)SlideSubView *leftSubView;
 @property (nonatomic,strong)SlideSubView *middleSubView;
 @property (nonatomic,strong)SlideSubView *rightSubView;
@@ -49,6 +49,13 @@
     }
     return _scrollView;
 }
+- (RACSubject *)didScrollSubject
+{
+    if (!_didScrollSubject) {
+        _didScrollSubject = [[RACSubject alloc]init];
+    }
+    return _didScrollSubject;
+}
 #pragma mark - Private Methods
 - (SlideSubView *)createSubViewWithIndex:(NSInteger)index
 {
@@ -59,7 +66,8 @@
 #pragma mark - UIScrollView Delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    CGFloat offsetX = scrollView.contentOffset.x;
+    float offsetX = scrollView.contentOffset.x;
     NSLog(@"offsetX::%f",offsetX);
+    [self.didScrollSubject sendNext:[NSNumber numberWithFloat:offsetX]];
 }
 @end

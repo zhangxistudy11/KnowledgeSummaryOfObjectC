@@ -10,6 +10,7 @@
 #import "BaseTableView.h"
 #import "SFLabel.h"
 #import "SlideTableViewCell.h"
+#import "SlideTabView.h"
 #define TopHeight  50
 #define TableHeaderImaHeight  180
 #define SectionHeight 50
@@ -22,6 +23,10 @@
 @property (nonatomic,strong)UIView *tableHeaderView;
 @property (nonatomic,strong)UIView *sectionView;
 @property (nonatomic,strong)SFLabel *topTitle;
+@property (nonatomic,strong)SlideTabView *slideTabView;
+@property (nonatomic,strong)SlideTableViewCell *slideContentCell;
+@property (nonatomic,strong)UIImageView *backIV;
+
 @end
 @implementation SlideView
 
@@ -30,6 +35,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setUpView];
+        [self bindModel];
     }
     return self;
 }
@@ -40,15 +46,30 @@
     _topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, screen_width, TopHeight)];
     [self addSubview:_topView];
     _topView.backgroundColor = [UIColor cyanColor];
-    _topTitle = [[SFLabel alloc]initWithFrame:CGRectMake(0, 0, screen_width, _topView.height)];
+    _topTitle = [[SFLabel alloc]initWithFrame:CGRectMake(60, 0, screen_width-120, _topView.height)];
     [_topView addSubview:_topTitle];
     _topTitle.textAlignment = NSTextAlignmentCenter;
     _topTitle.text = @"滑动悬浮";
     _topTitle.textColor = [UIColor blackColor];
     _topTitle.font = [UIFont boldSystemFontOfSize:18];
     _topTitle.edgeInsets = UIEdgeInsetsMake(20, 0, 0, 0);
+    
+    _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_topView addSubview:_backBtn];
+    _backBtn.frame = CGRectMake(0, 0, 60, TopHeight);
+    
+    _backIV = [[UIImageView alloc]initWithFrame:CGRectMake(20, 25, 10, 17)];
+    [_backBtn addSubview:_backIV];
+    _backIV.image = [UIImage imageNamed:@"Back_Arrow"];
 }
-#pragma makr - Getter Methods
+- (void)bindModel
+{
+    [self.slideContentCell.didScrollSubject subscribeNext:^(NSNumber * offsetX) {
+        NSInteger index = [offsetX floatValue]/ (self.slideContentCell.scrollView.width);
+        [self.slideTabView selectedWithIndex:index];
+    }];
+}
+#pragma mark - Getter Methods
 - (BaseTableView *)tableView
 {
     if (!_tableView) {
@@ -56,7 +77,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableHeaderView = self.tableHeaderView;
-       
+        _tableView.bounces = NO;
     }
     return _tableView;
 }
@@ -84,6 +105,32 @@
     }
     return _sectionView;
 }
+-(SlideTabView *)slideTabView
+{
+    if (!_slideTabView) {
+        _slideTabView = [[SlideTabView alloc]initWithFrame:CGRectMake(0, 0, screen_width, SectionHeight)];
+        _slideTabView.lineColor = [UIColor yellowColor];
+        _slideTabView.itemColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+        _slideTabView.itemSelctedColor = [UIColor whiteColor];
+        _slideTabView.itemWidth = _slideTabView.bounds.size.width/3;
+        _slideTabView.font = [UIFont boldSystemFontOfSize:18];
+        _slideTabView.backgroundColor = [UIColor orangeColor];
+        _slideTabView.titles = @[@"左边列表",@"中间列表",@"右边列表"];
+       
+        [_slideTabView makeItemSelectedBlock:^(NSInteger index) {
+           [self setScrollViewWithIndex:index];
+        }];
+        
+    }
+    return _slideTabView;
+}
+- (SlideTableViewCell *)slideContentCell
+{
+    if (!_slideContentCell) {
+        _slideContentCell  = [[SlideTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"slide"];
+    }
+    return _slideContentCell;
+}
 #pragma mark - UITableVIewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -99,11 +146,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"idea"];
-//    cell.textLabel.text = [NSString stringWithFormat:@"SubCell-%zi",indexPath.row];
-    SlideTableViewCell * cell = [[SlideTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"slide"];
-    return cell;
-
+    return self.slideContentCell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -112,7 +155,7 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    return self.sectionView;
+    return self.slideTabView;
 }
 #pragma mark - UIScrollviewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -123,26 +166,28 @@
     [self changeTopViewSsyleWithOffset:diff];
 }
 #pragma mark - Private Methods
+- (void)setScrollViewWithIndex:(NSInteger)index
+{
+    float ofsetX = screen_width*index;
+    [UIView animateWithDuration:0.25 animations:^{
+       self.slideContentCell.scrollView.contentOffset = CGPointMake(ofsetX, 0);
+    } ];
+    
+}
 - (void)changeTopViewSsyleWithOffset:(CGFloat)diff
 {
     if (diff> 0 && diff <TopHeight) {
-        float scale = 1- diff/(float)TopHeight;
-        float tempH = TopHeight *scale;
-        NSLog(@"scale %f",scale);
-        NSLog(@"tempH %f",tempH);
-        //_topView.frame = CGRectMake(_topView.x, _topView.y, screen_width, tempH);
+//        float scale = 1- diff/(float)TopHeight;
         _topView.transform = CGAffineTransformMakeTranslation(0,-diff);
 }
     else if (diff<=0)
     {
     _topView.transform = CGAffineTransformIdentity;
-       // _topView.frame = CGRectMake(_topView.x, _topView.y, screen_width, TopHeight);
     }else if (diff>=TopHeight)
     {
         _topView.transform =  CGAffineTransformMakeTranslation(0,-TopHeight);
-        //_topView.frame = CGRectMake(_topView.x, _topView.y, screen_width, 0);
     }
-//    _topTitle.frame = CGRectMake(_topTitle.x, _topTitle.y, screen_width, _topView.height);
+
 }
 
 @end

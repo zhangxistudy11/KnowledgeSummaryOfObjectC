@@ -54,6 +54,13 @@
 		33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D61FBC6FFC0082B934 /* BaseTableViewCell.m */; };
 		33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D91FBC73680082B934 /* SlideTableViewCell.m */; };
 		33CD24DD1FBC772B0082B934 /* SlideSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24DC1FBC772B0082B934 /* SlideSubView.m */; };
+		33DA54E31FBD2F6C00EB3716 /* SlideTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */; };
+		33DA54E61FBD333100EB3716 /* ranklist_item_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */; };
+		33DA54E71FBD333100EB3716 /* ranklist_item_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E51FBD333100EB3716 /* ranklist_item_right@2x.png */; };
+		33DA54EA1FBD335400EB3716 /* ranklist_item_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E81FBD335400EB3716 /* ranklist_item_left@2x.png */; };
+		33DA54EB1FBD335400EB3716 /* ranklist_item_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E91FBD335400EB3716 /* ranklist_item_left@3x.png */; };
+		33DA54F11FBD7DF100EB3716 /* Back_Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54EF1FBD7DF100EB3716 /* Back_Arrow@2x.png */; };
+		33DA54F21FBD7DF100EB3716 /* Back_Arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54F01FBD7DF100EB3716 /* Back_Arrow@3x.png */; };
 		33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 /* End PBXBuildFile section */
@@ -170,6 +177,14 @@
 		33CD24D91FBC73680082B934 /* SlideTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTableViewCell.m; sourceTree = "<group>"; };
 		33CD24DB1FBC772B0082B934 /* SlideSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideSubView.h; sourceTree = "<group>"; };
 		33CD24DC1FBC772B0082B934 /* SlideSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideSubView.m; sourceTree = "<group>"; };
+		33DA54E11FBD2F6C00EB3716 /* SlideTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideTabView.h; sourceTree = "<group>"; };
+		33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTabView.m; sourceTree = "<group>"; };
+		33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranklist_item_right@3x.png"; sourceTree = "<group>"; };
+		33DA54E51FBD333100EB3716 /* ranklist_item_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranklist_item_right@2x.png"; sourceTree = "<group>"; };
+		33DA54E81FBD335400EB3716 /* ranklist_item_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranklist_item_left@2x.png"; sourceTree = "<group>"; };
+		33DA54E91FBD335400EB3716 /* ranklist_item_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranklist_item_left@3x.png"; sourceTree = "<group>"; };
+		33DA54EF1FBD7DF100EB3716 /* Back_Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Arrow@2x.png"; sourceTree = "<group>"; };
+		33DA54F01FBD7DF100EB3716 /* Back_Arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Arrow@3x.png"; sourceTree = "<group>"; };
 		33EABABD1F9EE22A00EEA2FC /* DynamicImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicImageViewController.h; sourceTree = "<group>"; };
 		33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicImageViewController.m; sourceTree = "<group>"; };
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
@@ -321,7 +336,13 @@
 		3349578C1FBBE957006E89F7 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				33DA54E81FBD335400EB3716 /* ranklist_item_left@2x.png */,
+				33DA54E91FBD335400EB3716 /* ranklist_item_left@3x.png */,
+				33DA54E51FBD333100EB3716 /* ranklist_item_right@2x.png */,
+				33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */,
 				334957911FBBEAA5006E89F7 /* header.jpg */,
+				33DA54EF1FBD7DF100EB3716 /* Back_Arrow@2x.png */,
+				33DA54F01FBD7DF100EB3716 /* Back_Arrow@3x.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -496,6 +517,8 @@
 				33CD24D91FBC73680082B934 /* SlideTableViewCell.m */,
 				33CD24DB1FBC772B0082B934 /* SlideSubView.h */,
 				33CD24DC1FBC772B0082B934 /* SlideSubView.m */,
+				33DA54E11FBD2F6C00EB3716 /* SlideTabView.h */,
+				33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -843,9 +866,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A201E51F9F1FB900137336 /* aaa.png in Resources */,
+				33DA54E61FBD333100EB3716 /* ranklist_item_right@3x.png in Resources */,
+				33DA54E71FBD333100EB3716 /* ranklist_item_right@2x.png in Resources */,
+				33DA54F11FBD7DF100EB3716 /* Back_Arrow@2x.png in Resources */,
 				33673CDE1F58FA6400ECE5D4 /* Assets.xcassets in Resources */,
 				332B8A311F7B80E200DE9C1A /* index.html in Resources */,
+				33DA54F21FBD7DF100EB3716 /* Back_Arrow@3x.png in Resources */,
+				33DA54EB1FBD335400EB3716 /* ranklist_item_left@3x.png in Resources */,
 				334957921FBBEAA5006E89F7 /* header.jpg in Resources */,
+				33DA54EA1FBD335400EB3716 /* ranklist_item_left@2x.png in Resources */,
 				33A201E71F9F203900137336 /* Speed_Gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -959,6 +988,7 @@
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
 				334957951FBC4738006E89F7 /* SFLabel.m in Sources */,
+				33DA54E31FBD2F6C00EB3716 /* SlideTabView.m in Sources */,
 				3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */,
 				336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */,
 				33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,

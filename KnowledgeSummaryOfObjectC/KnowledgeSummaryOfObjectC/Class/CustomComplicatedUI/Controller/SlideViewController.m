@@ -38,5 +38,8 @@
 {
     _contentView = [[SlideView alloc]initWithFrame:CGRectMake(0, top_height, screen_width, screen_height-top_height)];
     [self.view addSubview:_contentView];
+    [[_contentView.backBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
 }
 @end

@@ -7,6 +7,10 @@
 //
 
 #import "BaseTableViewCell.h"
-
+#import "RACSubject.h"
 @interface SlideTableViewCell : BaseTableViewCell
+
+@property (nonatomic,strong)UIScrollView *scrollView;
+
+@property (nonatomic, strong) RACSubject *didScrollSubject;
 @end

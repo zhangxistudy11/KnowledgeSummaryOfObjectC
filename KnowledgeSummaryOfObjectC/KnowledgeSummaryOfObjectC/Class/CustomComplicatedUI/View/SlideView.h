@@ -9,5 +9,5 @@
 #import "BaseView.h"
 
 @interface SlideView : BaseView
-
+@property (nonatomic,strong)UIButton * backBtn;
 @end

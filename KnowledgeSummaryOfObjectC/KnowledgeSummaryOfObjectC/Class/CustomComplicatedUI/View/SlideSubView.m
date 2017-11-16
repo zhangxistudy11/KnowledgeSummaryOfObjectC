@@ -61,7 +61,7 @@
         loctionDes = @"右边";
     }
     UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"idea"];
-    cell.textLabel.text = [NSString stringWithFormat:@"位置-%@  个数-%zi",loctionDes,indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@  个数-%zi",loctionDes,indexPath.row];
     return cell;
     
 }
