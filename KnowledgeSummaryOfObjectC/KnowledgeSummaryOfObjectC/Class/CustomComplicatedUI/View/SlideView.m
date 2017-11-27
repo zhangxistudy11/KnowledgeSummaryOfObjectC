@@ -26,7 +26,7 @@
 @property (nonatomic,strong)SlideTabView *slideTabView;
 @property (nonatomic,strong)SlideTableViewCell *slideContentCell;
 @property (nonatomic,strong)UIImageView *backIV;
-
+@property (nonatomic,strong)UIImageView * imaIV;
 @end
 @implementation SlideView
 
@@ -77,7 +77,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableHeaderView = self.tableHeaderView;
-        _tableView.bounces = NO;
+        //_tableView.bounces = NO;
     }
     return _tableView;
 }
@@ -85,9 +85,9 @@
 {
     if (!_tableHeaderView) {
         _tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, screen_width, TableHeaderImaHeight+TopHeight)];
-        UIImageView * imaIV = [[UIImageView alloc]initWithFrame:CGRectMake(0, TopHeight, screen_width, TableHeaderImaHeight)];
-        [_tableHeaderView addSubview:imaIV];
-        imaIV.image = [UIImage imageNamed:@"header.jpg"];
+        _imaIV = [[UIImageView alloc]initWithFrame:CGRectMake(0, TopHeight, screen_width, TableHeaderImaHeight)];
+        [_tableHeaderView addSubview:_imaIV];
+        _imaIV.image = [UIImage imageNamed:@"header.jpg"];
     }
     return _tableHeaderView;
 }
@@ -164,7 +164,11 @@
     CGFloat diff = offsetY - TableHeaderImaHeight;
     NSLog(@"offsetY=%f  diff=%f",offsetY,diff);
     [self changeTopViewSsyleWithOffset:diff];
+    [self changeTableHeaderFrameWithOffset:offsetY];
+  
+
 }
+
 #pragma mark - Private Methods
 - (void)setScrollViewWithIndex:(NSInteger)index
 {
@@ -174,10 +178,10 @@
     } ];
     
 }
+
 - (void)changeTopViewSsyleWithOffset:(CGFloat)diff
 {
     if (diff> 0 && diff <TopHeight) {
-//        float scale = 1- diff/(float)TopHeight;
         _topView.transform = CGAffineTransformMakeTranslation(0,-diff);
 }
     else if (diff<=0)
@@ -189,5 +193,13 @@
     }
 
 }
-
+- (void)changeTableHeaderFrameWithOffset:(float)offsetY
+{
+    if (offsetY<0) {
+        CGFloat Y = TopHeight+offsetY;
+        CGFloat W = screen_width - 2* offsetY;
+        CGFloat H = TableHeaderImaHeight-offsetY;
+        self.imaIV.frame = CGRectMake(offsetY, Y, W, H);
+    }
+}
 @end
