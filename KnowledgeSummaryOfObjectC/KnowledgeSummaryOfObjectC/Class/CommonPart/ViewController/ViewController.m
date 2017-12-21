@@ -16,6 +16,7 @@
 #import "CustomPopViewController.h"
 #import "sys/utsname.h"
 #import "CustomComplicateController.h"
+#import "ARStudyViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -88,6 +89,10 @@
             cell.textLabel.text = @"6-复杂UI控件的封装";
             return cell;
             break;
+        case 7:
+            cell.textLabel.text = @"7-AR技术";
+            return cell;
+            break;
         default:
             break;
     }
@@ -141,6 +146,12 @@
         case 6:
         {
             CustomComplicateController * vc = [[CustomComplicateController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 7:
+        {
+            ARStudyViewController * vc = [[ARStudyViewController  alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
