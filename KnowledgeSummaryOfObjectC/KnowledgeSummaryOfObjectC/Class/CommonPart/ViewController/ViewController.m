@@ -162,11 +162,28 @@
 #pragma mark - Target Methods
 - (void)rightclick:(UIBarButtonItem *)sender
 {
+    /*
     struct utsname systemInfo;
     uname(&systemInfo);
     
     NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
     NSLog(@"platform:%@",platform);
+     */
+    NSLog(@"1");
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_queue_create("queue",DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"2");
+    });
+    dispatch_group_enter(group);
+    dispatch_sync(queue, ^{
+        NSLog(@"3");
+    });
+    dispatch_group_leave(group);
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        NSLog(@"4");
+    });
+    NSLog(@"5");
 }
 
 @end

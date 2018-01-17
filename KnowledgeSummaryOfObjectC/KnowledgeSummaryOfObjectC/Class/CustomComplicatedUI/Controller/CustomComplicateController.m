@@ -10,6 +10,7 @@
 #import "LoopViewController.h"
 #import "DynamicImageViewController.h"
 #import "SlideViewController.h"
+#import "ButtonViewController.h"
 @interface CustomComplicateController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -61,6 +62,9 @@
         case 2:
             cell.textLabel.text = @"3-滑动悬停效果";
             return cell;
+        case 3:
+            cell.textLabel.text = @"4-UIButton的使用";
+            return cell;
             break;
         default:
             break;
@@ -94,8 +98,8 @@
             break;
         case 3:
         {
-            
-            
+            ButtonViewController * vc = [[ButtonViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         default:

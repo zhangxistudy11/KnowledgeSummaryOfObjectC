@@ -14,6 +14,8 @@
 #import "EarningsViewController.h"
 #import "TransformViewController.h"
 #import "KeyFrameViewController.h"
+#import "HUDViewController.h"
+#import "CustomHudViewController.h"
 @interface AnimationAndDrawViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -78,6 +80,14 @@
             cell.textLabel.text = @"6-关键帧动画";
             return cell;
             break;
+        case 6:
+            cell.textLabel.text = @"7-HUD动画";
+            return cell;
+            break;
+        case 7:
+            cell.textLabel.text = @"8-自定义加载动画";
+            return cell;
+            break;
         default:
             break;
     }
@@ -125,6 +135,18 @@
         case 5:
         {
             KeyFrameViewController * vc = [[KeyFrameViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 6:
+        {
+            HUDViewController * vc = [[HUDViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 7:
+        {
+            CustomHudViewController  * vc = [[CustomHudViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
