@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33021DD01F65763500E49A29 /* CrashLocationViewController.m */; };
+		3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330721292015E53700A320FA /* LoadHtmlViewController.m */; };
 		3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3325D4BB1FCFFB03002ED01E /* ARStudyViewController.m */; };
 		3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3325D4BE1FD00467002ED01E /* ARStudyPeimaryVC.m */; };
 		332B8A2D1F7B7DB100DE9C1A /* JSCallNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332B8A2C1F7B7DB100DE9C1A /* JSCallNativeViewController.m */; };
@@ -130,6 +131,8 @@
 		0B1FBABE29897B8DFDBCA683 /* Pods-KnowledgeSummaryOfObjectC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.debug.xcconfig"; sourceTree = "<group>"; };
 		33021DCF1F65763500E49A29 /* CrashLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashLocationViewController.h; sourceTree = "<group>"; };
 		33021DD01F65763500E49A29 /* CrashLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashLocationViewController.m; sourceTree = "<group>"; };
+		330721282015E53700A320FA /* LoadHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadHtmlViewController.h; sourceTree = "<group>"; };
+		330721292015E53700A320FA /* LoadHtmlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadHtmlViewController.m; sourceTree = "<group>"; };
 		3325D4BA1FCFFB03002ED01E /* ARStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARStudyViewController.h; sourceTree = "<group>"; };
 		3325D4BB1FCFFB03002ED01E /* ARStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARStudyViewController.m; sourceTree = "<group>"; };
 		3325D4BD1FD00467002ED01E /* ARStudyPeimaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARStudyPeimaryVC.h; sourceTree = "<group>"; };
@@ -919,6 +922,8 @@
 				33BB26981F669E5300CDFA92 /* WebPracticeViewController.m */,
 				332B8A2B1F7B7DB100DE9C1A /* JSCallNativeViewController.h */,
 				332B8A2C1F7B7DB100DE9C1A /* JSCallNativeViewController.m */,
+				330721282015E53700A320FA /* LoadHtmlViewController.h */,
+				330721292015E53700A320FA /* LoadHtmlViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1222,6 +1227,7 @@
 				3362C7B71FF1042600F3EFA9 /* CustomHudViewController.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
+				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
 				334957951FBC4738006E89F7 /* SFLabel.m in Sources */,

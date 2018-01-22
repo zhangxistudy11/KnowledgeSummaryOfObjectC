@@ -8,6 +8,7 @@
 
 #import "WebPracticeViewController.h"
 #import "JSCallNativeViewController.h"
+#import "LoadHtmlViewController.h"
 @interface WebPracticeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -53,7 +54,10 @@
             cell.textLabel.text = @"1-WebViewJavascriptBridge调原生";
             return cell;
             break;
-            
+        case 1:
+            cell.textLabel.text = @"2-加载本地Html";
+            return cell;
+            break;
         default:
             break;
     }
@@ -75,7 +79,8 @@
         case 1:
         {
             
-            
+            LoadHtmlViewController * vc = [[LoadHtmlViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 2:
