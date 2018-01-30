@@ -107,6 +107,10 @@
 		33DA54F11FBD7DF100EB3716 /* Back_Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54EF1FBD7DF100EB3716 /* Back_Arrow@2x.png */; };
 		33DA54F21FBD7DF100EB3716 /* Back_Arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54F01FBD7DF100EB3716 /* Back_Arrow@3x.png */; };
 		33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */; };
+		33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778F420206C2A00581E5C /* SlideMenuDemoController.m */; };
+		33F778F820206F8100581E5C /* ic_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F620206F8100581E5C /* ic_back@2x.png */; };
+		33F778F920206F8100581E5C /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F720206F8100581E5C /* ic_back@3x.png */; };
+		33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 /* End PBXBuildFile section */
 
@@ -285,6 +289,12 @@
 		33DA54F01FBD7DF100EB3716 /* Back_Arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Arrow@3x.png"; sourceTree = "<group>"; };
 		33EABABD1F9EE22A00EEA2FC /* DynamicImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicImageViewController.h; sourceTree = "<group>"; };
 		33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicImageViewController.m; sourceTree = "<group>"; };
+		33F778F320206C2A00581E5C /* SlideMenuDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenuDemoController.h; sourceTree = "<group>"; };
+		33F778F420206C2A00581E5C /* SlideMenuDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideMenuDemoController.m; sourceTree = "<group>"; };
+		33F778F620206F8100581E5C /* ic_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@2x.png"; sourceTree = "<group>"; };
+		33F778F720206F8100581E5C /* ic_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@3x.png"; sourceTree = "<group>"; };
+		33F778FA202071A200581E5C /* FiltrateSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltrateSlideView.m; sourceTree = "<group>"; };
+		33F778FB202071A300581E5C /* FiltrateSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltrateSlideView.h; sourceTree = "<group>"; };
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
 		F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -485,6 +495,8 @@
 				336A8E341FEB590E00EFCF42 /* myMessage_Notification@3x.png */,
 				336A8E351FEB590E00EFCF42 /* myMessage_TradingAssistance@2x.png */,
 				336A8E361FEB590E00EFCF42 /* myMessage_TradingAssistance@3x.png */,
+				33F778F620206F8100581E5C /* ic_back@2x.png */,
+				33F778F720206F8100581E5C /* ic_back@3x.png */,
 				3362C76D1FF0F3C300F3EFA9 /* CoinLoading */,
 			);
 			path = Image;
@@ -696,6 +708,8 @@
 				334957841FBBDF5D006E89F7 /* SlideViewController.m */,
 				336A8E2F1FEB533300EFCF42 /* ButtonViewController.h */,
 				336A8E301FEB533300EFCF42 /* ButtonViewController.m */,
+				33F778F320206C2A00581E5C /* SlideMenuDemoController.h */,
+				33F778F420206C2A00581E5C /* SlideMenuDemoController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -711,6 +725,8 @@
 				33CD24DC1FBC772B0082B934 /* SlideSubView.m */,
 				33DA54E11FBD2F6C00EB3716 /* SlideTabView.h */,
 				33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */,
+				33F778FB202071A300581E5C /* FiltrateSlideView.h */,
+				33F778FA202071A200581E5C /* FiltrateSlideView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1072,6 +1088,7 @@
 				3362C78E1FF0F3C400F3EFA9 /* Coin_loading_13@2x.png in Resources */,
 				336A8E381FEB590E00EFCF42 /* myMessage_CouponHint@3x.png in Resources */,
 				3362C7B31FF0FFEB00F3EFA9 /* MAO@2x.png in Resources */,
+				33F778F820206F8100581E5C /* ic_back@2x.png in Resources */,
 				3362C79B1FF0F3C400F3EFA9 /* Coin_loading_25@2x.png in Resources */,
 				33DA54E71FBD333100EB3716 /* ranklist_item_right@2x.png in Resources */,
 				33DA54F11FBD7DF100EB3716 /* Back_Arrow@2x.png in Resources */,
@@ -1101,6 +1118,7 @@
 				3362C78B1FF0F3C400F3EFA9 /* Coin_loading_10@2x.png in Resources */,
 				3362C78D1FF0F3C400F3EFA9 /* Coin_loading_12@2x.png in Resources */,
 				3362C79A1FF0F3C400F3EFA9 /* Coin_loading_24@2x.png in Resources */,
+				33F778F920206F8100581E5C /* ic_back@3x.png in Resources */,
 				3362C78F1FF0F3C400F3EFA9 /* Coin_loading_14@2x.png in Resources */,
 				3362C7A01FF0F3C400F3EFA9 /* Coin_loading_2@2x.png in Resources */,
 				3362C7961FF0F3C400F3EFA9 /* Coin_loading_20@2x.png in Resources */,
@@ -1207,6 +1225,7 @@
 				336A8E311FEB533300EFCF42 /* ButtonViewController.m in Sources */,
 				336EFD141F7E377700B8246F /* PopViewTwoController.m in Sources */,
 				3362C7B01FF0FFCE00F3EFA9 /* UIViewExt.m in Sources */,
+				33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */,
 				33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */,
 				3398DCFB1F63FC2400D7A872 /* EarningsViewController.m in Sources */,
 				3398DD061F640E0000D7A872 /* UIBezierPathCustomView.m in Sources */,
@@ -1222,6 +1241,7 @@
 				3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */,
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
+				33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */,
 				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
 				3362C7B71FF1042600F3EFA9 /* CustomHudViewController.m in Sources */,

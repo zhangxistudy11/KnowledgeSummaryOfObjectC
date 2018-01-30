@@ -11,6 +11,7 @@
 #import "DynamicImageViewController.h"
 #import "SlideViewController.h"
 #import "ButtonViewController.h"
+#import "SlideMenuDemoController.h"
 @interface CustomComplicateController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -66,6 +67,10 @@
             cell.textLabel.text = @"4-UIButton的使用";
             return cell;
             break;
+        case 4:
+            cell.textLabel.text = @"5-侧滑按钮的使用";
+            return cell;
+            break;
         default:
             break;
     }
@@ -99,6 +104,12 @@
         case 3:
         {
             ButtonViewController * vc = [[ButtonViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            SlideMenuDemoController * vc = [[SlideMenuDemoController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
