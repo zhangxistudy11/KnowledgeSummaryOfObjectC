@@ -94,13 +94,7 @@
     }
     return _hideBtn;
 }
-- (FiltrateSlideView *)slideView
-{
-    if (!_slideView) {
-        _slideView = [[FiltrateSlideView alloc]initWithFrame:CGRectMake(0, 0, screen_width, screen_height)];
-    }
-    return _slideView;
-}
+
 - (UIView *)subContentView
 {
     if (!_subContentView) {
@@ -128,7 +122,6 @@
 #pragma mark - UIEvnet Method
 - (void)show
 {
-    NSLog(@"show");
     if (self.slideView.superview) {
         [self.slideView showView];
     }else{
@@ -136,6 +129,13 @@
         [self.slideView.contentView addSubview:self.subContentView];
         [self.slideView showView];
     }
+}
+- (FiltrateSlideView *)slideView
+{
+    if (!_slideView) {
+        _slideView = [[FiltrateSlideView alloc]initWithFrame:CGRectMake(0, 0, screen_width, screen_height)];
+    }
+    return _slideView;
 }
 - (void)hide
 {
@@ -149,16 +149,9 @@
 - (void)panSlide:(UIPanGestureRecognizer*)panGesture
 {
     switch (panGesture.state) {
-        case UIGestureRecognizerStateBegan:
-            //self.orginPoint = self.contentView.center;
-            break;
         case UIGestureRecognizerStateChanged:
             [self panProgress:panGesture];
             break;
-        case UIGestureRecognizerStateEnded:
-          //  [self panStop:panGesture];
-            break;
-            
         default:
             break;
     }
@@ -166,13 +159,12 @@
 #pragma mark - Private Method
 - (UILabel *)addSubMenuLabelWithStr:(NSString *)str index:(NSInteger)index
 {
-    UILabel * lb = [[UILabel alloc]initWithFrame:CGRectMake(0,20 + 50*index, self.slideView.contentView.width, 50)];
+    UILabel * lb = [[UILabel alloc]initWithFrame:CGRectMake(0,0 + 50*index, self.slideView.contentView.width, 50)];
     lb.text = str;
     lb.font = [UIFont systemFontOfSize:20];
     lb.text = str;
     lb.backgroundColor = RandomColor;
-//    lb.layer.borderColor = [UIColor orangeColor].CGColor;
-//    lb.layer.borderWidth = 0.5;
+
     return lb;
 }
 - (void)panProgress:(UIPanGestureRecognizer*)pan
