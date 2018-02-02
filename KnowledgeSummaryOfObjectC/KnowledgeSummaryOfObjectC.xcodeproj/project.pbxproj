@@ -22,6 +22,9 @@
 		3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3349578A1FBBE0E6006E89F7 /* SlideView.m */; };
 		334957921FBBEAA5006E89F7 /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 334957911FBBEAA5006E89F7 /* header.jpg */; };
 		334957951FBC4738006E89F7 /* SFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 334957941FBC4737006E89F7 /* SFLabel.m */; };
+		335024DE20231D26008B1182 /* CGAffineTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335024DD20231D26008B1182 /* CGAffineTransformViewController.m */; };
+		335024E120231F92008B1182 /* ic_xiala_black_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 335024DF20231F92008B1182 /* ic_xiala_black_big@2x.png */; };
+		335024E220231F92008B1182 /* ic_xiala_black_big@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 335024E020231F92008B1182 /* ic_xiala_black_big@3x.png */; };
 		3362C76C1FF09E1000F3EFA9 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3362C76B1FF09E1000F3EFA9 /* HUDViewController.m */; };
 		3362C78B1FF0F3C400F3EFA9 /* Coin_loading_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C76E1FF0F3C300F3EFA9 /* Coin_loading_10@2x.png */; };
 		3362C78C1FF0F3C400F3EFA9 /* Coin_loading_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C76F1FF0F3C300F3EFA9 /* Coin_loading_11@2x.png */; };
@@ -163,6 +166,10 @@
 		334957911FBBEAA5006E89F7 /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
 		334957931FBC4737006E89F7 /* SFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLabel.h; sourceTree = "<group>"; };
 		334957941FBC4737006E89F7 /* SFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLabel.m; sourceTree = "<group>"; };
+		335024DC20231D26008B1182 /* CGAffineTransformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformViewController.h; sourceTree = "<group>"; };
+		335024DD20231D26008B1182 /* CGAffineTransformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformViewController.m; sourceTree = "<group>"; };
+		335024DF20231F92008B1182 /* ic_xiala_black_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_xiala_black_big@2x.png"; sourceTree = "<group>"; };
+		335024E020231F92008B1182 /* ic_xiala_black_big@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_xiala_black_big@3x.png"; sourceTree = "<group>"; };
 		3362C76A1FF09E1000F3EFA9 /* HUDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
 		3362C76B1FF09E1000F3EFA9 /* HUDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
 		3362C76E1FF0F3C300F3EFA9 /* Coin_loading_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coin_loading_10@2x.png"; sourceTree = "<group>"; };
@@ -480,6 +487,8 @@
 		3349578C1FBBE957006E89F7 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				335024DF20231F92008B1182 /* ic_xiala_black_big@2x.png */,
+				335024E020231F92008B1182 /* ic_xiala_black_big@3x.png */,
 				3362C7B11FF0FFEB00F3EFA9 /* MAO@2x.png */,
 				3362C7B21FF0FFEB00F3EFA9 /* mouse@2x.png */,
 				33DA54E81FBD335400EB3716 /* ranklist_item_left@2x.png */,
@@ -795,6 +804,8 @@
 				3362C76B1FF09E1000F3EFA9 /* HUDViewController.m */,
 				3362C7B51FF1042600F3EFA9 /* CustomHudViewController.h */,
 				3362C7B61FF1042600F3EFA9 /* CustomHudViewController.m */,
+				335024DC20231D26008B1182 /* CGAffineTransformViewController.h */,
+				335024DD20231D26008B1182 /* CGAffineTransformViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1106,6 +1117,7 @@
 				3362C78C1FF0F3C400F3EFA9 /* Coin_loading_11@2x.png in Resources */,
 				3362C7971FF0F3C400F3EFA9 /* Coin_loading_21@2x.png in Resources */,
 				3362C7921FF0F3C400F3EFA9 /* Coin_loading_17@2x.png in Resources */,
+				335024E120231F92008B1182 /* ic_xiala_black_big@2x.png in Resources */,
 				3362C79F1FF0F3C400F3EFA9 /* Coin_loading_29@2x.png in Resources */,
 				3362C7941FF0F3C400F3EFA9 /* Coin_loading_19@2x.png in Resources */,
 				336A8E3B1FEB590E00EFCF42 /* myMessage_TradingAssistance@2x.png in Resources */,
@@ -1117,6 +1129,7 @@
 				334957921FBBEAA5006E89F7 /* header.jpg in Resources */,
 				3362C78B1FF0F3C400F3EFA9 /* Coin_loading_10@2x.png in Resources */,
 				3362C78D1FF0F3C400F3EFA9 /* Coin_loading_12@2x.png in Resources */,
+				335024E220231F92008B1182 /* ic_xiala_black_big@3x.png in Resources */,
 				3362C79A1FF0F3C400F3EFA9 /* Coin_loading_24@2x.png in Resources */,
 				33F778F920206F8100581E5C /* ic_back@3x.png in Resources */,
 				3362C78F1FF0F3C400F3EFA9 /* Coin_loading_14@2x.png in Resources */,
@@ -1245,6 +1258,7 @@
 				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
 				3362C7B71FF1042600F3EFA9 /* CustomHudViewController.m in Sources */,
+				335024DE20231D26008B1182 /* CGAffineTransformViewController.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,

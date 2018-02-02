@@ -16,6 +16,7 @@
 #import "KeyFrameViewController.h"
 #import "HUDViewController.h"
 #import "CustomHudViewController.h"
+#import "CGAffineTransformViewController.h"
 @interface AnimationAndDrawViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -88,6 +89,10 @@
             cell.textLabel.text = @"8-自定义加载动画";
             return cell;
             break;
+        case 8:
+            cell.textLabel.text = @"9-仿射变换";
+            return cell;
+            break;
         default:
             break;
     }
@@ -147,6 +152,12 @@
         case 7:
         {
             CustomHudViewController  * vc = [[CustomHudViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 8:
+        {
+             CGAffineTransformViewController * vc = [[CGAffineTransformViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
