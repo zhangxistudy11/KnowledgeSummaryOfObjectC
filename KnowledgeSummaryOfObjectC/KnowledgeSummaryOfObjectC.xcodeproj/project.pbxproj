@@ -82,6 +82,10 @@
 		336EFD141F7E377700B8246F /* PopViewTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD131F7E377700B8246F /* PopViewTwoController.m */; };
 		336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD191F7E388800B8246F /* PopViewTwo.m */; };
 		336EFD1D1F7E410900B8246F /* UIView+FITBackViewAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */; };
+		3380A32B20465D1300F8BA23 /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3380A32A20465D1300F8BA23 /* ChartViewController.m */; };
+		3380A32E204676FA00F8BA23 /* BarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3380A32D204676FA00F8BA23 /* BarChartViewController.m */; };
+		3380A331204677BE00F8BA23 /* BarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3380A330204677BE00F8BA23 /* BarChartView.m */; };
+		3380A334204686A200F8BA23 /* BarChartItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3380A333204686A200F8BA23 /* BarChartItemView.m */; };
 		339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339884AE1F95B26C008C5646 /* CustomComplicateController.m */; };
 		339884B21F95B48F008C5646 /* LoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339884B11F95B48F008C5646 /* LoopViewController.m */; };
 		3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */; };
@@ -248,6 +252,14 @@
 		336EFD191F7E388800B8246F /* PopViewTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewTwo.m; sourceTree = "<group>"; };
 		336EFD1B1F7E410900B8246F /* UIView+FITBackViewAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FITBackViewAddition.h"; sourceTree = "<group>"; };
 		336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FITBackViewAddition.m"; sourceTree = "<group>"; };
+		3380A32920465D1300F8BA23 /* ChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		3380A32A20465D1300F8BA23 /* ChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
+		3380A32C204676FA00F8BA23 /* BarChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartViewController.h; sourceTree = "<group>"; };
+		3380A32D204676FA00F8BA23 /* BarChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartViewController.m; sourceTree = "<group>"; };
+		3380A32F204677BE00F8BA23 /* BarChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartView.h; sourceTree = "<group>"; };
+		3380A330204677BE00F8BA23 /* BarChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartView.m; sourceTree = "<group>"; };
+		3380A332204686A200F8BA23 /* BarChartItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartItemView.h; sourceTree = "<group>"; };
+		3380A333204686A200F8BA23 /* BarChartItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartItemView.m; sourceTree = "<group>"; };
 		339884AD1F95B26C008C5646 /* CustomComplicateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomComplicateController.h; sourceTree = "<group>"; };
 		339884AE1F95B26C008C5646 /* CustomComplicateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomComplicateController.m; sourceTree = "<group>"; };
 		339884B01F95B48F008C5646 /* LoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopViewController.h; sourceTree = "<group>"; };
@@ -695,6 +707,53 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		3380A32220465CD100F8BA23 /* DrawChar */ = {
+			isa = PBXGroup;
+			children = (
+				3380A32320465CD100F8BA23 /* Model */,
+				3380A32420465CD100F8BA23 /* View */,
+				3380A32520465CD100F8BA23 /* ViewController */,
+				3380A32620465CD100F8BA23 /* ViewModel */,
+			);
+			path = DrawChar;
+			sourceTree = "<group>";
+		};
+		3380A32320465CD100F8BA23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3380A32420465CD100F8BA23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3380A32F204677BE00F8BA23 /* BarChartView.h */,
+				3380A330204677BE00F8BA23 /* BarChartView.m */,
+				3380A332204686A200F8BA23 /* BarChartItemView.h */,
+				3380A333204686A200F8BA23 /* BarChartItemView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3380A32520465CD100F8BA23 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3380A32920465D1300F8BA23 /* ChartViewController.h */,
+				3380A32A20465D1300F8BA23 /* ChartViewController.m */,
+				3380A32C204676FA00F8BA23 /* BarChartViewController.h */,
+				3380A32D204676FA00F8BA23 /* BarChartViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3380A32620465CD100F8BA23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		339884AA1F95B222008C5646 /* CustomComplicatedUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -743,6 +802,7 @@
 		3398DCC01F63FC2400D7A872 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3380A32220465CD100F8BA23 /* DrawChar */,
 				3325D4B61FCFFA8B002ED01E /* ARStudy */,
 				339884AA1F95B222008C5646 /* CustomComplicatedUI */,
 				336EFD011F7E1C0F00B8246F /* CustomPopView */,
@@ -1050,6 +1110,7 @@
 					33673CCA1F58FA6300ECE5D4 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8A4DC3EVW4;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					33673CE61F58FA6400ECE5D4 = {
@@ -1246,6 +1307,7 @@
 				33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
+				3380A32B20465D1300F8BA23 /* ChartViewController.m in Sources */,
 				3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */,
 				33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */,
 				336EFD1D1F7E410900B8246F /* UIView+FITBackViewAddition.m in Sources */,
@@ -1255,6 +1317,7 @@
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
 				33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */,
+				3380A331204677BE00F8BA23 /* BarChartView.m in Sources */,
 				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
 				3362C7B71FF1042600F3EFA9 /* CustomHudViewController.m in Sources */,
@@ -1263,6 +1326,7 @@
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
+				3380A334204686A200F8BA23 /* BarChartItemView.m in Sources */,
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
 				334957951FBC4738006E89F7 /* SFLabel.m in Sources */,
 				33DA54E31FBD2F6C00EB3716 /* SlideTabView.m in Sources */,
@@ -1270,6 +1334,7 @@
 				336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */,
 				33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,
 				3362C7AF1FF0FFCE00F3EFA9 /* SCCatWaitingHUD.m in Sources */,
+				3380A32E204676FA00F8BA23 /* BarChartViewController.m in Sources */,
 				3398DD021F63FC2400D7A872 /* AboutCopyViewController.m in Sources */,
 				33CD24DD1FBC772B0082B934 /* SlideSubView.m in Sources */,
 				332B8A2D1F7B7DB100DE9C1A /* JSCallNativeViewController.m in Sources */,
@@ -1410,6 +1475,7 @@
 			baseConfigurationReference = 0B1FBABE29897B8DFDBCA683 /* Pods-KnowledgeSummaryOfObjectC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8A4DC3EVW4;
@@ -1419,6 +1485,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1427,6 +1495,7 @@
 			baseConfigurationReference = BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8A4DC3EVW4;
@@ -1436,6 +1505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

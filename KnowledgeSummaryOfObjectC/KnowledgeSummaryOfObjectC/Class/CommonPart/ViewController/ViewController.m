@@ -17,6 +17,7 @@
 #import "sys/utsname.h"
 #import "CustomComplicateController.h"
 #import "ARStudyViewController.h"
+#import "ChartViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -93,6 +94,10 @@
             cell.textLabel.text = @"7-AR技术";
             return cell;
             break;
+        case 8:
+            cell.textLabel.text = @"8-图表";
+            return cell;
+            break;
         default:
             break;
     }
@@ -152,6 +157,12 @@
         case 7:
         {
             ARStudyViewController * vc = [[ARStudyViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 8:
+        {
+            ChartViewController * vc = [[ChartViewController  alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
