@@ -99,7 +99,7 @@
         
         // 将分享的结果返回到JS中
         NSString *result = [NSString stringWithFormat:@"分享成功:%@,%@,%@",title,content,url];
-      //  responseCallback(result);
+      responseCallback(result);
     }];
 }
 

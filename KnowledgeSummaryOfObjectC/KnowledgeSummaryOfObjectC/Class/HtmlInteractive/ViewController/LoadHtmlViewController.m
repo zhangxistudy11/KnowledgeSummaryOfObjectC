@@ -27,7 +27,8 @@
 {
     self.webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:self.webView];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:@"/Users/zhangxi/Desktop/HTMLStu/HTMCODE/06-登录界面/index.html"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:@"/Users/zhangxi/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Resources/Html/index.html"]]];
+   
     
 }
 

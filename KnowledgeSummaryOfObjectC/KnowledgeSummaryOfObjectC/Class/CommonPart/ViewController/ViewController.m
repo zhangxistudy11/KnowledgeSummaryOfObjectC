@@ -18,6 +18,7 @@
 #import "CustomComplicateController.h"
 #import "ARStudyViewController.h"
 #import "ChartViewController.h"
+#import "RunTimeBasicViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -75,7 +76,7 @@
             return cell;
             break;
         case 3:
-            cell.textLabel.text = @"3-WebView交互";
+            cell.textLabel.text = @"3-Web交互";
             return cell;
             break;
         case 4:
@@ -96,6 +97,10 @@
             break;
         case 8:
             cell.textLabel.text = @"8-图表";
+            return cell;
+            break;
+        case 9:
+            cell.textLabel.text = @"9-Runtime练习";
             return cell;
             break;
         default:
@@ -163,6 +168,12 @@
         case 8:
         {
             ChartViewController * vc = [[ChartViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 9:
+        {
+            RunTimeBasicViewController * vc = [[RunTimeBasicViewController  alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

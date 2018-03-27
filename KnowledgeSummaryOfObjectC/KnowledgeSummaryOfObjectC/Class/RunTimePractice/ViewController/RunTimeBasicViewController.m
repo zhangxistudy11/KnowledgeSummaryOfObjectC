@@ -1,31 +1,26 @@
 //
-//  WebPracticeViewController.m
+//  RunTimeBasicViewController.m
 //  KnowledgeSummaryOfObjectC
 //
-//  Created by 张玺 on 2017/9/11.
-//  Copyright © 2017年 张玺. All rights reserved.
+//  Created by 张玺 on 2018/3/20.
+//  Copyright © 2018年 张玺. All rights reserved.
 //
 
-#import "WebPracticeViewController.h"
-#import "JSCallNativeViewController.h"
-#import "LoadHtmlViewController.h"
-#import "JavaScriptStuViewController.h"
-#import "JSProtocolViewController.h"
-@interface WebPracticeViewController ()<UITableViewDataSource,UITableViewDelegate>
+#import "RunTimeBasicViewController.h"
+#import "MethodPacticeViewController.h"
+@interface RunTimeBasicViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
 }
 
 @end
 
-@implementation WebPracticeViewController
-
+@implementation RunTimeBasicViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"HTML交互";
-    self.view.backgroundColor = [UIColor  whiteColor];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+
+    self.navigationItem.title = @"RunTime使用";
     
     [self  setUpView];
 }
@@ -53,21 +48,10 @@
     }
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"1-WebViewJavascriptBridge调原生";
+            cell.textLabel.text = @"1-方法熟悉";
             return cell;
             break;
-        case 1:
-            cell.textLabel.text = @"2-加载本地Html";
-            return cell;
-            break;
-        case 2:
-            cell.textLabel.text = @"3-JavaScriptCore熟悉";
-            return cell;
-            break;
-        case 3:
-            cell.textLabel.text = @"4-JavaScriptProtol熟悉";
-            return cell;
-            break;
+            
         default:
             break;
     }
@@ -82,27 +66,26 @@
     switch (indexPath.row) {
         case 0:
         {
-            JSCallNativeViewController * vc = [[JSCallNativeViewController alloc]init];
+            MethodPacticeViewController * vc = [[MethodPacticeViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 1:
         {
             
-            LoadHtmlViewController * vc = [[LoadHtmlViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            
         }
             break;
         case 2:
         {
-            JavaScriptStuViewController * vc = [[JavaScriptStuViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            
+            
         }
             break;
         case 3:
         {
-            JSProtocolViewController * vc = [[JSProtocolViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            
+            
         }
             break;
         default:

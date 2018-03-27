@@ -116,7 +116,7 @@
                   moduleName = "KnowledgeSummaryOfObjectC"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangxi/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/AnimationAndDraw/ViewController/CGAffineTransformViewController.m"
-                  timestampString = "541505532.0970401"
+                  timestampString = "543468229.3247041"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -131,7 +131,7 @@
                   moduleName = "KnowledgeSummaryOfObjectC"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangxi/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/AnimationAndDraw/ViewController/CGAffineTransformViewController.m"
-                  timestampString = "541505532.0990241"
+                  timestampString = "543468229.328366"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -164,7 +164,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KnowledgeSummaryOfObjectC/Class/DrawChar/View/BarChartItemView.m"
-            timestampString = "541609481.085824"
+            timestampString = "542006013.433995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
@@ -180,7 +180,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KnowledgeSummaryOfObjectC/Class/DrawChar/View/BarChartItemView.m"
-            timestampString = "541609481.086"
+            timestampString = "542006013.436113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -212,12 +212,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KnowledgeSummaryOfObjectC/Class/DrawChar/View/BarChartItemView.m"
-            timestampString = "541609481.08611"
+            timestampString = "542006013.436451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
             landmarkName = "-barShapeLayer"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/HtmlInteractive/ViewController/JSCallNativeViewController.m"
+            timestampString = "543468229.140298"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-rightClick"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/HtmlInteractive/ViewController/JSCallNativeViewController.m"
+            timestampString = "543468229.140776"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-registShareFunction"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/HtmlInteractive/ViewController/JSProtocolViewController.m"
+            timestampString = "543218088.617458"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-test1"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/HtmlInteractive/Model/JSProtocolObj.m"
+            timestampString = "543154663.7618411"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "-whatYouName"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/RunTimePractice/ViewController/MethodPacticeViewController.m"
+            timestampString = "543288862.744455"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-test1"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
