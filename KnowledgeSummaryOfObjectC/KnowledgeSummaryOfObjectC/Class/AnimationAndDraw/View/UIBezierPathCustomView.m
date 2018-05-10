@@ -81,13 +81,20 @@
     [path7 stroke];
     
     // 8.绘制扇形
+    CGPoint bottomLeftPoint = CGPointMake(50, 500);
+    CGPoint bottomRightPoint = CGPointMake(150, 500);
+    CGPoint topRightPoint = CGPointMake(150, 450);
+    CGPoint topLeftPoint = CGPointMake(50, 450);
     UIBezierPath * path8 = [UIBezierPath bezierPath]; // 创建路径
-    [path8 moveToPoint:CGPointMake(100, kMargin*45)]; // 设置起始点
-    [path8 addArcWithCenter:CGPointMake(100, kMargin*45) radius:50 startAngle:0 endAngle:3.14159/2 clockwise:YES];
+   // [path8 moveToPoint:CGPointMake(100, kMargin*45)]; // 设置起始点
+    [path8 moveToPoint:topLeftPoint];
+    [path8 addLineToPoint:bottomLeftPoint];
+    [path8 addLineToPoint:bottomRightPoint];
+    [path8 addLineToPoint:topRightPoint];
+    [path8 addArcWithCenter:CGPointMake(100, kMargin*45) radius:50 startAngle:M_PI endAngle:M_PI*2 clockwise:YES];
     //[[UIColor lightGrayColor] setStroke];
-    //[[UIColor lightGrayColor] setFill];
+    [path8 fill];
     [path8 closePath];
-    [path8 stroke];
     
     // 9. 绘制竖直虚线
     UIBezierPath *verticalLinePath = [UIBezierPath bezierPath];
