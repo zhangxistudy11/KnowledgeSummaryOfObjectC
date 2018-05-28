@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Additions/UIView+FITBackViewAddition.m"
+            timestampString = "545475641.32426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-showViewWithBackView:alpha:backViewColor:target:touchAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomPopView/View/PopViewTwo.m"
+            timestampString = "545482939.292821"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "-hide"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PopViewTwo hide]"
+                  moduleName = "KnowledgeSummaryOfObjectC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zx/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/CustomPopView/View/PopViewTwo.m"
+                  timestampString = "546589421.653301"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__18-[PopViewTwo hide]_block_invoke"
+                  moduleName = "KnowledgeSummaryOfObjectC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zx/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/CustomPopView/View/PopViewTwo.m"
+                  timestampString = "546589421.656198"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.74"
+                  moduleName = "KnowledgeSummaryOfObjectC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zx/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/CustomPopView/View/PopViewTwo.m"
+                  timestampString = "546589421.658518"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/DrawChar/View/BarChartItemView.m"
+            timestampString = "547008115.886317"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "BarChartItemView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/DrawChar/View/BarChartItemView.m"
+            timestampString = "547008115.886694"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-barShapeLayer"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

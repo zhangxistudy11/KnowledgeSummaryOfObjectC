@@ -24,6 +24,7 @@
     [self addButtonTwo];
     [self addButtonThree];
     [self addButtonFour];
+    [self addShadowlabel];
 }
 
 - (void)addButtonOne
@@ -99,5 +100,24 @@
     {
         NSLog(@"Tag is 1004");
     }
+}
+- (void)addShadowlabel
+{
+   // UILabel *lb = [[UILabel alloc]initWithFrame:CGRectMake(100, 500, 200, 100)];
+    UILabel *lb = [[UILabel alloc]init];
+    [self.view addSubview:lb];
+    [lb mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view).offset(100);
+        make.top.equalTo(self.view).offset(500);
+        make.width.mas_equalTo(200);
+        make.height.mas_equalTo(100);
+    }];
+    lb.backgroundColor = [UIColor whiteColor];
+    lb.text = @"房间爱咖啡";
+    
+    lb.layer.shadowColor = [UIColor blackColor].CGColor;
+    lb.layer.shadowRadius = 5;
+    lb.layer.shadowOpacity = 0.5;
+    lb.layer.shadowOffset = CGSizeMake(0, 0);
 }
 @end

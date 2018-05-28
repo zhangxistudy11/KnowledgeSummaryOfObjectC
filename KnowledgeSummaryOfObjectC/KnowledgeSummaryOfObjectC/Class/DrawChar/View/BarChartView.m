@@ -80,12 +80,13 @@
         item.barHeight = value;
         [item drawContent];
     }
+    self.scrollView.backgroundColor = [UIColor cyanColor];
 }
 #pragma mark - Setter Methods
 - (void)setBackColor:(UIColor *)backColor
 {
     _backColor = backColor;
-    self.scrollView.backgroundColor = [UIColor whiteColor];
+  //  self.scrollView.backgroundColor = [UIColor whiteColor];
     
 }
 #pragma mark - Getter Methods
@@ -93,10 +94,15 @@
 {
     if (!_displayArray) {
         _displayArray = [NSMutableArray array];
-        for (int i=0; i<6; i++) {
-            int value = arc4random() % 80;
+//        for (int i=0; i<6; i++) {
+//            int value = arc4random() % 80;
+//            int result = (i%2==1) ? (-value):value;
+//            [_displayArray addObject:[NSNumber numberWithInt:result]];
+//        }
+        for (int i=0; i<4; i++) {
+            int value = arc4random() % 40;
             int result = (i%2==1) ? (-value):value;
-            [_displayArray addObject:[NSNumber numberWithInt:result]];
+            [_displayArray addObject:[NSNumber numberWithInt:30]];
         }
     }
     return _displayArray;

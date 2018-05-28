@@ -7,12 +7,12 @@
 //
 
 #import "PopViewTwo.h"
-#import <objc/runtime.h>
+//#import <objc/runtime.h>
 #import "UIView+FITBackViewAddition.h"
 #define SCREEN_H  [UIScreen mainScreen].bounds.size.height
 #define SCREEN_W  [UIScreen mainScreen].bounds.size.width
 
-static const void *kBackViewIdentifier = &kBackViewIdentifier;
+//static const void *kBackViewIdentifier = &kBackViewIdentifier;
 
 @interface PopViewTwo ()<UIGestureRecognizerDelegate>
 
