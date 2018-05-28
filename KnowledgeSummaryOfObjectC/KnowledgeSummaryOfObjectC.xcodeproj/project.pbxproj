@@ -160,10 +160,10 @@
 		332B8A2B1F7B7DB100DE9C1A /* JSCallNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCallNativeViewController.h; sourceTree = "<group>"; };
 		332B8A2C1F7B7DB100DE9C1A /* JSCallNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCallNativeViewController.m; sourceTree = "<group>"; };
 		332B8A301F7B80E200DE9C1A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		3343CF701FBAF2CE00653468 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3343CF711FBAF55400653468 /* CommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		3343CF721FBAF85700653468 /* BaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
 		3343CF731FBAF85700653468 /* BaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
+		3347FCB320BC5C1400AFCBFA /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3348385A1F7CEA3100BD17EE /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		3348385B1F7CEA3100BD17EE /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		334839A41F7CF02E00BD17EE /* RacPrimaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacPrimaryView.h; sourceTree = "<group>"; };
@@ -708,9 +708,9 @@
 		33673D231F59033300ECE5D4 /* Appdelegate */ = {
 			isa = PBXGroup;
 			children = (
+				3347FCB320BC5C1400AFCBFA /* PrefixHeader.pch */,
 				33673D241F59035000ECE5D4 /* AppDelegate.h */,
 				33673D251F59035000ECE5D4 /* AppDelegate.m */,
-				3343CF701FBAF2CE00653468 /* PrefixHeader.pch */,
 				3343CF711FBAF55400653468 /* CommonMacro.h */,
 			);
 			path = Appdelegate;
@@ -1533,9 +1533,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8A4DC3EVW4;
-				GCC_PREFIX_HEADER = /Users/zx/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1554,9 +1554,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8A4DC3EVW4;
-				GCC_PREFIX_HEADER = /Users/zx/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
