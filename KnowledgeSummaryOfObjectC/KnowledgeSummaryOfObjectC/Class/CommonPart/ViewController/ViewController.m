@@ -88,7 +88,7 @@
             return cell;
             break;
         case 6:
-            cell.textLabel.text = @"6-复杂UI控件的封装";
+            cell.textLabel.text = @"6-复杂界面的封装";
             return cell;
             break;
         case 7:

@@ -4,18 +4,28 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KnowledgeSummaryOfObjectC/Additions/UIView+FITBackViewAddition.m"
-            timestampString = "545475641.32426"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/View/FloatSlideCell.m"
+            timestampString = "547833590.873917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "-showViewWithBackView:alpha:backViewColor:target:touchAction:"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-scrollViewDidScroll:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,61 +35,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KnowledgeSummaryOfObjectC/Class/CustomPopView/View/PopViewTwo.m"
-            timestampString = "545482939.292821"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/View/FloatSlideCell.m"
+            timestampString = "547833590.873989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "-hide"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-scrollViewDidScroll:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[PopViewTwo hide]"
-                  moduleName = "KnowledgeSummaryOfObjectC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zx/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/CustomPopView/View/PopViewTwo.m"
-                  timestampString = "546589421.653301"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "99"
-                  endingLineNumber = "99"
-                  offsetFromSymbolStart = "122">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__18-[PopViewTwo hide]_block_invoke"
-                  moduleName = "KnowledgeSummaryOfObjectC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zx/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/CustomPopView/View/PopViewTwo.m"
-                  timestampString = "546589421.656198"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "99"
-                  endingLineNumber = "99"
-                  offsetFromSymbolStart = "15">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.74"
-                  moduleName = "KnowledgeSummaryOfObjectC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zx/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/CustomPopView/View/PopViewTwo.m"
-                  timestampString = "546589421.658518"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "99"
-                  endingLineNumber = "99"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -88,14 +51,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KnowledgeSummaryOfObjectC/Class/DrawChar/View/BarChartItemView.m"
-            timestampString = "547008115.886317"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/Controller/FloatSlideViewController.m"
+            timestampString = "547833590.8740489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "BarChartItemView"
-            landmarkType = "3">
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-didMoveTop"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -104,13 +67,77 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KnowledgeSummaryOfObjectC/Class/DrawChar/View/BarChartItemView.m"
-            timestampString = "547008115.886694"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/Controller/FloatSlideViewController.m"
+            timestampString = "547833590.874104"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "-barShapeLayer"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-scrollViewDidScroll:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/View/FloatSlideCell.m"
+            timestampString = "547833590.874149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-innerCanScroll:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/Controller/FloatSlideViewController.m"
+            timestampString = "547833590.874193"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-scrollViewDidScroll:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/Controller/FloatSlideViewController.m"
+            timestampString = "547833590.8742369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-scrollViewDidScroll:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KnowledgeSummaryOfObjectC/Class/CustomComplicatedUI/Controller/FloatTableViewController.m"
+            timestampString = "548067963.0388139"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-panGestureRecognizer:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
