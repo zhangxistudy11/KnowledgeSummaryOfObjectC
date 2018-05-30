@@ -164,11 +164,12 @@
     lb.font = [UIFont systemFontOfSize:20];
     lb.text = str;
     lb.backgroundColor = RandomColor;
-
+    NSLog(@"第一次");
     return lb;
 }
 - (void)panProgress:(UIPanGestureRecognizer*)pan
 {
+    NSLog(@"第二次");
      CGFloat speedX = [pan velocityInView:pan.view].x;
      BOOL towardRight = speedX > 0;
     if (!towardRight) {
