@@ -125,6 +125,7 @@
 		33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 		FB54C1EC20A741D40060FD9F /* TranslucentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */; };
+		FBBFD6B320BE7A490077B014 /* CoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBFD6B220BE7A490077B014 /* CoverViewController.m */; };
 		FBF2007320A52CF400AFE27B /* FloatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2007220A52CF400AFE27B /* FloatTableViewController.m */; };
 		FBF2016720A58F6A00AFE27B /* FloatSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2016620A58F6A00AFE27B /* FloatSlideViewController.m */; };
 		FBF2016A20A5921800AFE27B /* FloatSlideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2016920A5921800AFE27B /* FloatSlideCell.m */; };
@@ -337,6 +338,8 @@
 		F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB54C1EA20A741D40060FD9F /* TranslucentCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslucentCellViewController.h; sourceTree = "<group>"; };
 		FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslucentCellViewController.m; sourceTree = "<group>"; };
+		FBBFD6B120BE7A490077B014 /* CoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverViewController.h; sourceTree = "<group>"; };
+		FBBFD6B220BE7A490077B014 /* CoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverViewController.m; sourceTree = "<group>"; };
 		FBF2007120A52CF400AFE27B /* FloatTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatTableViewController.h; sourceTree = "<group>"; };
 		FBF2007220A52CF400AFE27B /* FloatTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatTableViewController.m; sourceTree = "<group>"; };
 		FBF2016520A58F6A00AFE27B /* FloatSlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatSlideViewController.h; sourceTree = "<group>"; };
@@ -945,6 +948,8 @@
 				3362C7B61FF1042600F3EFA9 /* CustomHudViewController.m */,
 				335024DC20231D26008B1182 /* CGAffineTransformViewController.h */,
 				335024DD20231D26008B1182 /* CGAffineTransformViewController.m */,
+				FBBFD6B120BE7A490077B014 /* CoverViewController.h */,
+				FBBFD6B220BE7A490077B014 /* CoverViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1398,6 +1403,7 @@
 				FBF2007320A52CF400AFE27B /* FloatTableViewController.m in Sources */,
 				3362C7B71FF1042600F3EFA9 /* CustomHudViewController.m in Sources */,
 				335024DE20231D26008B1182 /* CGAffineTransformViewController.m in Sources */,
+				FBBFD6B320BE7A490077B014 /* CoverViewController.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
