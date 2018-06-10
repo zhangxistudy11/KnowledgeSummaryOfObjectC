@@ -124,6 +124,8 @@
 		33F778F920206F8100581E5C /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F720206F8100581E5C /* ic_back@3x.png */; };
 		33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
+		FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */; };
+		FB1335EB20CCB72D00187132 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335EA20CCB72D00187132 /* NSArray+Safe.m */; };
 		FB54C1EC20A741D40060FD9F /* TranslucentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */; };
 		FBBFD6B320BE7A490077B014 /* CoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBFD6B220BE7A490077B014 /* CoverViewController.m */; };
 		FBF2007320A52CF400AFE27B /* FloatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2007220A52CF400AFE27B /* FloatTableViewController.m */; };
@@ -336,6 +338,10 @@
 		33F778FB202071A300581E5C /* FiltrateSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltrateSlideView.h; sourceTree = "<group>"; };
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
 		F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1335E620CCB5D700187132 /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
+		FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingViewController.m; sourceTree = "<group>"; };
+		FB1335E920CCB72D00187132 /* NSArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		FB1335EA20CCB72D00187132 /* NSArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		FB54C1EA20A741D40060FD9F /* TranslucentCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslucentCellViewController.h; sourceTree = "<group>"; };
 		FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslucentCellViewController.m; sourceTree = "<group>"; };
 		FBBFD6B120BE7A490077B014 /* CoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverViewController.h; sourceTree = "<group>"; };
@@ -447,6 +453,8 @@
 				33186CDE2060DA4F002B2D20 /* RunTimeBasicViewController.m */,
 				33186CE02060DBA4002B2D20 /* MethodPacticeViewController.h */,
 				33186CE12060DBA4002B2D20 /* MethodPacticeViewController.m */,
+				FB1335E620CCB5D700187132 /* MethodSwizzlingViewController.h */,
+				FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -716,6 +724,8 @@
 				336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */,
 				334957931FBC4737006E89F7 /* SFLabel.h */,
 				334957941FBC4737006E89F7 /* SFLabel.m */,
+				FB1335E920CCB72D00187132 /* NSArray+Safe.h */,
+				FB1335EA20CCB72D00187132 /* NSArray+Safe.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -1363,6 +1373,7 @@
 				3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
+				FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */,
 				3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */,
 				339884B21F95B48F008C5646 /* LoopViewController.m in Sources */,
 				3362C76C1FF09E1000F3EFA9 /* HUDViewController.m in Sources */,
@@ -1402,6 +1413,7 @@
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
 				FBF2007320A52CF400AFE27B /* FloatTableViewController.m in Sources */,
 				3362C7B71FF1042600F3EFA9 /* CustomHudViewController.m in Sources */,
+				FB1335EB20CCB72D00187132 /* NSArray+Safe.m in Sources */,
 				335024DE20231D26008B1182 /* CGAffineTransformViewController.m in Sources */,
 				FBBFD6B320BE7A490077B014 /* CoverViewController.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
