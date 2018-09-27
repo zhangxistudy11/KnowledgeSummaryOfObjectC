@@ -22,7 +22,7 @@
 }
 - (void)testArrayCrash
 {
-    NSArray *arr = @[@"22",@"33",@"44"];
+    NSArray *arr = @[@"22",@"33",@"44",@"gg"];
     NSString *temp = [arr objectAtIndex:5];
 }
 
