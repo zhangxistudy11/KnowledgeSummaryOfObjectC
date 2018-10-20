@@ -123,6 +123,7 @@
 		33F778F820206F8100581E5C /* ic_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F620206F8100581E5C /* ic_back@2x.png */; };
 		33F778F920206F8100581E5C /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F720206F8100581E5C /* ic_back@3x.png */; };
 		33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
+		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 		FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */; };
 		FB1335EB20CCB72D00187132 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335EA20CCB72D00187132 /* NSArray+Safe.m */; };
@@ -336,6 +337,8 @@
 		33F778F720206F8100581E5C /* ic_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@3x.png"; sourceTree = "<group>"; };
 		33F778FA202071A200581E5C /* FiltrateSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltrateSlideView.m; sourceTree = "<group>"; };
 		33F778FB202071A300581E5C /* FiltrateSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltrateSlideView.h; sourceTree = "<group>"; };
+		777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewThreeViewController.h; sourceTree = "<group>"; };
+		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
 		F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1335E620CCB5D700187132 /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
@@ -779,6 +782,8 @@
 				336EFD0D1F7E1E1100B8246F /* PopViewOneController.m */,
 				336EFD121F7E377700B8246F /* PopViewTwoController.h */,
 				336EFD131F7E377700B8246F /* PopViewTwoController.m */,
+				777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */,
+				777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1378,6 +1383,7 @@
 				339884B21F95B48F008C5646 /* LoopViewController.m in Sources */,
 				3362C76C1FF09E1000F3EFA9 /* HUDViewController.m in Sources */,
 				3343CF741FBAF85700653468 /* BaseTableView.m in Sources */,
+				777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */,
 				33C0BE64205FAFA70062AE6D /* JavaScriptStuViewController.m in Sources */,
 				334957851FBBDF5D006E89F7 /* SlideViewController.m in Sources */,
 				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
