@@ -6,4 +6,5 @@ target 'KnowledgeSummaryOfObjectC' do
     pod 'WebViewJavascriptBridge’,'~> 6.0.2’
     pod 'FLAnimatedImage', '~> 1.0'
     pod 'MBProgressHUD', '~> 1.0.0'
+    pod 'YYCache'
 end
