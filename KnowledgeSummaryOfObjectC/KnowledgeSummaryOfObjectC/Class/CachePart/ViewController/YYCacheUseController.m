@@ -146,7 +146,7 @@ static NSString *cacheName = @"ZXCache";
         NSDictionary * dict= (NSDictionary *)[cache.diskCache objectForKey:@"modelTwo"];
         NSLog(@"%@",dict);
         NSString *homePaht = NSHomeDirectory();
-        NSLog(@"Parh--->%@",homePaht);
+        NSLog(@"Parh111--->%@",homePaht);
     }
 }
 @end
