@@ -9,6 +9,7 @@
 #import "MemoryManageViewController.h"
 #import "UIView+Extension.h"
 #import "AboutCopyViewController.h"
+#import "MemoryLeakViewController.h"
 @interface MemoryManageViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -54,7 +55,10 @@
             cell.textLabel.text = @"1-深拷贝与浅拷贝";
             return cell;
             break;
-            
+        case 1:
+            cell.textLabel.text = @"2-内存泄漏";
+            return cell;
+            break;
         default:
             break;
     }
@@ -75,7 +79,8 @@
             break;
         case 1:
         {
-           
+            MemoryLeakViewController * vc = [[MemoryLeakViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
             
         }
             break;

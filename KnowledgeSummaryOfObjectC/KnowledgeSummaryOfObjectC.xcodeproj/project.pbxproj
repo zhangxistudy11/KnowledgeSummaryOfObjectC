@@ -123,7 +123,20 @@
 		33F778F820206F8100581E5C /* ic_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F620206F8100581E5C /* ic_back@2x.png */; };
 		33F778F920206F8100581E5C /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F720206F8100581E5C /* ic_back@3x.png */; };
 		33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
+		771C8852217B54F10018F4D3 /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */; };
+		771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8855217B55BE0018F4D3 /* MemoryTestView.m */; };
+		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
+		77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD9217D7915001325D9 /* YYCacheUseController.m */; };
+		77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639B1E217D9CF0001325D9 /* CacheTestModel.m */; };
+		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
+		FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */; };
+		FB1335EB20CCB72D00187132 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335EA20CCB72D00187132 /* NSArray+Safe.m */; };
+		FB54C1EC20A741D40060FD9F /* TranslucentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */; };
+		FBBFD6B320BE7A490077B014 /* CoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBFD6B220BE7A490077B014 /* CoverViewController.m */; };
+		FBF2007320A52CF400AFE27B /* FloatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2007220A52CF400AFE27B /* FloatTableViewController.m */; };
+		FBF2016720A58F6A00AFE27B /* FloatSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2016620A58F6A00AFE27B /* FloatSlideViewController.m */; };
+		FBF2016A20A5921800AFE27B /* FloatSlideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2016920A5921800AFE27B /* FloatSlideCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -329,8 +342,34 @@
 		33F778F720206F8100581E5C /* ic_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@3x.png"; sourceTree = "<group>"; };
 		33F778FA202071A200581E5C /* FiltrateSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltrateSlideView.m; sourceTree = "<group>"; };
 		33F778FB202071A300581E5C /* FiltrateSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltrateSlideView.h; sourceTree = "<group>"; };
+		771C8850217B54F10018F4D3 /* MemoryLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeakViewController.h; sourceTree = "<group>"; };
+		771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakViewController.m; sourceTree = "<group>"; };
+		771C8854217B55BE0018F4D3 /* MemoryTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryTestView.h; sourceTree = "<group>"; };
+		771C8855217B55BE0018F4D3 /* MemoryTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryTestView.m; sourceTree = "<group>"; };
+		77639AD5217D71B9001325D9 /* CacheClassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheClassController.h; sourceTree = "<group>"; };
+		77639AD6217D71B9001325D9 /* CacheClassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheClassController.m; sourceTree = "<group>"; };
+		77639AD8217D7915001325D9 /* YYCacheUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCacheUseController.h; sourceTree = "<group>"; };
+		77639AD9217D7915001325D9 /* YYCacheUseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCacheUseController.m; sourceTree = "<group>"; };
+		77639B1D217D9CF0001325D9 /* CacheTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheTestModel.h; sourceTree = "<group>"; };
+		77639B1E217D9CF0001325D9 /* CacheTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheTestModel.m; sourceTree = "<group>"; };
+		777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewThreeViewController.h; sourceTree = "<group>"; };
+		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
 		F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1335E620CCB5D700187132 /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
+		FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingViewController.m; sourceTree = "<group>"; };
+		FB1335E920CCB72D00187132 /* NSArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		FB1335EA20CCB72D00187132 /* NSArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		FB54C1EA20A741D40060FD9F /* TranslucentCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslucentCellViewController.h; sourceTree = "<group>"; };
+		FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslucentCellViewController.m; sourceTree = "<group>"; };
+		FBBFD6B120BE7A490077B014 /* CoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverViewController.h; sourceTree = "<group>"; };
+		FBBFD6B220BE7A490077B014 /* CoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverViewController.m; sourceTree = "<group>"; };
+		FBF2007120A52CF400AFE27B /* FloatTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatTableViewController.h; sourceTree = "<group>"; };
+		FBF2007220A52CF400AFE27B /* FloatTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatTableViewController.m; sourceTree = "<group>"; };
+		FBF2016520A58F6A00AFE27B /* FloatSlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatSlideViewController.h; sourceTree = "<group>"; };
+		FBF2016620A58F6A00AFE27B /* FloatSlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatSlideViewController.m; sourceTree = "<group>"; };
+		FBF2016820A5921800AFE27B /* FloatSlideCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatSlideCell.h; sourceTree = "<group>"; };
+		FBF2016920A5921800AFE27B /* FloatSlideCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatSlideCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +471,8 @@
 				33186CDE2060DA4F002B2D20 /* RunTimeBasicViewController.m */,
 				33186CE02060DBA4002B2D20 /* MethodPacticeViewController.h */,
 				33186CE12060DBA4002B2D20 /* MethodPacticeViewController.m */,
+				FB1335E620CCB5D700187132 /* MethodSwizzlingViewController.h */,
+				FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -701,6 +742,8 @@
 				336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */,
 				334957931FBC4737006E89F7 /* SFLabel.h */,
 				334957941FBC4737006E89F7 /* SFLabel.m */,
+				FB1335E920CCB72D00187132 /* NSArray+Safe.h */,
+				FB1335EA20CCB72D00187132 /* NSArray+Safe.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -754,6 +797,8 @@
 				336EFD0D1F7E1E1100B8246F /* PopViewOneController.m */,
 				336EFD121F7E377700B8246F /* PopViewTwoController.h */,
 				336EFD131F7E377700B8246F /* PopViewTwoController.m */,
+				777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */,
+				777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -836,6 +881,12 @@
 				336A8E301FEB533300EFCF42 /* ButtonViewController.m */,
 				33F778F320206C2A00581E5C /* SlideMenuDemoController.h */,
 				33F778F420206C2A00581E5C /* SlideMenuDemoController.m */,
+				FBF2007120A52CF400AFE27B /* FloatTableViewController.h */,
+				FBF2007220A52CF400AFE27B /* FloatTableViewController.m */,
+				FBF2016520A58F6A00AFE27B /* FloatSlideViewController.h */,
+				FBF2016620A58F6A00AFE27B /* FloatSlideViewController.m */,
+				FB54C1EA20A741D40060FD9F /* TranslucentCellViewController.h */,
+				FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -853,6 +904,8 @@
 				33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */,
 				33F778FB202071A300581E5C /* FiltrateSlideView.h */,
 				33F778FA202071A200581E5C /* FiltrateSlideView.m */,
+				FBF2016820A5921800AFE27B /* FloatSlideCell.h */,
+				FBF2016920A5921800AFE27B /* FloatSlideCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -860,6 +913,7 @@
 		3398DCC01F63FC2400D7A872 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				77639AD3217D719B001325D9 /* CachePart */,
 				33186CD82060DA22002B2D20 /* RunTimePractice */,
 				3380A32220465CD100F8BA23 /* DrawChar */,
 				3325D4B61FCFFA8B002ED01E /* ARStudy */,
@@ -925,6 +979,8 @@
 				3362C7B61FF1042600F3EFA9 /* CustomHudViewController.m */,
 				335024DC20231D26008B1182 /* CGAffineTransformViewController.h */,
 				335024DD20231D26008B1182 /* CGAffineTransformViewController.m */,
+				FBBFD6B120BE7A490077B014 /* CoverViewController.h */,
+				FBBFD6B220BE7A490077B014 /* CoverViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -988,26 +1044,10 @@
 		3398DCE51F63FC2400D7A872 /* MemoryManagement */ = {
 			isa = PBXGroup;
 			children = (
-				3398DCE61F63FC2400D7A872 /* Model */,
-				3398DCE71F63FC2400D7A872 /* View */,
+				771C8853217B55A80018F4D3 /* View */,
 				3398DCE81F63FC2400D7A872 /* ViewController */,
-				3398DCF01F63FC2400D7A872 /* ViewModel */,
 			);
 			path = MemoryManagement;
-			sourceTree = "<group>";
-		};
-		3398DCE61F63FC2400D7A872 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3398DCE71F63FC2400D7A872 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		3398DCE81F63FC2400D7A872 /* ViewController */ = {
@@ -1017,15 +1057,10 @@
 				3398DCEA1F63FC2400D7A872 /* AboutCopyViewController.m */,
 				3398DCEB1F63FC2400D7A872 /* MemoryManageViewController.h */,
 				3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */,
+				771C8850217B54F10018F4D3 /* MemoryLeakViewController.h */,
+				771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		3398DCF01F63FC2400D7A872 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		33A201DF1F9F185700137336 /* Gif */ = {
@@ -1085,6 +1120,44 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		771C8853217B55A80018F4D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				771C8854217B55BE0018F4D3 /* MemoryTestView.h */,
+				771C8855217B55BE0018F4D3 /* MemoryTestView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77639AD3217D719B001325D9 /* CachePart */ = {
+			isa = PBXGroup;
+			children = (
+				77639B1C217D9CDD001325D9 /* Model */,
+				77639AD4217D719B001325D9 /* ViewController */,
+			);
+			path = CachePart;
+			sourceTree = "<group>";
+		};
+		77639AD4217D719B001325D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77639AD5217D71B9001325D9 /* CacheClassController.h */,
+				77639AD6217D71B9001325D9 /* CacheClassController.m */,
+				77639AD8217D7915001325D9 /* YYCacheUseController.h */,
+				77639AD9217D7915001325D9 /* YYCacheUseController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		77639B1C217D9CDD001325D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77639B1D217D9CF0001325D9 /* CacheTestModel.h */,
+				77639B1E217D9CF0001325D9 /* CacheTestModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8F9BEC53A383DDB9C48FB611 /* Frameworks */ = {
@@ -1173,7 +1246,7 @@
 				TargetAttributes = {
 					33673CCA1F58FA6300ECE5D4 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8A4DC3EVW4;
+						DevelopmentTeam = MS8TX68Z59;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -1331,16 +1404,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB54C1EC20A741D40060FD9F /* TranslucentCellViewController.m in Sources */,
 				33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */,
+				771C8852217B54F10018F4D3 /* MemoryLeakViewController.m in Sources */,
 				336EFD001F7DF50C00B8246F /* RacAdvanceView.m in Sources */,
 				334839B01F7CF02E00BD17EE /* RacPrimaryController.m in Sources */,
 				3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
+				FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */,
 				3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */,
 				339884B21F95B48F008C5646 /* LoopViewController.m in Sources */,
 				3362C76C1FF09E1000F3EFA9 /* HUDViewController.m in Sources */,
 				3343CF741FBAF85700653468 /* BaseTableView.m in Sources */,
+				777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */,
 				33C0BE64205FAFA70062AE6D /* JavaScriptStuViewController.m in Sources */,
 				334957851FBBDF5D006E89F7 /* SlideViewController.m in Sources */,
 				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
@@ -1357,10 +1434,13 @@
 				33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
+				77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */,
 				3380A32B20465D1300F8BA23 /* ChartViewController.m in Sources */,
+				FBF2016720A58F6A00AFE27B /* FloatSlideViewController.m in Sources */,
 				3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */,
 				33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */,
 				336EFD1D1F7E410900B8246F /* UIView+FITBackViewAddition.m in Sources */,
+				FBF2016A20A5921800AFE27B /* FloatSlideCell.m in Sources */,
 				336EFCFD1F7DF24200B8246F /* RacAdvanceController.m in Sources */,
 				33186CDF2060DA4F002B2D20 /* RunTimeBasicViewController.m in Sources */,
 				334839B11F7CF02E00BD17EE /* RACViewController.m in Sources */,
@@ -1372,12 +1452,18 @@
 				3380A331204677BE00F8BA23 /* BarChartView.m in Sources */,
 				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
+				FBF2007320A52CF400AFE27B /* FloatTableViewController.m in Sources */,
 				3362C7B71FF1042600F3EFA9 /* CustomHudViewController.m in Sources */,
+				FB1335EB20CCB72D00187132 /* NSArray+Safe.m in Sources */,
 				335024DE20231D26008B1182 /* CGAffineTransformViewController.m in Sources */,
+				FBBFD6B320BE7A490077B014 /* CoverViewController.m in Sources */,
+				77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
+				771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
+				77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */,
 				3380A334204686A200F8BA23 /* BarChartItemView.m in Sources */,
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
 				334957951FBC4738006E89F7 /* SFLabel.m in Sources */,
@@ -1530,9 +1616,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8A4DC3EVW4;
+				DEVELOPMENT_TEAM = MS8TX68Z59;
 				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1551,9 +1638,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8A4DC3EVW4;
+				DEVELOPMENT_TEAM = MS8TX68Z59;
 				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

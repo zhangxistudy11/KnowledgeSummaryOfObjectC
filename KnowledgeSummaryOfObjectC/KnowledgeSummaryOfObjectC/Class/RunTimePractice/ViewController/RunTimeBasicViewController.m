@@ -8,6 +8,7 @@
 
 #import "RunTimeBasicViewController.h"
 #import "MethodPacticeViewController.h"
+#import "MethodSwizzlingViewController.h"
 @interface RunTimeBasicViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -48,10 +49,13 @@
     }
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"1-方法熟悉";
+            cell.textLabel.text = @"0-方法熟悉";
             return cell;
             break;
-            
+        case 1:
+            cell.textLabel.text = @"1-Method Swizzling";
+            return cell;
+            break;
         default:
             break;
     }
@@ -72,7 +76,8 @@
             break;
         case 1:
         {
-            
+            MethodSwizzlingViewController * vc = [[MethodSwizzlingViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
             
         }
             break;

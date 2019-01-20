@@ -169,6 +169,7 @@
 }
 - (void)panProgress:(UIPanGestureRecognizer*)pan
 {
+    NSLog(@"第二次");
      CGFloat speedX = [pan velocityInView:pan.view].x;
      BOOL towardRight = speedX > 0;
     if (!towardRight) {

@@ -19,6 +19,7 @@
 #import "ARStudyViewController.h"
 #import "ChartViewController.h"
 #import "RunTimeBasicViewController.h"
+#import "CacheClassController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -88,7 +89,7 @@
             return cell;
             break;
         case 6:
-            cell.textLabel.text = @"6-复杂UI控件的封装";
+            cell.textLabel.text = @"6-复杂界面的封装";
             return cell;
             break;
         case 7:
@@ -101,6 +102,10 @@
             break;
         case 9:
             cell.textLabel.text = @"9-Runtime练习";
+            return cell;
+            break;
+        case 10:
+            cell.textLabel.text = @"10-缓存";
             return cell;
             break;
         default:
@@ -174,6 +179,12 @@
         case 9:
         {
             RunTimeBasicViewController * vc = [[RunTimeBasicViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 10:
+        {
+            CacheClassController * vc = [[CacheClassController  alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

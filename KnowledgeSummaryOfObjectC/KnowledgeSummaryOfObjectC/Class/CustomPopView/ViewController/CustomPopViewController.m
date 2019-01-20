@@ -9,6 +9,7 @@
 #import "CustomPopViewController.h"
 #import "PopViewOneController.h"
 #import "PopViewTwoController.h"
+#import "PopViewThreeViewController.h"
 @interface CustomPopViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -59,6 +60,10 @@
             cell.textLabel.text = @"2-PopView方法二";
             return cell;
             break;
+        case 2:
+            cell.textLabel.text = @"3-PopView方法三";
+            return cell;
+            break;
         default:
             break;
     }
@@ -85,8 +90,8 @@
             break;
         case 2:
         {
-            
-            
+            PopViewThreeViewController * vc = [[PopViewThreeViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 3:
