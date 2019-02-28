@@ -25,6 +25,7 @@
     NSLog(@"cccc");
     
     [self  setUpView];
+     NSLog(@"dddd");
 }
 - (void)setUpView
 {
