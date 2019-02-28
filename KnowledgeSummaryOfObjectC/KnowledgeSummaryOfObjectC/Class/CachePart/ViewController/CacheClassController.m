@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [subProject printA];
+    NSLog(@"bbbb");
     self.navigationItem.title = @"缓存";
     [self setUpView];
     NSLog(@"aaaa");
