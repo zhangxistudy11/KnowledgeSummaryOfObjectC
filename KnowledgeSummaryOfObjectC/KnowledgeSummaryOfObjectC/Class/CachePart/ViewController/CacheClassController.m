@@ -8,7 +8,7 @@
 
 #import "CacheClassController.h"
 #import "YYCacheUseController.h"
-//#import "subProject.h"
+#import "subProject.h"
 @interface CacheClassController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -19,10 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [subProject printA];
+    [subProject printA];
     self.navigationItem.title = @"缓存";
     [self setUpView];
-    NSLog(@"aaaa");
 }
 
 - (void)setUpView
