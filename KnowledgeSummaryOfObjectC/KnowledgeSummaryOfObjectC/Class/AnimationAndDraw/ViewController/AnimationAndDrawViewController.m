@@ -18,6 +18,7 @@
 #import "CustomHudViewController.h"
 #import "CGAffineTransformViewController.h"
 #import "CoverViewController.h"
+#import "ProgressAnimationViewController.h"
 @interface AnimationAndDrawViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -98,6 +99,10 @@
             cell.textLabel.text = @"9-遮罩图形";
             return cell;
             break;
+        case 10:
+            cell.textLabel.text = @"10-进度条";
+            return cell;
+            break;
         default:
             break;
     }
@@ -169,6 +174,12 @@
         case 9:
         {
             CoverViewController * vc = [[CoverViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 10:
+        {
+            ProgressAnimationViewController * vc = [[ProgressAnimationViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

@@ -129,6 +129,8 @@
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
 		77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD9217D7915001325D9 /* YYCacheUseController.m */; };
 		77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639B1E217D9CF0001325D9 /* CacheTestModel.m */; };
+		777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */; };
+		777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618FA224C80B100D51594 /* ProgressAnimationView.m */; };
 		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 		FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */; };
@@ -361,6 +363,10 @@
 		77639AD9217D7915001325D9 /* YYCacheUseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCacheUseController.m; sourceTree = "<group>"; };
 		77639B1D217D9CF0001325D9 /* CacheTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheTestModel.h; sourceTree = "<group>"; };
 		77639B1E217D9CF0001325D9 /* CacheTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheTestModel.m; sourceTree = "<group>"; };
+		777618F6224C74DE00D51594 /* ProgressAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressAnimationViewController.h; sourceTree = "<group>"; };
+		777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimationViewController.m; sourceTree = "<group>"; };
+		777618F9224C80B100D51594 /* ProgressAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressAnimationView.h; sourceTree = "<group>"; };
+		777618FA224C80B100D51594 /* ProgressAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimationView.m; sourceTree = "<group>"; };
 		777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewThreeViewController.h; sourceTree = "<group>"; };
 		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
@@ -963,6 +969,8 @@
 			children = (
 				3398DD041F640E0000D7A872 /* UIBezierPathCustomView.h */,
 				3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */,
+				777618F9224C80B100D51594 /* ProgressAnimationView.h */,
+				777618FA224C80B100D51594 /* ProgressAnimationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -992,6 +1000,8 @@
 				335024DD20231D26008B1182 /* CGAffineTransformViewController.m */,
 				FBBFD6B120BE7A490077B014 /* CoverViewController.h */,
 				FBBFD6B220BE7A490077B014 /* CoverViewController.m */,
+				777618F6224C74DE00D51594 /* ProgressAnimationViewController.h */,
+				777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1475,6 +1485,7 @@
 				3398DD061F640E0000D7A872 /* UIBezierPathCustomView.m in Sources */,
 				336EFD111F7E1EC400B8246F /* PopViewOne.m in Sources */,
 				33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */,
+				777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
 				77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */,
@@ -1489,6 +1500,7 @@
 				334839B11F7CF02E00BD17EE /* RACViewController.m in Sources */,
 				3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */,
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
+				777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
 				33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */,
 				335B79C6205FD701005B6E29 /* JSProtocolObj.m in Sources */,
