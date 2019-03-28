@@ -7,7 +7,7 @@
 //
 
 #define FIRST_VALUE  0.3
-#define FIRST_DURATION 10
+#define FIRST_DURATION 3
 
 #define LAST_VALUE  0.9
 #define LAST_DURATION 0.066
