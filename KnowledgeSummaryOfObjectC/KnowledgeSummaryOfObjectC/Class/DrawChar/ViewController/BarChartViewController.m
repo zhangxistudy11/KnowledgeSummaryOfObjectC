@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.navigationItem.title = @"柱形图";
+    self.navigationItem.title = @"柱形图aaa";
     
     [self setUpView];
 }
