@@ -15,6 +15,8 @@
 		3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3325D4BE1FD00467002ED01E /* ARStudyPeimaryVC.m */; };
 		332B8A2D1F7B7DB100DE9C1A /* JSCallNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332B8A2C1F7B7DB100DE9C1A /* JSCallNativeViewController.m */; };
 		332B8A311F7B80E200DE9C1A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 332B8A301F7B80E200DE9C1A /* index.html */; };
+		333AAD11226B320F005736F0 /* ThirdLibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333AAD10226B320F005736F0 /* ThirdLibViewController.m */; };
+		333AAD14226B3402005736F0 /* MansoryStudyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333AAD13226B3402005736F0 /* MansoryStudyController.m */; };
 		3343CF741FBAF85700653468 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3343CF731FBAF85700653468 /* BaseTableView.m */; };
 		3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3348385B1F7CEA3100BD17EE /* BaseView.m */; };
 		334839AF1F7CF02E00BD17EE /* RacPrimaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 334839A51F7CF02E00BD17EE /* RacPrimaryView.m */; };
@@ -183,6 +185,10 @@
 		332B8A2B1F7B7DB100DE9C1A /* JSCallNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCallNativeViewController.h; sourceTree = "<group>"; };
 		332B8A2C1F7B7DB100DE9C1A /* JSCallNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCallNativeViewController.m; sourceTree = "<group>"; };
 		332B8A301F7B80E200DE9C1A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		333AAD0F226B320F005736F0 /* ThirdLibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdLibViewController.h; sourceTree = "<group>"; };
+		333AAD10226B320F005736F0 /* ThirdLibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdLibViewController.m; sourceTree = "<group>"; };
+		333AAD12226B3402005736F0 /* MansoryStudyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MansoryStudyController.h; sourceTree = "<group>"; };
+		333AAD13226B3402005736F0 /* MansoryStudyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MansoryStudyController.m; sourceTree = "<group>"; };
 		3343CF711FBAF55400653468 /* CommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		3343CF721FBAF85700653468 /* BaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
 		3343CF731FBAF85700653468 /* BaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
@@ -562,6 +568,25 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		333AAD0C226B3196005736F0 /* ThridLibStudy */ = {
+			isa = PBXGroup;
+			children = (
+				333AAD0D226B3196005736F0 /* ViewController */,
+			);
+			path = ThridLibStudy;
+			sourceTree = "<group>";
+		};
+		333AAD0D226B3196005736F0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				333AAD0F226B320F005736F0 /* ThirdLibViewController.h */,
+				333AAD10226B320F005736F0 /* ThirdLibViewController.m */,
+				333AAD12226B3402005736F0 /* MansoryStudyController.h */,
+				333AAD13226B3402005736F0 /* MansoryStudyController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		334839A11F7CF02300BD17EE /* RAC */ = {
 			isa = PBXGroup;
 			children = (
@@ -930,6 +955,7 @@
 		3398DCC01F63FC2400D7A872 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				333AAD0C226B3196005736F0 /* ThridLibStudy */,
 				77639AD3217D719B001325D9 /* CachePart */,
 				33186CD82060DA22002B2D20 /* RunTimePractice */,
 				3380A32220465CD100F8BA23 /* DrawChar */,
@@ -1487,6 +1513,7 @@
 				33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */,
 				777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
+				333AAD11226B320F005736F0 /* ThirdLibViewController.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
 				77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */,
 				3380A32B20465D1300F8BA23 /* ChartViewController.m in Sources */,
@@ -1516,6 +1543,7 @@
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
+				333AAD14226B3402005736F0 /* MansoryStudyController.m in Sources */,
 				771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
 				77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */,

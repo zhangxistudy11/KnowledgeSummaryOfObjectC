@@ -20,6 +20,7 @@
 #import "ChartViewController.h"
 #import "RunTimeBasicViewController.h"
 #import "CacheClassController.h"
+#import "ThirdLibViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -108,6 +109,10 @@
             cell.textLabel.text = @"10-缓存";
             return cell;
             break;
+        case 11:
+            cell.textLabel.text = @"11-三方库学习";
+            return cell;
+            break;
         default:
             break;
     }
@@ -185,6 +190,12 @@
         case 10:
         {
             CacheClassController * vc = [[CacheClassController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 11:
+        {
+            ThirdLibViewController * vc = [[ThirdLibViewController  alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
