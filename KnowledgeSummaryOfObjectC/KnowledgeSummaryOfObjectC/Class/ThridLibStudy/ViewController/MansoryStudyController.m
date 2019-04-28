@@ -19,8 +19,11 @@
 @property (nonatomic,strong) UILabel *sixSubLabel;
 
 @property (nonatomic,strong)UIView *twoPView;
+@property (nonatomic,strong)UIView *thrPView;
+@property (nonatomic,strong) UILabel *sevenSubLabel;
+@property (nonatomic,strong) UILabel *eightSubLabel;
 
-
+@property (nonatomic,strong)UIView *thrSonePView;
 @end
 
 @implementation MansoryStudyController
@@ -32,6 +35,8 @@
     [self testOne];
     [self testTwo];
     [self testThree];
+    [self testFour];
+
 }
 - (void)testOne
 {
@@ -133,5 +138,64 @@
 
 
     }];
+}
+- (void)testFour
+{
+    self.thrPView = [[UIView alloc]init];
+    [self.view addSubview:self.thrPView];
+    [self.thrPView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view);
+        make.top.equalTo(self.twoPView.mas_bottom).offset(25);
+        make.height.mas_equalTo(40);
+    }];
+    self.thrPView.backgroundColor = [UIColor redColor];
+    
+//    self.thrSonePView = [[UIView alloc]init];
+//    [self.thrPView addSubview:self.thrSonePView];
+//    [self.thrSonePView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.thrPView);
+//        make.centerY.equalTo(self.thrSonePView);
+//        make.height.mas_equalTo(15);
+//        make.width.mas_equalTo(40);
+//        make.right.equalTo(self.thrPView.mas_right);
+//    }];
+//    self.thrSonePView.backgroundColor = [UIColor blueColor];
+    
+    for (int i=0; i<=3; i++) {
+        UIView * lv = [[UIView alloc]init];
+        [self.thrPView addSubview:lv];
+        lv.backgroundColor = [UIColor greenColor];
+        [lv mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.thrPView).offset(i*40);
+            make.height.mas_equalTo(30);
+            make.centerY.equalTo(self.thrPView);
+            make.width.mas_equalTo(40);
+            if (i==3) {
+                make.right.equalTo(self.thrPView.mas_right);
+            }
+        }];
+        
+    }
+    
+    self.sevenSubLabel = [[UILabel alloc]init];
+    [self.view addSubview:self.sevenSubLabel];
+    [self.sevenSubLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.thrPView.mas_right);
+        make.top.equalTo(self.twoPView.mas_bottom).offset(25);
+        make.height.mas_equalTo(20);
+        make.width.lessThanOrEqualTo(@(90));
+    }];
+    self.sevenSubLabel.text = @"gggggggggggggggggggg";
+    self.sevenSubLabel.backgroundColor = [UIColor greenColor];
+    
+    self.eightSubLabel = [[UILabel alloc]init];
+    [self.view addSubview:self.eightSubLabel];
+    [self.eightSubLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.sevenSubLabel.mas_right);
+        make.centerY.equalTo(self.sevenSubLabel);
+        make.height.mas_equalTo(20);
+    }];
+    self.eightSubLabel.text = @"ffff ";
+    self.eightSubLabel.backgroundColor = [UIColor yellowColor];
 }
 @end
