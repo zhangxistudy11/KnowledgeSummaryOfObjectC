@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading tffffhe view, typically from a nib.
     self.title = @"动画与绘图";
     self.view.backgroundColor = [UIColor  whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;

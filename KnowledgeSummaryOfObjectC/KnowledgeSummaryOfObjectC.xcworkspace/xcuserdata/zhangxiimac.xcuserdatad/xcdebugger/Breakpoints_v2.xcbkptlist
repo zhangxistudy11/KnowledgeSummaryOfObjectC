@@ -138,12 +138,12 @@
                   moduleName = "KnowledgeSummaryOfObjectC"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangxiimac/Desktop/SummaryCode/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/AnimationAndDraw/View/ProgressAnimationView.m"
-                  timestampString = "575445800.54361"
+                  timestampString = "578161692.122062"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "163">
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "155">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -153,27 +153,12 @@
                   moduleName = "KnowledgeSummaryOfObjectC"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangxiimac/Desktop/SummaryCode/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/AnimationAndDraw/View/ProgressAnimationView.m"
-                  timestampString = "575445800.545696"
+                  timestampString = "578161692.125509"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
                   offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.37"
-                  moduleName = "KnowledgeSummaryOfObjectC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhangxiimac/Desktop/SummaryCode/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Class/AnimationAndDraw/View/ProgressAnimationView.m"
-                  timestampString = "575445800.547623"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
