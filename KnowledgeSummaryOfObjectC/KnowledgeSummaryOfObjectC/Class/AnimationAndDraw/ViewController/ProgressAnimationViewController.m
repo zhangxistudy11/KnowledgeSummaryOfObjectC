@@ -63,7 +63,7 @@
     self.progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
     self.progressView.frame = CGRectMake(0, 200, screen_width, 40);
     [self.view addSubview:self.progressView];
-//    NSLog( @"%@",NSStringFromCGRect(progressView.frame));fffffff
+//    NSLog( @"%@",NSStringFromCGRme));
     CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 40/(float)2.0f);
     self.progressView.transform = transform;
 }
