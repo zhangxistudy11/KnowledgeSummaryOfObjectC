@@ -24,7 +24,7 @@
     self.navigationItem.title = @"RunTime使用";
     NSLog(@"2222");
     [self  setUpView];
-     NSLog(@"dddd");
+     NSLog(@"333");
 }
 - (void)setUpView
 {
