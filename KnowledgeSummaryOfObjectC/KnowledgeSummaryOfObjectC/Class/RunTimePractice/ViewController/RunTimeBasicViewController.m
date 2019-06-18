@@ -20,9 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    NSLog(@"111111");
     self.navigationItem.title = @"RunTime使用";
-    
+    NSLog(@"2222");
     [self  setUpView];
      NSLog(@"dddd");
 }
