@@ -125,6 +125,8 @@
 		33F778F820206F8100581E5C /* ic_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F620206F8100581E5C /* ic_back@2x.png */; };
 		33F778F920206F8100581E5C /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F720206F8100581E5C /* ic_back@3x.png */; };
 		33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
+		771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F222C9D8C4000926A9 /* SuspendViewController.m */; };
+		771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F522C9DECC000926A9 /* SuspendTableController.m */; };
 		771C8852217B54F10018F4D3 /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */; };
 		771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8855217B55BE0018F4D3 /* MemoryTestView.m */; };
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
@@ -358,6 +360,10 @@
 		33F778F720206F8100581E5C /* ic_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@3x.png"; sourceTree = "<group>"; };
 		33F778FA202071A200581E5C /* FiltrateSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltrateSlideView.m; sourceTree = "<group>"; };
 		33F778FB202071A300581E5C /* FiltrateSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltrateSlideView.h; sourceTree = "<group>"; };
+		771902F122C9D8C4000926A9 /* SuspendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendViewController.h; sourceTree = "<group>"; };
+		771902F222C9D8C4000926A9 /* SuspendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspendViewController.m; sourceTree = "<group>"; };
+		771902F422C9DECC000926A9 /* SuspendTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendTableController.h; sourceTree = "<group>"; };
+		771902F522C9DECC000926A9 /* SuspendTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspendTableController.m; sourceTree = "<group>"; };
 		771C8850217B54F10018F4D3 /* MemoryLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeakViewController.h; sourceTree = "<group>"; };
 		771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakViewController.m; sourceTree = "<group>"; };
 		771C8854217B55BE0018F4D3 /* MemoryTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryTestView.h; sourceTree = "<group>"; };
@@ -927,6 +933,10 @@
 				FBF2016620A58F6A00AFE27B /* FloatSlideViewController.m */,
 				FB54C1EA20A741D40060FD9F /* TranslucentCellViewController.h */,
 				FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */,
+				771902F122C9D8C4000926A9 /* SuspendViewController.h */,
+				771902F222C9D8C4000926A9 /* SuspendViewController.m */,
+				771902F422C9DECC000926A9 /* SuspendTableController.h */,
+				771902F522C9DECC000926A9 /* SuspendTableController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1517,6 +1527,8 @@
 				77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */,
 				3380A32B20465D1300F8BA23 /* ChartViewController.m in Sources */,
 				FBF2016720A58F6A00AFE27B /* FloatSlideViewController.m in Sources */,
+				771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */,
+				771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */,
 				3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */,
 				33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */,
 				336EFD1D1F7E410900B8246F /* UIView+FITBackViewAddition.m in Sources */,

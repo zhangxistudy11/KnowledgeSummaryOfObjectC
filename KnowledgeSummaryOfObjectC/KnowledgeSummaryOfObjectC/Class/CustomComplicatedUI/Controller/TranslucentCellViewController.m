@@ -31,7 +31,7 @@
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.bounces = NO;
+//    self.tableView.bounces = NO;
     self.tableView.backgroundColor = [UIColor clearColor];
     
     

@@ -15,6 +15,8 @@
 #import "FloatTableViewController.h"
 #import "FloatSlideViewController.h"
 #import "TranslucentCellViewController.h"
+#import "SuspendViewController.h"
+#import "SuspendTableController.h"
 @interface CustomComplicateController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -86,6 +88,14 @@
             cell.textLabel.text = @"8-tableview悬停滑动";
             return cell;
             break;
+        case 8:
+            cell.textLabel.text = @"9-自定义滑动悬停";
+            return cell;
+            break;
+        case 9:
+            cell.textLabel.text = @"10-TableView滑动悬停";
+            return cell;
+            break;
         default:
             break;
     }
@@ -143,6 +153,18 @@
         case 7:
         {
             TranslucentCellViewController * vc = [[TranslucentCellViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 8:
+        {
+            SuspendViewController * vc = [[SuspendViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 9:
+        {
+            SuspendTableController * vc = [[SuspendTableController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
