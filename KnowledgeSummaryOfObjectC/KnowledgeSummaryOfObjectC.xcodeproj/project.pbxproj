@@ -130,6 +130,8 @@
 		771902F922CA2813000926A9 /* CustomProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F822CA2813000926A9 /* CustomProgressController.m */; };
 		771902FC22CA2964000926A9 /* CustomProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902FB22CA2964000926A9 /* CustomProgressView.m */; };
 		771902FF22CB05B6000926A9 /* TailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902FE22CB05B6000926A9 /* TailView.m */; };
+		7719034B22CB4DDD000926A9 /* jianbian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7719034922CB4DDD000926A9 /* jianbian@2x.png */; };
+		7719034C22CB4DDD000926A9 /* jianbian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7719034A22CB4DDD000926A9 /* jianbian@3x.png */; };
 		771C8852217B54F10018F4D3 /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */; };
 		771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8855217B55BE0018F4D3 /* MemoryTestView.m */; };
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
@@ -373,6 +375,8 @@
 		771902FB22CA2964000926A9 /* CustomProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomProgressView.m; sourceTree = "<group>"; };
 		771902FD22CB05B6000926A9 /* TailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TailView.h; sourceTree = "<group>"; };
 		771902FE22CB05B6000926A9 /* TailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TailView.m; sourceTree = "<group>"; };
+		7719034922CB4DDD000926A9 /* jianbian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jianbian@2x.png"; sourceTree = "<group>"; };
+		7719034A22CB4DDD000926A9 /* jianbian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jianbian@3x.png"; sourceTree = "<group>"; };
 		771C8850217B54F10018F4D3 /* MemoryLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeakViewController.h; sourceTree = "<group>"; };
 		771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakViewController.m; sourceTree = "<group>"; };
 		771C8854217B55BE0018F4D3 /* MemoryTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryTestView.h; sourceTree = "<group>"; };
@@ -652,6 +656,8 @@
 		3349578C1FBBE957006E89F7 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				7719034922CB4DDD000926A9 /* jianbian@2x.png */,
+				7719034A22CB4DDD000926A9 /* jianbian@3x.png */,
 				335024DF20231F92008B1182 /* ic_xiala_black_big@2x.png */,
 				335024E020231F92008B1182 /* ic_xiala_black_big@3x.png */,
 				3362C7B11FF0FFEB00F3EFA9 /* MAO@2x.png */,
@@ -1411,6 +1417,7 @@
 				3362C7A31FF0F3C400F3EFA9 /* Coin_loading_5@2x.png in Resources */,
 				3362C7A61FF0F3C400F3EFA9 /* Coin_loading_8@2x.png in Resources */,
 				3362C7911FF0F3C400F3EFA9 /* Coin_loading_16@2x.png in Resources */,
+				7719034B22CB4DDD000926A9 /* jianbian@2x.png in Resources */,
 				336A8E3C1FEB590E00EFCF42 /* myMessage_TradingAssistance@3x.png in Resources */,
 				3362C7901FF0F3C400F3EFA9 /* Coin_loading_15@2x.png in Resources */,
 				33673CDE1F58FA6400ECE5D4 /* Assets.xcassets in Resources */,
@@ -1438,6 +1445,7 @@
 				3362C7961FF0F3C400F3EFA9 /* Coin_loading_20@2x.png in Resources */,
 				336A8E3A1FEB590E00EFCF42 /* myMessage_Notification@3x.png in Resources */,
 				33DA54EA1FBD335400EB3716 /* ranklist_item_left@2x.png in Resources */,
+				7719034C22CB4DDD000926A9 /* jianbian@3x.png in Resources */,
 				33A201E71F9F203900137336 /* Speed_Gif.gif in Resources */,
 				3362C79C1FF0F3C400F3EFA9 /* Coin_loading_26@2x.png in Resources */,
 				3362C7991FF0F3C400F3EFA9 /* Coin_loading_23@2x.png in Resources */,
