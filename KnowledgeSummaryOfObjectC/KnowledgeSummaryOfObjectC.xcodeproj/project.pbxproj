@@ -127,6 +127,9 @@
 		33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
 		771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F222C9D8C4000926A9 /* SuspendViewController.m */; };
 		771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F522C9DECC000926A9 /* SuspendTableController.m */; };
+		771902F922CA2813000926A9 /* CustomProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F822CA2813000926A9 /* CustomProgressController.m */; };
+		771902FC22CA2964000926A9 /* CustomProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902FB22CA2964000926A9 /* CustomProgressView.m */; };
+		771902FF22CB05B6000926A9 /* TailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902FE22CB05B6000926A9 /* TailView.m */; };
 		771C8852217B54F10018F4D3 /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */; };
 		771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8855217B55BE0018F4D3 /* MemoryTestView.m */; };
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
@@ -364,6 +367,12 @@
 		771902F222C9D8C4000926A9 /* SuspendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspendViewController.m; sourceTree = "<group>"; };
 		771902F422C9DECC000926A9 /* SuspendTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendTableController.h; sourceTree = "<group>"; };
 		771902F522C9DECC000926A9 /* SuspendTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspendTableController.m; sourceTree = "<group>"; };
+		771902F722CA2813000926A9 /* CustomProgressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomProgressController.h; sourceTree = "<group>"; };
+		771902F822CA2813000926A9 /* CustomProgressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomProgressController.m; sourceTree = "<group>"; };
+		771902FA22CA2964000926A9 /* CustomProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomProgressView.h; sourceTree = "<group>"; };
+		771902FB22CA2964000926A9 /* CustomProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomProgressView.m; sourceTree = "<group>"; };
+		771902FD22CB05B6000926A9 /* TailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TailView.h; sourceTree = "<group>"; };
+		771902FE22CB05B6000926A9 /* TailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TailView.m; sourceTree = "<group>"; };
 		771C8850217B54F10018F4D3 /* MemoryLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeakViewController.h; sourceTree = "<group>"; };
 		771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakViewController.m; sourceTree = "<group>"; };
 		771C8854217B55BE0018F4D3 /* MemoryTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryTestView.h; sourceTree = "<group>"; };
@@ -1005,6 +1014,10 @@
 				3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */,
 				777618F9224C80B100D51594 /* ProgressAnimationView.h */,
 				777618FA224C80B100D51594 /* ProgressAnimationView.m */,
+				771902FA22CA2964000926A9 /* CustomProgressView.h */,
+				771902FB22CA2964000926A9 /* CustomProgressView.m */,
+				771902FD22CB05B6000926A9 /* TailView.h */,
+				771902FE22CB05B6000926A9 /* TailView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1036,6 +1049,8 @@
 				FBBFD6B220BE7A490077B014 /* CoverViewController.m */,
 				777618F6224C74DE00D51594 /* ProgressAnimationViewController.h */,
 				777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */,
+				771902F722CA2813000926A9 /* CustomProgressController.h */,
+				771902F822CA2813000926A9 /* CustomProgressController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1504,7 +1519,9 @@
 				3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */,
 				339884B21F95B48F008C5646 /* LoopViewController.m in Sources */,
 				3362C76C1FF09E1000F3EFA9 /* HUDViewController.m in Sources */,
+				771902FC22CA2964000926A9 /* CustomProgressView.m in Sources */,
 				3343CF741FBAF85700653468 /* BaseTableView.m in Sources */,
+				771902F922CA2813000926A9 /* CustomProgressController.m in Sources */,
 				777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */,
 				33C0BE64205FAFA70062AE6D /* JavaScriptStuViewController.m in Sources */,
 				334957851FBBDF5D006E89F7 /* SlideViewController.m in Sources */,
@@ -1536,6 +1553,7 @@
 				336EFCFD1F7DF24200B8246F /* RacAdvanceController.m in Sources */,
 				33186CDF2060DA4F002B2D20 /* RunTimeBasicViewController.m in Sources */,
 				334839B11F7CF02E00BD17EE /* RACViewController.m in Sources */,
+				771902FF22CB05B6000926A9 /* TailView.m in Sources */,
 				3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */,
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
 				777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */,

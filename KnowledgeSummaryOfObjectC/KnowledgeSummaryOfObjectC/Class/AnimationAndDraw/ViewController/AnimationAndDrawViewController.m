@@ -19,6 +19,7 @@
 #import "CGAffineTransformViewController.h"
 #import "CoverViewController.h"
 #import "ProgressAnimationViewController.h"
+#import "CustomProgressController.h"
 @interface AnimationAndDrawViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -103,6 +104,10 @@
             cell.textLabel.text = @"10-进度条";
             return cell;
             break;
+        case 11:
+            cell.textLabel.text = @"11-自定义进度条";
+            return cell;
+            break;
         default:
             break;
     }
@@ -180,6 +185,12 @@
         case 10:
         {
             ProgressAnimationViewController * vc = [[ProgressAnimationViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 11:
+        {
+            CustomProgressController * vc = [[CustomProgressController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
