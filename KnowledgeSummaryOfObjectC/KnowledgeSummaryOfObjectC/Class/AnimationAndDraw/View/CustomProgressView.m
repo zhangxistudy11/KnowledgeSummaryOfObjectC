@@ -10,7 +10,8 @@
 #define ContentHeight  40
 #define ArrowWidth 30
 @interface  CustomProgressView()
-@property (nonatomic,strong) UIView *tailView;
+//@property (nonatomic,strong) UIView *tailView;
+@property (nonatomic,strong) UIImageView *tailView;
 @property (nonatomic,strong) UIImageView *arrowIV;
 @property (nonatomic,strong)  CAGradientLayer * gradientLayer;
 
@@ -26,10 +27,10 @@
     return self;
 }
 - (void)setupView{
-    self.tailView = [[UIView alloc]init];
+    self.tailView = [[UIImageView alloc]init];
     [self addSubview:self.tailView];
     self.tailView.frame = CGRectMake(0, 0, 0, ContentHeight);
-    self.tailView.backgroundColor = [UIColor blueColor];
+    self.tailView.image = [UIImage imageNamed:@"jianbian"];
     
 //    self.gradientLayer = [[CAGradientLayer alloc]init];
 //    self.gradientLayer.colors = @[(__bridge id)[UIColor whiteColor].CGColor, (__bridge id)[UIColor blueColor].CGColor];
