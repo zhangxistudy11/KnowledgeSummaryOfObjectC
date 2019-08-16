@@ -17,6 +17,7 @@
 #import "TranslucentCellViewController.h"
 #import "SuspendViewController.h"
 #import "SuspendTableController.h"
+#import "CustomTabbarViewController.h"
 @interface CustomComplicateController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -96,6 +97,10 @@
             cell.textLabel.text = @"10-TableView滑动悬停";
             return cell;
             break;
+        case 10:
+            cell.textLabel.text = @"11-自定义TabBar";
+            return cell;
+            break;
         default:
             break;
     }
@@ -165,6 +170,12 @@
         case 9:
         {
             SuspendTableController * vc = [[SuspendTableController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 10:
+        {
+            CustomTabbarViewController * vc = [[CustomTabbarViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
