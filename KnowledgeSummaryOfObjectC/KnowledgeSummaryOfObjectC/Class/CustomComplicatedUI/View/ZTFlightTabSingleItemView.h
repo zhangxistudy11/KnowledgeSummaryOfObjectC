@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZTFlightTabSingleItemView : UIControl
 @property (nonatomic,strong) UILabel *label;
 @property (nonatomic,strong) UIView  *line;
+@property (nonatomic,strong) UIButton  *badge;
 @end
 
 NS_ASSUME_NONNULL_END

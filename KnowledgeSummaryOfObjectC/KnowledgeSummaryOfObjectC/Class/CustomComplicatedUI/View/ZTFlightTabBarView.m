@@ -152,13 +152,33 @@ static NSInteger const ITEM_TAG = 1000;
         itemView.label.font = [UIFont systemFontOfSize:fontSize];
         itemView.label.textColor = (self.selectIndex==i) ?self.itemSelctedColor:self.itemColor;
         itemView.line.backgroundColor = (self.selectIndex==i) ?self.lineColor:[UIColor clearColor];
-        [itemView.label mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(itemWidth);
-        }];
         float textWidth = [self getTextWidth:title];
+        [itemView.label mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(textWidth);
+        }];
         [itemView.line mas_updateConstraints:^(MASConstraintMaker *make) {
             make.width.mas_equalTo(MIN(textWidth, itemWidth) -2*self.linePadding);
         }];
+    }
+}
+#pragma mark - Public Method
+- (void)showBadgeAtIndex:(NSInteger)index title:(NSString *)title{
+    if (index>=_titles.count||!title) {
+        return;
+    }
+    for (int i=0; i<_titles.count; i++) {
+        ZTFlightTabSingleItemView *itemView = [self.contentView viewWithTag:ITEM_TAG+i];
+        if (index==i) {
+            itemView.badge.hidden = NO;
+            [itemView.badge setTitle:title forState:UIControlStateNormal];
+            itemView.badge.titleLabel.font = [UIFont systemFontOfSize:[self getBadgeFontSizeWithTitle:title]];
+            [self.contentView bringSubviewToFront:itemView];
+        }else{
+            itemView.badge.hidden = YES;
+            [self.contentView sendSubviewToBack:itemView];
+//            [self bringSubviewToFront:itemView];
+
+        }
     }
 }
 #pragma mark - Touch Method
@@ -178,6 +198,15 @@ static NSInteger const ITEM_TAG = 1000;
     }
 }
 #pragma mark - Private Method
+- (float)getBadgeFontSizeWithTitle:(NSString *)title{
+    float width = [title getTheTextWidthWithFont:[UIFont systemFontOfSize:10] height:15]+1;
+    if (width>33-7) {
+        return 8;
+    }else{
+        return 10;
+    }
+    return 10;
+}
 - (float)getFontSize{
     NSArray *sortedArray = [self.titles sortedArrayUsingComparator:^NSComparisonResult(NSString * obj1, NSString *  obj2) {
         //这里的代码可以参照上面compare:默认的排序方法，也可以把自定义的方法写在这里，给对象排序
@@ -228,4 +257,5 @@ static NSInteger const ITEM_TAG = 1000;
     }
     return _contentView;
 }
+
 @end

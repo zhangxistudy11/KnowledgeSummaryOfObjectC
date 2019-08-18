@@ -64,6 +64,14 @@ typedef void (^IndexChangeBlock)(NSInteger index);
  选中位置后回调
  */
 @property (nonatomic,copy) IndexChangeBlock indexChangeBlock;
+
+/**
+ 显示右上角提示
+
+ @param index 第几个tab，默认从0开始
+ @param title 显示的文案
+ */
+- (void)showBadgeAtIndex:(NSInteger)index title:(NSString *)title;
 @end
 
 NS_ASSUME_NONNULL_END

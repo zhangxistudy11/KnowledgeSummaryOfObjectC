@@ -34,8 +34,8 @@
     self.tabBarView.itemSelctedColor = [UIColor blueColor];
     [self.tabBarView setIndexChangeBlock:^(NSInteger index) {
         NSLog(@"%ld位置",index);
-
     }];
+    [self.tabBarView showBadgeAtIndex:1 title:@"减80"];
 //    self.tabBarView.titles = @[@"国内",@"国际/港澳台(中国)",@"特价"];
 
 }
