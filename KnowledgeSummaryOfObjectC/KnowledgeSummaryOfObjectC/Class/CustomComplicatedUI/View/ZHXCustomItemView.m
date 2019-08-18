@@ -6,10 +6,10 @@
 //  Copyright © 2019 张玺. All rights reserved.
 //
 
-#import "ZTFlightTabItemsView.h"
+#import "ZHXCustomItemView.h"
 static NSInteger const BUTTON_TAG = 1000;
 
-@interface ZTFlightTabItemsView()<UIScrollViewDelegate>
+@interface ZHXCustomItemView()<UIScrollViewDelegate>
 
 @property (nonatomic,strong)UIScrollView *scrollView;
 @property (nonatomic,strong)UIView *moveLineView;
@@ -17,7 +17,7 @@ static NSInteger const BUTTON_TAG = 1000;
 @property (nonatomic,strong) UIImageView *rightCoverView;
 @property (nonatomic,copy)SlideTabItemSelectedBlock block;
 @end
-@implementation ZTFlightTabItemsView
+@implementation ZHXCustomItemView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

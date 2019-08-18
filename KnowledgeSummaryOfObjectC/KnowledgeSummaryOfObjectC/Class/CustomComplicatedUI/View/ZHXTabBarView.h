@@ -1,5 +1,5 @@
 //
-//  ZTFlightTabBarView.h
+//  ZHXTabBarView.h
 //  KnowledgeSummaryOfObjectC
 //
 //  Created by 张玺 on 2019/8/16.
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void (^IndexChangeBlock)(NSInteger index);
 
 
-@interface ZTFlightTabBarView : UIView
+@interface ZHXTabBarView : UIView
 
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titles;
 /**

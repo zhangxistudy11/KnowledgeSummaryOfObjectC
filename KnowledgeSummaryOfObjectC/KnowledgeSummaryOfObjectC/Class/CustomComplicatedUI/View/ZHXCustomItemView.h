@@ -11,7 +11,7 @@ typedef void(^SlideTabItemSelectedBlock)(NSInteger index);
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZTFlightTabItemsView : UIView
+@interface ZHXCustomItemView : UIView
 
 
 @property (nonatomic,strong)NSArray *titles;

@@ -109,10 +109,10 @@
 		33A201E51F9F1FB900137336 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E41F9F1FB900137336 /* aaa.png */; };
 		33A201E71F9F203900137336 /* Speed_Gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E61F9F203900137336 /* Speed_Gif.gif */; };
 		33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295A230925F40064ED6A /* UIColor+Extension.m */; };
+		33AD296023092E290064ED6A /* ZHXTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295C23092E280064ED6A /* ZHXTabBarView.m */; };
+		33AD296123092E290064ED6A /* ZHXTabSingleItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295D23092E280064ED6A /* ZHXTabSingleItemView.m */; };
 		33BA97D82306E2D000BF181C /* CustomTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97D72306E2D000BF181C /* CustomTabbarViewController.m */; };
-		33BA97DB2306E59000BF181C /* ZTFlightTabItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97DA2306E59000BF181C /* ZTFlightTabItemsView.m */; };
-		33BA97DE2306EC2300BF181C /* ZTFlightTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97DD2306EC2300BF181C /* ZTFlightTabBarView.m */; };
-		33BA97E12306EF6400BF181C /* ZTFlightTabSingleItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97E02306EF6400BF181C /* ZTFlightTabSingleItemView.m */; };
+		33BA97DB2306E59000BF181C /* ZHXCustomItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97DA2306E59000BF181C /* ZHXCustomItemView.m */; };
 		33BA97E42306FCEB00BF181C /* NSString+ZTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97E32306FCEB00BF181C /* NSString+ZTSize.m */; };
 		33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BB26981F669E5300CDFA92 /* WebPracticeViewController.m */; };
 		33C0BE64205FAFA70062AE6D /* JavaScriptStuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0BE63205FAFA70062AE6D /* JavaScriptStuViewController.m */; };
@@ -346,15 +346,15 @@
 		33A201E61F9F203900137336 /* Speed_Gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Speed_Gif.gif; sourceTree = "<group>"; };
 		33AD2959230925F30064ED6A /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		33AD295A230925F40064ED6A /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		33AD295C23092E280064ED6A /* ZHXTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHXTabBarView.m; sourceTree = "<group>"; };
+		33AD295D23092E280064ED6A /* ZHXTabSingleItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHXTabSingleItemView.m; sourceTree = "<group>"; };
+		33AD295E23092E290064ED6A /* ZHXTabSingleItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHXTabSingleItemView.h; sourceTree = "<group>"; };
+		33AD295F23092E290064ED6A /* ZHXTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHXTabBarView.h; sourceTree = "<group>"; };
 		33B7348121F47FFA00260BA4 /* subProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = subProject.xcodeproj; path = "../../../../DownloadDemo/AddSubProjectDemo-master/subProject/subProject.xcodeproj"; sourceTree = "<group>"; };
 		33BA97D62306E2D000BF181C /* CustomTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTabbarViewController.h; sourceTree = "<group>"; };
 		33BA97D72306E2D000BF181C /* CustomTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTabbarViewController.m; sourceTree = "<group>"; };
-		33BA97D92306E59000BF181C /* ZTFlightTabItemsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTFlightTabItemsView.h; sourceTree = "<group>"; };
-		33BA97DA2306E59000BF181C /* ZTFlightTabItemsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTFlightTabItemsView.m; sourceTree = "<group>"; };
-		33BA97DC2306EC2300BF181C /* ZTFlightTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTFlightTabBarView.h; sourceTree = "<group>"; };
-		33BA97DD2306EC2300BF181C /* ZTFlightTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTFlightTabBarView.m; sourceTree = "<group>"; };
-		33BA97DF2306EF6400BF181C /* ZTFlightTabSingleItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTFlightTabSingleItemView.h; sourceTree = "<group>"; };
-		33BA97E02306EF6400BF181C /* ZTFlightTabSingleItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTFlightTabSingleItemView.m; sourceTree = "<group>"; };
+		33BA97D92306E59000BF181C /* ZHXCustomItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHXCustomItemView.h; sourceTree = "<group>"; };
+		33BA97DA2306E59000BF181C /* ZHXCustomItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHXCustomItemView.m; sourceTree = "<group>"; };
 		33BA97E22306FCEA00BF181C /* NSString+ZTSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZTSize.h"; sourceTree = "<group>"; };
 		33BA97E32306FCEB00BF181C /* NSString+ZTSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZTSize.m"; sourceTree = "<group>"; };
 		33BB26971F669E5300CDFA92 /* WebPracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPracticeViewController.h; sourceTree = "<group>"; };
@@ -995,12 +995,12 @@
 				33F778FA202071A200581E5C /* FiltrateSlideView.m */,
 				FBF2016820A5921800AFE27B /* FloatSlideCell.h */,
 				FBF2016920A5921800AFE27B /* FloatSlideCell.m */,
-				33BA97D92306E59000BF181C /* ZTFlightTabItemsView.h */,
-				33BA97DA2306E59000BF181C /* ZTFlightTabItemsView.m */,
-				33BA97DC2306EC2300BF181C /* ZTFlightTabBarView.h */,
-				33BA97DD2306EC2300BF181C /* ZTFlightTabBarView.m */,
-				33BA97DF2306EF6400BF181C /* ZTFlightTabSingleItemView.h */,
-				33BA97E02306EF6400BF181C /* ZTFlightTabSingleItemView.m */,
+				33BA97D92306E59000BF181C /* ZHXCustomItemView.h */,
+				33BA97DA2306E59000BF181C /* ZHXCustomItemView.m */,
+				33AD295F23092E290064ED6A /* ZHXTabBarView.h */,
+				33AD295C23092E280064ED6A /* ZHXTabBarView.m */,
+				33AD295E23092E290064ED6A /* ZHXTabSingleItemView.h */,
+				33AD295D23092E280064ED6A /* ZHXTabSingleItemView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1558,10 +1558,10 @@
 				339884B21F95B48F008C5646 /* LoopViewController.m in Sources */,
 				3362C76C1FF09E1000F3EFA9 /* HUDViewController.m in Sources */,
 				771902FC22CA2964000926A9 /* CustomProgressView.m in Sources */,
-				33BA97E12306EF6400BF181C /* ZTFlightTabSingleItemView.m in Sources */,
 				3343CF741FBAF85700653468 /* BaseTableView.m in Sources */,
 				771902F922CA2813000926A9 /* CustomProgressController.m in Sources */,
 				777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */,
+				33AD296023092E290064ED6A /* ZHXTabBarView.m in Sources */,
 				33C0BE64205FAFA70062AE6D /* JavaScriptStuViewController.m in Sources */,
 				334957851FBBDF5D006E89F7 /* SlideViewController.m in Sources */,
 				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
@@ -1579,7 +1579,7 @@
 				777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				333AAD11226B320F005736F0 /* ThirdLibViewController.m in Sources */,
-				33BA97DB2306E59000BF181C /* ZTFlightTabItemsView.m in Sources */,
+				33BA97DB2306E59000BF181C /* ZHXCustomItemView.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
 				77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */,
 				3380A32B20465D1300F8BA23 /* ChartViewController.m in Sources */,
@@ -1610,7 +1610,6 @@
 				335024DE20231D26008B1182 /* CGAffineTransformViewController.m in Sources */,
 				FBBFD6B320BE7A490077B014 /* CoverViewController.m in Sources */,
 				77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */,
-				33BA97DE2306EC2300BF181C /* ZTFlightTabBarView.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
@@ -1624,6 +1623,7 @@
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
 				334957951FBC4738006E89F7 /* SFLabel.m in Sources */,
 				33DA54E31FBD2F6C00EB3716 /* SlideTabView.m in Sources */,
+				33AD296123092E290064ED6A /* ZHXTabSingleItemView.m in Sources */,
 				3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */,
 				336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */,
 				33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,

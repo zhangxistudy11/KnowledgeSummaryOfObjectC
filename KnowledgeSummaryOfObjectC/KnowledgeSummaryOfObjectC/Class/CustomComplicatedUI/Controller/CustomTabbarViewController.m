@@ -7,13 +7,13 @@
 //
 
 #import "CustomTabbarViewController.h"
-#import "ZTFlightTabItemsView.h"
-#import "ZTFlightTabBarView.h"
+#import "ZHXCustomItemView.h"
+#import "ZHXTabBarView.h"
 @interface CustomTabbarViewController ()
-@property (nonatomic,strong)ZTFlightTabItemsView *slideTabView;
-@property (nonatomic,strong) ZTFlightTabBarView *tabBarView;
-@property (nonatomic,strong) ZTFlightTabBarView *tabBarTwoView;
-@property (nonatomic,strong) ZTFlightTabBarView *tabBarThreeView;
+@property (nonatomic,strong)ZHXCustomItemView *slideTabView;
+@property (nonatomic,strong) ZHXTabBarView *tabBarView;
+@property (nonatomic,strong) ZHXTabBarView *tabBarTwoView;
+@property (nonatomic,strong) ZHXTabBarView *tabBarThreeView;
 
 @end
 
@@ -26,7 +26,7 @@
 }
 - (void)addSubView{
 //    [self.view addSubview:self.slideTabView];
-    self.tabBarView = [[ZTFlightTabBarView alloc]initWithFrame:CGRectMake(0, 170, screen_width, 50) titles:@[@"男装",@"女装",@"儿童服装"]];
+    self.tabBarView = [[ZHXTabBarView alloc]initWithFrame:CGRectMake(0, 170, screen_width, 50) titles:@[@"男装",@"女装",@"儿童服装"]];
     [self.view addSubview:self.tabBarView];
     self.tabBarView.horizontalMargin = 20;
     self.tabBarView.fontSize = 15;
@@ -41,7 +41,7 @@
     }];
     
     
-    self.tabBarTwoView = [[ZTFlightTabBarView alloc]initWithFrame:CGRectMake(0, 300, screen_width, 50) titles:@[@"服务家电",@"电子商品"]];
+    self.tabBarTwoView = [[ZHXTabBarView alloc]initWithFrame:CGRectMake(0, 300, screen_width, 50) titles:@[@"服务家电",@"电子商品"]];
     [self.view addSubview:self.tabBarTwoView];
     self.tabBarTwoView.backgroundColor = [UIColor grayColor];
     self.tabBarTwoView.horizontalMargin = 0;
@@ -56,7 +56,7 @@
         NSLog(@"%ld位置",index);
     }];
     
-    self.tabBarThreeView = [[ZTFlightTabBarView alloc]initWithFrame:CGRectMake(0, 400, screen_width, 50) titles:@[@"机票",@"酒店",@"汽车/船票",@"火车票"]];
+    self.tabBarThreeView = [[ZHXTabBarView alloc]initWithFrame:CGRectMake(0, 400, screen_width, 50) titles:@[@"机票",@"酒店",@"汽车/船票",@"火车票"]];
     [self.view addSubview:self.tabBarThreeView];
     self.tabBarThreeView.backgroundColor = [UIColor lightGrayColor];
     self.tabBarThreeView.horizontalMargin = 0;
@@ -72,10 +72,10 @@
     }];
 
 }
--(ZTFlightTabItemsView *)slideTabView
+-(ZHXCustomItemView *)slideTabView
 {
     if (!_slideTabView) {
-        _slideTabView = [[ZTFlightTabItemsView alloc]initWithFrame:CGRectMake(0, 200, screen_width, 50)];
+        _slideTabView = [[ZHXCustomItemView alloc]initWithFrame:CGRectMake(0, 200, screen_width, 50)];
         _slideTabView.lineColor = [UIColor blueColor];
         _slideTabView.itemColor = [UIColor blackColor] ;
         _slideTabView.itemSelctedColor = [UIColor blueColor];

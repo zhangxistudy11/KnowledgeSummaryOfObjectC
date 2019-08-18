@@ -1,5 +1,5 @@
 //
-//  ZTFlightTabSingleItemView.h
+//  ZHXTabSingleItemView.h
 //  KnowledgeSummaryOfObjectC
 //
 //  Created by 张玺 on 2019/8/16.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZTFlightTabSingleItemView : UIControl
+@interface ZHXTabSingleItemView : UIControl
 @property (nonatomic,strong) UILabel *label;
 @property (nonatomic,strong) UIView  *line;
 @property (nonatomic,strong) UIButton  *badge;

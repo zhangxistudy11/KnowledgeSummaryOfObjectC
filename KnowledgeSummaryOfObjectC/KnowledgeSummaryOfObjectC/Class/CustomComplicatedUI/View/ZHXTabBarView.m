@@ -1,23 +1,23 @@
 //
-//  ZTFlightTabBarView.m
+//  ZHXTabBarView.m
 //  KnowledgeSummaryOfObjectC
 //
 //  Created by 张玺 on 2019/8/16.
 //  Copyright © 2019 张玺. All rights reserved.
 //
 
-#import "ZTFlightTabBarView.h"
-#import "ZTFlightTabSingleItemView.h"
+#import "ZHXTabBarView.h"
+#import "ZHXTabSingleItemView.h"
 #import "NSString+ZTSize.h"
 #import "UIColor+Extension.h"
 static NSInteger const ITEM_TAG = 1000;
 
-@interface  ZTFlightTabBarView()
+@interface  ZHXTabBarView()
 @property (nonatomic,strong) UIView *contentView;
 
 @end
 
-@implementation ZTFlightTabBarView
+@implementation ZHXTabBarView
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titles
 {
     self = [super initWithFrame:frame];
@@ -114,7 +114,7 @@ static NSInteger const ITEM_TAG = 1000;
     float itemX = 0;
     for (int i=0; i<_titles.count; i++) {
         NSString * title = [_titles objectAtIndex:i];
-        ZTFlightTabSingleItemView *itemView = [[ZTFlightTabSingleItemView alloc]init];
+        ZHXTabSingleItemView *itemView = [[ZHXTabSingleItemView alloc]init];
         [self.contentView addSubview:itemView];
         itemView.backgroundColor = [UIColor whiteColor];
         itemView.tag = ITEM_TAG+i;
@@ -145,7 +145,7 @@ static NSInteger const ITEM_TAG = 1000;
     }];
     for (int i=0; i<_titles.count; i++) {
         NSString * title = [_titles objectAtIndex:i];
-        ZTFlightTabSingleItemView *itemView = [self.contentView viewWithTag:ITEM_TAG+i];
+        ZHXTabSingleItemView *itemView = [self.contentView viewWithTag:ITEM_TAG+i];
         [itemView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.contentView.mas_left).offset(itemX);
             make.top.bottom.equalTo(self.contentView);
@@ -175,7 +175,7 @@ static NSInteger const ITEM_TAG = 1000;
     NSString *backColor = !badgeStyleDict[@"backColor"]?badgeStyleDict[@"backColor"]:@"";
     NSString *textColor = !badgeStyleDict[@"textColor"]?badgeStyleDict[@"textColor"]:@"";
     for (int i=0; i<_titles.count; i++) {
-        ZTFlightTabSingleItemView *itemView = [self.contentView viewWithTag:ITEM_TAG+i];
+        ZHXTabSingleItemView *itemView = [self.contentView viewWithTag:ITEM_TAG+i];
         if (index==i) {
             itemView.badge.hidden = NO;
             itemView.badge.backgroundColor = backColor.length>0 ? [UIColor colorWithString:backColor]:[UIColor orangeColor];

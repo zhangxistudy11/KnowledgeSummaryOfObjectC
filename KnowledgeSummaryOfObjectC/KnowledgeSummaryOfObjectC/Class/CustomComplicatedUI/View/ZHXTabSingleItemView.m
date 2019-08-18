@@ -1,13 +1,13 @@
 //
-//  ZTFlightTabSingleItemView.m
+//  ZHXTabSingleItemView.m
 //  KnowledgeSummaryOfObjectC
 //
 //  Created by 张玺 on 2019/8/16.
 //  Copyright © 2019 张玺. All rights reserved.
 //
 
-#import "ZTFlightTabSingleItemView.h"
-@implementation ZTFlightTabSingleItemView
+#import "ZHXTabSingleItemView.h"
+@implementation ZHXTabSingleItemView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
