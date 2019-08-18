@@ -4,7 +4,7 @@
 
 ### 首先、内存管理部分
 #### 1-深拷贝与浅拷贝
-
+#### 2-深拷贝与浅拷贝
 
 ### 一、绘图与动画
 #### 1-UIBezierPath使用
@@ -15,13 +15,18 @@
 #### 6-关键帧动画
 #### 7-HUD动画
 #### 8-自定义加载动画
+#### 9-仿射变换
+#### 10-进度条
+#### 11-自定义进度条
 
 ### 二、项目闪退定位
 
 
-### 三、Html交互
+### 三、Web交互
 #### 1-WebViewJavascriptBridge调原生
 #### 2-加载本地Html
+#### 3-JavaScriptCore熟悉
+#### 4-JavaScriptProtol熟悉
 
 ### 四、RecactiveCocoa交互
 #### 1-RAC初步了解
@@ -30,11 +35,12 @@
 ### 五、PopView的封装
 #### 1-PopView方法一
 #### 2-PopView方法二
+#### 3-PopView方法三
 
 ### 六、复杂UI控件的封装
 #### 1-可循环利用的轮播图
 #### 2-gif动图
-#### 3-滑动悬停效果
+#### [3-滑动悬停效果](https://www.jianshu.com/p/846de7fdc43c)
 #### 4-UIButton的使用
 #### 5-侧滑按钮的使用
 #### 6-TableView联动
