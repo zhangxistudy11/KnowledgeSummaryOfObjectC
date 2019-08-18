@@ -9,12 +9,11 @@
 #import "ZTFlightTabBarView.h"
 #import "ZTFlightTabSingleItemView.h"
 #import "NSString+ZTSize.h"
-
+#import "UIColor+Extension.h"
 static NSInteger const ITEM_TAG = 1000;
 
 @interface  ZTFlightTabBarView()
 @property (nonatomic,strong) UIView *contentView;
-@property (nonatomic,assign) NSInteger selectIndex;
 
 @end
 
@@ -23,7 +22,6 @@ static NSInteger const ITEM_TAG = 1000;
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor cyanColor];
         //要先初始化view
         [self initView];
         self.titles = titles;
@@ -49,11 +47,7 @@ static NSInteger const ITEM_TAG = 1000;
         make.right.equalTo(self.mas_right).offset(-self.horizontalMargin);
         
     }];
-//    for (int i=0; i<_titles.count; i++) {
-//        NSString * title = [_titles objectAtIndex:i];
-//        float itemWidth =
-//    }
-    
+
     [self layoutAllView];
 }
 - (void)layoutAllView{
@@ -79,9 +73,20 @@ static NSInteger const ITEM_TAG = 1000;
     [self updateContentView];
 }
 
+- (void)setSelectIndex:(NSInteger)selectIndex{
+    _selectIndex = selectIndex;
+    if (_selectIndex>=_titles.count) {
+        return;
+    }
+    [self updateContentView];
+}
 - (void)setFontSize:(float)fontSize
 {
     _fontSize = fontSize;
+    [self updateContentView];
+}
+- (void)setItemBackColor:(UIColor *)itemBackColor{
+    _itemBackColor =itemBackColor;
     [self updateContentView];
 }
 - (void)setLineColor:(UIColor *)lineColor{
@@ -106,13 +111,12 @@ static NSInteger const ITEM_TAG = 1000;
 - (void)initContentView{
     float itemWidth = [self getItemWidth];
     float fontSize = 14;
-    //[self getFontSize];
     float itemX = 0;
     for (int i=0; i<_titles.count; i++) {
         NSString * title = [_titles objectAtIndex:i];
         ZTFlightTabSingleItemView *itemView = [[ZTFlightTabSingleItemView alloc]init];
         [self.contentView addSubview:itemView];
-        itemView.backgroundColor = RandomColor;
+        itemView.backgroundColor = [UIColor whiteColor];
         itemView.tag = ITEM_TAG+i;
         [itemView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.contentView.mas_left).offset(itemX);
@@ -147,6 +151,7 @@ static NSInteger const ITEM_TAG = 1000;
             make.top.bottom.equalTo(self.contentView);
             make.width.mas_equalTo(itemWidth);
         }];
+        itemView.backgroundColor = self.itemBackColor;
         itemX = itemX+itemWidth;
         itemView.label.text = title;
         itemView.label.font = [UIFont systemFontOfSize:fontSize];
@@ -162,16 +167,22 @@ static NSInteger const ITEM_TAG = 1000;
     }
 }
 #pragma mark - Public Method
-- (void)showBadgeAtIndex:(NSInteger)index title:(NSString *)title{
+- (void)showBadgeAtIndex:(NSInteger)index title:(NSString *)title badgeStyle:(NSDictionary *)badgeStyleDict{
     if (index>=_titles.count||!title) {
         return;
     }
+    float size = [badgeStyleDict[@"textSize"] floatValue]>0 ? [badgeStyleDict[@"textSize"] floatValue] :0;
+    NSString *backColor = !badgeStyleDict[@"backColor"]?badgeStyleDict[@"backColor"]:@"";
+    NSString *textColor = !badgeStyleDict[@"textColor"]?badgeStyleDict[@"textColor"]:@"";
     for (int i=0; i<_titles.count; i++) {
         ZTFlightTabSingleItemView *itemView = [self.contentView viewWithTag:ITEM_TAG+i];
         if (index==i) {
             itemView.badge.hidden = NO;
+            itemView.badge.backgroundColor = backColor.length>0 ? [UIColor colorWithString:backColor]:[UIColor orangeColor];
+            [itemView.badge setTitleColor:(textColor.length>0?[UIColor colorWithString:textColor] : [UIColor whiteColor]) forState:UIControlStateNormal];
+
             [itemView.badge setTitle:title forState:UIControlStateNormal];
-            itemView.badge.titleLabel.font = [UIFont systemFontOfSize:[self getBadgeFontSizeWithTitle:title]];
+            itemView.badge.titleLabel.font = [UIFont systemFontOfSize:(size >0?size:[self getBadgeFontSizeWithTitle:title])];
             [self.contentView bringSubviewToFront:itemView];
         }else{
             itemView.badge.hidden = YES;
@@ -253,7 +264,6 @@ static NSInteger const ITEM_TAG = 1000;
 - (UIView *)contentView{
     if (!_contentView) {
         _contentView = [[UIView alloc]init];
-        _contentView.backgroundColor = [UIColor redColor];
     }
     return _contentView;
 }

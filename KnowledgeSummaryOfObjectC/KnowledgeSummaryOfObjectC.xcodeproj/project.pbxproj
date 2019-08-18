@@ -108,6 +108,7 @@
 		3398DD061F640E0000D7A872 /* UIBezierPathCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */; };
 		33A201E51F9F1FB900137336 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E41F9F1FB900137336 /* aaa.png */; };
 		33A201E71F9F203900137336 /* Speed_Gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E61F9F203900137336 /* Speed_Gif.gif */; };
+		33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295A230925F40064ED6A /* UIColor+Extension.m */; };
 		33BA97D82306E2D000BF181C /* CustomTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97D72306E2D000BF181C /* CustomTabbarViewController.m */; };
 		33BA97DB2306E59000BF181C /* ZTFlightTabItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97DA2306E59000BF181C /* ZTFlightTabItemsView.m */; };
 		33BA97DE2306EC2300BF181C /* ZTFlightTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97DD2306EC2300BF181C /* ZTFlightTabBarView.m */; };
@@ -343,6 +344,8 @@
 		3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCustomView.m; sourceTree = "<group>"; };
 		33A201E41F9F1FB900137336 /* aaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aaa.png; sourceTree = "<group>"; };
 		33A201E61F9F203900137336 /* Speed_Gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Speed_Gif.gif; sourceTree = "<group>"; };
+		33AD2959230925F30064ED6A /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		33AD295A230925F40064ED6A /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		33B7348121F47FFA00260BA4 /* subProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = subProject.xcodeproj; path = "../../../../DownloadDemo/AddSubProjectDemo-master/subProject/subProject.xcodeproj"; sourceTree = "<group>"; };
 		33BA97D62306E2D000BF181C /* CustomTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTabbarViewController.h; sourceTree = "<group>"; };
 		33BA97D72306E2D000BF181C /* CustomTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTabbarViewController.m; sourceTree = "<group>"; };
@@ -812,6 +815,8 @@
 		33673D121F58FC1C00ECE5D4 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				33AD2959230925F30064ED6A /* UIColor+Extension.h */,
+				33AD295A230925F40064ED6A /* UIColor+Extension.m */,
 				33BA97E22306FCEA00BF181C /* NSString+ZTSize.h */,
 				33BA97E32306FCEB00BF181C /* NSString+ZTSize.m */,
 				33673D131F58FC1C00ECE5D4 /* UIView+Extension.h */,
@@ -1607,6 +1612,7 @@
 				77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */,
 				33BA97DE2306EC2300BF181C /* ZTFlightTabBarView.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
+				33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				33BA97E42306FCEB00BF181C /* NSString+ZTSize.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,

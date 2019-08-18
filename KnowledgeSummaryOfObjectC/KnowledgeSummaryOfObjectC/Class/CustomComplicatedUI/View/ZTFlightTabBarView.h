@@ -35,6 +35,17 @@ typedef void (^IndexChangeBlock)(NSInteger index);
  */
 @property (nonatomic,strong) NSArray *titles;
 
+
+/**
+ 指定选中位置  默认为 0
+ */
+@property (nonatomic,assign) NSInteger selectIndex;
+
+/**
+ *  单个item背景色,默认白色
+ */
+@property (nonatomic,strong)UIColor *itemBackColor;
+
 /**
  字体字号 默认14号
  */
@@ -66,12 +77,19 @@ typedef void (^IndexChangeBlock)(NSInteger index);
 @property (nonatomic,copy) IndexChangeBlock indexChangeBlock;
 
 /**
- 显示右上角提示
+ 显示右上角图标提示
 
  @param index 第几个tab，默认从0开始
  @param title 显示的文案
+ @param badgeStyleDict 图标样式 非必传
+ {
+ @"backColor":@"#ffffff",默认橘黄色
+ @"textColor":@"#ccccc",默认白色
+ @"textSize":@(10) 默认10号
+ }
+ @
  */
-- (void)showBadgeAtIndex:(NSInteger)index title:(NSString *)title;
+- (void)showBadgeAtIndex:(NSInteger)index title:(NSString *)title badgeStyle:(NSDictionary *)badgeStyleDict;
 @end
 
 NS_ASSUME_NONNULL_END
