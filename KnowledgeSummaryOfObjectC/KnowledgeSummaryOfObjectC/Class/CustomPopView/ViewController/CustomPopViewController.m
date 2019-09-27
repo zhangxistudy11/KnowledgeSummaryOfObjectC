@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"111111");
     self.navigationItem.title = @"PopView的使用";
     self.view.backgroundColor = [UIColor  whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
