@@ -39,6 +39,12 @@
 #pragma mark - Target Methods
 - (void)pop
 {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"noti1" object:nil];
+    
+
+    [self.navigationController popViewControllerAnimated:YES];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    return;
     NSLog(@"aa");
     [self.view addSubview:self.onePopView];
     [self.onePopView mas_makeConstraints:^(MASConstraintMaker *make) {

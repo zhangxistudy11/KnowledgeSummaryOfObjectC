@@ -20,6 +20,7 @@
 
 @implementation CustomPopViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -28,6 +29,11 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [self  setUpView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noti1) name:@"noti1" object:nil];
+}
+- (void)noti1{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)setUpView
 {

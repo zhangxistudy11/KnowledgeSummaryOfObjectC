@@ -101,8 +101,13 @@
             break;
         case 3:
         {
-            JSProtocolViewController * vc = [[JSProtocolViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+//            [self dismissViewControllerAnimated:YES completion:^{
+            [self dismissViewControllerAnimated:NO completion:nil];
+
+                JSProtocolViewController * vc = [[JSProtocolViewController alloc]init];
+                [self.navigationController pushViewController:vc animated:YES];
+//            }];
+          
         }
             break;
         default:
