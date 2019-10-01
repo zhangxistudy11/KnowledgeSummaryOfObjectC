@@ -21,7 +21,7 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    self.navigationItem.title = @"自定义TabBar";
+    self.navigationItem.title = @"自定义TabBarItems";
     [self addSubView];
 }
 - (void)addSubView{
