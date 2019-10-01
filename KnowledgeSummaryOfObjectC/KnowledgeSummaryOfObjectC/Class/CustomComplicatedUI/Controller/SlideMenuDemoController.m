@@ -164,7 +164,7 @@
     lb.font = [UIFont systemFontOfSize:20];
     lb.text = str;
     lb.backgroundColor = RandomColor;
-    NSLog(@"第一次");
+    NSLog(@"第一次fffggg");
     return lb;
 }
 - (void)panProgress:(UIPanGestureRecognizer*)pan
