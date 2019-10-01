@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"无限轮播图";
+    self.navigationItem.title = @"ff无限轮播图";
     
     
 }
