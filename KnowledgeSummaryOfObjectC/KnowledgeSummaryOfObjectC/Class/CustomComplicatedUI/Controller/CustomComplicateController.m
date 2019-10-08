@@ -18,6 +18,7 @@
 #import "SuspendViewController.h"
 #import "SuspendTableController.h"
 #import "CustomTabbarViewController.h"
+#import "AnimationSegmentViewController.h"
 @interface CustomComplicateController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -101,6 +102,10 @@
             cell.textLabel.text = @"11-自定义TabBar";
             return cell;
             break;
+            case 11:
+            cell.textLabel.text = @"12-动画TabBar";
+            return cell;
+            break;
         default:
             break;
     }
@@ -179,6 +184,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+            case 11:
+                   {
+                       AnimationSegmentViewController * vc = [[AnimationSegmentViewController alloc]init];
+                       [self.navigationController pushViewController:vc animated:YES];
+                   }
+                       break;
         default:
             break;
     }

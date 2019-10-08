@@ -140,6 +140,9 @@
 		7719034C22CB4DDD000926A9 /* jianbian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7719034A22CB4DDD000926A9 /* jianbian@3x.png */; };
 		771C8852217B54F10018F4D3 /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */; };
 		771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8855217B55BE0018F4D3 /* MemoryTestView.m */; };
+		772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */; };
+		772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */; };
+		772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */; };
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
 		77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD9217D7915001325D9 /* YYCacheUseController.m */; };
 		77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639B1E217D9CF0001325D9 /* CacheTestModel.m */; };
@@ -399,6 +402,12 @@
 		771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakViewController.m; sourceTree = "<group>"; };
 		771C8854217B55BE0018F4D3 /* MemoryTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryTestView.h; sourceTree = "<group>"; };
 		771C8855217B55BE0018F4D3 /* MemoryTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryTestView.m; sourceTree = "<group>"; };
+		772D6D41234CA0760000F5B2 /* AnimationSegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationSegmentViewController.h; sourceTree = "<group>"; };
+		772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationSegmentViewController.m; sourceTree = "<group>"; };
+		772D6D44234CA1D50000F5B2 /* ZHXSegmentBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHXSegmentBarView.h; sourceTree = "<group>"; };
+		772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHXSegmentBarView.m; sourceTree = "<group>"; };
+		772D6D47234CA2700000F5B2 /* ZXSegmentItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXSegmentItemView.h; sourceTree = "<group>"; };
+		772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSegmentItemView.m; sourceTree = "<group>"; };
 		77639AD5217D71B9001325D9 /* CacheClassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheClassController.h; sourceTree = "<group>"; };
 		77639AD6217D71B9001325D9 /* CacheClassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheClassController.m; sourceTree = "<group>"; };
 		77639AD8217D7915001325D9 /* YYCacheUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCacheUseController.h; sourceTree = "<group>"; };
@@ -976,6 +985,8 @@
 				771902F522C9DECC000926A9 /* SuspendTableController.m */,
 				33BA97D62306E2D000BF181C /* CustomTabbarViewController.h */,
 				33BA97D72306E2D000BF181C /* CustomTabbarViewController.m */,
+				772D6D41234CA0760000F5B2 /* AnimationSegmentViewController.h */,
+				772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1001,6 +1012,10 @@
 				33AD295C23092E280064ED6A /* ZHXTabBarView.m */,
 				33AD295E23092E290064ED6A /* ZHXTabSingleItemView.h */,
 				33AD295D23092E280064ED6A /* ZHXTabSingleItemView.m */,
+				772D6D44234CA1D50000F5B2 /* ZHXSegmentBarView.h */,
+				772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */,
+				772D6D47234CA2700000F5B2 /* ZXSegmentItemView.h */,
+				772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1549,6 +1564,7 @@
 				33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */,
 				771C8852217B54F10018F4D3 /* MemoryLeakViewController.m in Sources */,
 				336EFD001F7DF50C00B8246F /* RacAdvanceView.m in Sources */,
+				772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */,
 				334839B01F7CF02E00BD17EE /* RacPrimaryController.m in Sources */,
 				3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
@@ -1584,6 +1600,7 @@
 				77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */,
 				3380A32B20465D1300F8BA23 /* ChartViewController.m in Sources */,
 				FBF2016720A58F6A00AFE27B /* FloatSlideViewController.m in Sources */,
+				772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */,
 				771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */,
 				771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */,
 				3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */,
@@ -1598,6 +1615,7 @@
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
 				777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
+				772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */,
 				33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */,
 				335B79C6205FD701005B6E29 /* JSProtocolObj.m in Sources */,
 				33BA97D82306E2D000BF181C /* CustomTabbarViewController.m in Sources */,
