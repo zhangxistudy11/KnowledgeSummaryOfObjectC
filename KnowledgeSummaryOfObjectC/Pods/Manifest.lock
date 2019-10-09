@@ -1,5 +1,6 @@
 PODS:
   - FLAnimatedImage (1.0.12)
+  - FLEX (2.1.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.13)
@@ -15,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - FLAnimatedImage (~> 1.0)
+  - FLEX
   - Masonry (~> 1.1.0)
   - MBProgressHUD (~> 1.0.0)
   - MJRefresh
@@ -25,6 +27,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FLAnimatedImage
+    - FLEX
     - Masonry
     - MBProgressHUD
     - MJRefresh
@@ -34,6 +37,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FLEX: 27b768fcae23a313a1eb115076d429180ca9b472
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 56a28aa628c9895e97a518dabaecf70b18f92f32
@@ -41,6 +45,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 2fe29f021e0b058100814bcab8d6255501e17d87
+PODFILE CHECKSUM: 5f4ff38653fdc3cdc26ac2495f4cdfaacfe341f1
 
 COCOAPODS: 1.5.0
