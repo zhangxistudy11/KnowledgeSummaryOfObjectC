@@ -25,6 +25,7 @@
 {
     [super viewDidAppear:animated];
     [self test1];
+    NSLog(@"333");
 }
 - (void)test1
 {
