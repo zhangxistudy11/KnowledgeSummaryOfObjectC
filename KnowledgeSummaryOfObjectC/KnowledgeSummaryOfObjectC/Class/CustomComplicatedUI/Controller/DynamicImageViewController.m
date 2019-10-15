@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"复杂UI的定制";
-    NSLog(@"1111");
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
