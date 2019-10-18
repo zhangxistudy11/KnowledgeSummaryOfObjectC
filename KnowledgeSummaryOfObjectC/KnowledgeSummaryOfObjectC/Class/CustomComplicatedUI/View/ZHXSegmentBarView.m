@@ -26,6 +26,8 @@ static NSInteger const ITEM_TAG = 1000;
 
         //要先初始化view
         [self initView];
+        NSLog(@"0000");
+
         self.titles = titles;
         NSLog(@"1111");
     }
