@@ -35,6 +35,8 @@ static NSInteger const ITEM_TAG = 1000;
     self.fontSize = 14;
     self.lineColor = [UIColor blackColor];
      */
+    NSLog(@"ddd1");
+
     [self setUpView];
 }
 
