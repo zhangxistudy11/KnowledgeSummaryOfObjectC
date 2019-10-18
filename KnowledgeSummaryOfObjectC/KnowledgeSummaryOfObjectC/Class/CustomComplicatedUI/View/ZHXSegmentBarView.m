@@ -56,8 +56,8 @@ static NSInteger const ITEM_TAG = 1000;
     }];
 
     [self layoutAllView];
-    NSLog(@"aaa");
 
+    NSLog(@"bbbb");
 }
 - (void)layoutAllView{
     
