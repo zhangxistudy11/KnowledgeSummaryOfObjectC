@@ -36,6 +36,8 @@ static NSInteger const ITEM_TAG = 1000;
     self.lineColor = [UIColor blackColor];
      */
     [self setUpView];
+    NSLog(@"222");
+
 }
 
 - (void)setUpView{
@@ -47,6 +49,7 @@ static NSInteger const ITEM_TAG = 1000;
         make.right.equalTo(self.mas_right).offset(-self.horizontalMargin);
         
     }];
+    NSLog(@"3333");
 
     [self layoutAllView];
 }
