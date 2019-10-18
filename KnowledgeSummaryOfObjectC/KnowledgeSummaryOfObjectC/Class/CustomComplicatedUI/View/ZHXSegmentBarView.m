@@ -45,6 +45,7 @@ static NSInteger const ITEM_TAG = 1000;
 }
 
 - (void)setUpView{
+    NSLog(@"ggg");
     [self addSubview:self.contentView];
     [self.contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_top).offset(self.topMargin);
