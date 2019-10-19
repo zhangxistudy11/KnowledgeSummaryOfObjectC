@@ -52,7 +52,6 @@
             self.canScroll = NO;
             //self.innerCell.cellCanScroll = YES;
 
-
         }
        
     }else{
