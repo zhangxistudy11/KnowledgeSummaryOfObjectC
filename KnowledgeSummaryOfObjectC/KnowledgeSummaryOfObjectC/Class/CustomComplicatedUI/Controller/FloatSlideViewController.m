@@ -58,7 +58,11 @@
             NSLog(@"外部不走，内部走dddd3333");
 
             [self.innerCell innerCanScroll:YES];
+
             NSLog(@"外部不走，111");
+
+            NSLog(@"外部不走，eeee3");
+
 
         }
        
