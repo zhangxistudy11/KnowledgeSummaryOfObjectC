@@ -52,7 +52,11 @@
             self.canScroll = NO;
           
             //self.innerCell.cellCanScroll = YES;
+
             NSLog(@"外部不走，内部走dddddddddd");
+
+            NSLog(@"外部不走，内部走dddd3333");
+
             [self.innerCell innerCanScroll:YES];
         }
        
