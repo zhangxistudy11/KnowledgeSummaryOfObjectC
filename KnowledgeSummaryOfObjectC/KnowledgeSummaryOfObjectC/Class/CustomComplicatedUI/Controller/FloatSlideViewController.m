@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    NSLog(@"111");
     self.navigationItem.title = @"滑动停止";
     
     [self setUpView];
