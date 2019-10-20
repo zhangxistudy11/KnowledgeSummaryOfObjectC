@@ -10,6 +10,7 @@
 #import "UIView+Extension.h"
 #import "AboutCopyViewController.h"
 #import "MemoryLeakViewController.h"
+#import "ParamsPassController.h"
 @interface MemoryManageViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -59,6 +60,10 @@
             cell.textLabel.text = @"2-内存泄漏";
             return cell;
             break;
+            case 2:
+            cell.textLabel.text = @"3-参数传递";
+           return cell;
+          break;
         default:
             break;
     }
@@ -87,7 +92,9 @@
         case 2:
         {
             
-            
+            ParamsPassController * vc = [[ParamsPassController alloc]init];
+                  [self.navigationController pushViewController:vc animated:YES];
+            vc.isStart = YES;
         }
             break;
         case 3:

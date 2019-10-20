@@ -108,6 +108,8 @@
 		3398DD061F640E0000D7A872 /* UIBezierPathCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */; };
 		33A201E51F9F1FB900137336 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E41F9F1FB900137336 /* aaa.png */; };
 		33A201E71F9F203900137336 /* Speed_Gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E61F9F203900137336 /* Speed_Gif.gif */; };
+		33AB8333235CA3CE00703D21 /* ParamsPassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB8332235CA3CE00703D21 /* ParamsPassController.m */; };
+		33AB8336235CA4AB00703D21 /* ParaPassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB8335235CA4AB00703D21 /* ParaPassView.m */; };
 		33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295A230925F40064ED6A /* UIColor+Extension.m */; };
 		33AD296023092E290064ED6A /* ZHXTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295C23092E280064ED6A /* ZHXTabBarView.m */; };
 		33AD296123092E290064ED6A /* ZHXTabSingleItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295D23092E280064ED6A /* ZHXTabSingleItemView.m */; };
@@ -347,6 +349,10 @@
 		3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCustomView.m; sourceTree = "<group>"; };
 		33A201E41F9F1FB900137336 /* aaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aaa.png; sourceTree = "<group>"; };
 		33A201E61F9F203900137336 /* Speed_Gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Speed_Gif.gif; sourceTree = "<group>"; };
+		33AB8331235CA3CE00703D21 /* ParamsPassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParamsPassController.h; sourceTree = "<group>"; };
+		33AB8332235CA3CE00703D21 /* ParamsPassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParamsPassController.m; sourceTree = "<group>"; };
+		33AB8334235CA4AB00703D21 /* ParaPassView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParaPassView.h; sourceTree = "<group>"; };
+		33AB8335235CA4AB00703D21 /* ParaPassView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParaPassView.m; sourceTree = "<group>"; };
 		33AD2959230925F30064ED6A /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		33AD295A230925F40064ED6A /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		33AD295C23092E280064ED6A /* ZHXTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHXTabBarView.m; sourceTree = "<group>"; };
@@ -1180,6 +1186,8 @@
 				3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */,
 				771C8850217B54F10018F4D3 /* MemoryLeakViewController.h */,
 				771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */,
+				33AB8331235CA3CE00703D21 /* ParamsPassController.h */,
+				33AB8332235CA3CE00703D21 /* ParamsPassController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1264,6 +1272,8 @@
 			children = (
 				771C8854217B55BE0018F4D3 /* MemoryTestView.h */,
 				771C8855217B55BE0018F4D3 /* MemoryTestView.m */,
+				33AB8334235CA4AB00703D21 /* ParaPassView.h */,
+				33AB8335235CA4AB00703D21 /* ParaPassView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1566,6 +1576,7 @@
 				336EFD001F7DF50C00B8246F /* RacAdvanceView.m in Sources */,
 				772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */,
 				334839B01F7CF02E00BD17EE /* RacPrimaryController.m in Sources */,
+				33AB8336235CA4AB00703D21 /* ParaPassView.m in Sources */,
 				3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
@@ -1620,6 +1631,7 @@
 				335B79C6205FD701005B6E29 /* JSProtocolObj.m in Sources */,
 				33BA97D82306E2D000BF181C /* CustomTabbarViewController.m in Sources */,
 				3380A331204677BE00F8BA23 /* BarChartView.m in Sources */,
+				33AB8333235CA3CE00703D21 /* ParamsPassController.m in Sources */,
 				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
 				FBF2007320A52CF400AFE27B /* FloatTableViewController.m in Sources */,
