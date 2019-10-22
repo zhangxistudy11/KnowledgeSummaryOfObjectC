@@ -32,7 +32,8 @@
     [self setUpView];
 }
 - (void)setUpView
-{
+{    NSLog(@"333");
+
     self.canScroll = YES;
     self.outTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kTableDeaultOrginY, screen_width, 700)];
     [self.view addSubview:self.outTableView];
