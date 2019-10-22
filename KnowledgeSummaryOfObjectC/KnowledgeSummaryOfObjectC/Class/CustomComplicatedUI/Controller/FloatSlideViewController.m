@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    NSLog(@"111");
     self.navigationItem.title = @"滑动停止";
     
     [self setUpView];
@@ -50,9 +50,8 @@
           self.outTableView.scrollEnabled = NO;
         if (self.canScroll){
             self.canScroll = NO;
-          
             //self.innerCell.cellCanScroll = YES;
-            NSLog(@"外部不走，内部走3333");
+
             [self.innerCell innerCanScroll:YES];
             NSLog(@"外部不走，内部走3333");
 

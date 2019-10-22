@@ -22,8 +22,12 @@ static NSInteger const ITEM_TAG = 1000;
 {
     self = [super initWithFrame:frame];
     if (self) {
+        NSLog(@"fffffffff");
+
         //要先初始化view
         [self initView];
+        NSLog(@"0000");
+
         self.titles = titles;
         NSLog(@"1111");
     }
@@ -41,6 +45,7 @@ static NSInteger const ITEM_TAG = 1000;
 }
 
 - (void)setUpView{
+    NSLog(@"ggg");
     [self addSubview:self.contentView];
     [self.contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_top).offset(self.topMargin);
@@ -51,6 +56,7 @@ static NSInteger const ITEM_TAG = 1000;
     }];
 
     [self layoutAllView];
+    NSLog(@"bbbb");
 }
 - (void)layoutAllView{
     
