@@ -25,15 +25,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"111");
     self.navigationItem.title = @"滑动停止";
-    NSLog(@"444");
-
+    NSLog(@"0000");
 
     [self setUpView];
 }
 - (void)setUpView
-{    NSLog(@"555");
+{
     self.canScroll = YES;
     self.outTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kTableDeaultOrginY, screen_width, 700)];
     [self.view addSubview:self.outTableView];
@@ -55,7 +53,6 @@
             //self.innerCell.cellCanScroll = YES;
 
             [self.innerCell innerCanScroll:YES];
-            NSLog(@"外部不走，内部走3333");
 
         }
        
