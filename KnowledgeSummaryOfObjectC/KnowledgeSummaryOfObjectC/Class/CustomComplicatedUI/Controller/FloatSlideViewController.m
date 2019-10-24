@@ -38,7 +38,8 @@
     self.outTableView.delegate = self;
     self.outTableView.dataSource = self;
     //self.outTableView.bounces = NO;
-    
+    NSLog(@"1111");
+
 }
 
 #pragma mark - UIScrollViewDelegate
