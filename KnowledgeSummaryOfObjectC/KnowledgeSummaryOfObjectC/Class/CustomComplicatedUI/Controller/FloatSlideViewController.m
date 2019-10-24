@@ -45,6 +45,8 @@
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    NSLog(@"222");
+
     CGFloat outerOffset = scrollView.contentOffset.y;
     if (outerOffset>=kMinTopMargin) {
         self.outTableView.contentOffset = CGPointMake(0, kMinTopMargin);
