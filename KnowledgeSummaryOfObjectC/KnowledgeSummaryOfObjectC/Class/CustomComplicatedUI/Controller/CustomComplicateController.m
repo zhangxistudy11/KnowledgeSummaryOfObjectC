@@ -19,6 +19,7 @@
 #import "SuspendTableController.h"
 #import "CustomTabbarViewController.h"
 #import "AnimationSegmentViewController.h"
+#import "ShadowViewController.h"
 @interface CustomComplicateController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -30,11 +31,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    
     self.navigationItem.title = @"复杂UI控件的封装";
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-     [self  setUpView];
+    [self  setUpView];
 }
 - (void)setUpView
 {
@@ -102,10 +103,14 @@
             cell.textLabel.text = @"11-自定义TabBar";
             return cell;
             break;
-            case 11:
+        case 11:
             cell.textLabel.text = @"12-动画TabBar";
             return cell;
             break;
+        case 12:
+        cell.textLabel.text = @"13-阴影效果";
+        return cell;
+        break;
         default:
             break;
     }
@@ -184,12 +189,18 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-            case 11:
-                   {
-                       AnimationSegmentViewController * vc = [[AnimationSegmentViewController alloc]init];
-                       [self.navigationController pushViewController:vc animated:YES];
-                   }
-                       break;
+        case 11:
+        {
+            AnimationSegmentViewController * vc = [[AnimationSegmentViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            case 12:
+                  {
+                      ShadowViewController * vc = [[ShadowViewController alloc]init];
+                      [self.navigationController pushViewController:vc animated:YES];
+                  }
+                      break;
         default:
             break;
     }
