@@ -1,5 +1,6 @@
 platform :ios, '7.0'
-target 'KnowledgeSummaryOfObjectC' do
+
+def common_Pods
     pod 'MJRefresh'
     pod 'ReactiveCocoa’,'~> 2.4.7’
     pod 'Masonry’,'~> 1.1.0’
@@ -8,4 +9,12 @@ target 'KnowledgeSummaryOfObjectC' do
     pod 'MBProgressHUD', '~> 1.0.0'
     pod 'YYCache'
     pod 'FLEX’
+end
+
+target 'KnowledgeSummaryOfObjectC' do
+      common_Pods
+end
+
+target 'TargetOne' do
+      common_Pods
 end
