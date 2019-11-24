@@ -102,6 +102,11 @@
       这里会出现闪退
       [self.copydMutableArray removeLastObject];
      */
+    if (TargetType==1) {
+        NSLog(@"原来");
+    } else if(TargetType==2){
+        NSLog(@"新的");
+    }
    
 }
 - (void)testimmutableArray

@@ -302,11 +302,17 @@
 		777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */; };
 		777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618FA224C80B100D51594 /* ProgressAnimationView.m */; };
 		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
+<<<<<<< HEAD
 		77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F4837D2361A76B00D7A1AD /* ShadowViewController.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
+=======
 		C84F4F28D022A06BD40E3113 /* libPods-TargetOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */; };
+<<<<<<< HEAD
 		E57D49A832B0A9AD19E3A921 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+>>>>>>> Study(Mul_tar):初步测试成功
+=======
 		E57D49A832B0A9AD19E3A921 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+>>>>>>> Study(Mul_tar):移动新建target.plist成功
 		FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */; };
 		FB1335EB20CCB72D00187132 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335EA20CCB72D00187132 /* NSArray+Safe.m */; };
 		FB54C1EC20A741D40060FD9F /* TranslucentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */; };
@@ -432,6 +438,7 @@
 		33673CCF1F58FA6400ECE5D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33673CDB1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KnowledgeSummaryOfObjectC.xcdatamodel; sourceTree = "<group>"; };
 		33673CDD1F58FA6400ECE5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33673CE21F58FA6400ECE5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33673CE71F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowledgeSummaryOfObjectCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33673CEB1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnowledgeSummaryOfObjectCTests.m; sourceTree = "<group>"; };
 		33673CED1F58FA6400ECE5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -533,7 +540,6 @@
 		33CD24DC1FBC772B0082B934 /* SlideSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideSubView.m; sourceTree = "<group>"; };
 		33CFECF3238AB45F00ED424A /* TargetOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TargetOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CFED03238ABC9900ED424A /* TargetOne.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TargetOne.plist; sourceTree = "<group>"; };
-		33CFED05238ABD5600ED424A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33DA54E11FBD2F6C00EB3716 /* SlideTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideTabView.h; sourceTree = "<group>"; };
 		33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTabView.m; sourceTree = "<group>"; };
 		33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranklist_item_right@3x.png"; sourceTree = "<group>"; };
@@ -584,10 +590,13 @@
 		777618FA224C80B100D51594 /* ProgressAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimationView.m; sourceTree = "<group>"; };
 		777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewThreeViewController.h; sourceTree = "<group>"; };
 		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		77F4837C2361A76B00D7A1AD /* ShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowViewController.h; sourceTree = "<group>"; };
 		77F4837D2361A76B00D7A1AD /* ShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowViewController.m; sourceTree = "<group>"; };
+=======
 		9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TargetOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06D0EEE88F72CBDC599B0AE /* Pods-TargetOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TargetOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TargetOne/Pods-TargetOne.debug.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> Study(Mul_tar):初步测试成功
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
 		D3589B5A20B8FEB977DD3289 /* Pods-TargetOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TargetOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-TargetOne/Pods-TargetOne.release.xcconfig"; sourceTree = "<group>"; };
 		FB1335E620CCB5D700187132 /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
@@ -967,6 +976,7 @@
 				332B8A321F7B81AC00DE9C1A /* Library */,
 				33673D121F58FC1C00ECE5D4 /* Additions */,
 				33673CDD1F58FA6400ECE5D4 /* Assets.xcassets */,
+				33673CE21F58FA6400ECE5D4 /* Info.plist */,
 				33673CDA1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld */,
 				33673CCE1F58FA6400ECE5D4 /* Supporting Files */,
 			);
@@ -1461,7 +1471,6 @@
 		33CFED02238ABC6500ED424A /* Orgin */ = {
 			isa = PBXGroup;
 			children = (
-				33CFED05238ABD5600ED424A /* Info.plist */,
 			);
 			path = Orgin;
 			sourceTree = "<group>";
@@ -2249,7 +2258,7 @@
 					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
 					"\"/Users/zhangxi/Desktop/DownloadDemo/AddSubProjectDemo-master/subProject/subProject\"",
 				);
-				INFOPLIST_FILE = Custom/Orgin/Info.plist;
+				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
@@ -2283,7 +2292,7 @@
 					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
 					"\"/Users/zhangxi/Desktop/DownloadDemo/AddSubProjectDemo-master/subProject/subProject\"",
 				);
-				INFOPLIST_FILE = Custom/Orgin/Info.plist;
+				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
