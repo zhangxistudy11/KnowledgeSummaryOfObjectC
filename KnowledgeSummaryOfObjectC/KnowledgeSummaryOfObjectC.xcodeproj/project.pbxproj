@@ -121,6 +121,156 @@
 		33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D61FBC6FFC0082B934 /* BaseTableViewCell.m */; };
 		33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D91FBC73680082B934 /* SlideTableViewCell.m */; };
 		33CD24DD1FBC772B0082B934 /* SlideSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24DC1FBC772B0082B934 /* SlideSubView.m */; };
+		33CFEC57238AB45F00ED424A /* TranslucentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */; };
+		33CFEC58238AB45F00ED424A /* DynamicImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */; };
+		33CFEC59238AB45F00ED424A /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */; };
+		33CFEC5A238AB45F00ED424A /* RacAdvanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFCFF1F7DF50C00B8246F /* RacAdvanceView.m */; };
+		33CFEC5B238AB45F00ED424A /* ZXSegmentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */; };
+		33CFEC5C238AB45F00ED424A /* RacPrimaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334839A91F7CF02E00BD17EE /* RacPrimaryController.m */; };
+		33CFEC5D238AB45F00ED424A /* ParaPassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB8335235CA4AB00703D21 /* ParaPassView.m */; };
+		33CFEC5E238AB45F00ED424A /* SlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3349578A1FBBE0E6006E89F7 /* SlideView.m */; };
+		33CFEC5F238AB45F00ED424A /* WebPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BB26981F669E5300CDFA92 /* WebPracticeViewController.m */; };
+		33CFEC60238AB45F00ED424A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCE21F63FC2400D7A872 /* ViewController.m */; };
+		33CFEC61238AB45F00ED424A /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */; };
+		33CFEC62238AB45F00ED424A /* CAShaplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCCA1F63FC2400D7A872 /* CAShaplayerViewController.m */; };
+		33CFEC63238AB45F00ED424A /* LoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339884B11F95B48F008C5646 /* LoopViewController.m */; };
+		33CFEC64238AB45F00ED424A /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3362C76B1FF09E1000F3EFA9 /* HUDViewController.m */; };
+		33CFEC65238AB45F00ED424A /* CustomProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902FB22CA2964000926A9 /* CustomProgressView.m */; };
+		33CFEC66238AB45F00ED424A /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3343CF731FBAF85700653468 /* BaseTableView.m */; };
+		33CFEC67238AB45F00ED424A /* CustomProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F822CA2813000926A9 /* CustomProgressController.m */; };
+		33CFEC68238AB45F00ED424A /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
+		33CFEC69238AB45F00ED424A /* ZHXTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295C23092E280064ED6A /* ZHXTabBarView.m */; };
+		33CFEC6A238AB45F00ED424A /* JavaScriptStuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0BE63205FAFA70062AE6D /* JavaScriptStuViewController.m */; };
+		33CFEC6B238AB45F00ED424A /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334957841FBBDF5D006E89F7 /* SlideViewController.m */; };
+		33CFEC6C238AB45F00ED424A /* KeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCCE1F63FC2400D7A872 /* KeyFrameViewController.m */; };
+		33CFEC6D238AB45F00ED424A /* RacPrimaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 334839A51F7CF02E00BD17EE /* RacPrimaryView.m */; };
+		33CFEC6E238AB45F00ED424A /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCD31F63FC2400D7A872 /* UIBezierPathViewController.m */; };
+		33CFEC6F238AB45F00ED424A /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336A8E301FEB533300EFCF42 /* ButtonViewController.m */; };
+		33CFEC70238AB45F00ED424A /* PopViewTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD131F7E377700B8246F /* PopViewTwoController.m */; };
+		33CFEC71238AB45F00ED424A /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3362C7AD1FF0FFCE00F3EFA9 /* UIViewExt.m */; };
+		33CFEC72238AB45F00ED424A /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
+		33CFEC73238AB45F00ED424A /* CrashLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33021DD01F65763500E49A29 /* CrashLocationViewController.m */; };
+		33CFEC74238AB45F00ED424A /* EarningsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCCC1F63FC2400D7A872 /* EarningsViewController.m */; };
+		33CFEC75238AB45F00ED424A /* UIBezierPathCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DD051F640E0000D7A872 /* UIBezierPathCustomView.m */; };
+		33CFEC76238AB45F00ED424A /* PopViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD101F7E1EC400B8246F /* PopViewOne.m */; };
+		33CFEC77238AB45F00ED424A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673D141F58FC1C00ECE5D4 /* UIView+Extension.m */; };
+		33CFEC78238AB45F00ED424A /* ProgressAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */; };
+		33CFEC79238AB45F00ED424A /* AnimationAndDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */; };
+		33CFEC7A238AB45F00ED424A /* ThirdLibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333AAD10226B320F005736F0 /* ThirdLibViewController.m */; };
+		33CFEC7B238AB45F00ED424A /* ZHXCustomItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97DA2306E59000BF181C /* ZHXCustomItemView.m */; };
+		33CFEC7C238AB45F00ED424A /* MemoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCEC1F63FC2400D7A872 /* MemoryManageViewController.m */; };
+		33CFEC7D238AB45F00ED424A /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
+		33CFEC7E238AB45F00ED424A /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3380A32A20465D1300F8BA23 /* ChartViewController.m */; };
+		33CFEC7F238AB45F00ED424A /* FloatSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2016620A58F6A00AFE27B /* FloatSlideViewController.m */; };
+		33CFEC80238AB45F00ED424A /* ZHXSegmentBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */; };
+		33CFEC81238AB45F00ED424A /* SuspendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F222C9D8C4000926A9 /* SuspendViewController.m */; };
+		33CFEC82238AB45F00ED424A /* SuspendTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F522C9DECC000926A9 /* SuspendTableController.m */; };
+		33CFEC83238AB45F00ED424A /* ARStudyPeimaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3325D4BE1FD00467002ED01E /* ARStudyPeimaryVC.m */; };
+		33CFEC84238AB45F00ED424A /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D61FBC6FFC0082B934 /* BaseTableViewCell.m */; };
+		33CFEC85238AB45F00ED424A /* UIView+FITBackViewAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD1C1F7E410900B8246F /* UIView+FITBackViewAddition.m */; };
+		33CFEC86238AB45F00ED424A /* FloatSlideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2016920A5921800AFE27B /* FloatSlideCell.m */; };
+		33CFEC87238AB45F00ED424A /* RacAdvanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFCFC1F7DF24200B8246F /* RacAdvanceController.m */; };
+		33CFEC88238AB45F00ED424A /* RunTimeBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33186CDE2060DA4F002B2D20 /* RunTimeBasicViewController.m */; };
+		33CFEC89238AB45F00ED424A /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334839AB1F7CF02E00BD17EE /* RACViewController.m */; };
+		33CFEC8A238AB45F00ED424A /* TailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902FE22CB05B6000926A9 /* TailView.m */; };
+		33CFEC8B238AB45F00ED424A /* ARStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3325D4BB1FCFFB03002ED01E /* ARStudyViewController.m */; };
+		33CFEC8C238AB45F00ED424A /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCD11F63FC2400D7A872 /* TransformViewController.m */; };
+		33CFEC8D238AB45F00ED424A /* ProgressAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618FA224C80B100D51594 /* ProgressAnimationView.m */; };
+		33CFEC8E238AB45F00ED424A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673D251F59035000ECE5D4 /* AppDelegate.m */; };
+		33CFEC8F238AB45F00ED424A /* AnimationSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */; };
+		33CFEC90238AB45F00ED424A /* SlideMenuDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778F420206C2A00581E5C /* SlideMenuDemoController.m */; };
+		33CFEC91238AB45F00ED424A /* JSProtocolObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 335B79C5205FD701005B6E29 /* JSProtocolObj.m */; };
+		33CFEC92238AB45F00ED424A /* CustomTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97D72306E2D000BF181C /* CustomTabbarViewController.m */; };
+		33CFEC93238AB45F00ED424A /* BarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3380A330204677BE00F8BA23 /* BarChartView.m */; };
+		33CFEC94238AB45F00ED424A /* ParamsPassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB8332235CA3CE00703D21 /* ParamsPassController.m */; };
+		33CFEC95238AB45F00ED424A /* SlideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D91FBC73680082B934 /* SlideTableViewCell.m */; };
+		33CFEC96238AB45F00ED424A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCDE1F63FC2400D7A872 /* BaseViewController.m */; };
+		33CFEC97238AB45F00ED424A /* FloatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2007220A52CF400AFE27B /* FloatTableViewController.m */; };
+		33CFEC98238AB45F00ED424A /* CustomHudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3362C7B61FF1042600F3EFA9 /* CustomHudViewController.m */; };
+		33CFEC99238AB45F00ED424A /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335EA20CCB72D00187132 /* NSArray+Safe.m */; };
+		33CFEC9A238AB45F00ED424A /* CGAffineTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335024DD20231D26008B1182 /* CGAffineTransformViewController.m */; };
+		33CFEC9B238AB45F00ED424A /* CoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBFD6B220BE7A490077B014 /* CoverViewController.m */; };
+		33CFEC9C238AB45F00ED424A /* CacheTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639B1E217D9CF0001325D9 /* CacheTestModel.m */; };
+		33CFEC9D238AB45F00ED424A /* PopViewOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD0D1F7E1E1100B8246F /* PopViewOneController.m */; };
+		33CFEC9E238AB45F00ED424A /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295A230925F40064ED6A /* UIColor+Extension.m */; };
+		33CFEC9F238AB45F00ED424A /* CustomComplicateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339884AE1F95B26C008C5646 /* CustomComplicateController.m */; };
+		33CFECA0238AB45F00ED424A /* NSString+ZTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA97E32306FCEB00BF181C /* NSString+ZTSize.m */; };
+		33CFECA1238AB45F00ED424A /* LoadHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330721292015E53700A320FA /* LoadHtmlViewController.m */; };
+		33CFECA2238AB45F00ED424A /* MansoryStudyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333AAD13226B3402005736F0 /* MansoryStudyController.m */; };
+		33CFECA3238AB45F00ED424A /* MemoryTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8855217B55BE0018F4D3 /* MemoryTestView.m */; };
+		33CFECA4238AB45F00ED424A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33673CCF1F58FA6400ECE5D4 /* main.m */; };
+		33CFECA5238AB45F00ED424A /* YYCacheUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD9217D7915001325D9 /* YYCacheUseController.m */; };
+		33CFECA6238AB45F00ED424A /* BarChartItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3380A333204686A200F8BA23 /* BarChartItemView.m */; };
+		33CFECA7238AB45F00ED424A /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3348385B1F7CEA3100BD17EE /* BaseView.m */; };
+		33CFECA8238AB45F00ED424A /* SFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 334957941FBC4737006E89F7 /* SFLabel.m */; };
+		33CFECA9238AB45F00ED424A /* SlideTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */; };
+		33CFECAA238AB45F00ED424A /* ZHXTabSingleItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD295D23092E280064ED6A /* ZHXTabSingleItemView.m */; };
+		33CFECAB238AB45F00ED424A /* CAGradientLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCC81F63FC2400D7A872 /* CAGradientLayerViewController.m */; };
+		33CFECAC238AB45F00ED424A /* PopViewTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD191F7E388800B8246F /* PopViewTwo.m */; };
+		33CFECAD238AB45F00ED424A /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33673CDA1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld */; };
+		33CFECAE238AB45F00ED424A /* SCCatWaitingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3362C7AB1FF0FFCE00F3EFA9 /* SCCatWaitingHUD.m */; };
+		33CFECAF238AB45F00ED424A /* JSProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335B79C2205FD6C5005B6E29 /* JSProtocolViewController.m */; };
+		33CFECB0238AB45F00ED424A /* BarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3380A32D204676FA00F8BA23 /* BarChartViewController.m */; };
+		33CFECB1238AB45F00ED424A /* AboutCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCEA1F63FC2400D7A872 /* AboutCopyViewController.m */; };
+		33CFECB2238AB45F00ED424A /* SlideSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24DC1FBC772B0082B934 /* SlideSubView.m */; };
+		33CFECB3238AB45F00ED424A /* JSCallNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332B8A2C1F7B7DB100DE9C1A /* JSCallNativeViewController.m */; };
+		33CFECB4238AB45F00ED424A /* CustomPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336EFD0A1F7E1CB700B8246F /* CustomPopViewController.m */; };
+		33CFECB5238AB45F00ED424A /* MethodPacticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33186CE12060DBA4002B2D20 /* MethodPacticeViewController.m */; };
+		33CFECB7238AB45F00ED424A /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
+		33CFECB9238AB45F00ED424A /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E41F9F1FB900137336 /* aaa.png */; };
+		33CFECBA238AB45F00ED424A /* Coin_loading_27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7801FF0F3C300F3EFA9 /* Coin_loading_27@2x.png */; };
+		33CFECBB238AB45F00ED424A /* mouse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7B21FF0FFEB00F3EFA9 /* mouse@2x.png */; };
+		33CFECBC238AB45F00ED424A /* Coin_loading_18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7761FF0F3C300F3EFA9 /* Coin_loading_18@2x.png */; };
+		33CFECBD238AB45F00ED424A /* ranklist_item_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */; };
+		33CFECBE238AB45F00ED424A /* Coin_loading_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7711FF0F3C300F3EFA9 /* Coin_loading_13@2x.png */; };
+		33CFECBF238AB45F00ED424A /* myMessage_CouponHint@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 336A8E321FEB590E00EFCF42 /* myMessage_CouponHint@3x.png */; };
+		33CFECC0238AB45F00ED424A /* MAO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7B11FF0FFEB00F3EFA9 /* MAO@2x.png */; };
+		33CFECC1238AB45F00ED424A /* ic_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F620206F8100581E5C /* ic_back@2x.png */; };
+		33CFECC2238AB45F00ED424A /* Coin_loading_25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C77E1FF0F3C300F3EFA9 /* Coin_loading_25@2x.png */; };
+		33CFECC3238AB45F00ED424A /* ranklist_item_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E51FBD333100EB3716 /* ranklist_item_right@2x.png */; };
+		33CFECC4238AB45F00ED424A /* Back_Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54EF1FBD7DF100EB3716 /* Back_Arrow@2x.png */; };
+		33CFECC5238AB45F00ED424A /* Coin_loading_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7871FF0F3C300F3EFA9 /* Coin_loading_6@2x.png */; };
+		33CFECC6238AB45F00ED424A /* myMessage_CouponHint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 336A8E371FEB590E00EFCF42 /* myMessage_CouponHint@2x.png */; };
+		33CFECC7238AB45F00ED424A /* Coin_loading_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7851FF0F3C300F3EFA9 /* Coin_loading_4@2x.png */; };
+		33CFECC8238AB45F00ED424A /* Coin_loading_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7841FF0F3C300F3EFA9 /* Coin_loading_3@2x.png */; };
+		33CFECC9238AB45F00ED424A /* Coin_loading_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7861FF0F3C300F3EFA9 /* Coin_loading_5@2x.png */; };
+		33CFECCA238AB45F00ED424A /* Coin_loading_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7891FF0F3C300F3EFA9 /* Coin_loading_8@2x.png */; };
+		33CFECCB238AB45F00ED424A /* Coin_loading_16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7741FF0F3C300F3EFA9 /* Coin_loading_16@2x.png */; };
+		33CFECCC238AB45F00ED424A /* jianbian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7719034922CB4DDD000926A9 /* jianbian@2x.png */; };
+		33CFECCD238AB45F00ED424A /* myMessage_TradingAssistance@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 336A8E361FEB590E00EFCF42 /* myMessage_TradingAssistance@3x.png */; };
+		33CFECCE238AB45F00ED424A /* Coin_loading_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7731FF0F3C300F3EFA9 /* Coin_loading_15@2x.png */; };
+		33CFECCF238AB45F00ED424A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33673CDD1F58FA6400ECE5D4 /* Assets.xcassets */; };
+		33CFECD0238AB45F00ED424A /* Coin_loading_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7881FF0F3C300F3EFA9 /* Coin_loading_7@2x.png */; };
+		33CFECD1238AB45F00ED424A /* Coin_loading_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C76F1FF0F3C300F3EFA9 /* Coin_loading_11@2x.png */; };
+		33CFECD2238AB45F00ED424A /* Coin_loading_21@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C77A1FF0F3C300F3EFA9 /* Coin_loading_21@2x.png */; };
+		33CFECD3238AB45F00ED424A /* Coin_loading_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7751FF0F3C300F3EFA9 /* Coin_loading_17@2x.png */; };
+		33CFECD4238AB45F00ED424A /* ic_xiala_black_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 335024DF20231F92008B1182 /* ic_xiala_black_big@2x.png */; };
+		33CFECD5238AB45F00ED424A /* Coin_loading_29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7821FF0F3C300F3EFA9 /* Coin_loading_29@2x.png */; };
+		33CFECD6238AB45F00ED424A /* Coin_loading_19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7771FF0F3C300F3EFA9 /* Coin_loading_19@2x.png */; };
+		33CFECD7238AB45F00ED424A /* myMessage_TradingAssistance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 336A8E351FEB590E00EFCF42 /* myMessage_TradingAssistance@2x.png */; };
+		33CFECD8238AB45F00ED424A /* Coin_loading_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7781FF0F3C300F3EFA9 /* Coin_loading_1@2x.png */; };
+		33CFECD9238AB45F00ED424A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 332B8A301F7B80E200DE9C1A /* index.html */; };
+		33CFECDA238AB45F00ED424A /* Back_Arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54F01FBD7DF100EB3716 /* Back_Arrow@3x.png */; };
+		33CFECDB238AB45F00ED424A /* ranklist_item_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E91FBD335400EB3716 /* ranklist_item_left@3x.png */; };
+		33CFECDC238AB45F00ED424A /* Coin_loading_28@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7811FF0F3C300F3EFA9 /* Coin_loading_28@2x.png */; };
+		33CFECDD238AB45F00ED424A /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 334957911FBBEAA5006E89F7 /* header.jpg */; };
+		33CFECDE238AB45F00ED424A /* Coin_loading_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C76E1FF0F3C300F3EFA9 /* Coin_loading_10@2x.png */; };
+		33CFECDF238AB45F00ED424A /* Coin_loading_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7701FF0F3C300F3EFA9 /* Coin_loading_12@2x.png */; };
+		33CFECE0238AB45F00ED424A /* ic_xiala_black_big@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 335024E020231F92008B1182 /* ic_xiala_black_big@3x.png */; };
+		33CFECE1238AB45F00ED424A /* Coin_loading_24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C77D1FF0F3C300F3EFA9 /* Coin_loading_24@2x.png */; };
+		33CFECE2238AB45F00ED424A /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F720206F8100581E5C /* ic_back@3x.png */; };
+		33CFECE3238AB45F00ED424A /* Coin_loading_14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7721FF0F3C300F3EFA9 /* Coin_loading_14@2x.png */; };
+		33CFECE4238AB45F00ED424A /* Coin_loading_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7831FF0F3C300F3EFA9 /* Coin_loading_2@2x.png */; };
+		33CFECE5238AB45F00ED424A /* Coin_loading_20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C7791FF0F3C300F3EFA9 /* Coin_loading_20@2x.png */; };
+		33CFECE6238AB45F00ED424A /* myMessage_Notification@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 336A8E341FEB590E00EFCF42 /* myMessage_Notification@3x.png */; };
+		33CFECE7238AB45F00ED424A /* ranklist_item_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E81FBD335400EB3716 /* ranklist_item_left@2x.png */; };
+		33CFECE8238AB45F00ED424A /* jianbian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7719034A22CB4DDD000926A9 /* jianbian@3x.png */; };
+		33CFECE9238AB45F00ED424A /* Speed_Gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 33A201E61F9F203900137336 /* Speed_Gif.gif */; };
+		33CFECEA238AB45F00ED424A /* Coin_loading_26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C77F1FF0F3C300F3EFA9 /* Coin_loading_26@2x.png */; };
+		33CFECEB238AB45F00ED424A /* Coin_loading_23@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C77C1FF0F3C300F3EFA9 /* Coin_loading_23@2x.png */; };
+		33CFECEC238AB45F00ED424A /* myMessage_Notification@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 336A8E331FEB590E00EFCF42 /* myMessage_Notification@2x.png */; };
+		33CFECED238AB45F00ED424A /* Coin_loading_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C78A1FF0F3C300F3EFA9 /* Coin_loading_9@2x.png */; };
+		33CFECEE238AB45F00ED424A /* Coin_loading_22@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C77B1FF0F3C300F3EFA9 /* Coin_loading_22@2x.png */; };
 		33DA54E31FBD2F6C00EB3716 /* SlideTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */; };
 		33DA54E61FBD333100EB3716 /* ranklist_item_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */; };
 		33DA54E71FBD333100EB3716 /* ranklist_item_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E51FBD333100EB3716 /* ranklist_item_right@2x.png */; };
@@ -377,6 +527,8 @@
 		33CD24D91FBC73680082B934 /* SlideTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTableViewCell.m; sourceTree = "<group>"; };
 		33CD24DB1FBC772B0082B934 /* SlideSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideSubView.h; sourceTree = "<group>"; };
 		33CD24DC1FBC772B0082B934 /* SlideSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideSubView.m; sourceTree = "<group>"; };
+		33CFECF3238AB45F00ED424A /* TargetOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TargetOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CFECF4238AB45F00ED424A /* TargetOne.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = TargetOne.plist; path = /Users/zhangxi/Desktop/OCSummary/KnowledgeSummaryOfObjectC/TargetOne.plist; sourceTree = "<absolute>"; };
 		33DA54E11FBD2F6C00EB3716 /* SlideTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideTabView.h; sourceTree = "<group>"; };
 		33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTabView.m; sourceTree = "<group>"; };
 		33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranklist_item_right@3x.png"; sourceTree = "<group>"; };
@@ -467,6 +619,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CFECB6238AB45F00ED424A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CFECB7238AB45F00ED424A /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,6 +934,7 @@
 				33673CCC1F58FA6400ECE5D4 /* Products */,
 				F90B6F490CF92D16AA2A00BE /* Pods */,
 				8F9BEC53A383DDB9C48FB611 /* Frameworks */,
+				33CFECF4238AB45F00ED424A /* TargetOne.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -783,6 +944,7 @@
 				33673CCB1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.app */,
 				33673CE71F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCTests.xctest */,
 				33673CF21F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCUITests.xctest */,
+				33CFECF3238AB45F00ED424A /* TargetOne.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1387,6 +1549,25 @@
 			productReference = 33673CF21F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		33CFEC54238AB45F00ED424A /* TargetOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33CFECF0238AB45F00ED424A /* Build configuration list for PBXNativeTarget "TargetOne" */;
+			buildPhases = (
+				33CFEC55238AB45F00ED424A /* [CP] Check Pods Manifest.lock */,
+				33CFEC56238AB45F00ED424A /* Sources */,
+				33CFECB6238AB45F00ED424A /* Frameworks */,
+				33CFECB8238AB45F00ED424A /* Resources */,
+				33CFECEF238AB45F00ED424A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TargetOne;
+			productName = KnowledgeSummaryOfObjectC;
+			productReference = 33CFECF3238AB45F00ED424A /* TargetOne.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1413,6 +1594,9 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 33673CCA1F58FA6300ECE5D4;
 					};
+					33CFEC54238AB45F00ED424A = {
+						ProvisioningStyle = Manual;
+					};
 				};
 			};
 			buildConfigurationList = 33673CC61F58FA6300ECE5D4 /* Build configuration list for PBXProject "KnowledgeSummaryOfObjectC" */;
@@ -1438,6 +1622,7 @@
 				33673CCA1F58FA6300ECE5D4 /* KnowledgeSummaryOfObjectC */,
 				33673CE61F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCTests */,
 				33673CF11F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCUITests */,
+				33CFEC54238AB45F00ED424A /* TargetOne */,
 			);
 		};
 /* End PBXProject section */
@@ -1528,9 +1713,106 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33CFECB8238AB45F00ED424A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CFECB9238AB45F00ED424A /* aaa.png in Resources */,
+				33CFECBA238AB45F00ED424A /* Coin_loading_27@2x.png in Resources */,
+				33CFECBB238AB45F00ED424A /* mouse@2x.png in Resources */,
+				33CFECBC238AB45F00ED424A /* Coin_loading_18@2x.png in Resources */,
+				33CFECBD238AB45F00ED424A /* ranklist_item_right@3x.png in Resources */,
+				33CFECBE238AB45F00ED424A /* Coin_loading_13@2x.png in Resources */,
+				33CFECBF238AB45F00ED424A /* myMessage_CouponHint@3x.png in Resources */,
+				33CFECC0238AB45F00ED424A /* MAO@2x.png in Resources */,
+				33CFECC1238AB45F00ED424A /* ic_back@2x.png in Resources */,
+				33CFECC2238AB45F00ED424A /* Coin_loading_25@2x.png in Resources */,
+				33CFECC3238AB45F00ED424A /* ranklist_item_right@2x.png in Resources */,
+				33CFECC4238AB45F00ED424A /* Back_Arrow@2x.png in Resources */,
+				33CFECC5238AB45F00ED424A /* Coin_loading_6@2x.png in Resources */,
+				33CFECC6238AB45F00ED424A /* myMessage_CouponHint@2x.png in Resources */,
+				33CFECC7238AB45F00ED424A /* Coin_loading_4@2x.png in Resources */,
+				33CFECC8238AB45F00ED424A /* Coin_loading_3@2x.png in Resources */,
+				33CFECC9238AB45F00ED424A /* Coin_loading_5@2x.png in Resources */,
+				33CFECCA238AB45F00ED424A /* Coin_loading_8@2x.png in Resources */,
+				33CFECCB238AB45F00ED424A /* Coin_loading_16@2x.png in Resources */,
+				33CFECCC238AB45F00ED424A /* jianbian@2x.png in Resources */,
+				33CFECCD238AB45F00ED424A /* myMessage_TradingAssistance@3x.png in Resources */,
+				33CFECCE238AB45F00ED424A /* Coin_loading_15@2x.png in Resources */,
+				33CFECCF238AB45F00ED424A /* Assets.xcassets in Resources */,
+				33CFECD0238AB45F00ED424A /* Coin_loading_7@2x.png in Resources */,
+				33CFECD1238AB45F00ED424A /* Coin_loading_11@2x.png in Resources */,
+				33CFECD2238AB45F00ED424A /* Coin_loading_21@2x.png in Resources */,
+				33CFECD3238AB45F00ED424A /* Coin_loading_17@2x.png in Resources */,
+				33CFECD4238AB45F00ED424A /* ic_xiala_black_big@2x.png in Resources */,
+				33CFECD5238AB45F00ED424A /* Coin_loading_29@2x.png in Resources */,
+				33CFECD6238AB45F00ED424A /* Coin_loading_19@2x.png in Resources */,
+				33CFECD7238AB45F00ED424A /* myMessage_TradingAssistance@2x.png in Resources */,
+				33CFECD8238AB45F00ED424A /* Coin_loading_1@2x.png in Resources */,
+				33CFECD9238AB45F00ED424A /* index.html in Resources */,
+				33CFECDA238AB45F00ED424A /* Back_Arrow@3x.png in Resources */,
+				33CFECDB238AB45F00ED424A /* ranklist_item_left@3x.png in Resources */,
+				33CFECDC238AB45F00ED424A /* Coin_loading_28@2x.png in Resources */,
+				33CFECDD238AB45F00ED424A /* header.jpg in Resources */,
+				33CFECDE238AB45F00ED424A /* Coin_loading_10@2x.png in Resources */,
+				33CFECDF238AB45F00ED424A /* Coin_loading_12@2x.png in Resources */,
+				33CFECE0238AB45F00ED424A /* ic_xiala_black_big@3x.png in Resources */,
+				33CFECE1238AB45F00ED424A /* Coin_loading_24@2x.png in Resources */,
+				33CFECE2238AB45F00ED424A /* ic_back@3x.png in Resources */,
+				33CFECE3238AB45F00ED424A /* Coin_loading_14@2x.png in Resources */,
+				33CFECE4238AB45F00ED424A /* Coin_loading_2@2x.png in Resources */,
+				33CFECE5238AB45F00ED424A /* Coin_loading_20@2x.png in Resources */,
+				33CFECE6238AB45F00ED424A /* myMessage_Notification@3x.png in Resources */,
+				33CFECE7238AB45F00ED424A /* ranklist_item_left@2x.png in Resources */,
+				33CFECE8238AB45F00ED424A /* jianbian@3x.png in Resources */,
+				33CFECE9238AB45F00ED424A /* Speed_Gif.gif in Resources */,
+				33CFECEA238AB45F00ED424A /* Coin_loading_26@2x.png in Resources */,
+				33CFECEB238AB45F00ED424A /* Coin_loading_23@2x.png in Resources */,
+				33CFECEC238AB45F00ED424A /* myMessage_Notification@2x.png in Resources */,
+				33CFECED238AB45F00ED424A /* Coin_loading_9@2x.png in Resources */,
+				33CFECEE238AB45F00ED424A /* Coin_loading_22@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		33CFEC55238AB45F00ED424A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnowledgeSummaryOfObjectC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33CFECEF238AB45F00ED424A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		71C215A07500B57F7D7FBC7D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1689,6 +1971,108 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33CFEC56238AB45F00ED424A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CFEC57238AB45F00ED424A /* TranslucentCellViewController.m in Sources */,
+				33CFEC58238AB45F00ED424A /* DynamicImageViewController.m in Sources */,
+				33CFEC59238AB45F00ED424A /* MemoryLeakViewController.m in Sources */,
+				33CFEC5A238AB45F00ED424A /* RacAdvanceView.m in Sources */,
+				33CFEC5B238AB45F00ED424A /* ZXSegmentItemView.m in Sources */,
+				33CFEC5C238AB45F00ED424A /* RacPrimaryController.m in Sources */,
+				33CFEC5D238AB45F00ED424A /* ParaPassView.m in Sources */,
+				33CFEC5E238AB45F00ED424A /* SlideView.m in Sources */,
+				33CFEC5F238AB45F00ED424A /* WebPracticeViewController.m in Sources */,
+				33CFEC60238AB45F00ED424A /* ViewController.m in Sources */,
+				33CFEC61238AB45F00ED424A /* MethodSwizzlingViewController.m in Sources */,
+				33CFEC62238AB45F00ED424A /* CAShaplayerViewController.m in Sources */,
+				33CFEC63238AB45F00ED424A /* LoopViewController.m in Sources */,
+				33CFEC64238AB45F00ED424A /* HUDViewController.m in Sources */,
+				33CFEC65238AB45F00ED424A /* CustomProgressView.m in Sources */,
+				33CFEC66238AB45F00ED424A /* BaseTableView.m in Sources */,
+				33CFEC67238AB45F00ED424A /* CustomProgressController.m in Sources */,
+				33CFEC68238AB45F00ED424A /* PopViewThreeViewController.m in Sources */,
+				33CFEC69238AB45F00ED424A /* ZHXTabBarView.m in Sources */,
+				33CFEC6A238AB45F00ED424A /* JavaScriptStuViewController.m in Sources */,
+				33CFEC6B238AB45F00ED424A /* SlideViewController.m in Sources */,
+				33CFEC6C238AB45F00ED424A /* KeyFrameViewController.m in Sources */,
+				33CFEC6D238AB45F00ED424A /* RacPrimaryView.m in Sources */,
+				33CFEC6E238AB45F00ED424A /* UIBezierPathViewController.m in Sources */,
+				33CFEC6F238AB45F00ED424A /* ButtonViewController.m in Sources */,
+				33CFEC70238AB45F00ED424A /* PopViewTwoController.m in Sources */,
+				33CFEC71238AB45F00ED424A /* UIViewExt.m in Sources */,
+				33CFEC72238AB45F00ED424A /* FiltrateSlideView.m in Sources */,
+				33CFEC73238AB45F00ED424A /* CrashLocationViewController.m in Sources */,
+				33CFEC74238AB45F00ED424A /* EarningsViewController.m in Sources */,
+				33CFEC75238AB45F00ED424A /* UIBezierPathCustomView.m in Sources */,
+				33CFEC76238AB45F00ED424A /* PopViewOne.m in Sources */,
+				33CFEC77238AB45F00ED424A /* UIView+Extension.m in Sources */,
+				33CFEC78238AB45F00ED424A /* ProgressAnimationViewController.m in Sources */,
+				33CFEC79238AB45F00ED424A /* AnimationAndDrawViewController.m in Sources */,
+				33CFEC7A238AB45F00ED424A /* ThirdLibViewController.m in Sources */,
+				33CFEC7B238AB45F00ED424A /* ZHXCustomItemView.m in Sources */,
+				33CFEC7C238AB45F00ED424A /* MemoryManageViewController.m in Sources */,
+				33CFEC7D238AB45F00ED424A /* CacheClassController.m in Sources */,
+				33CFEC7E238AB45F00ED424A /* ChartViewController.m in Sources */,
+				33CFEC7F238AB45F00ED424A /* FloatSlideViewController.m in Sources */,
+				33CFEC80238AB45F00ED424A /* ZHXSegmentBarView.m in Sources */,
+				33CFEC81238AB45F00ED424A /* SuspendViewController.m in Sources */,
+				33CFEC82238AB45F00ED424A /* SuspendTableController.m in Sources */,
+				33CFEC83238AB45F00ED424A /* ARStudyPeimaryVC.m in Sources */,
+				33CFEC84238AB45F00ED424A /* BaseTableViewCell.m in Sources */,
+				33CFEC85238AB45F00ED424A /* UIView+FITBackViewAddition.m in Sources */,
+				33CFEC86238AB45F00ED424A /* FloatSlideCell.m in Sources */,
+				33CFEC87238AB45F00ED424A /* RacAdvanceController.m in Sources */,
+				33CFEC88238AB45F00ED424A /* RunTimeBasicViewController.m in Sources */,
+				33CFEC89238AB45F00ED424A /* RACViewController.m in Sources */,
+				33CFEC8A238AB45F00ED424A /* TailView.m in Sources */,
+				33CFEC8B238AB45F00ED424A /* ARStudyViewController.m in Sources */,
+				33CFEC8C238AB45F00ED424A /* TransformViewController.m in Sources */,
+				33CFEC8D238AB45F00ED424A /* ProgressAnimationView.m in Sources */,
+				33CFEC8E238AB45F00ED424A /* AppDelegate.m in Sources */,
+				33CFEC8F238AB45F00ED424A /* AnimationSegmentViewController.m in Sources */,
+				33CFEC90238AB45F00ED424A /* SlideMenuDemoController.m in Sources */,
+				33CFEC91238AB45F00ED424A /* JSProtocolObj.m in Sources */,
+				33CFEC92238AB45F00ED424A /* CustomTabbarViewController.m in Sources */,
+				33CFEC93238AB45F00ED424A /* BarChartView.m in Sources */,
+				33CFEC94238AB45F00ED424A /* ParamsPassController.m in Sources */,
+				33CFEC95238AB45F00ED424A /* SlideTableViewCell.m in Sources */,
+				33CFEC96238AB45F00ED424A /* BaseViewController.m in Sources */,
+				33CFEC97238AB45F00ED424A /* FloatTableViewController.m in Sources */,
+				33CFEC98238AB45F00ED424A /* CustomHudViewController.m in Sources */,
+				33CFEC99238AB45F00ED424A /* NSArray+Safe.m in Sources */,
+				33CFEC9A238AB45F00ED424A /* CGAffineTransformViewController.m in Sources */,
+				33CFEC9B238AB45F00ED424A /* CoverViewController.m in Sources */,
+				33CFEC9C238AB45F00ED424A /* CacheTestModel.m in Sources */,
+				33CFEC9D238AB45F00ED424A /* PopViewOneController.m in Sources */,
+				33CFEC9E238AB45F00ED424A /* UIColor+Extension.m in Sources */,
+				33CFEC9F238AB45F00ED424A /* CustomComplicateController.m in Sources */,
+				33CFECA0238AB45F00ED424A /* NSString+ZTSize.m in Sources */,
+				33CFECA1238AB45F00ED424A /* LoadHtmlViewController.m in Sources */,
+				33CFECA2238AB45F00ED424A /* MansoryStudyController.m in Sources */,
+				33CFECA3238AB45F00ED424A /* MemoryTestView.m in Sources */,
+				33CFECA4238AB45F00ED424A /* main.m in Sources */,
+				33CFECA5238AB45F00ED424A /* YYCacheUseController.m in Sources */,
+				33CFECA6238AB45F00ED424A /* BarChartItemView.m in Sources */,
+				33CFECA7238AB45F00ED424A /* BaseView.m in Sources */,
+				33CFECA8238AB45F00ED424A /* SFLabel.m in Sources */,
+				33CFECA9238AB45F00ED424A /* SlideTabView.m in Sources */,
+				33CFECAA238AB45F00ED424A /* ZHXTabSingleItemView.m in Sources */,
+				33CFECAB238AB45F00ED424A /* CAGradientLayerViewController.m in Sources */,
+				33CFECAC238AB45F00ED424A /* PopViewTwo.m in Sources */,
+				33CFECAD238AB45F00ED424A /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,
+				33CFECAE238AB45F00ED424A /* SCCatWaitingHUD.m in Sources */,
+				33CFECAF238AB45F00ED424A /* JSProtocolViewController.m in Sources */,
+				33CFECB0238AB45F00ED424A /* BarChartViewController.m in Sources */,
+				33CFECB1238AB45F00ED424A /* AboutCopyViewController.m in Sources */,
+				33CFECB2238AB45F00ED424A /* SlideSubView.m in Sources */,
+				33CFECB3238AB45F00ED424A /* JSCallNativeViewController.m in Sources */,
+				33CFECB4238AB45F00ED424A /* CustomPopViewController.m in Sources */,
+				33CFECB5238AB45F00ED424A /* MethodPacticeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1812,6 +2196,11 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TargetType=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1918,6 +2307,78 @@
 			};
 			name = Release;
 		};
+		33CFECF1238AB45F00ED424A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1FBABE29897B8DFDBCA683 /* Pods-KnowledgeSummaryOfObjectC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TargetType=2",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/WebViewJavascriptBridge\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"/Users/zhangxi/Desktop/DownloadDemo/AddSubProjectDemo-master/subProject/subProject\"",
+				);
+				INFOPLIST_FILE = TargetOne.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.TargetOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		33CFECF2238AB45F00ED424A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/WebViewJavascriptBridge\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"/Users/zhangxi/Desktop/DownloadDemo/AddSubProjectDemo-master/subProject/subProject\"",
+				);
+				INFOPLIST_FILE = TargetOne.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.TargetOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1953,6 +2414,15 @@
 			buildConfigurations = (
 				33673D021F58FA6400ECE5D4 /* Debug */,
 				33673D031F58FA6400ECE5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33CFECF0238AB45F00ED424A /* Build configuration list for PBXNativeTarget "TargetOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CFECF1238AB45F00ED424A /* Debug */,
+				33CFECF2238AB45F00ED424A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
