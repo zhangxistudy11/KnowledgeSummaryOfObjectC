@@ -432,7 +432,6 @@
 		33673CCF1F58FA6400ECE5D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33673CDB1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KnowledgeSummaryOfObjectC.xcdatamodel; sourceTree = "<group>"; };
 		33673CDD1F58FA6400ECE5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		33673CE21F58FA6400ECE5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33673CE71F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowledgeSummaryOfObjectCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33673CEB1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnowledgeSummaryOfObjectCTests.m; sourceTree = "<group>"; };
 		33673CED1F58FA6400ECE5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -534,6 +533,7 @@
 		33CD24DC1FBC772B0082B934 /* SlideSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideSubView.m; sourceTree = "<group>"; };
 		33CFECF3238AB45F00ED424A /* TargetOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TargetOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CFED03238ABC9900ED424A /* TargetOne.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TargetOne.plist; sourceTree = "<group>"; };
+		33CFED05238ABD5600ED424A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33DA54E11FBD2F6C00EB3716 /* SlideTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideTabView.h; sourceTree = "<group>"; };
 		33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTabView.m; sourceTree = "<group>"; };
 		33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranklist_item_right@3x.png"; sourceTree = "<group>"; };
@@ -967,7 +967,6 @@
 				332B8A321F7B81AC00DE9C1A /* Library */,
 				33673D121F58FC1C00ECE5D4 /* Additions */,
 				33673CDD1F58FA6400ECE5D4 /* Assets.xcassets */,
-				33673CE21F58FA6400ECE5D4 /* Info.plist */,
 				33673CDA1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld */,
 				33673CCE1F58FA6400ECE5D4 /* Supporting Files */,
 			);
@@ -1462,6 +1461,7 @@
 		33CFED02238ABC6500ED424A /* Orgin */ = {
 			isa = PBXGroup;
 			children = (
+				33CFED05238ABD5600ED424A /* Info.plist */,
 			);
 			path = Orgin;
 			sourceTree = "<group>";
@@ -2249,7 +2249,7 @@
 					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
 					"\"/Users/zhangxi/Desktop/DownloadDemo/AddSubProjectDemo-master/subProject/subProject\"",
 				);
-				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
+				INFOPLIST_FILE = Custom/Orgin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
@@ -2283,7 +2283,7 @@
 					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
 					"\"/Users/zhangxi/Desktop/DownloadDemo/AddSubProjectDemo-master/subProject/subProject\"",
 				);
-				INFOPLIST_FILE = KnowledgeSummaryOfObjectC/Info.plist;
+				INFOPLIST_FILE = Custom/Orgin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
