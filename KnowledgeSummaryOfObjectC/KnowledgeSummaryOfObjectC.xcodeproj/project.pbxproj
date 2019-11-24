@@ -270,6 +270,7 @@
 		33CFECEC238AB45F00ED424A /* myMessage_Notification@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 336A8E331FEB590E00EFCF42 /* myMessage_Notification@2x.png */; };
 		33CFECED238AB45F00ED424A /* Coin_loading_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C78A1FF0F3C300F3EFA9 /* Coin_loading_9@2x.png */; };
 		33CFECEE238AB45F00ED424A /* Coin_loading_22@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3362C77B1FF0F3C300F3EFA9 /* Coin_loading_22@2x.png */; };
+		33CFED04238ABC9900ED424A /* TargetOne.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33CFED03238ABC9900ED424A /* TargetOne.plist */; };
 		33DA54E31FBD2F6C00EB3716 /* SlideTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */; };
 		33DA54E61FBD333100EB3716 /* ranklist_item_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */; };
 		33DA54E71FBD333100EB3716 /* ranklist_item_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E51FBD333100EB3716 /* ranklist_item_right@2x.png */; };
@@ -301,13 +302,11 @@
 		777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */; };
 		777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618FA224C80B100D51594 /* ProgressAnimationView.m */; };
 		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
-<<<<<<< HEAD
 		77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F4837D2361A76B00D7A1AD /* ShadowViewController.m */; };
 		E57D49A832B0A9AD19E3A921 /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F536D8FD5550A22F3BCBF735 /* libPods-KnowledgeSummaryOfObjectC.a */; };
-=======
 		C84F4F28D022A06BD40E3113 /* libPods-TargetOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */; };
 		E57D49A832B0A9AD19E3A921 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
->>>>>>> Study(Mul_tar):初步测试成功
+		E57D49A832B0A9AD19E3A921 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */; };
 		FB1335EB20CCB72D00187132 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335EA20CCB72D00187132 /* NSArray+Safe.m */; };
 		FB54C1EC20A741D40060FD9F /* TranslucentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */; };
@@ -534,7 +533,7 @@
 		33CD24DB1FBC772B0082B934 /* SlideSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideSubView.h; sourceTree = "<group>"; };
 		33CD24DC1FBC772B0082B934 /* SlideSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideSubView.m; sourceTree = "<group>"; };
 		33CFECF3238AB45F00ED424A /* TargetOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TargetOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		33CFECF4238AB45F00ED424A /* TargetOne.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = TargetOne.plist; path = /Users/zhangxi/Desktop/OCSummary/KnowledgeSummaryOfObjectC/TargetOne.plist; sourceTree = "<absolute>"; };
+		33CFED03238ABC9900ED424A /* TargetOne.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TargetOne.plist; sourceTree = "<group>"; };
 		33DA54E11FBD2F6C00EB3716 /* SlideTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideTabView.h; sourceTree = "<group>"; };
 		33DA54E21FBD2F6C00EB3716 /* SlideTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTabView.m; sourceTree = "<group>"; };
 		33DA54E41FBD333100EB3716 /* ranklist_item_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranklist_item_right@3x.png"; sourceTree = "<group>"; };
@@ -585,13 +584,10 @@
 		777618FA224C80B100D51594 /* ProgressAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimationView.m; sourceTree = "<group>"; };
 		777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewThreeViewController.h; sourceTree = "<group>"; };
 		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		77F4837C2361A76B00D7A1AD /* ShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowViewController.h; sourceTree = "<group>"; };
 		77F4837D2361A76B00D7A1AD /* ShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowViewController.m; sourceTree = "<group>"; };
-=======
 		9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TargetOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06D0EEE88F72CBDC599B0AE /* Pods-TargetOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TargetOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TargetOne/Pods-TargetOne.debug.xcconfig"; sourceTree = "<group>"; };
->>>>>>> Study(Mul_tar):初步测试成功
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
 		D3589B5A20B8FEB977DD3289 /* Pods-TargetOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TargetOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-TargetOne/Pods-TargetOne.release.xcconfig"; sourceTree = "<group>"; };
 		FB1335E620CCB5D700187132 /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
@@ -615,7 +611,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57D49A832B0A9AD19E3A921 /* BuildFile in Frameworks */,
+				E57D49A832B0A9AD19E3A921 /* (null) in Frameworks */,
 				5161741911F0F6354905088A /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -940,13 +936,13 @@
 		33673CC21F58FA6300ECE5D4 = {
 			isa = PBXGroup;
 			children = (
+				33CFED00238ABC6500ED424A /* Custom */,
 				33673CCD1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC */,
 				33673CEA1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCTests */,
 				33673CF51F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectCUITests */,
 				33673CCC1F58FA6400ECE5D4 /* Products */,
 				F90B6F490CF92D16AA2A00BE /* Pods */,
 				8F9BEC53A383DDB9C48FB611 /* Frameworks */,
-				33CFECF4238AB45F00ED424A /* TargetOne.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1446,6 +1442,30 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		33CFED00238ABC6500ED424A /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				33CFED01238ABC6500ED424A /* TargetOne */,
+				33CFED02238ABC6500ED424A /* Orgin */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		33CFED01238ABC6500ED424A /* TargetOne */ = {
+			isa = PBXGroup;
+			children = (
+				33CFED03238ABC9900ED424A /* TargetOne.plist */,
+			);
+			path = TargetOne;
+			sourceTree = "<group>";
+		};
+		33CFED02238ABC6500ED424A /* Orgin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Orgin;
+			sourceTree = "<group>";
+		};
 		771C8853217B55A80018F4D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1735,6 +1755,7 @@
 				33CFECB9238AB45F00ED424A /* aaa.png in Resources */,
 				33CFECBA238AB45F00ED424A /* Coin_loading_27@2x.png in Resources */,
 				33CFECBB238AB45F00ED424A /* mouse@2x.png in Resources */,
+				33CFED04238ABC9900ED424A /* TargetOne.plist in Resources */,
 				33CFECBC238AB45F00ED424A /* Coin_loading_18@2x.png in Resources */,
 				33CFECBD238AB45F00ED424A /* ranklist_item_right@3x.png in Resources */,
 				33CFECBE238AB45F00ED424A /* Coin_loading_13@2x.png in Resources */,
@@ -2350,7 +2371,7 @@
 					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
 					"\"/Users/zhangxi/Desktop/DownloadDemo/AddSubProjectDemo-master/subProject/subProject\"",
 				);
-				INFOPLIST_FILE = TargetOne.plist;
+				INFOPLIST_FILE = Custom/TargetOne/TargetOne.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.TargetOne;
@@ -2384,7 +2405,7 @@
 					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
 					"\"/Users/zhangxi/Desktop/DownloadDemo/AddSubProjectDemo-master/subProject/subProject\"",
 				);
-				INFOPLIST_FILE = TargetOne.plist;
+				INFOPLIST_FILE = Custom/TargetOne/TargetOne.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.TargetOne;
