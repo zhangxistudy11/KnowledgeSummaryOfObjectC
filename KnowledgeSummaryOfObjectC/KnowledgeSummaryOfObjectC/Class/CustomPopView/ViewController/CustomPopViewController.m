@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"111111aaa");
+    NSLog(@"111111aaaaaa");
     self.navigationItem.title = @"PopView的使用";
     self.view.backgroundColor = [UIColor  whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -59,7 +59,7 @@
     }
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"1-PopView方法一bbb";
+            cell.textLabel.text = @"1-PopView方法一cccbbb";
             return cell;
             break;
         case 1:
