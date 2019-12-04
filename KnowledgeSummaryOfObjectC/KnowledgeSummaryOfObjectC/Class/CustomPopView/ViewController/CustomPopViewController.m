@@ -63,7 +63,7 @@
             return cell;
             break;
         case 1:
-            cell.textLabel.text = @"2-PopView方法二";
+            cell.textLabel.text = @"2-PopView方法二ggggg";
             return cell;
             break;
         case 2:
