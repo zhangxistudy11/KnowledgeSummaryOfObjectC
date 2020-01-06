@@ -11,6 +11,7 @@
 #import "AboutCopyViewController.h"
 #import "MemoryLeakViewController.h"
 #import "ParamsPassController.h"
+#import "ExceptionController.h"
 @interface MemoryManageViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -31,8 +32,8 @@
 
 - (void)setUpView
 {
-   _tableView = [[UITableView  alloc]initWithFrame:CGRectMake(0, 0, self.view.width
-                                                              , self.view.height + 100) style:UITableViewStylePlain];
+    _tableView = [[UITableView  alloc]initWithFrame:CGRectMake(0, 0, self.view.width
+                                                               , self.view.height + 100) style:UITableViewStylePlain];
     _tableView.delegate =self;
     _tableView.dataSource = self;
     [self.view  addSubview:_tableView];
@@ -46,7 +47,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   static  NSString *  CellIdentifier = @"CellIdentifier";
+    static  NSString *  CellIdentifier = @"CellIdentifier";
     UITableViewCell  * cell = [tableView  dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
         cell = [[UITableViewCell  alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
@@ -60,10 +61,13 @@
             cell.textLabel.text = @"2-内存泄漏";
             return cell;
             break;
-            case 2:
+        case 2:
             cell.textLabel.text = @"3-参数传递";
-           return cell;
-          break;
+            return cell;
+        case 3:
+            cell.textLabel.text = @"4-异常处理";
+            return cell;
+            break;
         default:
             break;
     }
@@ -74,11 +78,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   
+    
     switch (indexPath.row) {
         case 0:
         {
-           AboutCopyViewController * vc = [[AboutCopyViewController alloc]init];
+            AboutCopyViewController * vc = [[AboutCopyViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
@@ -93,14 +97,14 @@
         {
             
             ParamsPassController * vc = [[ParamsPassController alloc]init];
-                  [self.navigationController pushViewController:vc animated:YES];
+            [self.navigationController pushViewController:vc animated:YES];
             vc.isStart = YES;
         }
             break;
         case 3:
         {
-           
-            
+            ExceptionController * vc = [[ExceptionController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         default:
