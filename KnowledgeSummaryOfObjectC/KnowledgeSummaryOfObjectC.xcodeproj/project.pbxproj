@@ -293,6 +293,10 @@
 		7719034C22CB4DDD000926A9 /* jianbian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7719034A22CB4DDD000926A9 /* jianbian@3x.png */; };
 		771C8852217B54F10018F4D3 /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */; };
 		771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8855217B55BE0018F4D3 /* MemoryTestView.m */; };
+		771DDC7F23C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */; };
+		771DDC8023C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */; };
+		771DDC8823C35BD20021AD61 /* EventInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */; };
+		771DDC8923C35BD20021AD61 /* EventInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */; };
 		772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */; };
 		772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */; };
 		772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */; };
@@ -566,6 +570,10 @@
 		771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakViewController.m; sourceTree = "<group>"; };
 		771C8854217B55BE0018F4D3 /* MemoryTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryTestView.h; sourceTree = "<group>"; };
 		771C8855217B55BE0018F4D3 /* MemoryTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryTestView.m; sourceTree = "<group>"; };
+		771DDC7D23C357D60021AD61 /* BaseicKnowledgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseicKnowledgeViewController.h; sourceTree = "<group>"; };
+		771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseicKnowledgeViewController.m; sourceTree = "<group>"; };
+		771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInteractionViewController.m; sourceTree = "<group>"; };
+		771DDC8723C35BD20021AD61 /* EventInteractionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInteractionViewController.h; sourceTree = "<group>"; };
 		772D6D41234CA0760000F5B2 /* AnimationSegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationSegmentViewController.h; sourceTree = "<group>"; };
 		772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationSegmentViewController.m; sourceTree = "<group>"; };
 		772D6D44234CA1D50000F5B2 /* ZHXSegmentBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHXSegmentBarView.h; sourceTree = "<group>"; };
@@ -1205,6 +1213,7 @@
 		3398DCC01F63FC2400D7A872 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				771DDC7C23C3578B0021AD61 /* BasicKnowledge */,
 				333AAD0C226B3196005736F0 /* ThridLibStudy */,
 				77639AD3217D719B001325D9 /* CachePart */,
 				33186CD82060DA22002B2D20 /* RunTimePractice */,
@@ -1481,6 +1490,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		771DDC7C23C3578B0021AD61 /* BasicKnowledge */ = {
+			isa = PBXGroup;
+			children = (
+				771DDC7D23C357D60021AD61 /* BaseicKnowledgeViewController.h */,
+				771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */,
+				771DDC8723C35BD20021AD61 /* EventInteractionViewController.h */,
+				771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */,
+			);
+			path = BasicKnowledge;
+			sourceTree = "<group>";
+		};
 		77639AD3217D719B001325D9 /* CachePart */ = {
 			isa = PBXGroup;
 			children = (
@@ -1640,10 +1660,9 @@
 			};
 			buildConfigurationList = 33673CC61F58FA6300ECE5D4 /* Build configuration list for PBXProject "KnowledgeSummaryOfObjectC" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -1906,6 +1925,7 @@
 				3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
+				771DDC8823C35BD20021AD61 /* EventInteractionViewController.m in Sources */,
 				FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */,
 				3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */,
 				339884B21F95B48F008C5646 /* LoopViewController.m in Sources */,
@@ -1968,6 +1988,7 @@
 				FBBFD6B320BE7A490077B014 /* CoverViewController.m in Sources */,
 				77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
+				771DDC7F23C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */,
 				33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				33BA97E42306FCEB00BF181C /* NSString+ZTSize.m in Sources */,
@@ -2064,6 +2085,7 @@
 				33CFEC83238AB45F00ED424A /* ARStudyPeimaryVC.m in Sources */,
 				33CFEC84238AB45F00ED424A /* BaseTableViewCell.m in Sources */,
 				33CFEC85238AB45F00ED424A /* UIView+FITBackViewAddition.m in Sources */,
+				771DDC8023C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */,
 				33CFEC86238AB45F00ED424A /* FloatSlideCell.m in Sources */,
 				33CFEC87238AB45F00ED424A /* RacAdvanceController.m in Sources */,
 				33CFEC88238AB45F00ED424A /* RunTimeBasicViewController.m in Sources */,
@@ -2075,6 +2097,7 @@
 				33CFEC8E238AB45F00ED424A /* AppDelegate.m in Sources */,
 				33CFEC8F238AB45F00ED424A /* AnimationSegmentViewController.m in Sources */,
 				33CFEC90238AB45F00ED424A /* SlideMenuDemoController.m in Sources */,
+				771DDC8923C35BD20021AD61 /* EventInteractionViewController.m in Sources */,
 				33CFEC91238AB45F00ED424A /* JSProtocolObj.m in Sources */,
 				33CFEC92238AB45F00ED424A /* CustomTabbarViewController.m in Sources */,
 				33CFEC93238AB45F00ED424A /* BarChartView.m in Sources */,

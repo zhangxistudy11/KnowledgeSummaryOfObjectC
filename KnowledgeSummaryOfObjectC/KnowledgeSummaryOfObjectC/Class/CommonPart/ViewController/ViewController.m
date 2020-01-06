@@ -21,6 +21,7 @@
 #import "RunTimeBasicViewController.h"
 #import "CacheClassController.h"
 #import "ThirdLibViewController.h"
+#import "BaseicKnowledgeViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -44,8 +45,8 @@
 
 - (void)setUpView
 {
-   _tableView = [[UITableView  alloc]initWithFrame:CGRectMake(0, 0, self.view.width
-                                                              , self.view.height + 100) style:UITableViewStylePlain];
+    _tableView = [[UITableView  alloc]initWithFrame:CGRectMake(0, 0, self.view.width
+                                                               , self.view.height + 100) style:UITableViewStylePlain];
     _tableView.delegate =self;
     _tableView.dataSource = self;
     [self.view  addSubview:_tableView];
@@ -59,7 +60,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   static  NSString *  CellIdentifier = @"CellIdentifier";
+    static  NSString *  CellIdentifier = @"CellIdentifier";
     UITableViewCell  * cell = [tableView  dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
         cell = [[UITableViewCell  alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
@@ -113,6 +114,10 @@
             cell.textLabel.text = @"11-三方库学习";
             return cell;
             break;
+            case 12:
+            cell.textLabel.text = @"12-基础知识点总结";
+            return cell;
+            break;
         default:
             break;
     }
@@ -123,7 +128,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   
+    
     switch (indexPath.row) {
         case 0:
         {
@@ -199,6 +204,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 12:
+        {
+            BaseicKnowledgeViewController * vc = [[BaseicKnowledgeViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -207,11 +218,11 @@
 - (void)rightclick:(UIBarButtonItem *)sender
 {
     /*
-    struct utsname systemInfo;
-    uname(&systemInfo);
-    
-    NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
-    NSLog(@"platform:%@",platform);
+     struct utsname systemInfo;
+     uname(&systemInfo);
+     
+     NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
+     NSLog(@"platform:%@",platform);
      */
     NSLog(@"1");
     dispatch_group_t group = dispatch_group_create();
