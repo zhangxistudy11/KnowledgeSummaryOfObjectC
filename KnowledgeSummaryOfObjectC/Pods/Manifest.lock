@@ -1,4 +1,19 @@
 PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - FLAnimatedImage (1.0.12)
   - FLEX (2.1.1)
   - Masonry (1.1.0)
@@ -15,6 +30,7 @@ PODS:
   - YYCache (1.0.4)
 
 DEPENDENCIES:
+  - BlocksKit
   - FLAnimatedImage (~> 1.0)
   - FLEX
   - Masonry (~> 1.1.0)
@@ -26,6 +42,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - BlocksKit
     - FLAnimatedImage
     - FLEX
     - Masonry
@@ -36,6 +53,7 @@ SPEC REPOS:
     - YYCache
 
 SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FLEX: 27b768fcae23a313a1eb115076d429180ca9b472
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -45,6 +63,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: b52f16f5515b61ab6596f2f88cc497a797800895
+PODFILE CHECKSUM: e7e962b58ce6608791e03cf6c6a741a8c0dbb4e4
 
 COCOAPODS: 1.8.4
