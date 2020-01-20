@@ -42,7 +42,7 @@
     }];
     
     [self.nameTF mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.redBtn.mas_bottom).offset(10);
+        make.top.equalTo(self.redBtn.mas_bottom).offset(200);
         make.left.right.height.equalTo(self.redBtn);
     }];
     
@@ -65,7 +65,7 @@
 {
     _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 150, 100, 200)];
     _scrollView.contentSize = CGSizeMake(200, 700);
-    _scrollView.backgroundColor = [UIColor greenColor];
+    _scrollView.backgroundColor = [UIColor cyanColor];
     [self addSubview:_scrollView];
 }
 #pragma mark - Getter Methods
@@ -73,7 +73,7 @@
 {
     if (!_redBtn) {
         _redBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _redBtn.backgroundColor = [UIColor redColor];
+        _redBtn.backgroundColor = [UIColor cyanColor];
         [_redBtn setTitle:@"测试一" forState:UIControlStateNormal];
     }
     return _redBtn;
@@ -83,7 +83,7 @@
 {
     if (!_greenBtn) {
         _greenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _greenBtn.backgroundColor = [UIColor greenColor];
+        _greenBtn.backgroundColor = [UIColor cyanColor];
         [_greenBtn setTitle:@"测试二" forState:UIControlStateNormal];
     }
     return _greenBtn;
@@ -92,7 +92,7 @@
 {
     if (!_yellowBtn) {
         _yellowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _yellowBtn.backgroundColor = [UIColor yellowColor];
+        _yellowBtn.backgroundColor = [UIColor cyanColor];
         [_yellowBtn setTitle:@"测试三" forState:UIControlStateNormal];
     }
     return _yellowBtn;
@@ -101,7 +101,7 @@
 {
     if (!_nameTF) {
         _nameTF = [[UITextField alloc]init];
-        _nameTF.backgroundColor = [UIColor cyanColor];
+        _nameTF.backgroundColor = [UIColor blueColor];
     }
     return _nameTF;
 }

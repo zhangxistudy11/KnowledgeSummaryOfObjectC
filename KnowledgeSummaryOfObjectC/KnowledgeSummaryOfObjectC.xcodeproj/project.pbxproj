@@ -306,6 +306,8 @@
 		777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */; };
 		777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618FA224C80B100D51594 /* ProgressAnimationView.m */; };
 		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
+		7790FE4723D5875000FA5B70 /* RacLoginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */; };
+		7790FE4823D5875000FA5B70 /* RacLoginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */; };
 		77B57BA323BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
 		77B57BA423BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
 		77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F4837D2361A76B00D7A1AD /* ShadowViewController.m */; };
@@ -592,6 +594,8 @@
 		777618FA224C80B100D51594 /* ProgressAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimationView.m; sourceTree = "<group>"; };
 		777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewThreeViewController.h; sourceTree = "<group>"; };
 		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
+		7790FE4523D5875000FA5B70 /* RacLoginExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RacLoginExampleController.h; sourceTree = "<group>"; };
+		7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacLoginExampleController.m; sourceTree = "<group>"; };
 		77B57BA123BF0D17000EB856 /* ExceptionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionController.h; sourceTree = "<group>"; };
 		77B57BA223BF0D17000EB856 /* ExceptionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExceptionController.m; sourceTree = "<group>"; };
 		77F4837C2361A76B00D7A1AD /* ShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowViewController.h; sourceTree = "<group>"; };
@@ -850,12 +854,14 @@
 		334839A61F7CF02E00BD17EE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				334839A81F7CF02E00BD17EE /* RacPrimaryController.h */,
-				334839A91F7CF02E00BD17EE /* RacPrimaryController.m */,
 				334839AA1F7CF02E00BD17EE /* RACViewController.h */,
 				334839AB1F7CF02E00BD17EE /* RACViewController.m */,
+				334839A81F7CF02E00BD17EE /* RacPrimaryController.h */,
+				334839A91F7CF02E00BD17EE /* RacPrimaryController.m */,
 				336EFCFB1F7DF24200B8246F /* RacAdvanceController.h */,
 				336EFCFC1F7DF24200B8246F /* RacAdvanceController.m */,
+				7790FE4523D5875000FA5B70 /* RacLoginExampleController.h */,
+				7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1924,6 +1930,7 @@
 				33AB8336235CA4AB00703D21 /* ParaPassView.m in Sources */,
 				3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
+				7790FE4723D5875000FA5B70 /* RacLoginExampleController.m in Sources */,
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
 				771DDC8823C35BD20021AD61 /* EventInteractionViewController.m in Sources */,
 				FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */,
@@ -2118,6 +2125,7 @@
 				33CFECA2238AB45F00ED424A /* MansoryStudyController.m in Sources */,
 				33CFECA3238AB45F00ED424A /* MemoryTestView.m in Sources */,
 				33CFECA4238AB45F00ED424A /* main.m in Sources */,
+				7790FE4823D5875000FA5B70 /* RacLoginExampleController.m in Sources */,
 				33CFECA5238AB45F00ED424A /* YYCacheUseController.m in Sources */,
 				33CFECA6238AB45F00ED424A /* BarChartItemView.m in Sources */,
 				33CFECA7238AB45F00ED424A /* BaseView.m in Sources */,

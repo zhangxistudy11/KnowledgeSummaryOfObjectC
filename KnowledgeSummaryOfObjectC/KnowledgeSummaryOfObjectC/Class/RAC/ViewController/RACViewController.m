@@ -9,6 +9,7 @@
 #import "RACViewController.h"
 #import "RacPrimaryController.h"
 #import "RacAdvanceController.h"
+#import "RacLoginExampleController.h"
 @interface RACViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -58,6 +59,10 @@
             cell.textLabel.text = @"2-RAC进阶使用";
             return cell;
             break;
+        case 2:
+            cell.textLabel.text = @"3-RAC登录的例子";
+            return cell;
+            break;
         default:
             break;
     }
@@ -84,8 +89,8 @@
             break;
         case 2:
         {
-            
-            
+            RacLoginExampleController * vc = [[RacLoginExampleController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 3:
