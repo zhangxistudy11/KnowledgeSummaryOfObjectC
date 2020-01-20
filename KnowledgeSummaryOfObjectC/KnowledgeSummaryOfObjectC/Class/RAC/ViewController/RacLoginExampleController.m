@@ -29,7 +29,7 @@
     self.usernameTextField = [[UITextField alloc]init];
     [self.view addSubview:self.usernameTextField];
     self.usernameTextField.backgroundColor = [UIColor cyanColor];
-    self.usernameTextField.placeholder = @"请输入账号";
+//    self.usernameTextField.placeholder = @"请输入账号";
     
     
     self.passwordTextField = [[UITextField alloc]init];
@@ -66,8 +66,8 @@
     RACSignal *validUsernameSignal = [self.usernameTextField.rac_textSignal map:^id(NSString *text) {
         return text.length>=3 ? @(YES):@(NO);
     }];
-    RAC(self.usernameTextField,backgroundColor) = [validUsernameSignal map:^id(id value) {
-        return validUsernameSignal ? [UIColor redColor]:[UIColor cyanColor];
+    RAC(self.usernameTextField,backgroundColor) = [validUsernameSignal map:^id(NSNumber * value) {
+        return [value boolValue] ? [UIColor redColor]:[UIColor cyanColor];
     }];
 }
 @end
