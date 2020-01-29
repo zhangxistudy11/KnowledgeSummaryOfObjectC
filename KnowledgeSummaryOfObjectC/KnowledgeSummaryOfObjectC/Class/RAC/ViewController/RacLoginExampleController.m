@@ -29,7 +29,7 @@
     self.usernameTextField = [[UITextField alloc]init];
     [self.view addSubview:self.usernameTextField];
     self.usernameTextField.backgroundColor = [UIColor cyanColor];
-//    self.usernameTextField.placeholder = @"请输入账号";
+    self.usernameTextField.placeholder = @"请输入账号";
     
     
     self.passwordTextField = [[UITextField alloc]init];
@@ -40,7 +40,8 @@
     self.signInButton = [[UIButton alloc]init];
     [self.view addSubview:self.signInButton];
     [self.signInButton setTitle:@"登录" forState:UIControlStateNormal];
-    self.signInButton.backgroundColor = [UIColor blueColor];
+    self.signInButton.backgroundColor = [UIColor grayColor];
+    self.signInButton.enabled = NO;
 
 }
 - (void)layoutUI{
@@ -64,10 +65,41 @@
 }
 - (void)RACStudy{
     RACSignal *validUsernameSignal = [self.usernameTextField.rac_textSignal map:^id(NSString *text) {
-        return text.length>=3 ? @(YES):@(NO);
+        return text.length>=4 ? @(YES):@(NO);
     }];
+    //map使用
     RAC(self.usernameTextField,backgroundColor) = [validUsernameSignal map:^id(NSNumber * value) {
         return [value boolValue] ? [UIColor redColor]:[UIColor cyanColor];
+    }];
+    
+    RACSignal *validPasswordSignal = [self.passwordTextField.rac_textSignal map:^id(NSString *text) {
+           return text.length>=4 ? @(YES):@(NO);
+       }];
+       //map使用
+       RAC(self.passwordTextField,backgroundColor) = [validPasswordSignal map:^id(NSNumber * value) {
+           return [value boolValue] ? [UIColor redColor]:[UIColor cyanColor];
+       }];
+    
+    RACSignal *validUsernameSignal1 =
+      [self.usernameTextField.rac_textSignal
+        map:^id(NSString *text) {
+          return text.length>4 ? @(YES):@(NO);
+        }];
+
+    RACSignal *validPasswordSignal1 =
+      [self.passwordTextField.rac_textSignal
+        map:^id(NSString *text) {
+          return text.length>4 ? @(YES):@(NO);
+        }];
+    RACSignal *signUpActiveSignal = [[RACSignal combineLatest:@[validPasswordSignal1,validUsernameSignal1] reduce:^id(NSNumber *usernameValid, NSNumber *passwordValid){
+        return @([usernameValid boolValue]&&[passwordValid boolValue]);
+    }] subscribeNext:^(NSNumber * valid) {
+        self.signInButton.enabled = [valid boolValue];
+        self.signInButton.backgroundColor = [valid boolValue]?[UIColor blueColor]:[UIColor grayColor];
+    }];
+    
+    [[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
+//        NSLog(@"登录成功");
     }];
 }
 @end
