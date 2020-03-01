@@ -59,15 +59,15 @@
     }
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"1-PopView方法一bbb";
+            cell.textLabel.text = @"1-PopView方法一";
             return cell;
             break;
         case 1:
-            cell.textLabel.text = @"2-PopView方法二bbbbbggggg";
+            cell.textLabel.text = @"2-PopView方法二";
             return cell;
             break;
         case 2:
-            cell.textLabel.text = @"3-PopView方法三ccccddd";
+            cell.textLabel.text = @"3-PopView方法三";
             return cell;
             break;
         default:
