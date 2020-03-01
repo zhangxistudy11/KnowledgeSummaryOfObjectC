@@ -283,6 +283,8 @@
 		33F778F820206F8100581E5C /* ic_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F620206F8100581E5C /* ic_back@2x.png */; };
 		33F778F920206F8100581E5C /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F720206F8100581E5C /* ic_back@3x.png */; };
 		33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
+		33F97A81240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */; };
+		33F97A82240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */; };
 		5161741911F0F6354905088A /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2538995099BB6BEFDA8352 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 		771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F222C9D8C4000926A9 /* SuspendViewController.m */; };
 		771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F522C9DECC000926A9 /* SuspendTableController.m */; };
@@ -556,6 +558,8 @@
 		33F778F720206F8100581E5C /* ic_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@3x.png"; sourceTree = "<group>"; };
 		33F778FA202071A200581E5C /* FiltrateSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltrateSlideView.m; sourceTree = "<group>"; };
 		33F778FB202071A300581E5C /* FiltrateSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltrateSlideView.h; sourceTree = "<group>"; };
+		33F97A7F240BD5E8000ADA49 /* UpdateLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateLayoutController.h; sourceTree = "<group>"; };
+		33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateLayoutController.m; sourceTree = "<group>"; };
 		771902F122C9D8C4000926A9 /* SuspendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendViewController.h; sourceTree = "<group>"; };
 		771902F222C9D8C4000926A9 /* SuspendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspendViewController.m; sourceTree = "<group>"; };
 		771902F422C9DECC000926A9 /* SuspendTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendTableController.h; sourceTree = "<group>"; };
@@ -1503,6 +1507,8 @@
 				771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */,
 				771DDC8723C35BD20021AD61 /* EventInteractionViewController.h */,
 				771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */,
+				33F97A7F240BD5E8000ADA49 /* UpdateLayoutController.h */,
+				33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */,
 			);
 			path = BasicKnowledge;
 			sourceTree = "<group>";
@@ -1953,6 +1959,7 @@
 				33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */,
 				33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */,
 				3398DCFB1F63FC2400D7A872 /* EarningsViewController.m in Sources */,
+				33F97A81240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */,
 				3398DD061F640E0000D7A872 /* UIBezierPathCustomView.m in Sources */,
 				336EFD111F7E1EC400B8246F /* PopViewOne.m in Sources */,
 				33673D151F58FC1C00ECE5D4 /* UIView+Extension.m in Sources */,
@@ -2120,6 +2127,7 @@
 				33CFEC9D238AB45F00ED424A /* PopViewOneController.m in Sources */,
 				33CFEC9E238AB45F00ED424A /* UIColor+Extension.m in Sources */,
 				33CFEC9F238AB45F00ED424A /* CustomComplicateController.m in Sources */,
+				33F97A82240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */,
 				33CFECA0238AB45F00ED424A /* NSString+ZTSize.m in Sources */,
 				33CFECA1238AB45F00ED424A /* LoadHtmlViewController.m in Sources */,
 				33CFECA2238AB45F00ED424A /* MansoryStudyController.m in Sources */,

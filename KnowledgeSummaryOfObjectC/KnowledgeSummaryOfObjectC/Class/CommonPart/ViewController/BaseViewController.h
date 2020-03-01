@@ -10,6 +10,8 @@
 //#import "UIView+Extension.h"
 #import "Masonry.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "UIView+BlocksKit.h"
+
 @interface BaseViewController : UIViewController
 
 @end
