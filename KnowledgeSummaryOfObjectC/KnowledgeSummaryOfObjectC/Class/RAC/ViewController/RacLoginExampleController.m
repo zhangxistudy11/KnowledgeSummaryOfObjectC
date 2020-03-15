@@ -149,3 +149,64 @@
     }];
 }
 @end
+#pragma mark - 另外两种事件类型：error和complete
+/*
+ - (RACSignal *)requestAccessToTwitterSignal {
+  
+   // 1 - define an error
+   NSError *accessError = [NSError errorWithDomain:RWTwitterInstantDomain
+                                              code:RWTwitterInstantErrorAccessDenied
+                                          userInfo:nil];
+  
+   // 2 - create the signal
+   @weakify(self)
+   return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+     // 3 - request access to twitter
+     @strongify(self)
+     [self.accountStore
+        requestAccessToAccountsWithType:self.twitterAccountType
+          options:nil
+       completion:^(BOOL granted, NSError *error) {
+           // 4 - handle the response
+ //可以发送失败
+           if (!granted) {
+             [subscriber sendError:accessError];
+           } else {
+             [subscriber sendNext:nil];
+             [subscriber sendCompleted];
+           }
+         }];
+     return nil;
+   }];
+ }
+ */
+/*
+ deliverOn:切换线程
+ [[[[[[self requestAccessToTwitterSignal]
+ then:^RACSignal *{
+   @strongify(self)
+   return self.searchText.rac_textSignal;
+ }]
+ filter:^BOOL(NSString *text) {
+   @strongify(self)
+   return [self isValidSearchText:text];
+ }]
+ flattenMap:^RACStream *(NSString *text) {
+   @strongify(self)
+   return [self signalForSearchWithText:text];
+ }]
+ deliverOn:[RACScheduler mainThreadScheduler]]
+ subscribeNext:^(id x) {
+   NSLog(@"%@", x);
+ } error:^(NSError *error) {
+   NSLog(@"An error occurred: %@", error);
+ }];
+ */
+#pragma mark -限流
+/*
+ throttle操作只有在时间间隔内没有接收到新的next事件时才会发送next事件给下一环节。这是不是相当简单！
+
+ 编译运行，这时搜索结果只在停止输入超过500毫秒时才会更新。这感觉好多了对吗？你的用户也会这么想的。
+
+ 
+ */
