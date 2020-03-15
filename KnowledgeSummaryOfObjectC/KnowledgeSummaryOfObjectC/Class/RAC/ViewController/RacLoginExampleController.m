@@ -7,18 +7,20 @@
 //
 
 #import "RacLoginExampleController.h"
+#import "RWDummySignInService.h"
 
 @interface RacLoginExampleController ()
 @property (nonatomic, strong) UITextField *usernameTextField;
 @property (nonatomic, strong) UITextField *passwordTextField;
 @property (nonatomic, strong) UIButton *signInButton;
+@property(nonatomic,strong) RWDummySignInService *signInService;
 @end
 
 @implementation RacLoginExampleController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.signInService = [[RWDummySignInService alloc]init];
     self.navigationItem.title = @"RAC登录的例子";
     [self setUpView];
     [self layoutUI];
@@ -67,7 +69,7 @@
     RACSignal *validUsernameSignal = [self.usernameTextField.rac_textSignal map:^id(NSString *text) {
         return text.length>=4 ? @(YES):@(NO);
     }];
-    //map使用
+    //map使用:可以将信号传递出去的类型进行改变，进行一次映射
     RAC(self.usernameTextField,backgroundColor) = [validUsernameSignal map:^id(NSNumber * value) {
         return [value boolValue] ? [UIColor redColor]:[UIColor cyanColor];
     }];
@@ -91,15 +93,59 @@
         map:^id(NSString *text) {
           return text.length>4 ? @(YES):@(NO);
         }];
-    RACSignal *signUpActiveSignal = [[RACSignal combineLatest:@[validPasswordSignal1,validUsernameSignal1] reduce:^id(NSNumber *usernameValid, NSNumber *passwordValid){
+    
+    /*
+     拆分：信号可以有多个订阅者和作为多个管道后续环节的来源。在上图中，验证账号和密码的布尔值信号就被单独拆分，并用于两个不同的方面。
+     组合：多个信号可以组合为全新的信号。在这个例子中，两个布尔值信号被组合到了一起。但不局限于此，实际上你可以组合任意值类型的信号
+     */
+    
+   [[RACSignal combineLatest:@[validPasswordSignal1,validUsernameSignal1] reduce:^id(NSNumber *usernameValid, NSNumber *passwordValid){
         return @([usernameValid boolValue]&&[passwordValid boolValue]);
     }] subscribeNext:^(NSNumber * valid) {
         self.signInButton.enabled = [valid boolValue];
         self.signInButton.backgroundColor = [valid boolValue]?[UIColor blueColor]:[UIColor grayColor];
     }];
-    
+     
+    /*
     [[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
-//        NSLog(@"登录成功");
+        NSLog(@"登录成功");
+    }];
+     */
+    /*
+    [[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]map:^id(id value) {
+        return [self signInSignal];
+    }] subscribeNext:^(id x) {
+        NSLog(@"---result%@",x);
+    }];
+    */
+    /*
+     flattenMap:将信号里嵌套的信号结果发送出来
+     */
+    /*
+     doNext:环节。注意doNext:是一个副作用，所以block没有返回任何值；它并不影响事件的内容
+     */
+    [[[[self.signInButton
+       rac_signalForControlEvents:UIControlEventTouchUpInside]
+       doNext:^(id x) {
+        
+    }]
+      flattenMap:^id(id value) {
+        return [self signInSignal];
+    }]
+     subscribeNext:^(id x) {
+//        self.signInButton.enabled = YES;
+
+        NSLog(@"---result%@",x);
+    }];
+}
+//创建一个假的服务器登录信号
+- (RACSignal *)signInSignal {
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [self.signInService signInWithUsername:self.usernameTextField.text password:self.passwordTextField.text complete:^(BOOL success) {
+            [subscriber sendNext:@(success)];
+            [subscriber sendCompleted];
+        }];
+        return nil;
     }];
 }
 @end
