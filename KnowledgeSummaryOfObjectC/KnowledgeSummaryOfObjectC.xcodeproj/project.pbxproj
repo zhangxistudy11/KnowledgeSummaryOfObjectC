@@ -313,6 +313,10 @@
 		7790FE4823D5875000FA5B70 /* RacLoginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */; };
 		77B57BA323BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
 		77B57BA423BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
+		77C39DE524163862002C8316 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE324163862002C8316 /* TTRangeSlider.m */; };
+		77C39DE624163862002C8316 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE324163862002C8316 /* TTRangeSlider.m */; };
+		77C39DE9241638BB002C8316 /* TTSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE8241638BB002C8316 /* TTSliderController.m */; };
+		77C39DEA241638BB002C8316 /* TTSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE8241638BB002C8316 /* TTSliderController.m */; };
 		77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F4837D2361A76B00D7A1AD /* ShadowViewController.m */; };
 		C84F4F28D022A06BD40E3113 /* libPods-TargetOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */; };
 		E57D49A832B0A9AD19E3A921 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
@@ -605,6 +609,11 @@
 		7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacLoginExampleController.m; sourceTree = "<group>"; };
 		77B57BA123BF0D17000EB856 /* ExceptionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionController.h; sourceTree = "<group>"; };
 		77B57BA223BF0D17000EB856 /* ExceptionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExceptionController.m; sourceTree = "<group>"; };
+		77C39DE224163862002C8316 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRangeSliderDelegate.h; sourceTree = "<group>"; };
+		77C39DE324163862002C8316 /* TTRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRangeSlider.m; sourceTree = "<group>"; };
+		77C39DE424163862002C8316 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRangeSlider.h; sourceTree = "<group>"; };
+		77C39DE7241638BB002C8316 /* TTSliderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSliderController.h; sourceTree = "<group>"; };
+		77C39DE8241638BB002C8316 /* TTSliderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSliderController.m; sourceTree = "<group>"; };
 		77F4837C2361A76B00D7A1AD /* ShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowViewController.h; sourceTree = "<group>"; };
 		77F4837D2361A76B00D7A1AD /* ShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowViewController.m; sourceTree = "<group>"; };
 		9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TargetOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -805,6 +814,7 @@
 		332B8A321F7B81AC00DE9C1A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				77C39DE124163862002C8316 /* TTRangeSlider */,
 				3362C7A81FF0FFCE00F3EFA9 /* CatHud */,
 			);
 			path = Library;
@@ -825,6 +835,8 @@
 				333AAD10226B320F005736F0 /* ThirdLibViewController.m */,
 				333AAD12226B3402005736F0 /* MansoryStudyController.h */,
 				333AAD13226B3402005736F0 /* MansoryStudyController.m */,
+				77C39DE7241638BB002C8316 /* TTSliderController.h */,
+				77C39DE8241638BB002C8316 /* TTSliderController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1547,6 +1559,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		77C39DE124163862002C8316 /* TTRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				77C39DE224163862002C8316 /* TTRangeSliderDelegate.h */,
+				77C39DE324163862002C8316 /* TTRangeSlider.m */,
+				77C39DE424163862002C8316 /* TTRangeSlider.h */,
+			);
+			path = TTRangeSlider;
+			sourceTree = "<group>";
+		};
 		8F9BEC53A383DDB9C48FB611 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2001,6 +2023,7 @@
 				33AB8333235CA3CE00703D21 /* ParamsPassController.m in Sources */,
 				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
+				77C39DE524163862002C8316 /* TTRangeSlider.m in Sources */,
 				FBF2007320A52CF400AFE27B /* FloatTableViewController.m in Sources */,
 				3362C7B71FF1042600F3EFA9 /* CustomHudViewController.m in Sources */,
 				FB1335EB20CCB72D00187132 /* NSArray+Safe.m in Sources */,
@@ -2015,6 +2038,7 @@
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
 				333AAD14226B3402005736F0 /* MansoryStudyController.m in Sources */,
 				771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */,
+				77C39DE9241638BB002C8316 /* TTSliderController.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
 				77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */,
 				3380A334204686A200F8BA23 /* BarChartItemView.m in Sources */,
@@ -2068,6 +2092,7 @@
 				33CFEC5F238AB45F00ED424A /* WebPracticeViewController.m in Sources */,
 				33CFEC60238AB45F00ED424A /* ViewController.m in Sources */,
 				33CFEC61238AB45F00ED424A /* MethodSwizzlingViewController.m in Sources */,
+				77C39DE624163862002C8316 /* TTRangeSlider.m in Sources */,
 				33CFEC62238AB45F00ED424A /* CAShaplayerViewController.m in Sources */,
 				33CFEC63238AB45F00ED424A /* LoopViewController.m in Sources */,
 				33CFEC64238AB45F00ED424A /* HUDViewController.m in Sources */,
@@ -2082,6 +2107,7 @@
 				33CFEC6D238AB45F00ED424A /* RacPrimaryView.m in Sources */,
 				33CFEC6E238AB45F00ED424A /* UIBezierPathViewController.m in Sources */,
 				33CFEC6F238AB45F00ED424A /* ButtonViewController.m in Sources */,
+				77C39DEA241638BB002C8316 /* TTSliderController.m in Sources */,
 				33CFEC70238AB45F00ED424A /* PopViewTwoController.m in Sources */,
 				33CFEC71238AB45F00ED424A /* UIViewExt.m in Sources */,
 				33CFEC72238AB45F00ED424A /* FiltrateSlideView.m in Sources */,

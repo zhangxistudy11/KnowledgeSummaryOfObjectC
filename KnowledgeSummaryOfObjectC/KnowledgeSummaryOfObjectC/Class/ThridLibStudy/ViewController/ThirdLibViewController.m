@@ -8,6 +8,7 @@
 
 #import "ThirdLibViewController.h"
 #import "MansoryStudyController.h"
+#import "TTSliderController.h"
 @interface ThirdLibViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -54,10 +55,10 @@
             cell.textLabel.text = @"0-Mansory学习";
             return cell;
             break;
-//        case 1:
-//            cell.textLabel.text = @"2-加载本地Html";
-//            return cell;
-//            break;
+        case 1:
+            cell.textLabel.text = @"1-slide使用";
+            return cell;
+            break;
 //        case 2:
 //            cell.textLabel.text = @"3-JavaScriptCore熟悉";
 //            return cell;
@@ -84,13 +85,13 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-//        case 1:
-//        {
-//
-//            LoadHtmlViewController * vc = [[LoadHtmlViewController alloc]init];
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//            break;
+        case 1:
+        {
+
+            TTSliderController * vc = [[TTSliderController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
 //        case 2:
 //        {
 //            JavaScriptStuViewController * vc = [[JavaScriptStuViewController alloc]init];
