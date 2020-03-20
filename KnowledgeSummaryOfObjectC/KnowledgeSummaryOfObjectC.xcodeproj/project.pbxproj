@@ -317,6 +317,7 @@
 		77C39DE624163862002C8316 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE324163862002C8316 /* TTRangeSlider.m */; };
 		77C39DE9241638BB002C8316 /* TTSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE8241638BB002C8316 /* TTSliderController.m */; };
 		77C39DEA241638BB002C8316 /* TTSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE8241638BB002C8316 /* TTSliderController.m */; };
+		77F3923C24249443009B8571 /* RACGrammarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F3923B24249443009B8571 /* RACGrammarViewController.m */; };
 		77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F4837D2361A76B00D7A1AD /* ShadowViewController.m */; };
 		C84F4F28D022A06BD40E3113 /* libPods-TargetOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */; };
 		E57D49A832B0A9AD19E3A921 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
@@ -614,6 +615,8 @@
 		77C39DE424163862002C8316 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRangeSlider.h; sourceTree = "<group>"; };
 		77C39DE7241638BB002C8316 /* TTSliderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSliderController.h; sourceTree = "<group>"; };
 		77C39DE8241638BB002C8316 /* TTSliderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSliderController.m; sourceTree = "<group>"; };
+		77F3923A24249443009B8571 /* RACGrammarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACGrammarViewController.h; sourceTree = "<group>"; };
+		77F3923B24249443009B8571 /* RACGrammarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACGrammarViewController.m; sourceTree = "<group>"; };
 		77F4837C2361A76B00D7A1AD /* ShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowViewController.h; sourceTree = "<group>"; };
 		77F4837D2361A76B00D7A1AD /* ShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowViewController.m; sourceTree = "<group>"; };
 		9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TargetOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -883,6 +886,8 @@
 				336EFCFC1F7DF24200B8246F /* RacAdvanceController.m */,
 				7790FE4523D5875000FA5B70 /* RacLoginExampleController.h */,
 				7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */,
+				77F3923A24249443009B8571 /* RACGrammarViewController.h */,
+				77F3923B24249443009B8571 /* RACGrammarViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2008,6 +2013,7 @@
 				FBF2016A20A5921800AFE27B /* FloatSlideCell.m in Sources */,
 				336EFCFD1F7DF24200B8246F /* RacAdvanceController.m in Sources */,
 				33186CDF2060DA4F002B2D20 /* RunTimeBasicViewController.m in Sources */,
+				77F3923C24249443009B8571 /* RACGrammarViewController.m in Sources */,
 				334839B11F7CF02E00BD17EE /* RACViewController.m in Sources */,
 				771902FF22CB05B6000926A9 /* TailView.m in Sources */,
 				3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */,

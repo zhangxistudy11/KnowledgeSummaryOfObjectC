@@ -1,29 +1,26 @@
 //
-//  RACViewController.m
+//  RACGrammarViewController.m
 //  KnowledgeSummaryOfObjectC
 //
-//  Created by 张玺 on 2017/9/26.
-//  Copyright © 2017年 张玺. All rights reserved.
+//  Created by 张玺 on 2020/3/20.
+//  Copyright © 2020 张玺. All rights reserved.
 //
 
-#import "RACViewController.h"
-#import "RacPrimaryController.h"
-#import "RacAdvanceController.h"
-#import "RacLoginExampleController.h"
 #import "RACGrammarViewController.h"
-@interface RACViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@interface RACGrammarViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
 }
 
+
 @end
 
-@implementation RACViewController
+@implementation RACGrammarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.title = @"ReactiveCocoa使用";
+    self.title = @"ReactiveCocoa语法学习";
     self.view.backgroundColor = [UIColor  whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
@@ -64,10 +61,6 @@
             cell.textLabel.text = @"3-RAC登录的例子";
             return cell;
             break;
-        case 3:
-            cell.textLabel.text = @"4-RAC语法学习";
-            return cell;
-            break;
         default:
             break;
     }
@@ -82,26 +75,25 @@
     switch (indexPath.row) {
         case 0:
         {
-            RacPrimaryController * vc = [[RacPrimaryController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            //                RacPrimaryController * vc = [[RacPrimaryController alloc]init];
+            //                [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 1:
         {
-            RacAdvanceController * vc = [[RacAdvanceController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            //                RacAdvanceController * vc = [[RacAdvanceController alloc]init];
+            //                [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 2:
         {
-            RacLoginExampleController * vc = [[RacLoginExampleController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            //                RacLoginExampleController * vc = [[RacLoginExampleController alloc]init];
+            //                [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 3:
         {
-            RACGrammarViewController * vc = [[RACGrammarViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            
             
         }
             break;
@@ -109,7 +101,5 @@
             break;
     }
 }
-
-
 
 @end
