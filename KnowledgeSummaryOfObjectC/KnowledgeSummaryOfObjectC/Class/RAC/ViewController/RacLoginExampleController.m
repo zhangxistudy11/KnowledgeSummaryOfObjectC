@@ -5,6 +5,11 @@
 //  Created by 张玺 on 2020/1/20.
 //  Copyright © 2020 张玺. All rights reserved.
 //
+/*
+ 认知：
+ ReactiveCocoa是github去年开源的一个项目，是在iOS平台上对FRP的实现。FRP的核心是信号，信号在ReactiveCocoa(以下简称RAC)中是通过RACSignal来表示的，信号是数据流，可以被绑定和传递。
+ 可以把信号想象成水龙头，只不过里面不是水，而是玻璃球(value)，直径跟水管的内径一样，这样就能保证玻璃球是依次排列，不会出现并排的情况(数据都是线性处理的，不会出现并发情况)。水龙头的开关默认是关的，除非有了接收方(subscriber)，才会打开。这样只要有新的玻璃球进来，就会自动传送给接收方。可以在水龙头上加一个过滤嘴(filter)，不符合的不让通过，也可以加一个改动装置，把球改变成符合自己的需求(map)。也可以把多个水龙头合并成一个新的水龙头(combineLatest:reduce:)，这样只要其中的一个水龙头有玻璃球出来，这个新合并的水龙头就会得到这个球。
+ */
 
 #import "RacLoginExampleController.h"
 #import "RWDummySignInService.h"
@@ -69,10 +74,13 @@
     RACSignal *validUsernameSignal = [self.usernameTextField.rac_textSignal map:^id(NSString *text) {
         return text.length>=4 ? @(YES):@(NO);
     }];
-    //map使用:可以将信号传递出去的类型进行改变，进行一次映射
+    //map使用:可以将信号传递出去的类型进行改变，进行一次映射 RAC
     RAC(self.usernameTextField,backgroundColor) = [validUsernameSignal map:^id(NSNumber * value) {
         return [value boolValue] ? [UIColor redColor]:[UIColor cyanColor];
     }];
+//    [RACObserve(self.usernameTextField, backgroundColor) subscribeNext:^(id x) {
+//        ZXLog(@"---%@",x);
+//    }];
     
     RACSignal *validPasswordSignal = [self.passwordTextField.rac_textSignal map:^id(NSString *text) {
            return text.length>=4 ? @(YES):@(NO);

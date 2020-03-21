@@ -22,4 +22,10 @@
 
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 
+#ifdef DEBUG
+#define ZXLog(format, ...) NSLog((@"%s@%d: " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define ZXLog(format, ...)
+#endif
+
 #endif /* CommonMacro_h */

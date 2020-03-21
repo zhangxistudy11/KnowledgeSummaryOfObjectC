@@ -83,7 +83,7 @@
             return cell;
             break;
         case 4:
-            cell.textLabel.text = @"4-ReactiveCocoa交互";
+            cell.textLabel.text = @"4-ReactiveCocoa学习";
             return cell;
             break;
         case 5:
