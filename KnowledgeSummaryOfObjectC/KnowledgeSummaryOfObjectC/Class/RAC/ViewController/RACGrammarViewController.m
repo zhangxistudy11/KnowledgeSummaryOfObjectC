@@ -38,7 +38,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return 40;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -48,6 +48,7 @@
     if (!cell) {
         cell = [[UITableViewCell  alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+    cell.textLabel.textColor = RandomColor;
     switch (indexPath.row) {
         case 0:
             cell.textLabel.text = @"0-创建&订阅信号";
@@ -82,7 +83,7 @@
             return cell;
             break;
         case 8:
-            cell.textLabel.text = @"8-concat";
+            cell.textLabel.text = @"8-concat(组合)";
             return cell;
             break;
         case 9:
@@ -105,7 +106,64 @@
             cell.textLabel.text = @"13-reduce";
             return cell;
             break;
+        case 14:
+            cell.textLabel.text = @"14-filter";
+            return cell;
+            break;
+        case 15:
+            cell.textLabel.text = @"15-ignore";
+            return cell;
+            break;
+        case 16:
+            cell.textLabel.text = @"16-distinctUntilChanged";
+            return cell;
+            break;
+        case 17:
+            cell.textLabel.text = @"17-take";
+            return cell;
+            break;
+        case 18:
+            cell.textLabel.text = @"18-takeLast";
+            return cell;
+            break;
+        case 19:
+            cell.textLabel.text = @"19-takeUntil";
+            return cell;
+            break;
+        case 20:
+            cell.textLabel.text = @"20-switchToLatest";
+            return cell;
+            break;
+        case 21:
+            cell.textLabel.text = @"21-skip";
+            return cell;
+            break;
+        case 22:
+            cell.textLabel.text = @"22-interval(定时操作)";
+            return cell;
+            break;
+        case 23:
+            cell.textLabel.text = @"23-delay";
+            return cell;
+            break;
+        case 24:
+            cell.textLabel.text = @"24-timeout";
+            return cell;
+            break;
+        case 25:
+            cell.textLabel.text = @"25-retry(重复)";
+            return cell;
+            break;
+            case 26:
+            cell.textLabel.text = @"26-replay";
+            return cell;
+            break;
+            case 27:
+                       cell.textLabel.text = @"27-throttle";
+                       return cell;
+                       break;
         default:
+            cell.textLabel.text = @"待使用";
             return cell;
             
     }
@@ -188,6 +246,76 @@
             [self test13];
         }
             break;
+        case 14:
+        {
+            [self test14];
+        }
+            break;
+        case 15:
+        {
+            [self test15];
+        }
+            break;
+        case 16:
+        {
+            [self test16];
+        }
+            break;
+        case 17:
+        {
+            [self test17];
+        }
+            break;
+        case 18:
+        {
+            [self test18];
+        }
+            break;
+        case 19:
+        {
+            [self test19];
+        }
+            break;
+        case 20:
+        {
+            [self test20];
+        }
+            break;
+        case 21:
+        {
+            [self test21];
+        }
+            break;
+        case 22:
+        {
+            [self test22];
+        }
+            break;
+        case 23:
+        {
+            [self test23];
+        }
+            break;
+        case 24:
+        {
+            [self test24];
+        }
+            break;
+        case 25:
+        {
+            [self test25];
+        }
+            break;
+            case 26:
+                   {
+                       [self test26];
+                   }
+                       break;
+            case 27:
+                            {
+                                [self test27];
+                            }
+                                break;
         default:
             break;
     }
@@ -541,5 +669,274 @@
      
      */
     
+}
+- (void)test14{
+    /*
+     //filter
+     //截取等于11位的字符
+     [[_accountText.rac_textSignal filter:^BOOL(NSString * _Nullable value) {
+     //类似手机号的输入, 只有等于11位的时候才返回true
+     return value.length == 11;
+     }]subscribeNext:^(NSString * _Nullable x) {
+     //这里只会返回等于11位的字符
+     NSLog(@"filter = %@", x);
+     }];
+     
+     */
+}
+- (void)test15{
+    //创建信号
+    
+    RACSubject*signal = [RACSubject subject];
+    
+    //ignore是忽略一些值
+    
+    //ignoreVlaues忽略所有的值
+    
+    RACSignal*ignoreSignal = [signal ignore:@"luobo"];
+    
+    //    RACSignal *ignoreSignal = [signal ignoreValues];
+    
+    //订阅信号
+    //
+    //    [ignoreSignal subscribeNext:^(idx) {
+    //
+    //    NSLog(@"%@",x);
+    //
+    //    }];
+    [ignoreSignal subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+    
+    //发送信号
+    
+    [signal sendNext:@"luobo"];
+    
+    [signal sendNext:@"crazy"];
+    
+}
+- (void)test16{
+    /*
+     当上一次的值和当前的值有明显的变化就会发出信号，否则会被忽略掉。
+     在开发中，刷新UI经常使用，只有两次数据不一样才需要刷新
+     */
+    //创建信号
+    RACSubject *subject = [RACSubject subject];
+    
+    //订阅
+    [[subject distinctUntilChanged] subscribeNext:^(id  _Nullable x) {
+        ZXLog(@"distinctUntilChanged = %@", x);
+    }];
+    
+    [subject sendNext:@12];
+    [subject sendNext:@12];
+    [subject sendNext:@23];
+    
+    
+}
+- (void)test17{
+    /*
+     从开始一共取N次的信号, 当遇到sendCompleted语句执行时, 会提前停止发送信号
+     */
+    //take
+    RACSubject *subject1 = [RACSubject subject];
+    [[subject1 take:2] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
+    
+    //如果上面发送信号的代码调整为
+    [subject1 sendNext:@1];
+    [subject1 sendCompleted];
+    [subject1 sendNext:@2];
+    [subject1 sendNext:@3];
+    
+    
+}
+- (void)test18{
+    /*
+     取调用sendCompleted之前的N次信号,前提条件，订阅者必须调用sendCompleted，否则不会执行任何操作
+     */
+    //takeLast
+    RACSubject *subject1 = [RACSubject subject];
+    [[subject1 takeLast:2] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
+    
+    [subject1 sendNext:@1];
+    [subject1 sendNext:@2];
+    [subject1 sendNext:@3];
+    [subject1 sendCompleted];
+    
+    
+}
+- (void)test19{
+    /*
+     只要传入的信号发送完成或者subject2开始发送信号的时候,就不会再接收信号的内容
+     */
+    //takeUntil
+    RACSubject *subject1 = [RACSubject subject];
+    RACSubject *subject2 = [RACSubject subject];
+    
+    [[subject1 takeUntil:subject2] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
+    
+    [subject1 sendNext:@11];
+    [subject1 sendNext:@12];
+    //    [subject1 sendCompleted];
+    [subject1 sendNext:@13];
+    [subject2 sendNext:@"21"];
+    [subject2 sendNext:@"22"];
+    [subject1 sendNext:@14];
+    
+    //这样会输出: 11, 12, 13
+    //当sendCompleted取消注释的时候, 只会输出: 11, 12
+    
+}
+- (void)test20{
+    /*
+     主要用于信号的信号, 有时候也会发出信号, 会在信号的信号中获取其发送的最新的信号
+     */
+    //信号的信号
+    RACSubject *subject1 = [RACSubject subject];
+    RACSubject *subject2 = [RACSubject subject];
+    
+    //获取信号中信号最近发出信号，订阅最近发出的信号
+    [[subject1 switchToLatest] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
+    
+    //发送信号
+    [subject1 sendNext:subject2];
+    [subject2 sendNext:@"信号中信号"];
+    
+    //最终结果输出: "信号中信号"
+    
+}
+- (void)test21{
+    /*
+     跳过N个信号后, 再开始订阅信号
+     */
+    
+    //创建信号
+    RACSubject *subject = [RACSubject subject];
+    
+    //订阅信号
+    //要求跳过2个信号
+    [[subject skip:2] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
+    
+    //发送信号
+    [subject sendNext:@1];
+    [subject sendNext:@2];
+    [subject sendNext:@3];
+    [subject sendNext:@4];
+    
+    //因为上面跳过了两个信号, 所以这里只会输出: 3, 4
+    
+}
+- (void)test22{
+    //RAC定时器, 每隔一段时间执行一次
+    //其中RACScheduler是RAC中管理线程的类
+    
+    [[RACSignal interval:1 onScheduler:[RACScheduler mainThreadScheduler]] subscribeNext:^(NSDate * _Nullable x) {
+        NSLog(@"定时器");
+    }];
+    
+}
+- (void)test23{
+    /*
+     延迟一段时间都发送信号
+     */
+    //delay: 延迟执行
+    [[[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@"delay"];
+        return nil;
+    }] delay:2] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
+    
+}
+- (void)test24{
+    /*
+     超时, 可以让一个信号在一定时间后自动报错
+     */
+    RACSignal *single = [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@"先成功"];
+        return nil;
+    }] timeout:2 onScheduler:[RACScheduler currentScheduler]];
+    
+    [single subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    } error:^(NSError * _Nullable error) {
+        //2秒后自动调用
+        NSLog(@"%@", error);
+    }];
+    
+}
+- (void)test25{
+    /*
+     重试 ：只要失败，就会重新执行创建信号中的block,直到成功.
+     */
+    //retry
+    __block int i = 0;
+    [[[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        if (i == 5) {
+            [subscriber sendNext:@12];
+        } else {
+            NSLog(@"发生错误");
+            [subscriber sendError:nil];
+        }
+        i++;
+        
+        return nil;
+    }] retry] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    } error:^(NSError * _Nullable error) {
+        NSLog(@"%@", error);
+    }];
+}
+- (void)test26{
+    //重放：当一个信号被多次订阅,反复播放内容
+
+    RACSignal *single = [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            [subscriber sendNext:@23];
+            [subscriber sendNext:@34];
+            
+            return nil;
+        }] replay];
+        
+        [single subscribeNext:^(id  _Nullable x) {
+            NSLog(@"第一次订阅-%@", x);
+        }];
+        
+        [single subscribeNext:^(id  _Nullable x) {
+            NSLog(@"第二次订阅-%@", x);
+        }];
+
+    
+}
+- (void)test27{
+    /*
+     节流:当某个信号发送比较频繁时，可以使用节流, 在一定时间（1秒）内，不接收任何信号内容，过了这个时间（1秒）获取最后发送的信号内容发出。
+     */
+        RACSubject *subject = [RACSubject subject];
+        
+        [[subject throttle:0.001] subscribeNext:^(id  _Nullable x) {
+            NSLog(@"%@", x);
+        }];
+        
+        [subject sendNext:@10];
+        [subject sendNext:@11];
+        [subject sendNext:@12];
+        [subject sendNext:@13];
+        [subject sendNext:@14];
+        [subject sendNext:@15];
+        [subject sendNext:@16];
+        [subject sendNext:@17];
+        [subject sendNext:@18];
+
+
 }
 @end
