@@ -48,7 +48,7 @@
     if (!cell) {
         cell = [[UITableViewCell  alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.textColor = RandomColor;
+    //    cell.textLabel.textColor = RandomColor;
     switch (indexPath.row) {
         case 0:
             cell.textLabel.text = @"0-创建&订阅信号";
@@ -154,14 +154,22 @@
             cell.textLabel.text = @"25-retry(重复)";
             return cell;
             break;
-            case 26:
+        case 26:
             cell.textLabel.text = @"26-replay";
             return cell;
             break;
-            case 27:
-                       cell.textLabel.text = @"27-throttle";
+        case 27:
+            cell.textLabel.text = @"27-throttle";
+            return cell;
+            break;
+            case 28:
+                       cell.textLabel.text = @"28-catch";
                        return cell;
                        break;
+            case 29:
+                                  cell.textLabel.text = @"29-catchTo";
+                                  return cell;
+                                  break;
         default:
             cell.textLabel.text = @"待使用";
             return cell;
@@ -306,16 +314,26 @@
             [self test25];
         }
             break;
-            case 26:
+        case 26:
+        {
+            [self test26];
+        }
+            break;
+        case 27:
+        {
+            [self test27];
+        }
+            break;
+            case 28:
                    {
-                       [self test26];
+                       [self test28];
                    }
                        break;
-            case 27:
-                            {
-                                [self test27];
-                            }
-                                break;
+            case 29:
+                              {
+                                  [self test29];
+                              }
+                                  break;
         default:
             break;
     }
@@ -899,44 +917,93 @@
 }
 - (void)test26{
     //重放：当一个信号被多次订阅,反复播放内容
-
+    
     RACSignal *single = [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-            [subscriber sendNext:@23];
-            [subscriber sendNext:@34];
-            
-            return nil;
-        }] replay];
+        [subscriber sendNext:@23];
+        [subscriber sendNext:@34];
         
-        [single subscribeNext:^(id  _Nullable x) {
-            NSLog(@"第一次订阅-%@", x);
-        }];
-        
-        [single subscribeNext:^(id  _Nullable x) {
-            NSLog(@"第二次订阅-%@", x);
-        }];
-
+        return nil;
+    }] replay];
+    
+    [single subscribeNext:^(id  _Nullable x) {
+        NSLog(@"第一次订阅-%@", x);
+    }];
+    
+    [single subscribeNext:^(id  _Nullable x) {
+        NSLog(@"第二次订阅-%@", x);
+    }];
+    
     
 }
 - (void)test27{
     /*
      节流:当某个信号发送比较频繁时，可以使用节流, 在一定时间（1秒）内，不接收任何信号内容，过了这个时间（1秒）获取最后发送的信号内容发出。
      */
-        RACSubject *subject = [RACSubject subject];
-        
-        [[subject throttle:0.001] subscribeNext:^(id  _Nullable x) {
-            NSLog(@"%@", x);
-        }];
-        
-        [subject sendNext:@10];
-        [subject sendNext:@11];
-        [subject sendNext:@12];
-        [subject sendNext:@13];
-        [subject sendNext:@14];
-        [subject sendNext:@15];
-        [subject sendNext:@16];
-        [subject sendNext:@17];
-        [subject sendNext:@18];
+    RACSubject *subject = [RACSubject subject];
+    
+    [[subject throttle:0.001] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
+    
+    [subject sendNext:@10];
+    [subject sendNext:@11];
+    [subject sendNext:@12];
+    [subject sendNext:@13];
+    [subject sendNext:@14];
+    [subject sendNext:@15];
+    [subject sendNext:@16];
+    [subject sendNext:@17];
+    [subject sendNext:@18];
+    
+    
+}
+- (void)test28{
+    /*
+     catch:方法的核心就在于对error信号的处理，参照上面的代码可以看到，catch:方法在原信号流sendError的时候，将对应的NSError通过catchBlock转换成了一个新的信号流并让原订阅者继续订阅。
+     */
+    // 原始信号
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@1];
+        [subscriber sendError:nil];
+        return nil;
+    }];
 
+    // 经过catch:方法将sendError:nil替换为sendNext:@2
+    RACSignal *catchedSignal = [signal catch:^RACSignal * _Nonnull(NSError * _Nonnull error) {
+        return [RACSignal return:@2];
+    }];
 
+    // 输出日志
+    [catchedSignal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"sendNext: %@", x);
+    } error:^(NSError * _Nullable error) {
+        NSLog(@"sendError");
+    } completed:^{
+        NSLog(@"sendCompleted");
+    }];
+    //最终输出结果如下，其中的错误信号被替换了
+}
+- (void)test29{
+    /*
+     可以看到逻辑很简单，就是预先传入了一个signal，无论收到的sendError传了什么类型的NSError，都直接返回这个signal。
+     */
+    // 原始信号
+       RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+           [subscriber sendNext:@1];
+           [subscriber sendError:nil];
+           return nil;
+       }];
+
+       // 经过catch:方法将sendError:nil替换为sendNext:@2
+       RACSignal *catchedSignal = [signal catchTo:[RACSignal return:@(2)]];
+
+       // 输出日志
+       [catchedSignal subscribeNext:^(id  _Nullable x) {
+           NSLog(@"sendNext: %@", x);
+       } error:^(NSError * _Nullable error) {
+           NSLog(@"sendError");
+       } completed:^{
+           NSLog(@"sendCompleted");
+       }];
 }
 @end
