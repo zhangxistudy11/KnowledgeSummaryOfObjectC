@@ -10,6 +10,7 @@
 #import "PopViewOneController.h"
 #import "PopViewTwoController.h"
 #import "PopViewThreeViewController.h"
+#import "PopViewMansoryVC.h"
 @interface CustomPopViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -59,15 +60,19 @@
     }
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"1-PopView方法一";
+            cell.textLabel.text = @"0-PopView方法一";
             return cell;
             break;
         case 1:
-            cell.textLabel.text = @"2-PopView方法二";
+            cell.textLabel.text = @"1-PopView方法二";
             return cell;
             break;
         case 2:
-            cell.textLabel.text = @"3-PopView方法三";
+            cell.textLabel.text = @"2-PopView方法三";
+            return cell;
+            break;
+        case 3:
+            cell.textLabel.text = @"3-PopView+Mansory";
             return cell;
             break;
         default:
@@ -102,8 +107,8 @@
             break;
         case 3:
         {
-            
-            
+            PopViewMansoryVC * vc = [[PopViewMansoryVC alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         default:

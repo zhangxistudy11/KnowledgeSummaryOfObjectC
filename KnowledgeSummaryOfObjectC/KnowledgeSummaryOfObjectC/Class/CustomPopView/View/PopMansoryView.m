@@ -1,21 +1,15 @@
 //
-//  PopViewOne.m
+//  PopMansoryView.m
 //  KnowledgeSummaryOfObjectC
 //
-//  Created by 张玺 on 2017/9/29.
-//  Copyright © 2017年 张玺. All rights reserved.
+//  Created by 张玺 on 2020/3/30.
+//  Copyright © 2020 张玺. All rights reserved.
 //
 
-#import "PopViewTwo.h"
-//#import <objc/runtime.h>
+#import "PopMansoryView.h"
 #import "UIView+FITBackViewAddition.h"
-#define SCREEN_H  [UIScreen mainScreen].bounds.size.height
-#define SCREEN_W  [UIScreen mainScreen].bounds.size.width
 
-//static const void *kBackViewIdentifier = &kBackViewIdentifier;
-
-@interface PopViewTwo ()
-
+@interface PopMansoryView ()
 @property (nonatomic,strong) UIView * backGroundView;
 
 @property (nonatomic,strong) UILabel * label;
@@ -24,7 +18,8 @@
 
 @property (nonatomic,strong) UIButton *testBtn;
 @end
-@implementation PopViewTwo
+
+@implementation PopMansoryView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -83,7 +78,7 @@
 - (void)show{
 
     self.height = 300;
-    self.frame = CGRectMake(0, SCREEN_H - self.height, self.width, self.height);
+    self.frame = CGRectMake(0, screen_height - self.height, self.width, self.height);
     self.transform = CGAffineTransformMakeTranslation(0, self.height);
     __weak typeof(self) weakSelf = self;
     [[UIApplication sharedApplication].keyWindow showViewWithBackView:weakSelf alpha:0.5 target:self touchAction:@selector(hide) animation:^{
@@ -100,4 +95,5 @@
         self.transform = CGAffineTransformMakeTranslation(0,  self.height);
     } timeInterval:0.25 fininshed:nil];
 }
+
 @end

@@ -303,6 +303,10 @@
 		772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */; };
 		772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */; };
 		772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */; };
+		7755F7872431EA4900955AC8 /* PopViewMansoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */; };
+		7755F7882431EA4900955AC8 /* PopViewMansoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */; };
+		7755F78B2431EDFD00955AC8 /* PopMansoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F78A2431EDFD00955AC8 /* PopMansoryView.m */; };
+		7755F78C2431EDFD00955AC8 /* PopMansoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F78A2431EDFD00955AC8 /* PopMansoryView.m */; };
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
 		77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD9217D7915001325D9 /* YYCacheUseController.m */; };
 		77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639B1E217D9CF0001325D9 /* CacheTestModel.m */; };
@@ -598,6 +602,10 @@
 		772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHXSegmentBarView.m; sourceTree = "<group>"; };
 		772D6D47234CA2700000F5B2 /* ZXSegmentItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXSegmentItemView.h; sourceTree = "<group>"; };
 		772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSegmentItemView.m; sourceTree = "<group>"; };
+		7755F7852431EA4900955AC8 /* PopViewMansoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewMansoryVC.h; sourceTree = "<group>"; };
+		7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewMansoryVC.m; sourceTree = "<group>"; };
+		7755F7892431EDFD00955AC8 /* PopMansoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMansoryView.h; sourceTree = "<group>"; };
+		7755F78A2431EDFD00955AC8 /* PopMansoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMansoryView.m; sourceTree = "<group>"; };
 		77639AD5217D71B9001325D9 /* CacheClassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheClassController.h; sourceTree = "<group>"; };
 		77639AD6217D71B9001325D9 /* CacheClassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheClassController.m; sourceTree = "<group>"; };
 		77639AD8217D7915001325D9 /* YYCacheUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCacheUseController.h; sourceTree = "<group>"; };
@@ -1106,6 +1114,8 @@
 				336EFD101F7E1EC400B8246F /* PopViewOne.m */,
 				336EFD181F7E388800B8246F /* PopViewTwo.h */,
 				336EFD191F7E388800B8246F /* PopViewTwo.m */,
+				7755F7892431EDFD00955AC8 /* PopMansoryView.h */,
+				7755F78A2431EDFD00955AC8 /* PopMansoryView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1121,6 +1131,8 @@
 				336EFD131F7E377700B8246F /* PopViewTwoController.m */,
 				777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */,
 				777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */,
+				7755F7852431EA4900955AC8 /* PopViewMansoryVC.h */,
+				7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2052,6 +2064,7 @@
 				771DDC7F23C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */,
 				33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
+				7755F7872431EA4900955AC8 /* PopViewMansoryVC.m in Sources */,
 				33BA97E42306FCEB00BF181C /* NSString+ZTSize.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
 				333AAD14226B3402005736F0 /* MansoryStudyController.m in Sources */,
@@ -2068,6 +2081,7 @@
 				33AD296123092E290064ED6A /* ZHXTabSingleItemView.m in Sources */,
 				3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */,
 				336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */,
+				7755F78B2431EDFD00955AC8 /* PopMansoryView.m in Sources */,
 				33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,
 				3362C7AF1FF0FFCE00F3EFA9 /* SCCatWaitingHUD.m in Sources */,
 				335B79C3205FD6C5005B6E29 /* JSProtocolViewController.m in Sources */,
@@ -2111,6 +2125,7 @@
 				33CFEC5F238AB45F00ED424A /* WebPracticeViewController.m in Sources */,
 				33CFEC60238AB45F00ED424A /* ViewController.m in Sources */,
 				33CFEC61238AB45F00ED424A /* MethodSwizzlingViewController.m in Sources */,
+				7755F78C2431EDFD00955AC8 /* PopMansoryView.m in Sources */,
 				77C39DE624163862002C8316 /* TTRangeSlider.m in Sources */,
 				33CFEC62238AB45F00ED424A /* CAShaplayerViewController.m in Sources */,
 				33CFEC63238AB45F00ED424A /* LoopViewController.m in Sources */,
@@ -2181,6 +2196,7 @@
 				33CFEC9F238AB45F00ED424A /* CustomComplicateController.m in Sources */,
 				33F97A82240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */,
 				33CFECA0238AB45F00ED424A /* NSString+ZTSize.m in Sources */,
+				7755F7882431EA4900955AC8 /* PopViewMansoryVC.m in Sources */,
 				33CFECA1238AB45F00ED424A /* LoadHtmlViewController.m in Sources */,
 				33CFECA2238AB45F00ED424A /* MansoryStudyController.m in Sources */,
 				33CFECA3238AB45F00ED424A /* MemoryTestView.m in Sources */,
