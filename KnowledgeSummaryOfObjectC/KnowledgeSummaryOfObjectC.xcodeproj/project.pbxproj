@@ -315,6 +315,16 @@
 		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
 		7790FE4723D5875000FA5B70 /* RacLoginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */; };
 		7790FE4823D5875000FA5B70 /* RacLoginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */; };
+		779748932435C153000FA83B /* CollectionIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748922435C153000FA83B /* CollectionIndexViewController.m */; };
+		779748942435C153000FA83B /* CollectionIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748922435C153000FA83B /* CollectionIndexViewController.m */; };
+		7797489A2435D726000FA83B /* indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779748962435D725000FA83B /* indicator@2x.png */; };
+		7797489B2435D726000FA83B /* indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779748962435D725000FA83B /* indicator@2x.png */; };
+		7797489C2435D726000FA83B /* DDIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748972435D725000FA83B /* DDIndexView.m */; };
+		7797489D2435D726000FA83B /* DDIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748972435D725000FA83B /* DDIndexView.m */; };
+		7797489E2435D726000FA83B /* indicator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779748982435D726000FA83B /* indicator@3x.png */; };
+		7797489F2435D726000FA83B /* indicator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779748982435D726000FA83B /* indicator@3x.png */; };
+		779748A22435DBB0000FA83B /* CollectionIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748A12435DBB0000FA83B /* CollectionIndexCell.m */; };
+		779748A32435DBB0000FA83B /* CollectionIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748A12435DBB0000FA83B /* CollectionIndexCell.m */; };
 		77B57BA323BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
 		77B57BA423BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
 		77C1A3B02429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C1A3AF2429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png */; };
@@ -620,6 +630,14 @@
 		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
 		7790FE4523D5875000FA5B70 /* RacLoginExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RacLoginExampleController.h; sourceTree = "<group>"; };
 		7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacLoginExampleController.m; sourceTree = "<group>"; };
+		779748912435C153000FA83B /* CollectionIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionIndexViewController.h; sourceTree = "<group>"; };
+		779748922435C153000FA83B /* CollectionIndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionIndexViewController.m; sourceTree = "<group>"; };
+		779748962435D725000FA83B /* indicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indicator@2x.png"; sourceTree = "<group>"; };
+		779748972435D725000FA83B /* DDIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDIndexView.m; sourceTree = "<group>"; };
+		779748982435D726000FA83B /* indicator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indicator@3x.png"; sourceTree = "<group>"; };
+		779748992435D726000FA83B /* DDIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDIndexView.h; sourceTree = "<group>"; };
+		779748A02435DBB0000FA83B /* CollectionIndexCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionIndexCell.h; sourceTree = "<group>"; };
+		779748A12435DBB0000FA83B /* CollectionIndexCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionIndexCell.m; sourceTree = "<group>"; };
 		77B57BA123BF0D17000EB856 /* ExceptionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionController.h; sourceTree = "<group>"; };
 		77B57BA223BF0D17000EB856 /* ExceptionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExceptionController.m; sourceTree = "<group>"; };
 		77C1A3AF2429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flight_intl_filter_slide_diameter@3x.png"; sourceTree = "<group>"; };
@@ -832,6 +850,7 @@
 		332B8A321F7B81AC00DE9C1A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				779748952435D719000FA83B /* DDIndexView */,
 				77C39DE124163862002C8316 /* TTRangeSlider */,
 				3362C7A81FF0FFCE00F3EFA9 /* CatHud */,
 			);
@@ -1231,6 +1250,8 @@
 				772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */,
 				77F4837C2361A76B00D7A1AD /* ShadowViewController.h */,
 				77F4837D2361A76B00D7A1AD /* ShadowViewController.m */,
+				779748912435C153000FA83B /* CollectionIndexViewController.h */,
+				779748922435C153000FA83B /* CollectionIndexViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1260,6 +1281,8 @@
 				772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */,
 				772D6D47234CA2700000F5B2 /* ZXSegmentItemView.h */,
 				772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */,
+				779748A02435DBB0000FA83B /* CollectionIndexCell.h */,
+				779748A12435DBB0000FA83B /* CollectionIndexCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1586,6 +1609,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		779748952435D719000FA83B /* DDIndexView */ = {
+			isa = PBXGroup;
+			children = (
+				779748992435D726000FA83B /* DDIndexView.h */,
+				779748972435D725000FA83B /* DDIndexView.m */,
+				779748962435D725000FA83B /* indicator@2x.png */,
+				779748982435D726000FA83B /* indicator@3x.png */,
+			);
+			path = DDIndexView;
+			sourceTree = "<group>";
+		};
 		77C39DE124163862002C8316 /* TTRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -1776,6 +1810,7 @@
 				3362C7B31FF0FFEB00F3EFA9 /* MAO@2x.png in Resources */,
 				33F778F820206F8100581E5C /* ic_back@2x.png in Resources */,
 				3362C79B1FF0F3C400F3EFA9 /* Coin_loading_25@2x.png in Resources */,
+				7797489A2435D726000FA83B /* indicator@2x.png in Resources */,
 				33DA54E71FBD333100EB3716 /* ranklist_item_right@2x.png in Resources */,
 				33DA54F11FBD7DF100EB3716 /* Back_Arrow@2x.png in Resources */,
 				3362C7A41FF0F3C400F3EFA9 /* Coin_loading_6@2x.png in Resources */,
@@ -1785,6 +1820,7 @@
 				3362C7A31FF0F3C400F3EFA9 /* Coin_loading_5@2x.png in Resources */,
 				3362C7A61FF0F3C400F3EFA9 /* Coin_loading_8@2x.png in Resources */,
 				3362C7911FF0F3C400F3EFA9 /* Coin_loading_16@2x.png in Resources */,
+				7797489E2435D726000FA83B /* indicator@3x.png in Resources */,
 				7719034B22CB4DDD000926A9 /* jianbian@2x.png in Resources */,
 				336A8E3C1FEB590E00EFCF42 /* myMessage_TradingAssistance@3x.png in Resources */,
 				3362C7901FF0F3C400F3EFA9 /* Coin_loading_15@2x.png in Resources */,
@@ -1855,6 +1891,7 @@
 				33CFECC2238AB45F00ED424A /* Coin_loading_25@2x.png in Resources */,
 				33CFECC3238AB45F00ED424A /* ranklist_item_right@2x.png in Resources */,
 				33CFECC4238AB45F00ED424A /* Back_Arrow@2x.png in Resources */,
+				7797489F2435D726000FA83B /* indicator@3x.png in Resources */,
 				33CFECC5238AB45F00ED424A /* Coin_loading_6@2x.png in Resources */,
 				33CFECC6238AB45F00ED424A /* myMessage_CouponHint@2x.png in Resources */,
 				33CFECC7238AB45F00ED424A /* Coin_loading_4@2x.png in Resources */,
@@ -1862,6 +1899,7 @@
 				33CFECC9238AB45F00ED424A /* Coin_loading_5@2x.png in Resources */,
 				33CFECCA238AB45F00ED424A /* Coin_loading_8@2x.png in Resources */,
 				33CFECCB238AB45F00ED424A /* Coin_loading_16@2x.png in Resources */,
+				7797489B2435D726000FA83B /* indicator@2x.png in Resources */,
 				33CFECCC238AB45F00ED424A /* jianbian@2x.png in Resources */,
 				33CFECCD238AB45F00ED424A /* myMessage_TradingAssistance@3x.png in Resources */,
 				33CFECCE238AB45F00ED424A /* Coin_loading_15@2x.png in Resources */,
@@ -2046,10 +2084,13 @@
 				777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
 				772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */,
+				7797489C2435D726000FA83B /* DDIndexView.m in Sources */,
 				33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */,
+				779748932435C153000FA83B /* CollectionIndexViewController.m in Sources */,
 				335B79C6205FD701005B6E29 /* JSProtocolObj.m in Sources */,
 				33BA97D82306E2D000BF181C /* CustomTabbarViewController.m in Sources */,
 				3380A331204677BE00F8BA23 /* BarChartView.m in Sources */,
+				779748A22435DBB0000FA83B /* CollectionIndexCell.m in Sources */,
 				33AB8333235CA3CE00703D21 /* ParamsPassController.m in Sources */,
 				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
@@ -2143,11 +2184,14 @@
 				33CFEC6F238AB45F00ED424A /* ButtonViewController.m in Sources */,
 				77C39DEA241638BB002C8316 /* TTSliderController.m in Sources */,
 				33CFEC70238AB45F00ED424A /* PopViewTwoController.m in Sources */,
+				779748942435C153000FA83B /* CollectionIndexViewController.m in Sources */,
 				33CFEC71238AB45F00ED424A /* UIViewExt.m in Sources */,
 				33CFEC72238AB45F00ED424A /* FiltrateSlideView.m in Sources */,
 				33CFEC73238AB45F00ED424A /* CrashLocationViewController.m in Sources */,
+				7797489D2435D726000FA83B /* DDIndexView.m in Sources */,
 				33CFEC74238AB45F00ED424A /* EarningsViewController.m in Sources */,
 				33CFEC75238AB45F00ED424A /* UIBezierPathCustomView.m in Sources */,
+				779748A32435DBB0000FA83B /* CollectionIndexCell.m in Sources */,
 				33CFEC76238AB45F00ED424A /* PopViewOne.m in Sources */,
 				33CFEC77238AB45F00ED424A /* UIView+Extension.m in Sources */,
 				33CFEC78238AB45F00ED424A /* ProgressAnimationViewController.m in Sources */,

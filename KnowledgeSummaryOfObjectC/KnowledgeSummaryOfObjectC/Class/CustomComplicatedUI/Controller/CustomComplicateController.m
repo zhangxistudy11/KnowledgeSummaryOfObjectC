@@ -20,6 +20,7 @@
 #import "CustomTabbarViewController.h"
 #import "AnimationSegmentViewController.h"
 #import "ShadowViewController.h"
+#import "CollectionIndexViewController.h"
 @interface CustomComplicateController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -108,9 +109,13 @@
             return cell;
             break;
         case 12:
-        cell.textLabel.text = @"13-阴影效果";
-        return cell;
-        break;
+            cell.textLabel.text = @"13-阴影效果";
+            return cell;
+            break;
+        case 13:
+            cell.textLabel.text = @"14-collectionIndexView";
+            return cell;
+            break;
         default:
             break;
     }
@@ -195,12 +200,18 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-            case 12:
-                  {
-                      ShadowViewController * vc = [[ShadowViewController alloc]init];
-                      [self.navigationController pushViewController:vc animated:YES];
-                  }
-                      break;
+        case 12:
+        {
+            ShadowViewController * vc = [[ShadowViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 13:
+        {
+            CollectionIndexViewController * vc = [[CollectionIndexViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }
