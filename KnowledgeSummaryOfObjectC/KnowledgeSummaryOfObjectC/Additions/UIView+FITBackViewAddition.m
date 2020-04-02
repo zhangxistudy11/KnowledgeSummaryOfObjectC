@@ -77,7 +77,7 @@ static const void *kBackViewIdentifier = &kBackViewIdentifier;
                       target:(id)target
                  touchAction:(SEL)selector{
     if (![self backView]) {
-        UIView* backView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_W, SCREEN_H-64)];
+        UIView* backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H)];
         backView.backgroundColor = backColor;
         backView.alpha = a;
         UITapGestureRecognizer* gesture = [[UITapGestureRecognizer alloc] initWithTarget:target action:selector];
