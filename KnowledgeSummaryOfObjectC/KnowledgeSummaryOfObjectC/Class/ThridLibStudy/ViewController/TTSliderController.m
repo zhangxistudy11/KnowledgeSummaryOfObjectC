@@ -34,6 +34,10 @@
     slider.minValue = 3;
     slider.selectedMinimum = 3;
     slider.selectedMaximum = 24;
+    
+    slider.handleImage = [UIImage imageNamed:@"flight_intl_filter_slide_diameter"];
+       slider.selectedHandleDiameterMultiplier = 1.0;
+       slider.handleDiameter = 32.f;
 }
 
 

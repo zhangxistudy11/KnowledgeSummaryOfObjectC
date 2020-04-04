@@ -303,6 +303,10 @@
 		772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */; };
 		772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */; };
 		772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */; };
+		7755F7872431EA4900955AC8 /* PopViewMansoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */; };
+		7755F7882431EA4900955AC8 /* PopViewMansoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */; };
+		7755F78B2431EDFD00955AC8 /* PopMansoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F78A2431EDFD00955AC8 /* PopMansoryView.m */; };
+		7755F78C2431EDFD00955AC8 /* PopMansoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F78A2431EDFD00955AC8 /* PopMansoryView.m */; };
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
 		77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD9217D7915001325D9 /* YYCacheUseController.m */; };
 		77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639B1E217D9CF0001325D9 /* CacheTestModel.m */; };
@@ -311,8 +315,22 @@
 		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
 		7790FE4723D5875000FA5B70 /* RacLoginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */; };
 		7790FE4823D5875000FA5B70 /* RacLoginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */; };
+		779748932435C153000FA83B /* CollectionIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748922435C153000FA83B /* CollectionIndexViewController.m */; };
+		779748942435C153000FA83B /* CollectionIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748922435C153000FA83B /* CollectionIndexViewController.m */; };
+		7797489A2435D726000FA83B /* indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779748962435D725000FA83B /* indicator@2x.png */; };
+		7797489B2435D726000FA83B /* indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779748962435D725000FA83B /* indicator@2x.png */; };
+		7797489C2435D726000FA83B /* DDIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748972435D725000FA83B /* DDIndexView.m */; };
+		7797489D2435D726000FA83B /* DDIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748972435D725000FA83B /* DDIndexView.m */; };
+		7797489E2435D726000FA83B /* indicator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779748982435D726000FA83B /* indicator@3x.png */; };
+		7797489F2435D726000FA83B /* indicator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779748982435D726000FA83B /* indicator@3x.png */; };
+		779748A22435DBB0000FA83B /* CollectionIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748A12435DBB0000FA83B /* CollectionIndexCell.m */; };
+		779748A32435DBB0000FA83B /* CollectionIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748A12435DBB0000FA83B /* CollectionIndexCell.m */; };
 		77B57BA323BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
 		77B57BA423BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
+		77C1A3B02429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C1A3AF2429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png */; };
+		77C1A3B12429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C1A3AF2429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png */; };
+		77C1A419242DA0A700EB50C1 /* MansoryAdvanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C1A418242DA0A700EB50C1 /* MansoryAdvanced.m */; };
+		77C1A41A242DA0A700EB50C1 /* MansoryAdvanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C1A418242DA0A700EB50C1 /* MansoryAdvanced.m */; };
 		77C39DE524163862002C8316 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE324163862002C8316 /* TTRangeSlider.m */; };
 		77C39DE624163862002C8316 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE324163862002C8316 /* TTRangeSlider.m */; };
 		77C39DE9241638BB002C8316 /* TTSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE8241638BB002C8316 /* TTSliderController.m */; };
@@ -594,6 +612,10 @@
 		772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHXSegmentBarView.m; sourceTree = "<group>"; };
 		772D6D47234CA2700000F5B2 /* ZXSegmentItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXSegmentItemView.h; sourceTree = "<group>"; };
 		772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSegmentItemView.m; sourceTree = "<group>"; };
+		7755F7852431EA4900955AC8 /* PopViewMansoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewMansoryVC.h; sourceTree = "<group>"; };
+		7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewMansoryVC.m; sourceTree = "<group>"; };
+		7755F7892431EDFD00955AC8 /* PopMansoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMansoryView.h; sourceTree = "<group>"; };
+		7755F78A2431EDFD00955AC8 /* PopMansoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMansoryView.m; sourceTree = "<group>"; };
 		77639AD5217D71B9001325D9 /* CacheClassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheClassController.h; sourceTree = "<group>"; };
 		77639AD6217D71B9001325D9 /* CacheClassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheClassController.m; sourceTree = "<group>"; };
 		77639AD8217D7915001325D9 /* YYCacheUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCacheUseController.h; sourceTree = "<group>"; };
@@ -608,8 +630,19 @@
 		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
 		7790FE4523D5875000FA5B70 /* RacLoginExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RacLoginExampleController.h; sourceTree = "<group>"; };
 		7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacLoginExampleController.m; sourceTree = "<group>"; };
+		779748912435C153000FA83B /* CollectionIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionIndexViewController.h; sourceTree = "<group>"; };
+		779748922435C153000FA83B /* CollectionIndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionIndexViewController.m; sourceTree = "<group>"; };
+		779748962435D725000FA83B /* indicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indicator@2x.png"; sourceTree = "<group>"; };
+		779748972435D725000FA83B /* DDIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDIndexView.m; sourceTree = "<group>"; };
+		779748982435D726000FA83B /* indicator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indicator@3x.png"; sourceTree = "<group>"; };
+		779748992435D726000FA83B /* DDIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDIndexView.h; sourceTree = "<group>"; };
+		779748A02435DBB0000FA83B /* CollectionIndexCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionIndexCell.h; sourceTree = "<group>"; };
+		779748A12435DBB0000FA83B /* CollectionIndexCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionIndexCell.m; sourceTree = "<group>"; };
 		77B57BA123BF0D17000EB856 /* ExceptionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionController.h; sourceTree = "<group>"; };
 		77B57BA223BF0D17000EB856 /* ExceptionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExceptionController.m; sourceTree = "<group>"; };
+		77C1A3AF2429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flight_intl_filter_slide_diameter@3x.png"; sourceTree = "<group>"; };
+		77C1A417242DA0A700EB50C1 /* MansoryAdvanced.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MansoryAdvanced.h; sourceTree = "<group>"; };
+		77C1A418242DA0A700EB50C1 /* MansoryAdvanced.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MansoryAdvanced.m; sourceTree = "<group>"; };
 		77C39DE224163862002C8316 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRangeSliderDelegate.h; sourceTree = "<group>"; };
 		77C39DE324163862002C8316 /* TTRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRangeSlider.m; sourceTree = "<group>"; };
 		77C39DE424163862002C8316 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRangeSlider.h; sourceTree = "<group>"; };
@@ -817,6 +850,7 @@
 		332B8A321F7B81AC00DE9C1A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				779748952435D719000FA83B /* DDIndexView */,
 				77C39DE124163862002C8316 /* TTRangeSlider */,
 				3362C7A81FF0FFCE00F3EFA9 /* CatHud */,
 			);
@@ -840,6 +874,8 @@
 				333AAD13226B3402005736F0 /* MansoryStudyController.m */,
 				77C39DE7241638BB002C8316 /* TTSliderController.h */,
 				77C39DE8241638BB002C8316 /* TTSliderController.m */,
+				77C1A417242DA0A700EB50C1 /* MansoryAdvanced.h */,
+				77C1A418242DA0A700EB50C1 /* MansoryAdvanced.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -902,6 +938,7 @@
 		3349578C1FBBE957006E89F7 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				77C1A3AF2429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png */,
 				7719034922CB4DDD000926A9 /* jianbian@2x.png */,
 				7719034A22CB4DDD000926A9 /* jianbian@3x.png */,
 				335024DF20231F92008B1182 /* ic_xiala_black_big@2x.png */,
@@ -1096,6 +1133,8 @@
 				336EFD101F7E1EC400B8246F /* PopViewOne.m */,
 				336EFD181F7E388800B8246F /* PopViewTwo.h */,
 				336EFD191F7E388800B8246F /* PopViewTwo.m */,
+				7755F7892431EDFD00955AC8 /* PopMansoryView.h */,
+				7755F78A2431EDFD00955AC8 /* PopMansoryView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1111,6 +1150,8 @@
 				336EFD131F7E377700B8246F /* PopViewTwoController.m */,
 				777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */,
 				777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */,
+				7755F7852431EA4900955AC8 /* PopViewMansoryVC.h */,
+				7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1209,6 +1250,8 @@
 				772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */,
 				77F4837C2361A76B00D7A1AD /* ShadowViewController.h */,
 				77F4837D2361A76B00D7A1AD /* ShadowViewController.m */,
+				779748912435C153000FA83B /* CollectionIndexViewController.h */,
+				779748922435C153000FA83B /* CollectionIndexViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1238,6 +1281,8 @@
 				772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */,
 				772D6D47234CA2700000F5B2 /* ZXSegmentItemView.h */,
 				772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */,
+				779748A02435DBB0000FA83B /* CollectionIndexCell.h */,
+				779748A12435DBB0000FA83B /* CollectionIndexCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1564,6 +1609,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		779748952435D719000FA83B /* DDIndexView */ = {
+			isa = PBXGroup;
+			children = (
+				779748992435D726000FA83B /* DDIndexView.h */,
+				779748972435D725000FA83B /* DDIndexView.m */,
+				779748962435D725000FA83B /* indicator@2x.png */,
+				779748982435D726000FA83B /* indicator@3x.png */,
+			);
+			path = DDIndexView;
+			sourceTree = "<group>";
+		};
 		77C39DE124163862002C8316 /* TTRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -1754,6 +1810,7 @@
 				3362C7B31FF0FFEB00F3EFA9 /* MAO@2x.png in Resources */,
 				33F778F820206F8100581E5C /* ic_back@2x.png in Resources */,
 				3362C79B1FF0F3C400F3EFA9 /* Coin_loading_25@2x.png in Resources */,
+				7797489A2435D726000FA83B /* indicator@2x.png in Resources */,
 				33DA54E71FBD333100EB3716 /* ranklist_item_right@2x.png in Resources */,
 				33DA54F11FBD7DF100EB3716 /* Back_Arrow@2x.png in Resources */,
 				3362C7A41FF0F3C400F3EFA9 /* Coin_loading_6@2x.png in Resources */,
@@ -1763,6 +1820,7 @@
 				3362C7A31FF0F3C400F3EFA9 /* Coin_loading_5@2x.png in Resources */,
 				3362C7A61FF0F3C400F3EFA9 /* Coin_loading_8@2x.png in Resources */,
 				3362C7911FF0F3C400F3EFA9 /* Coin_loading_16@2x.png in Resources */,
+				7797489E2435D726000FA83B /* indicator@3x.png in Resources */,
 				7719034B22CB4DDD000926A9 /* jianbian@2x.png in Resources */,
 				336A8E3C1FEB590E00EFCF42 /* myMessage_TradingAssistance@3x.png in Resources */,
 				3362C7901FF0F3C400F3EFA9 /* Coin_loading_15@2x.png in Resources */,
@@ -1797,6 +1855,7 @@
 				3362C7991FF0F3C400F3EFA9 /* Coin_loading_23@2x.png in Resources */,
 				336A8E391FEB590E00EFCF42 /* myMessage_Notification@2x.png in Resources */,
 				3362C7A71FF0F3C400F3EFA9 /* Coin_loading_9@2x.png in Resources */,
+				77C1A3B02429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png in Resources */,
 				3362C7981FF0F3C400F3EFA9 /* Coin_loading_22@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1832,6 +1891,7 @@
 				33CFECC2238AB45F00ED424A /* Coin_loading_25@2x.png in Resources */,
 				33CFECC3238AB45F00ED424A /* ranklist_item_right@2x.png in Resources */,
 				33CFECC4238AB45F00ED424A /* Back_Arrow@2x.png in Resources */,
+				7797489F2435D726000FA83B /* indicator@3x.png in Resources */,
 				33CFECC5238AB45F00ED424A /* Coin_loading_6@2x.png in Resources */,
 				33CFECC6238AB45F00ED424A /* myMessage_CouponHint@2x.png in Resources */,
 				33CFECC7238AB45F00ED424A /* Coin_loading_4@2x.png in Resources */,
@@ -1839,6 +1899,7 @@
 				33CFECC9238AB45F00ED424A /* Coin_loading_5@2x.png in Resources */,
 				33CFECCA238AB45F00ED424A /* Coin_loading_8@2x.png in Resources */,
 				33CFECCB238AB45F00ED424A /* Coin_loading_16@2x.png in Resources */,
+				7797489B2435D726000FA83B /* indicator@2x.png in Resources */,
 				33CFECCC238AB45F00ED424A /* jianbian@2x.png in Resources */,
 				33CFECCD238AB45F00ED424A /* myMessage_TradingAssistance@3x.png in Resources */,
 				33CFECCE238AB45F00ED424A /* Coin_loading_15@2x.png in Resources */,
@@ -1868,6 +1929,7 @@
 				33CFECE6238AB45F00ED424A /* myMessage_Notification@3x.png in Resources */,
 				33CFECE7238AB45F00ED424A /* ranklist_item_left@2x.png in Resources */,
 				33CFECE8238AB45F00ED424A /* jianbian@3x.png in Resources */,
+				77C1A3B12429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png in Resources */,
 				33CFECE9238AB45F00ED424A /* Speed_Gif.gif in Resources */,
 				33CFECEA238AB45F00ED424A /* Coin_loading_26@2x.png in Resources */,
 				33CFECEB238AB45F00ED424A /* Coin_loading_23@2x.png in Resources */,
@@ -2022,10 +2084,13 @@
 				777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
 				772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */,
+				7797489C2435D726000FA83B /* DDIndexView.m in Sources */,
 				33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */,
+				779748932435C153000FA83B /* CollectionIndexViewController.m in Sources */,
 				335B79C6205FD701005B6E29 /* JSProtocolObj.m in Sources */,
 				33BA97D82306E2D000BF181C /* CustomTabbarViewController.m in Sources */,
 				3380A331204677BE00F8BA23 /* BarChartView.m in Sources */,
+				779748A22435DBB0000FA83B /* CollectionIndexCell.m in Sources */,
 				33AB8333235CA3CE00703D21 /* ParamsPassController.m in Sources */,
 				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
@@ -2040,6 +2105,7 @@
 				771DDC7F23C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */,
 				33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
+				7755F7872431EA4900955AC8 /* PopViewMansoryVC.m in Sources */,
 				33BA97E42306FCEB00BF181C /* NSString+ZTSize.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
 				333AAD14226B3402005736F0 /* MansoryStudyController.m in Sources */,
@@ -2048,6 +2114,7 @@
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
 				77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */,
 				3380A334204686A200F8BA23 /* BarChartItemView.m in Sources */,
+				77C1A419242DA0A700EB50C1 /* MansoryAdvanced.m in Sources */,
 				77B57BA323BF0D17000EB856 /* ExceptionController.m in Sources */,
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
 				334957951FBC4738006E89F7 /* SFLabel.m in Sources */,
@@ -2055,6 +2122,7 @@
 				33AD296123092E290064ED6A /* ZHXTabSingleItemView.m in Sources */,
 				3398DCF91F63FC2400D7A872 /* CAGradientLayerViewController.m in Sources */,
 				336EFD1A1F7E388800B8246F /* PopViewTwo.m in Sources */,
+				7755F78B2431EDFD00955AC8 /* PopMansoryView.m in Sources */,
 				33673CDC1F58FA6400ECE5D4 /* KnowledgeSummaryOfObjectC.xcdatamodeld in Sources */,
 				3362C7AF1FF0FFCE00F3EFA9 /* SCCatWaitingHUD.m in Sources */,
 				335B79C3205FD6C5005B6E29 /* JSProtocolViewController.m in Sources */,
@@ -2098,6 +2166,7 @@
 				33CFEC5F238AB45F00ED424A /* WebPracticeViewController.m in Sources */,
 				33CFEC60238AB45F00ED424A /* ViewController.m in Sources */,
 				33CFEC61238AB45F00ED424A /* MethodSwizzlingViewController.m in Sources */,
+				7755F78C2431EDFD00955AC8 /* PopMansoryView.m in Sources */,
 				77C39DE624163862002C8316 /* TTRangeSlider.m in Sources */,
 				33CFEC62238AB45F00ED424A /* CAShaplayerViewController.m in Sources */,
 				33CFEC63238AB45F00ED424A /* LoopViewController.m in Sources */,
@@ -2115,11 +2184,14 @@
 				33CFEC6F238AB45F00ED424A /* ButtonViewController.m in Sources */,
 				77C39DEA241638BB002C8316 /* TTSliderController.m in Sources */,
 				33CFEC70238AB45F00ED424A /* PopViewTwoController.m in Sources */,
+				779748942435C153000FA83B /* CollectionIndexViewController.m in Sources */,
 				33CFEC71238AB45F00ED424A /* UIViewExt.m in Sources */,
 				33CFEC72238AB45F00ED424A /* FiltrateSlideView.m in Sources */,
 				33CFEC73238AB45F00ED424A /* CrashLocationViewController.m in Sources */,
+				7797489D2435D726000FA83B /* DDIndexView.m in Sources */,
 				33CFEC74238AB45F00ED424A /* EarningsViewController.m in Sources */,
 				33CFEC75238AB45F00ED424A /* UIBezierPathCustomView.m in Sources */,
+				779748A32435DBB0000FA83B /* CollectionIndexCell.m in Sources */,
 				33CFEC76238AB45F00ED424A /* PopViewOne.m in Sources */,
 				33CFEC77238AB45F00ED424A /* UIView+Extension.m in Sources */,
 				33CFEC78238AB45F00ED424A /* ProgressAnimationViewController.m in Sources */,
@@ -2137,6 +2209,7 @@
 				33CFEC83238AB45F00ED424A /* ARStudyPeimaryVC.m in Sources */,
 				33CFEC84238AB45F00ED424A /* BaseTableViewCell.m in Sources */,
 				33CFEC85238AB45F00ED424A /* UIView+FITBackViewAddition.m in Sources */,
+				77C1A41A242DA0A700EB50C1 /* MansoryAdvanced.m in Sources */,
 				771DDC8023C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */,
 				33CFEC86238AB45F00ED424A /* FloatSlideCell.m in Sources */,
 				33CFEC87238AB45F00ED424A /* RacAdvanceController.m in Sources */,
@@ -2167,6 +2240,7 @@
 				33CFEC9F238AB45F00ED424A /* CustomComplicateController.m in Sources */,
 				33F97A82240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */,
 				33CFECA0238AB45F00ED424A /* NSString+ZTSize.m in Sources */,
+				7755F7882431EA4900955AC8 /* PopViewMansoryVC.m in Sources */,
 				33CFECA1238AB45F00ED424A /* LoadHtmlViewController.m in Sources */,
 				33CFECA2238AB45F00ED424A /* MansoryStudyController.m in Sources */,
 				33CFECA3238AB45F00ED424A /* MemoryTestView.m in Sources */,
