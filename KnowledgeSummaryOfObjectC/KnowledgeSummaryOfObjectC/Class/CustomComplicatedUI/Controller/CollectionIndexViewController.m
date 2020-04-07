@@ -35,18 +35,18 @@
     for (int i=0; i<30; i++) {
         [allArray addObject:[NSString stringWithFormat:@"%d",i]];
     }
-    self.dataSource = allArray;
+    self.dataSource = [@[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"M",@"N",@"O",@"W"] mutableCopy];
     
-    _indexView = [[DDIndexView alloc] init];
-       
-       _indexView.delegate = self;
-       [self.view addSubview:_indexView];
+//    _indexView = [[DDIndexView alloc] init];
+//
+//       _indexView.delegate = self;
+//       [self.view addSubview:_indexView];
     
 }
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    _startContentOffset = self.calendarView.contentOffset;
-}
+//- (void)viewDidLayoutSubviews {
+//    [super viewDidLayoutSubviews];
+//    _startContentOffset = self.calendarView.contentOffset;
+//}
 
 - (UICollectionView *)calendarView {
     if (!_calendarView) {
@@ -78,26 +78,29 @@
 }
 
 #pragma mark ---DDIndexViewDelegate
-- (NSArray <NSString *>*)titlesForIndexView:(DDIndexView *)indexView {
-    return self.dataSource;
-}
-
-- (void)indexView:(DDIndexView *)indexView didSelectedIndex:(NSInteger)index complete:(void (^)(NSInteger finalSelectedIndex))complete {
-    if (index >=0 && index < _calendarView.numberOfSections) {
-//        [_calendarView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index] atScrollPosition:UITableViewScrollPositionTop animated:NO];
-        [_calendarView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index] atScrollPosition:(UICollectionViewScrollPosition)UITableViewScrollPositionTop animated:NO];
-    }
-    CGPoint p = CGPointMake(0, _calendarView.contentOffset.y - _startContentOffset.y);
-    NSIndexPath *indexPath = [_calendarView indexPathForItemAtPoint:p];
-    complete(indexPath.section);
-}
+//- (NSArray <NSString *>*)titlesForIndexView:(DDIndexView *)indexView {
+//    return self.dataSource;
+//}
+//
+//- (void)indexView:(DDIndexView *)indexView didSelectedIndex:(NSInteger)index complete:(void (^)(NSInteger finalSelectedIndex))complete {
+//    if (index >=0 && index < _calendarView.numberOfSections) {
+////        [_calendarView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index] atScrollPosition:UITableViewScrollPositionTop animated:NO];
+//        [_calendarView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index] atScrollPosition:(UICollectionViewScrollPosition)UITableViewScrollPositionTop animated:NO];
+//    }
+//    CGPoint p = CGPointMake(0, _calendarView.contentOffset.y - _startContentOffset.y);
+//    NSIndexPath *indexPath = [_calendarView indexPathForItemAtPoint:p];
+//    complete(indexPath.section);
+//}
 #pragma mark ---UIScrollView
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    CGPoint p = CGPointMake(0, scrollView.contentOffset.y - _startContentOffset.y);
-    NSIndexPath *indexPath = [self.calendarView indexPathForItemAtPoint:p];
-    [_indexView updateSelectedIndex:indexPath.section];
+//    CGPoint p = CGPointMake(0, scrollView.contentOffset.y - _startContentOffset.y);
+//    NSIndexPath *indexPath = [self.calendarView indexPathForItemAtPoint:p];
+//    [_indexView updateSelectedIndex:indexPath.section];
 }
 #pragma mark - UICollectionViewDataSource
+- (NSArray<NSString *> *)indexTitlesForCollectionView:(UICollectionView *)collectionView{
+    return self.dataSource;
+}
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
 //    NSArray *items = self.dataSource[@"items"];
 //    return (items.count > 0 ? 1 : 0);
@@ -129,5 +132,26 @@
     NSString *data = [self.dataSource objectAtIndex:indexPath.section];
     [cell updateStr:data];
     return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+//       NSString *data = [self.dataSource objectAtIndex:indexPath.section];
+//           UILabel *lb = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, screen_width, 40)];
+//           lb.text = [NSString stringWithFormat:@"%@",data];
+//           [cell.contentView  addSubview:lb];
+//           cell.backgroundColor = [UIColor whiteColor];
+        
+        UICollectionReusableView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                                                                                       withReuseIdentifier:@"CalendarCollectionViewHeader"
+                                                                                              forIndexPath:indexPath];
+               headView.backgroundColor = [UIColor yellowColor];
+               
+               return headView;
+        
+        return headView;
+    }
+    return nil;
 }
 @end
