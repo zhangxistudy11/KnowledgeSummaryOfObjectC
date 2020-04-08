@@ -74,7 +74,7 @@
     if (!_redBtn) {
         _redBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _redBtn.backgroundColor = [UIColor cyanColor];
-        [_redBtn setTitle:@"测试一" forState:UIControlStateNormal];
+        [_redBtn setTitle:@"测试一111" forState:UIControlStateNormal];
     }
     return _redBtn;
 }
