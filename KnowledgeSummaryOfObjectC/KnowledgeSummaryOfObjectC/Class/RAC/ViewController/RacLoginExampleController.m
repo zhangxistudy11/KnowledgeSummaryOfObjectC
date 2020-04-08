@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.signInService = [[RWDummySignInService alloc]init];
-    self.navigationItem.title = @"RAC登录的例子";
+    self.navigationItem.title = @"RAC登录的例zzzz子";
     [self setUpView];
     [self layoutUI];
     [self RACStudy];
