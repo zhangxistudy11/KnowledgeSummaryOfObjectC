@@ -61,7 +61,7 @@
     [RACObserve(self.primaryView.scrollView, contentOffset)subscribeNext:^(id x) {
         NSNumber * aa = (NSNumber *)x;
 //        CGPoint offset = [x];
-        NSLog(@"gg166666111");
+        NSLog(@"gg1111");
        // NSLog(@"offY:%f",offset.y);
     } ];
 }
@@ -76,7 +76,7 @@
     }]];
 
     [alert addAction:[UIAlertAction actionWithTitle:@"sure" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"确定333ttt5555hhhhh77777zzz");
+        NSLog(@"确定333ttt55533335hhhhh77777");
     }]];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"wait" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
