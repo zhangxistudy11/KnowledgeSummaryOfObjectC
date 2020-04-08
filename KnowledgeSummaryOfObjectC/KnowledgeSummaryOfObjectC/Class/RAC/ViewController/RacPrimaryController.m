@@ -79,7 +79,7 @@
     }]];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"wait" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"待定");
+        NSLog(@"待定4444");
     }]];
     
 }
