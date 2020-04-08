@@ -84,7 +84,7 @@
     if (!_greenBtn) {
         _greenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _greenBtn.backgroundColor = [UIColor cyanColor];
-        [_greenBtn setTitle:@"测试二" forState:UIControlStateNormal];
+        [_greenBtn setTitle:@"测试二22222" forState:UIControlStateNormal];
     }
     return _greenBtn;
 }
