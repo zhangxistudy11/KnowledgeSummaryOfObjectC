@@ -42,7 +42,7 @@
     self.passwordTextField = [[UITextField alloc]init];
     [self.view addSubview:self.passwordTextField];
     self.passwordTextField.backgroundColor = [UIColor grayColor];
-    self.passwordTextField.placeholder = @"请输入密码";
+    self.passwordTextField.placeholder = @"请6666输入密码";
     
     self.signInButton = [[UIButton alloc]init];
     [self.view addSubview:self.signInButton];
