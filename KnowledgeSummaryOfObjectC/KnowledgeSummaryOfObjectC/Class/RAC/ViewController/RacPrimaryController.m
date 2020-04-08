@@ -76,11 +76,11 @@
     }]];
 
     [alert addAction:[UIAlertAction actionWithTitle:@"sure" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"确定333ttt");
+        NSLog(@"确定333ttt5555");
     }]];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"wait" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"待定44ffff44");
+        NSLog(@"待定44ffff4466666");
     }]];
     
 }
