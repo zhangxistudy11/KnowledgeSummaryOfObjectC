@@ -68,7 +68,7 @@
 #pragma mark - Target Methods
 - (void)showAlertGreenView
 {
-    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"弹出框" message:@"aa" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"弹出框" message:@"gggaa" preferredStyle:UIAlertControllerStyleAlert];
     [self presentViewController:alert animated:YES completion:nil];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"canc99999le11888811" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
