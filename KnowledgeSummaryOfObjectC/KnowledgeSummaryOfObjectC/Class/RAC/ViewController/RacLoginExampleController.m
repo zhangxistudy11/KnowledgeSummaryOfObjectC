@@ -36,7 +36,7 @@
     self.usernameTextField = [[UITextField alloc]init];
     [self.view addSubview:self.usernameTextField];
     self.usernameTextField.backgroundColor = [UIColor cyanColor];
-    self.usernameTextField.placeholder = @"请999输入账号";
+    self.usernameTextField.placeholder = @"请999输ppp入账号";
     
     
     self.passwordTextField = [[UITextField alloc]init];
