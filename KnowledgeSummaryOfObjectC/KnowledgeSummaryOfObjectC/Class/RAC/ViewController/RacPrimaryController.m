@@ -61,7 +61,7 @@
     [RACObserve(self.primaryView.scrollView, contentOffset)subscribeNext:^(id x) {
         NSNumber * aa = (NSNumber *)x;
 //        CGPoint offset = [x];
-        NSLog(@"gg1111");
+        NSLog(@"gg166666111");
        // NSLog(@"offY:%f",offset.y);
     } ];
 }
