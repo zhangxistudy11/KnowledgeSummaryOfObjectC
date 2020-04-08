@@ -46,7 +46,7 @@
     
     self.signInButton = [[UIButton alloc]init];
     [self.view addSubview:self.signInButton];
-    [self.signInButton setTitle:@"登4444333录" forState:UIControlStateNormal];
+    [self.signInButton setTitle:@"登44222244333录" forState:UIControlStateNormal];
     self.signInButton.backgroundColor = [UIColor grayColor];
     self.signInButton.enabled = NO;
 
