@@ -75,7 +75,7 @@
         [alert dismissViewControllerAnimated:YES completion:nil];
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"sure" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"确定");
+        NSLog(@"确定333");
     }]];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"wait" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
