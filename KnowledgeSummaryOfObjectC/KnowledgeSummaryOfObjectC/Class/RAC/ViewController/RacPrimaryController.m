@@ -74,12 +74,13 @@
     [alert addAction:[UIAlertAction actionWithTitle:@"cancle1111" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alert dismissViewControllerAnimated:YES completion:nil];
     }]];
-    [alert addAction:[UIAlertAction actionWithTitle:@"sureddd" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"确定");
+
+    [alert addAction:[UIAlertAction actionWithTitle:@"sure" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"确定333ttt");
     }]];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"wait" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"待定4444");
+        NSLog(@"待定44ffff44");
     }]];
     
 }
