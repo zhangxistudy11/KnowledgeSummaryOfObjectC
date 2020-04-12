@@ -28,6 +28,7 @@ PODS:
     - ReactiveCocoa/Core
   - WebViewJavascriptBridge (6.0.2)
   - YYCache (1.0.4)
+  - ZHXIndexView (0.0.1)
 
 DEPENDENCIES:
   - BlocksKit
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.4.7)
   - WebViewJavascriptBridge (~> 6.0.2)
   - YYCache
+  - ZHXIndexView (~> 0.0.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -51,6 +53,7 @@ SPEC REPOS:
     - ReactiveCocoa
     - WebViewJavascriptBridge
     - YYCache
+    - ZHXIndexView
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
@@ -62,7 +65,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  ZHXIndexView: 56c164f7102f549d4759e569b135faeffc9368af
 
-PODFILE CHECKSUM: e7e962b58ce6608791e03cf6c6a741a8c0dbb4e4
+PODFILE CHECKSUM: 2899e29c7778425105b845565b9aa0385268bb10
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
