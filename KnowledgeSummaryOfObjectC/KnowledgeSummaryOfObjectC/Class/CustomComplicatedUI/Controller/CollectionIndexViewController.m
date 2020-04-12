@@ -9,11 +9,13 @@
 #import "CollectionIndexViewController.h"
 #import "DDIndexView.h"
 #import "CollectionIndexCell.h"
+#import "ZHXIndexView.h"
 @interface CollectionIndexViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,DDIndexViewDelegate>
 @property (nonatomic, strong) UICollectionView *calendarView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, strong)  DDIndexView *indexView;
 @property (nonatomic, assign) CGPoint startContentOffset;
+@property(nonatomic,strong) ZHXIndexView *indexV;
 @end
 
 @implementation CollectionIndexViewController
@@ -36,6 +38,7 @@
         [allArray addObject:[NSString stringWithFormat:@"%d",i]];
     }
     self.dataSource = [@[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"M",@"N",@"O",@"W"] mutableCopy];
+    
     
 //    _indexView = [[DDIndexView alloc] init];
 //

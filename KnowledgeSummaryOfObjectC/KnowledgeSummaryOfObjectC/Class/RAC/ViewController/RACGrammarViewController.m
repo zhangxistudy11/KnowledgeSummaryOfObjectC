@@ -859,7 +859,7 @@
     //其中RACScheduler是RAC中管理线程的类
     
     [[RACSignal interval:1 onScheduler:[RACScheduler mainThreadScheduler]] subscribeNext:^(NSDate * _Nullable x) {
-        NSLog(@"定时器ffffaaaaag");
+        NSLog(@"定时器ffffaaaaagbbbbb66666");
     }];
     
 }
