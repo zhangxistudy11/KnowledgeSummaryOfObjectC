@@ -287,6 +287,7 @@
 		33F97A81240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */; };
 		33F97A82240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */; };
 		5161741911F0F6354905088A /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2538995099BB6BEFDA8352 /* libPods-KnowledgeSummaryOfObjectC.a */; };
+		7709A91C2449551500EA984B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7709A91B2449551500EA984B /* TestViewController.m */; };
 		771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F222C9D8C4000926A9 /* SuspendViewController.m */; };
 		771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F522C9DECC000926A9 /* SuspendTableController.m */; };
 		771902F922CA2813000926A9 /* CustomProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F822CA2813000926A9 /* CustomProgressController.m */; };
@@ -586,6 +587,8 @@
 		33F778FB202071A300581E5C /* FiltrateSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltrateSlideView.h; sourceTree = "<group>"; };
 		33F97A7F240BD5E8000ADA49 /* UpdateLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateLayoutController.h; sourceTree = "<group>"; };
 		33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateLayoutController.m; sourceTree = "<group>"; };
+		7709A91A2449551500EA984B /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		7709A91B2449551500EA984B /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		771902F122C9D8C4000926A9 /* SuspendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendViewController.h; sourceTree = "<group>"; };
 		771902F222C9D8C4000926A9 /* SuspendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspendViewController.m; sourceTree = "<group>"; };
 		771902F422C9DECC000926A9 /* SuspendTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendTableController.h; sourceTree = "<group>"; };
@@ -1419,6 +1422,8 @@
 				3398DCDE1F63FC2400D7A872 /* BaseViewController.m */,
 				3398DCE11F63FC2400D7A872 /* ViewController.h */,
 				3398DCE21F63FC2400D7A872 /* ViewController.m */,
+				7709A91A2449551500EA984B /* TestViewController.h */,
+				7709A91B2449551500EA984B /* TestViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2051,6 +2056,7 @@
 				336A8E311FEB533300EFCF42 /* ButtonViewController.m in Sources */,
 				336EFD141F7E377700B8246F /* PopViewTwoController.m in Sources */,
 				3362C7B01FF0FFCE00F3EFA9 /* UIViewExt.m in Sources */,
+				7709A91C2449551500EA984B /* TestViewController.m in Sources */,
 				33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */,
 				33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */,
 				3398DCFB1F63FC2400D7A872 /* EarningsViewController.m in Sources */,
