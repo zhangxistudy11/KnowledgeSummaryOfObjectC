@@ -12,9 +12,9 @@ def common_Pods
     pod 'FLAnimatedImage', '~> 1.0'
     pod 'MBProgressHUD', '~> 1.0.0'
     pod 'YYCache'
-    pod 'FLEX’
-    pod 'ZHXIndexView', '~> 0.0.1'
     pod 'BlocksKit’
+    pod 'ZHXIndexView', '~> 0.0.3'
+
 end
 
 target 'KnowledgeSummaryOfObjectC' do

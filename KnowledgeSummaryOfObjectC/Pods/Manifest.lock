@@ -15,7 +15,6 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - FLAnimatedImage (1.0.12)
-  - FLEX (2.1.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.13)
@@ -28,25 +27,23 @@ PODS:
     - ReactiveCocoa/Core
   - WebViewJavascriptBridge (6.0.2)
   - YYCache (1.0.4)
-  - ZHXIndexView (0.0.1)
+  - ZHXIndexView (0.0.3)
 
 DEPENDENCIES:
   - BlocksKit
   - FLAnimatedImage (~> 1.0)
-  - FLEX
   - Masonry (~> 1.1.0)
   - MBProgressHUD (~> 1.0.0)
   - MJRefresh
   - ReactiveCocoa (~> 2.4.7)
   - WebViewJavascriptBridge (~> 6.0.2)
   - YYCache
-  - ZHXIndexView (~> 0.0.1)
+  - ZHXIndexView (~> 0.0.3)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - BlocksKit
     - FLAnimatedImage
-    - FLEX
     - Masonry
     - MBProgressHUD
     - MJRefresh
@@ -58,15 +55,14 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
-  FLEX: 27b768fcae23a313a1eb115076d429180ca9b472
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 56a28aa628c9895e97a518dabaecf70b18f92f32
   ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
-  ZHXIndexView: 56c164f7102f549d4759e569b135faeffc9368af
+  ZHXIndexView: e7bd78b850969061f33b2c3c2f878a5bc1702ad1
 
-PODFILE CHECKSUM: 2899e29c7778425105b845565b9aa0385268bb10
+PODFILE CHECKSUM: a27500a79e2783d77165528352094d20eab278b2
 
 COCOAPODS: 1.9.1
