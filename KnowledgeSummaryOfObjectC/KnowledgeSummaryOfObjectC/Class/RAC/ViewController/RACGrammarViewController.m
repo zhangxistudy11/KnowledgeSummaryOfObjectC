@@ -162,14 +162,22 @@
             cell.textLabel.text = @"27-throttle";
             return cell;
             break;
-            case 28:
-                       cell.textLabel.text = @"28-catch";
+        case 28:
+            cell.textLabel.text = @"28-catch";
+            return cell;
+            break;
+        case 29:
+            cell.textLabel.text = @"29-catchTo";
+            return cell;
+            break;
+        case 30:
+            cell.textLabel.text = @"30-线程切换";
+            return cell;
+            break;
+            case 31:
+                       cell.textLabel.text = @"31-zip";
                        return cell;
                        break;
-            case 29:
-                                  cell.textLabel.text = @"29-catchTo";
-                                  return cell;
-                                  break;
         default:
             cell.textLabel.text = @"待使用";
             return cell;
@@ -324,16 +332,26 @@
             [self test27];
         }
             break;
-            case 28:
+        case 28:
+        {
+            [self test28];
+        }
+            break;
+        case 29:
+        {
+            [self test29];
+        }
+            break;
+        case 30:
+        {
+            [self test30];
+        }
+            break;
+            case 31:
                    {
-                       [self test28];
+                       [self test31];
                    }
                        break;
-            case 29:
-                              {
-                                  [self test29];
-                              }
-                                  break;
         default:
             break;
     }
@@ -643,10 +661,26 @@
     //合并信号
     RACSignal *single = [subjectA zipWith:subjectB];
     
+    RACSignal *zipSignal = [ RACSignal zip:@[subjectA,subjectB] reduce:^id(NSString *A,NSString *B){
+        return [NSString stringWithFormat:@"resultis:%@%@",A,B];
+    }];
+    [zipSignal subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+    
     //订阅信号
     [single subscribeNext:^(id  _Nullable x) {
+       //生成的是元组
         NSLog(@"%@", x);
     }];
+    [single subscribeNext:^(RACTuple * _Nullable tupe) {
+          //生成的是元组
+           RACTupleUnpack(NSString *a,NSString *b) = tupe;
+
+           NSLog(@"%@ %@",a,b);
+
+
+       }];
     
     //发出消息
     [subjectA sendNext:@"A"];
@@ -662,15 +696,33 @@
      与zipWith区别
      1.当组合信号被订阅，内部会自动订阅两个信号,必须两个信号都发出内容，才会被触发。(而zip, 是两个信号同事发出内容, 才会触发)
      */
-    /*
-     RACSignal *single = [_accountText.rac_textSignal combineLatestWith:_passwordText.rac_textSignal];
-     
-     [single subscribeNext:^(id  _Nullable x) {
-     RACTupleUnpack(NSString *account, NSString *password) = x;
-     
-     _loginButton.enabled = account.length > 0 && password.length > 0;
-     }];
-     
+    RACSubject *letters = [RACSubject subject];
+    RACSubject *numbers = [RACSubject subject];
+    
+    RACSignal *combined = [RACSignal combineLatest:@[letters,numbers] reduce:^id(NSString *letter,NSString *number){
+        return [letter stringByAppendingString:number];
+    }];
+    // Outputs: B1 B2 C2 C3 D3 D4
+    [combined subscribeNext:^(id x) {
+        NSLog(@"%@", x);
+    }];
+    
+    [letters sendNext:@"A"];
+    [letters sendNext:@"B"];
+    [numbers sendNext:@"1"];
+    [numbers sendNext:@"2"];
+    [letters sendNext:@"C"];
+    [numbers sendNext:@"3"];
+    [letters sendNext:@"D"];
+    [numbers sendNext:@"4"];
+    
+    /**
+     | letter |-  A  -  B  -  -   -   C  -    -   D
+     | number |-  -  -   1  -  2   -   3   -   -    4
+     | new   |-  -  -  -  B1 -  B2 C2 C3 -  D3 D4
+     -------------- time ----------------------->
+     可以发现letter信号的A值被更新的B值覆盖了,所以接下来接收到number信号的1时候,合并,输出信号B1.
+     当接收到C的时候,与number的最新的值2合并,输出信号C2.
      */
 }
 - (void)test13{
@@ -967,12 +1019,12 @@
         [subscriber sendError:nil];
         return nil;
     }];
-
+    
     // 经过catch:方法将sendError:nil替换为sendNext:@2
     RACSignal *catchedSignal = [signal catch:^RACSignal * _Nonnull(NSError * _Nonnull error) {
         return [RACSignal return:@2];
     }];
-
+    
     // 输出日志
     [catchedSignal subscribeNext:^(id  _Nullable x) {
         NSLog(@"sendNext: %@", x);
@@ -988,22 +1040,68 @@
      可以看到逻辑很简单，就是预先传入了一个signal，无论收到的sendError传了什么类型的NSError，都直接返回这个signal。
      */
     // 原始信号
-       RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-           [subscriber sendNext:@1];
-           [subscriber sendError:nil];
-           return nil;
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@1];
+        [subscriber sendError:nil];
+        return nil;
+    }];
+    
+    // 经过catch:方法将sendError:nil替换为sendNext:@2
+    RACSignal *catchedSignal = [signal catchTo:[RACSignal return:@(2)]];
+    
+    // 输出日志
+    [catchedSignal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"sendNext: %@", x);
+    } error:^(NSError * _Nullable error) {
+        NSLog(@"sendError");
+    } completed:^{
+        NSLog(@"sendCompleted");
+    }];
+}
+- (void)test30 {
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [subscriber sendNext:@1];
+        [subscriber sendCompleted];
+        return nil;
+    }];
+    [[signal deliverOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(id x) {
+        NSLog(@"result:%@",x);
+        
+    }];
+    [[signal deliverOnMainThread]subscribeNext:^(id x) {
+        NSLog(@"resultdd:%@",x);
+        
+    }];
+    
+}
+- (void)test31 {
+    RACSubject *letters = [RACSubject subject];
+       RACSubject *numbers = [RACSubject subject];
+       
+       RACSignal *zipSignal = [RACSignal zip:@[letters,numbers] reduce:^id(NSString *letter,NSString *number){
+           return [letter stringByAppendingString:number];
        }];
-
-       // 经过catch:方法将sendError:nil替换为sendNext:@2
-       RACSignal *catchedSignal = [signal catchTo:[RACSignal return:@(2)]];
-
-       // 输出日志
-       [catchedSignal subscribeNext:^(id  _Nullable x) {
-           NSLog(@"sendNext: %@", x);
-       } error:^(NSError * _Nullable error) {
-           NSLog(@"sendError");
-       } completed:^{
-           NSLog(@"sendCompleted");
+       // Outputs: A1 B2 C3 D4
+       [zipSignal subscribeNext:^(id x) {
+           NSLog(@"%@",x);
        }];
+       
+       [letters sendNext:@"A"];
+       [letters sendNext:@"B"];
+       [numbers sendNext:@"1"];
+       [numbers sendNext:@"2"];
+       [numbers sendNext:@"3"];
+       [letters sendNext:@"C"];
+       [letters sendNext:@"D"];
+       [numbers sendNext:@"4"];
+       /**
+        | letter |-  A  -  B  -  -  -  -  -  -  C  - D
+        | number |-  -  -  -  1  -  2  -  3  -   -  -   4
+        | new  |-  -  -  -   - A1 -  B2 -  -  C3 -  -  D4
+        -------------- time ----------------------->
+        zip的合并行为是按顺序取出各个信号然后合并发出的.也就是说,
+        letters的第一个值A和number的第一个值1合并输出A1,第二个值B和number的第二个值2合并输出B2
+       假设D后面,还有E,F,G...,但是没有对应的number信号,zip的合并行为就无法进行下去了.
+        */
 }
 @end
