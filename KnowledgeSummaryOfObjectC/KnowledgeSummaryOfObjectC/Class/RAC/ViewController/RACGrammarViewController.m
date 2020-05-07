@@ -357,6 +357,9 @@
     }
 }
 - (void)test0{
+    /*
+     https://juejin.im/post/5a30fa206fb9a044ff317545
+     */
     //创建信号
     RACSignal *single = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         //发送消息

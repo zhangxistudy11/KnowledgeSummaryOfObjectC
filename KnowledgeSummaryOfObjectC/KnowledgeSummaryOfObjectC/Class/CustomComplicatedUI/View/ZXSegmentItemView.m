@@ -29,15 +29,6 @@
         make.centerX.equalTo(self.mas_centerX);
     }];
     
-//    self.line = [[UIView alloc]init];
-//    [self addSubview:self.line];
-//    [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.bottom.equalTo(self.mas_bottom);
-//        make.centerX.equalTo(self.mas_centerX);
-//        make.width.mas_equalTo(20);
-//        make.height.mas_equalTo(3);
-//    }];
-    
     self.badge = [UIButton buttonWithType:UIButtonTypeCustom];
     [self addSubview:self.badge];
     [self.badge setContentEdgeInsets:UIEdgeInsetsMake(1, 4, 1, 4)];
