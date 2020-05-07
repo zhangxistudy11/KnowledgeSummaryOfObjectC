@@ -679,6 +679,7 @@
     [single subscribeNext:^(RACTuple * _Nullable tupe) {
           //生成的是元组
            RACTupleUnpack(NSString *a,NSString *b) = tupe;
+        //也可以用reduce来处理组合后的信号，见test13
 
            NSLog(@"%@ %@",a,b);
 
