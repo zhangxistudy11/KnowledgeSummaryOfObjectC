@@ -9,6 +9,7 @@
 #import "BaseicKnowledgeViewController.h"
 #import "EventInteractionViewController.h"
 #import "UpdateLayoutController.h"
+#import "ImageResizabVC.h"
 @interface BaseicKnowledgeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -59,10 +60,10 @@
             cell.textLabel.text = @"1-setNeedsLayout和layoutIfNeeded";
             return cell;
             break;
-//        case 2:
-//            cell.textLabel.text = @"3-JavaScriptCore熟悉";
-//            return cell;
-//            break;
+        case 2:
+            cell.textLabel.text = @"2-图片拉伸";
+            return cell;
+            break;
 //        case 3:
 //            cell.textLabel.text = @"4-JavaScriptProtol熟悉";
 //            return cell;
@@ -92,12 +93,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-//        case 2:
-//        {
-//            JavaScriptStuViewController * vc = [[JavaScriptStuViewController alloc]init];
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//            break;
+        case 2:
+        {
+            ImageResizabVC * vc = [[ImageResizabVC alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
 //        case 3:
 //        {
 //            JSProtocolViewController * vc = [[JSProtocolViewController alloc]init];

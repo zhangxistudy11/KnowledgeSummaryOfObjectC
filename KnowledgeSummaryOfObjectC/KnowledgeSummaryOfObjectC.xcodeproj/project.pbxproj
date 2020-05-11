@@ -310,6 +310,8 @@
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
 		77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD9217D7915001325D9 /* YYCacheUseController.m */; };
 		77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639B1E217D9CF0001325D9 /* CacheTestModel.m */; };
+		77673C142468FC9B007F958B /* ImageResizabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 77673C132468FC9B007F958B /* ImageResizabVC.m */; };
+		77673C162468FD9A007F958B /* back_resizab@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77673C152468FD9A007F958B /* back_resizab@3x.png */; };
 		777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */; };
 		777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618FA224C80B100D51594 /* ProgressAnimationView.m */; };
 		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
@@ -624,6 +626,9 @@
 		77639AD9217D7915001325D9 /* YYCacheUseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCacheUseController.m; sourceTree = "<group>"; };
 		77639B1D217D9CF0001325D9 /* CacheTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheTestModel.h; sourceTree = "<group>"; };
 		77639B1E217D9CF0001325D9 /* CacheTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheTestModel.m; sourceTree = "<group>"; };
+		77673C122468FC9B007F958B /* ImageResizabVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageResizabVC.h; sourceTree = "<group>"; };
+		77673C132468FC9B007F958B /* ImageResizabVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageResizabVC.m; sourceTree = "<group>"; };
+		77673C152468FD9A007F958B /* back_resizab@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_resizab@3x.png"; sourceTree = "<group>"; };
 		777618F6224C74DE00D51594 /* ProgressAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressAnimationViewController.h; sourceTree = "<group>"; };
 		777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimationViewController.m; sourceTree = "<group>"; };
 		777618F9224C80B100D51594 /* ProgressAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressAnimationView.h; sourceTree = "<group>"; };
@@ -940,6 +945,7 @@
 		3349578C1FBBE957006E89F7 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				77673C152468FD9A007F958B /* back_resizab@3x.png */,
 				77C1A3AF2429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png */,
 				7719034922CB4DDD000926A9 /* jianbian@2x.png */,
 				7719034A22CB4DDD000926A9 /* jianbian@3x.png */,
@@ -1580,6 +1586,8 @@
 				771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */,
 				33F97A7F240BD5E8000ADA49 /* UpdateLayoutController.h */,
 				33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */,
+				77673C122468FC9B007F958B /* ImageResizabVC.h */,
+				77673C132468FC9B007F958B /* ImageResizabVC.m */,
 			);
 			path = BasicKnowledge;
 			sourceTree = "<group>";
@@ -1833,6 +1841,7 @@
 				3362C78C1FF0F3C400F3EFA9 /* Coin_loading_11@2x.png in Resources */,
 				3362C7971FF0F3C400F3EFA9 /* Coin_loading_21@2x.png in Resources */,
 				3362C7921FF0F3C400F3EFA9 /* Coin_loading_17@2x.png in Resources */,
+				77673C162468FD9A007F958B /* back_resizab@3x.png in Resources */,
 				335024E120231F92008B1182 /* ic_xiala_black_big@2x.png in Resources */,
 				3362C79F1FF0F3C400F3EFA9 /* Coin_loading_29@2x.png in Resources */,
 				3362C7941FF0F3C400F3EFA9 /* Coin_loading_19@2x.png in Resources */,
@@ -2075,6 +2084,7 @@
 				771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */,
 				3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */,
 				33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */,
+				77673C142468FC9B007F958B /* ImageResizabVC.m in Sources */,
 				336EFD1D1F7E410900B8246F /* UIView+FITBackViewAddition.m in Sources */,
 				FBF2016A20A5921800AFE27B /* FloatSlideCell.m in Sources */,
 				336EFCFD1F7DF24200B8246F /* RacAdvanceController.m in Sources */,
