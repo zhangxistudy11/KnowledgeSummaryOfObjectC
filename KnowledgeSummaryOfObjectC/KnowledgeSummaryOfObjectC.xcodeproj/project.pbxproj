@@ -119,6 +119,7 @@
 		33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BB26981F669E5300CDFA92 /* WebPracticeViewController.m */; };
 		33BF2F5B241E1CCF00E5A54F /* RWDummySignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BF2F5A241E1CCF00E5A54F /* RWDummySignInService.m */; };
 		33C0BE64205FAFA70062AE6D /* JavaScriptStuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0BE63205FAFA70062AE6D /* JavaScriptStuViewController.m */; };
+		33CCD914247AA7AF00681671 /* StackViewUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CCD913247AA7AF00681671 /* StackViewUseController.m */; };
 		33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D61FBC6FFC0082B934 /* BaseTableViewCell.m */; };
 		33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D91FBC73680082B934 /* SlideTableViewCell.m */; };
 		33CD24DD1FBC772B0082B934 /* SlideSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24DC1FBC772B0082B934 /* SlideSubView.m */; };
@@ -561,6 +562,8 @@
 		33BF2F5A241E1CCF00E5A54F /* RWDummySignInService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWDummySignInService.m; sourceTree = "<group>"; };
 		33C0BE62205FAFA70062AE6D /* JavaScriptStuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptStuViewController.h; sourceTree = "<group>"; };
 		33C0BE63205FAFA70062AE6D /* JavaScriptStuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptStuViewController.m; sourceTree = "<group>"; };
+		33CCD912247AA7AF00681671 /* StackViewUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackViewUseController.h; sourceTree = "<group>"; };
+		33CCD913247AA7AF00681671 /* StackViewUseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackViewUseController.m; sourceTree = "<group>"; };
 		33CD24D51FBC6FFC0082B934 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		33CD24D61FBC6FFC0082B934 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		33CD24D81FBC73680082B934 /* SlideTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideTableViewCell.h; sourceTree = "<group>"; };
@@ -1588,6 +1591,8 @@
 				33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */,
 				77673C122468FC9B007F958B /* ImageResizabVC.h */,
 				77673C132468FC9B007F958B /* ImageResizabVC.m */,
+				33CCD912247AA7AF00681671 /* StackViewUseController.h */,
+				33CCD913247AA7AF00681671 /* StackViewUseController.m */,
 			);
 			path = BasicKnowledge;
 			sourceTree = "<group>";
@@ -2056,6 +2061,7 @@
 				33AD296023092E290064ED6A /* ZHXTabBarView.m in Sources */,
 				33C0BE64205FAFA70062AE6D /* JavaScriptStuViewController.m in Sources */,
 				334957851FBBDF5D006E89F7 /* SlideViewController.m in Sources */,
+				33CCD914247AA7AF00681671 /* StackViewUseController.m in Sources */,
 				33BF2F5B241E1CCF00E5A54F /* RWDummySignInService.m in Sources */,
 				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
 				334839AF1F7CF02E00BD17EE /* RacPrimaryView.m in Sources */,

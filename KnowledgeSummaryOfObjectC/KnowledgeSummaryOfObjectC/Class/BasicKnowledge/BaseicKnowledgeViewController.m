@@ -10,6 +10,7 @@
 #import "EventInteractionViewController.h"
 #import "UpdateLayoutController.h"
 #import "ImageResizabVC.h"
+#import "StackViewUseController.h"
 @interface BaseicKnowledgeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -64,10 +65,10 @@
             cell.textLabel.text = @"2-图片拉伸";
             return cell;
             break;
-//        case 3:
-//            cell.textLabel.text = @"4-JavaScriptProtol熟悉";
-//            return cell;
-//            break;
+        case 3:
+            cell.textLabel.text = @"3-UIStackView使用";
+            return cell;
+            break;
         default:
             break;
     }
@@ -99,12 +100,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-//        case 3:
-//        {
-//            JSProtocolViewController * vc = [[JSProtocolViewController alloc]init];
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//            break;
+        case 3:
+        {
+            StackViewUseController * vc = [[StackViewUseController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }
