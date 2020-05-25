@@ -328,6 +328,7 @@
 		7797489F2435D726000FA83B /* indicator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779748982435D726000FA83B /* indicator@3x.png */; };
 		779748A22435DBB0000FA83B /* CollectionIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748A12435DBB0000FA83B /* CollectionIndexCell.m */; };
 		779748A32435DBB0000FA83B /* CollectionIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748A12435DBB0000FA83B /* CollectionIndexCell.m */; };
+		77AC8756247B5B55004210F0 /* BlockUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC8755247B5B55004210F0 /* BlockUseViewController.m */; };
 		77B57BA323BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
 		77B57BA423BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
 		77C1A3B02429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C1A3AF2429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png */; };
@@ -648,6 +649,8 @@
 		779748992435D726000FA83B /* DDIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDIndexView.h; sourceTree = "<group>"; };
 		779748A02435DBB0000FA83B /* CollectionIndexCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionIndexCell.h; sourceTree = "<group>"; };
 		779748A12435DBB0000FA83B /* CollectionIndexCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionIndexCell.m; sourceTree = "<group>"; };
+		77AC8754247B5B55004210F0 /* BlockUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockUseViewController.h; sourceTree = "<group>"; };
+		77AC8755247B5B55004210F0 /* BlockUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockUseViewController.m; sourceTree = "<group>"; };
 		77B57BA123BF0D17000EB856 /* ExceptionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionController.h; sourceTree = "<group>"; };
 		77B57BA223BF0D17000EB856 /* ExceptionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExceptionController.m; sourceTree = "<group>"; };
 		77C1A3AF2429EF3400EB50C1 /* flight_intl_filter_slide_diameter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flight_intl_filter_slide_diameter@3x.png"; sourceTree = "<group>"; };
@@ -1465,6 +1468,8 @@
 				33AB8332235CA3CE00703D21 /* ParamsPassController.m */,
 				77B57BA123BF0D17000EB856 /* ExceptionController.h */,
 				77B57BA223BF0D17000EB856 /* ExceptionController.m */,
+				77AC8754247B5B55004210F0 /* BlockUseViewController.h */,
+				77AC8755247B5B55004210F0 /* BlockUseViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2114,6 +2119,7 @@
 				33AB8333235CA3CE00703D21 /* ParamsPassController.m in Sources */,
 				33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */,
 				3398DD001F63FC2400D7A872 /* BaseViewController.m in Sources */,
+				77AC8756247B5B55004210F0 /* BlockUseViewController.m in Sources */,
 				77C39DE524163862002C8316 /* TTRangeSlider.m in Sources */,
 				FBF2007320A52CF400AFE27B /* FloatTableViewController.m in Sources */,
 				3362C7B71FF1042600F3EFA9 /* CustomHudViewController.m in Sources */,

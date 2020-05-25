@@ -12,6 +12,7 @@
 #import "MemoryLeakViewController.h"
 #import "ParamsPassController.h"
 #import "ExceptionController.h"
+#import "BlockUseViewController.h"
 @interface MemoryManageViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -68,6 +69,10 @@
             cell.textLabel.text = @"4-异常处理";
             return cell;
             break;
+        case 4:
+            cell.textLabel.text = @"5-block探究";
+            return cell;
+            break;
         default:
             break;
     }
@@ -107,6 +112,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+            case 4:
+                   {
+                       BlockUseViewController * vc = [[BlockUseViewController alloc]init];
+                       [self.navigationController pushViewController:vc animated:YES];
+                   }
+                       break;
         default:
             break;
     }
