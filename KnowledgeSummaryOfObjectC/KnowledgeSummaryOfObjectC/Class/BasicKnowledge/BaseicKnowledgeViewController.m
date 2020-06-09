@@ -11,6 +11,7 @@
 #import "UpdateLayoutController.h"
 #import "ImageResizabVC.h"
 #import "StackViewUseController.h"
+#import "TableLeftSlideViewController.h"
 @interface BaseicKnowledgeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -69,6 +70,10 @@
             cell.textLabel.text = @"3-UIStackView使用";
             return cell;
             break;
+        case 4:
+            cell.textLabel.text = @"4-TableView左滑删除";
+            return cell;
+            break;
         default:
             break;
     }
@@ -89,7 +94,7 @@
             break;
         case 1:
         {
-
+            
             UpdateLayoutController * vc = [[UpdateLayoutController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
@@ -103,6 +108,12 @@
         case 3:
         {
             StackViewUseController * vc = [[StackViewUseController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            TableLeftSlideViewController * vc = [[TableLeftSlideViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
