@@ -7,15 +7,21 @@
 //
 
 #import "SuspendViewController.h"
+#import "SuspendTabTableViewCell.h"
+
 
 #define TopMargin  100
 #define HeaderPadding 20
 #define HeaderHeight 200
 
-@interface SuspendViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface SuspendViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UILabel *topLB;
 @property (nonatomic,strong) UIView *headerView;
+@property (nonatomic, strong) UIImageView *headerIV;
+
+@property (nonatomic, strong) SuspendTabTableViewCell *suspendCell;
+@property (nonatomic, strong) UIView *floatView;
 @end
 
 @implementation SuspendViewController
@@ -23,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"自定义滑动悬停";
+    self.navigationItem.title = @"滑动悬停-新方案";
     [self addSubView];
 }
 
@@ -33,29 +39,30 @@
     
     
     
-    self.topLB = [self creatLB];
-    [self.topLB mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view).offset(TopMargin);
-        make.height.mas_equalTo(50);
-        make.left.right.equalTo(self.view);
-    }];
-    self.topLB.text = @"不可下拉顶部LB";
+
+    self.headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, screen_width, HeaderHeight)];
+//    self.headerView.backgroundColor = [UIColor cyanColor];
     
-    self.headerView = [[UIView alloc]init];
-    [self.view addSubview:self.headerView];
-    [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top).offset(TopMargin+HeaderPadding+50);
-        make.left.right.equalTo(self.view);
-        make.height.mas_equalTo(HeaderHeight);
-    }];
-    self.headerView.backgroundColor = [UIColor cyanColor];
+    self.headerIV = [[UIImageView alloc]initWithFrame:self.headerView.bounds];
+    [self.headerView addSubview:self.headerIV];
+    self.headerIV.image = [UIImage imageNamed:@"header.jpg"];
     
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, TopMargin+HeaderPadding+HeaderHeight, screen_width, 800)];
+    
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, screen_width, screen_height)];
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.backgroundColor = [UIColor clearColor];
-
+//    self.tableView.backgroundColor = [UIColor redColor];
+    self.tableView.tableHeaderView = self.headerView;
+    
+    [self.tableView registerClass:[SuspendTabTableViewCell class] forCellReuseIdentifier:@"SuspendTabTableViewCell"];
+    
+    self.floatView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, screen_width, 40)];
+    [self.view addSubview:self.floatView];
+    self.floatView.backgroundColor = [UIColor cyanColor];
+    self.floatView.hidden = YES;
+//    self.floatView.alpha = 0;
+    
 }
 - (UILabel *)creatLB
 {
@@ -81,14 +88,38 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static  NSString *  CellIdentifier = @"CellIdentifier";
-    UITableViewCell  * cell = [tableView  dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell  alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    if (indexPath.row == 5) {
+        static  NSString *  CellIdentifier = @"SuspendTabTableViewCell";
+        SuspendTabTableViewCell  * cell = [tableView  dequeueReusableCellWithIdentifier:CellIdentifier];
+        self.suspendCell = cell;
+        [cell setClickTabBlock:^(NSInteger index) {
+            [self.tableView reloadData];
+        }];
+        return cell;
+    } else {
+        static  NSString *  CellIdentifier = @"CellIdentifier";
+        UITableViewCell  * cell = [tableView  dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (!cell) {
+            cell = [[UITableViewCell  alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        cell.backgroundColor = [UIColor whiteColor];
+        
+        cell.textLabel.text = [NSString stringWithFormat:@"cell位置:%ld",(long)indexPath.row];
+        return cell;
     }
-    cell.backgroundColor = RandomColor;
+    return nil;
     
-    cell.textLabel.text = [NSString stringWithFormat:@"cell位置:%ld",(long)indexPath.row];
-    return cell;
+}
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    float ofsetY = scrollView.contentOffset.y;
+    float limitY = self.headerView.frame.size.height + 40*5;
+    if (ofsetY >= limitY) {
+        [self.floatView addSubview:self.suspendCell.contentView];
+        self.floatView.hidden = NO;
+    } else {
+        self.floatView.hidden = YES;
+        [self.suspendCell addSubview:self.suspendCell.contentView];
+    }
 }
 @end

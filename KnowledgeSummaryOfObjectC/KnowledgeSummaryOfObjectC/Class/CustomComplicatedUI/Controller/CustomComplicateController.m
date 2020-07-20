@@ -62,58 +62,58 @@
     }
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"1-可循环利用的轮播图";
+            cell.textLabel.text = @"0-可循环利用的轮播图";
             return cell;
             break;
         case 1:
-            cell.textLabel.text = @"2-gif动图";
+            cell.textLabel.text = @"1-gif动图";
             return cell;
             break;
         case 2:
-            cell.textLabel.text = @"3-滑动悬停效果";
+            cell.textLabel.text = @"2-滑动悬停效果";
             return cell;
         case 3:
-            cell.textLabel.text = @"4-UIButton的使用";
+            cell.textLabel.text = @"3-UIButton的使用";
             return cell;
             break;
         case 4:
-            cell.textLabel.text = @"5-侧滑按钮的使用";
+            cell.textLabel.text = @"4-侧滑按钮的使用";
             return cell;
             break;
         case 5:
-            cell.textLabel.text = @"6-TableView联动";
+            cell.textLabel.text = @"5-TableView联动";
             return cell;
             break;
         case 6:
-            cell.textLabel.text = @"7-悬停滑动";
+            cell.textLabel.text = @"6-悬停滑动";
             return cell;
             break;
         case 7:
-            cell.textLabel.text = @"8-tableview悬停滑动";
+            cell.textLabel.text = @"7-tableview悬停滑动";
             return cell;
             break;
         case 8:
-            cell.textLabel.text = @"9-自定义滑动悬停";
+            cell.textLabel.text = @"8-滑动悬停-新方案";
             return cell;
             break;
         case 9:
-            cell.textLabel.text = @"10-TableView滑动悬停";
+            cell.textLabel.text = @"9-TableView滑动悬停";
             return cell;
             break;
         case 10:
-            cell.textLabel.text = @"11-自定义TabBar";
+            cell.textLabel.text = @"10-自定义TabBar";
             return cell;
             break;
         case 11:
-            cell.textLabel.text = @"12-动画TabBar";
+            cell.textLabel.text = @"11-动画TabBar";
             return cell;
             break;
         case 12:
-            cell.textLabel.text = @"13-阴影效果";
+            cell.textLabel.text = @"12-阴影效果";
             return cell;
             break;
         case 13:
-            cell.textLabel.text = @"14-collectionIndexView";
+            cell.textLabel.text = @"13-collectionIndexView";
             return cell;
             break;
         default:
