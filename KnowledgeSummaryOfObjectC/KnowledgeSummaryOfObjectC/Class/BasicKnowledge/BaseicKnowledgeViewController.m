@@ -12,6 +12,7 @@
 #import "ImageResizabVC.h"
 #import "StackViewUseController.h"
 #import "TableLeftSlideViewController.h"
+#import "ChangeTwoViewController.h"
 @interface BaseicKnowledgeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -74,6 +75,10 @@
             cell.textLabel.text = @"4-TableView左滑删除";
             return cell;
             break;
+        case 5:
+            cell.textLabel.text = @"5-交换两个子view";
+            return cell;
+            break;
         default:
             break;
     }
@@ -117,6 +122,13 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 5:
+        {
+            ChangeTwoViewController * vc = [[ChangeTwoViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
         default:
             break;
     }

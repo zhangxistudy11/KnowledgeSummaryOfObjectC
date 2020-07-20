@@ -305,6 +305,7 @@
 		772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */; };
 		772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */; };
 		7751FF6624C54BDE0055FFEE /* SuspendTabTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7751FF6524C54BDE0055FFEE /* SuspendTabTableViewCell.m */; };
+		7751FF6924C56C310055FFEE /* ChangeTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7751FF6824C56C310055FFEE /* ChangeTwoViewController.m */; };
 		7755F7872431EA4900955AC8 /* PopViewMansoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */; };
 		7755F7882431EA4900955AC8 /* PopViewMansoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */; };
 		7755F78B2431EDFD00955AC8 /* PopMansoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F78A2431EDFD00955AC8 /* PopMansoryView.m */; };
@@ -626,6 +627,8 @@
 		772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSegmentItemView.m; sourceTree = "<group>"; };
 		7751FF6424C54BDE0055FFEE /* SuspendTabTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendTabTableViewCell.h; sourceTree = "<group>"; };
 		7751FF6524C54BDE0055FFEE /* SuspendTabTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspendTabTableViewCell.m; sourceTree = "<group>"; };
+		7751FF6724C56C310055FFEE /* ChangeTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeTwoViewController.h; sourceTree = "<group>"; };
+		7751FF6824C56C310055FFEE /* ChangeTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeTwoViewController.m; sourceTree = "<group>"; };
 		7755F7852431EA4900955AC8 /* PopViewMansoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewMansoryVC.h; sourceTree = "<group>"; };
 		7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewMansoryVC.m; sourceTree = "<group>"; };
 		7755F7892431EDFD00955AC8 /* PopMansoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMansoryView.h; sourceTree = "<group>"; };
@@ -1614,6 +1617,8 @@
 				33CCD913247AA7AF00681671 /* StackViewUseController.m */,
 				77746371248E3DFB0008A94C /* TableLeftSlideViewController.h */,
 				77746372248E3DFB0008A94C /* TableLeftSlideViewController.m */,
+				7751FF6724C56C310055FFEE /* ChangeTwoViewController.h */,
+				7751FF6824C56C310055FFEE /* ChangeTwoViewController.m */,
 			);
 			path = BasicKnowledge;
 			sourceTree = "<group>";
@@ -2068,6 +2073,7 @@
 				772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */,
 				334839B01F7CF02E00BD17EE /* RacPrimaryController.m in Sources */,
 				33AB8336235CA4AB00703D21 /* ParaPassView.m in Sources */,
+				7751FF6924C56C310055FFEE /* ChangeTwoViewController.m in Sources */,
 				3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */,
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
 				7790FE4723D5875000FA5B70 /* RacLoginExampleController.m in Sources */,

@@ -29,3 +29,7 @@
 #endif
 
 #endif /* CommonMacro_h */
+
+//weak strong self for retain cycle
+#define WEAK_SELF __weak typeof(self)weakSelf = self
+#define STRONG_SELF __strong typeof(weakSelf)self = weakSelf
