@@ -32,7 +32,7 @@
     }];
     WEAK_SELF;
     leakView.clickBlock = ^{
-        [weakSelf testLog];
+        [self testLog];
     };
 }
 - (void)testLog
