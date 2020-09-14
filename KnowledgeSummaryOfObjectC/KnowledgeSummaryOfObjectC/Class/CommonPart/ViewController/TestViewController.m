@@ -61,19 +61,14 @@
     switch (indexPath.row) {
         case 0:
         {
-            NSArray * arr = nil;
-            [arr count];
-            NSLog(@"ddd%ld",arr.count);
-            NSLog(@"adddaa");
             NSLog(@"000");
-            [self testOne];
-
+            NSLog(@"adddssssaaaaa");
+            
         }
             break;
         case 1:
         {
             NSLog(@"111");
-
 
             NSLog(@"bfffbbb");
 
@@ -81,14 +76,14 @@
             break;
             case 3:
                    {
-                       
-                       NSLog(@"cccdddc");
-
+                       NSLog(@"aaa");
+                       NSLog(@"cccc");
+                       NSLog(@"bbb");
                    }
                        break;
             case 4:
                           {
-                              
+                              NSLog(@"333");
                               NSLog(@"fccbbbc4h555hhh");
 
                           }
@@ -96,21 +91,6 @@
             
         default:
             break;
-    }
-}
-- (void)testOne{
-    NSMutableArray *array = [[NSMutableArray alloc]initWithArray:@[@(3),@(8),@(5),@(6),@(9),@(11),@(0),@(7)]];
-    NSInteger sun = 11;
-    [self sumtest:array andSum:sun];
-}
-- (void)sumtest:(NSMutableArray *)array andSum:(NSInteger)sum{
-    for (int i=0; i<array.count; i++) {
-        for (NSInteger j = array.count-1; j>i; j--) {
-            NSInteger dd = [array[i] integerValue] + [array[j] integerValue];
-            if (dd == sum) {
-                NSLog(@"%@",@[@(i),@(j)]);
-            }
-        }
     }
 }
 @end
