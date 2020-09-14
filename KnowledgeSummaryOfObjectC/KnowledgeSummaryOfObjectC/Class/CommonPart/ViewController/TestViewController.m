@@ -65,6 +65,7 @@
             [arr count];
             NSLog(@"ddd%ld",arr.count);
             NSLog(@"adddaa");
+            NSLog(@"000");
             [self testOne];
         }
             break;
