@@ -78,7 +78,7 @@
                    {
                        NSLog(@"aaa");
                        NSLog(@"cccc");
-                       NSLog(@"bbb");
+                       NSLog(@"bbggggb");
                    }
                        break;
             case 4:
