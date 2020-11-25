@@ -9,6 +9,8 @@
 #import "RunTimeBasicViewController.h"
 #import "MethodPacticeViewController.h"
 #import "MethodSwizzlingViewController.h"
+#import "GetPrivateObjViewController.h"
+
 @interface RunTimeBasicViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -21,11 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSLog(@"AAAA");
     self.navigationItem.title = @"RunTime使用";
-    NSLog(@"2222");
     [self  setUpView];
-     NSLog(@"333");
 }
 - (void)setUpView
 {
@@ -58,6 +57,10 @@
             cell.textLabel.text = @"1-Method Swizzling";
             return cell;
             break;
+        case 2:
+            cell.textLabel.text = @"2-获取成员变量";
+            return cell;
+            break;
         default:
             break;
     }
@@ -85,7 +88,8 @@
             break;
         case 2:
         {
-            
+            GetPrivateObjViewController * vc = [[GetPrivateObjViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
             
         }
             break;

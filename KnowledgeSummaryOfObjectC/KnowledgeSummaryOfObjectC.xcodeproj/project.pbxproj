@@ -321,6 +321,9 @@
 		777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */; };
 		777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618FA224C80B100D51594 /* ProgressAnimationView.m */; };
 		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
+		778FDC92256E3B3E0078952C /* GetPrivateObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778FDC91256E3B3E0078952C /* GetPrivateObjViewController.m */; };
+		778FDC99256E3BA90078952C /* GetPrivateObjOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 778FDC98256E3BA90078952C /* GetPrivateObjOne.m */; };
+		778FDCA0256E3BBA0078952C /* GetPrivateObjTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 778FDC9F256E3BBA0078952C /* GetPrivateObjTwo.m */; };
 		7790FE4723D5875000FA5B70 /* RacLoginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */; };
 		7790FE4823D5875000FA5B70 /* RacLoginExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */; };
 		779748932435C153000FA83B /* CollectionIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779748922435C153000FA83B /* CollectionIndexViewController.m */; };
@@ -652,6 +655,12 @@
 		777618FA224C80B100D51594 /* ProgressAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimationView.m; sourceTree = "<group>"; };
 		777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewThreeViewController.h; sourceTree = "<group>"; };
 		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
+		778FDC90256E3B3E0078952C /* GetPrivateObjViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetPrivateObjViewController.h; sourceTree = "<group>"; };
+		778FDC91256E3B3E0078952C /* GetPrivateObjViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetPrivateObjViewController.m; sourceTree = "<group>"; };
+		778FDC97256E3BA90078952C /* GetPrivateObjOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GetPrivateObjOne.h; path = KnowledgeSummaryOfObjectC/Class/RunTimePractice/ViewController/GetPrivateObjOne.h; sourceTree = SOURCE_ROOT; };
+		778FDC98256E3BA90078952C /* GetPrivateObjOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GetPrivateObjOne.m; path = KnowledgeSummaryOfObjectC/Class/RunTimePractice/ViewController/GetPrivateObjOne.m; sourceTree = SOURCE_ROOT; };
+		778FDC9E256E3BBA0078952C /* GetPrivateObjTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GetPrivateObjTwo.h; path = KnowledgeSummaryOfObjectC/Class/RunTimePractice/ViewController/GetPrivateObjTwo.h; sourceTree = SOURCE_ROOT; };
+		778FDC9F256E3BBA0078952C /* GetPrivateObjTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GetPrivateObjTwo.m; path = KnowledgeSummaryOfObjectC/Class/RunTimePractice/ViewController/GetPrivateObjTwo.m; sourceTree = SOURCE_ROOT; };
 		7790FE4523D5875000FA5B70 /* RacLoginExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RacLoginExampleController.h; sourceTree = "<group>"; };
 		7790FE4623D5875000FA5B70 /* RacLoginExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacLoginExampleController.m; sourceTree = "<group>"; };
 		779748912435C153000FA83B /* CollectionIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionIndexViewController.h; sourceTree = "<group>"; };
@@ -788,6 +797,10 @@
 		33186CD92060DA22002B2D20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				778FDC97256E3BA90078952C /* GetPrivateObjOne.h */,
+				778FDC98256E3BA90078952C /* GetPrivateObjOne.m */,
+				778FDC9E256E3BBA0078952C /* GetPrivateObjTwo.h */,
+				778FDC9F256E3BBA0078952C /* GetPrivateObjTwo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -808,6 +821,8 @@
 				33186CE12060DBA4002B2D20 /* MethodPacticeViewController.m */,
 				FB1335E620CCB5D700187132 /* MethodSwizzlingViewController.h */,
 				FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */,
+				778FDC90256E3B3E0078952C /* GetPrivateObjViewController.h */,
+				778FDC91256E3B3E0078952C /* GetPrivateObjViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1781,8 +1796,9 @@
 				TargetAttributes = {
 					33673CCA1F58FA6300ECE5D4 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UNS8RSTG96;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					33673CE61F58FA6400ECE5D4 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -2130,10 +2146,12 @@
 				771902FF22CB05B6000926A9 /* TailView.m in Sources */,
 				3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */,
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
+				778FDC92256E3B3E0078952C /* GetPrivateObjViewController.m in Sources */,
 				77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */,
 				777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
 				772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */,
+				778FDC99256E3BA90078952C /* GetPrivateObjOne.m in Sources */,
 				7797489C2435D726000FA83B /* DDIndexView.m in Sources */,
 				33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */,
 				779748932435C153000FA83B /* CollectionIndexViewController.m in Sources */,
@@ -2168,6 +2186,7 @@
 				3380A334204686A200F8BA23 /* BarChartItemView.m in Sources */,
 				77C1A419242DA0A700EB50C1 /* MansoryAdvanced.m in Sources */,
 				77B57BA323BF0D17000EB856 /* ExceptionController.m in Sources */,
+				778FDCA0256E3BBA0078952C /* GetPrivateObjTwo.m in Sources */,
 				3348385C1F7CEA3100BD17EE /* BaseView.m in Sources */,
 				334957951FBC4738006E89F7 /* SFLabel.m in Sources */,
 				33DA54E31FBD2F6C00EB3716 /* SlideTabView.m in Sources */,
@@ -2454,8 +2473,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UNS8RSTG96;
 				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -2493,8 +2512,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UNS8RSTG96;
 				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
