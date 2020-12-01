@@ -10,6 +10,13 @@
 
 @implementation OrderDetailView
 
-
+- (void)updateOrderDetailCardWithData:(id<OrderDetailProtocol>) data;
+{
+    if (![data conformsToProtocol:@protocol(OrderDetailProtocol)]) {
+        return;
+    }
+    //根据外部传参，给view的组件赋值
+    //...
+}
 
 @end

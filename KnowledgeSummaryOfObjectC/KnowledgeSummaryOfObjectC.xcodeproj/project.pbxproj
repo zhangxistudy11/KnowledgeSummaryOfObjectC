@@ -679,7 +679,6 @@
 		779CF58525765F3200ACDC22 /* FrameworkBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkBaseViewController.m; sourceTree = "<group>"; };
 		779CF58F2576601D00ACDC22 /* OrderDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderDetailView.h; sourceTree = "<group>"; };
 		779CF5902576601D00ACDC22 /* OrderDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderDetailView.m; sourceTree = "<group>"; };
-		779CF5962576607900ACDC22 /* OrderDetailProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderDetailProtocol.h; sourceTree = "<group>"; };
 		779CF59B257662BB00ACDC22 /* HomePageDetailInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageDetailInfoModel.h; sourceTree = "<group>"; };
 		779CF59C257662BB00ACDC22 /* HomePageDetailInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageDetailInfoModel.m; sourceTree = "<group>"; };
 		779CF5A22576639F00ACDC22 /* AllOrderPageInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllOrderPageInfoModel.h; sourceTree = "<group>"; };
@@ -1707,7 +1706,6 @@
 			children = (
 				779CF58F2576601D00ACDC22 /* OrderDetailView.h */,
 				779CF5902576601D00ACDC22 /* OrderDetailView.m */,
-				779CF5962576607900ACDC22 /* OrderDetailProtocol.h */,
 				779CF59B257662BB00ACDC22 /* HomePageDetailInfoModel.h */,
 				779CF59C257662BB00ACDC22 /* HomePageDetailInfoModel.m */,
 				779CF5A22576639F00ACDC22 /* AllOrderPageInfoModel.h */,

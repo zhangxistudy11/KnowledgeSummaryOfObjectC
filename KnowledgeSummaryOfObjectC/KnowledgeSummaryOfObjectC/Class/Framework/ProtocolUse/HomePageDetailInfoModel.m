@@ -9,5 +9,13 @@
 #import "HomePageDetailInfoModel.h"
 
 @implementation HomePageDetailInfoModel
-
+- (NSString *)orderNum{
+    return [NSString stringWithFormat:@"%ld",self.homeOrderID];
+}
+- (float)price{
+    return self.payMoney;
+}
+- (BOOL)isVipTypeOrder {
+    return YES;
+}
 @end

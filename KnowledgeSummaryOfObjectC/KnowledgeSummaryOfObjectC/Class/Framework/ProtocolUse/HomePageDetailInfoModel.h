@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OrderDetailView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomePageDetailInfoModel : NSObject
+@interface HomePageDetailInfoModel : NSObject<OrderDetailProtocol>
 
 @property (nonatomic,copy) NSString *cityName;
 
@@ -23,6 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign) NSInteger homeOrderID;
 //支付金额
 @property (nonatomic, assign) NSInteger payMoney;
+/*OrderDetailProtocol协议部分*/
+//订单号
+@property (nonatomic, copy)   NSString * orderNum;
+//订单金额
+@property (nonatomic, assign) float price;
+
+//是否是高级客户的订单
+- (BOOL)isVipTypeOrder;
 @end
 
 NS_ASSUME_NONNULL_END
