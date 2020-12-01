@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param druation 到达value的动画时间
  */
 - (void)animationProgessToValue:(float)value  druation:(float)druation;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

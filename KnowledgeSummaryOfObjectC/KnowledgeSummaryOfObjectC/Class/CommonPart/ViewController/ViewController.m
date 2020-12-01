@@ -23,6 +23,7 @@
 #import "ThirdLibViewController.h"
 #import "BaseicKnowledgeViewController.h"
 #import "TestViewController.h"
+#import "FrameworkBaseViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -115,8 +116,12 @@
             cell.textLabel.text = @"11-三方库学习";
             return cell;
             break;
-            case 12:
+        case 12:
             cell.textLabel.text = @"12-基础知识点总结";
+            return cell;
+            break;
+        case 13:
+            cell.textLabel.text = @"13-架构方面";
             return cell;
             break;
         default:
@@ -211,6 +216,14 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 13:
+        {
+            FrameworkBaseViewController * vc = [[FrameworkBaseViewController  alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+            
         default:
             break;
     }
@@ -218,8 +231,8 @@
 #pragma mark - Target Methods
 - (void)rightclick:(UIBarButtonItem *)sender
 {
-     TestViewController * vc = [[TestViewController  alloc]init];
-           [self.navigationController pushViewController:vc animated:YES];
+    TestViewController * vc = [[TestViewController  alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
