@@ -77,6 +77,8 @@
             case 3:
                    {
                        NSLog(@"aaa");
+                       NSLog(@"333");
+
                        NSLog(@"cccc");
                        NSLog(@"bbggggb");
                    }
