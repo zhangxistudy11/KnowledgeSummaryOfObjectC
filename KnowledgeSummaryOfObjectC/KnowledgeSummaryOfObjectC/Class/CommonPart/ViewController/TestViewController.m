@@ -69,6 +69,7 @@
         case 1:
         {
             NSLog(@"111");
+            NSLog(@"2222");
 
             NSLog(@"bfffbbb");
 
