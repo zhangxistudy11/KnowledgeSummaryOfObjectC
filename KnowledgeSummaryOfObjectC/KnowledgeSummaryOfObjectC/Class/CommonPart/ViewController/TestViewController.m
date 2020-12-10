@@ -75,6 +75,8 @@
 
             NSLog(@"bfffbbb");
             NSLog(@"6666");
+            NSLog(@"ggg");
+            NSLog(@"zzz");
 
         }
             break;
