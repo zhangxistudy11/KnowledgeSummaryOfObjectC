@@ -310,6 +310,7 @@
 		7755F7882431EA4900955AC8 /* PopViewMansoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */; };
 		7755F78B2431EDFD00955AC8 /* PopMansoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F78A2431EDFD00955AC8 /* PopMansoryView.m */; };
 		7755F78C2431EDFD00955AC8 /* PopMansoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F78A2431EDFD00955AC8 /* PopMansoryView.m */; };
+		7761DFBE2592134D00050C11 /* TestUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761DFBD2592134D00050C11 /* TestUIViewController.m */; };
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
 		77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD9217D7915001325D9 /* YYCacheUseController.m */; };
 		77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639B1E217D9CF0001325D9 /* CacheTestModel.m */; };
@@ -640,6 +641,8 @@
 		7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewMansoryVC.m; sourceTree = "<group>"; };
 		7755F7892431EDFD00955AC8 /* PopMansoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMansoryView.h; sourceTree = "<group>"; };
 		7755F78A2431EDFD00955AC8 /* PopMansoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMansoryView.m; sourceTree = "<group>"; };
+		7761DFBC2592134D00050C11 /* TestUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUIViewController.h; sourceTree = "<group>"; };
+		7761DFBD2592134D00050C11 /* TestUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUIViewController.m; sourceTree = "<group>"; };
 		77639AD5217D71B9001325D9 /* CacheClassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheClassController.h; sourceTree = "<group>"; };
 		77639AD6217D71B9001325D9 /* CacheClassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheClassController.m; sourceTree = "<group>"; };
 		77639AD8217D7915001325D9 /* YYCacheUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCacheUseController.h; sourceTree = "<group>"; };
@@ -1480,6 +1483,8 @@
 				3398DCE21F63FC2400D7A872 /* ViewController.m */,
 				7709A91A2449551500EA984B /* TestViewController.h */,
 				7709A91B2449551500EA984B /* TestViewController.m */,
+				7761DFBC2592134D00050C11 /* TestUIViewController.h */,
+				7761DFBD2592134D00050C11 /* TestUIViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2186,6 +2191,7 @@
 				3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */,
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
 				778FDC92256E3B3E0078952C /* GetPrivateObjViewController.m in Sources */,
+				7761DFBE2592134D00050C11 /* TestUIViewController.m in Sources */,
 				77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */,
 				777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,

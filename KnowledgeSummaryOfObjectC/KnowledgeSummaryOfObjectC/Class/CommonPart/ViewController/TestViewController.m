@@ -7,11 +7,13 @@
 //
 
 #import "TestViewController.h"
-
+#import "TestUIViewController.h"
 @interface TestViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
 }
+
+
 
 @end
 
@@ -24,7 +26,8 @@
     self.view.backgroundColor = [UIColor  whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStylePlain target:self action:@selector(rightclick:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
     
     [self  setUpView];
 }
@@ -37,6 +40,11 @@
     _tableView.dataSource = self;
     [self.view  addSubview:_tableView];
     
+}
+- (void)rightclick:(UIBarButtonItem *)sender
+{
+    TestUIViewController * vc = [[TestUIViewController  alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
