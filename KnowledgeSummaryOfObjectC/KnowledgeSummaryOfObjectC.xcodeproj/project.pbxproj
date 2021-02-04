@@ -301,6 +301,7 @@
 		771DDC8023C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */; };
 		771DDC8823C35BD20021AD61 /* EventInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */; };
 		771DDC8923C35BD20021AD61 /* EventInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */; };
+		7728526A25CBA0DB00579F2A /* GetApplistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7728526925CBA0DB00579F2A /* GetApplistViewController.m */; };
 		772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */; };
 		772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */; };
 		772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */; };
@@ -627,6 +628,8 @@
 		771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseicKnowledgeViewController.m; sourceTree = "<group>"; };
 		771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInteractionViewController.m; sourceTree = "<group>"; };
 		771DDC8723C35BD20021AD61 /* EventInteractionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInteractionViewController.h; sourceTree = "<group>"; };
+		7728526825CBA0DB00579F2A /* GetApplistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetApplistViewController.h; sourceTree = "<group>"; };
+		7728526925CBA0DB00579F2A /* GetApplistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetApplistViewController.m; sourceTree = "<group>"; };
 		772D6D41234CA0760000F5B2 /* AnimationSegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationSegmentViewController.h; sourceTree = "<group>"; };
 		772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationSegmentViewController.m; sourceTree = "<group>"; };
 		772D6D44234CA1D50000F5B2 /* ZHXSegmentBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHXSegmentBarView.h; sourceTree = "<group>"; };
@@ -932,6 +935,8 @@
 				77C39DE8241638BB002C8316 /* TTSliderController.m */,
 				77C1A417242DA0A700EB50C1 /* MansoryAdvanced.h */,
 				77C1A418242DA0A700EB50C1 /* MansoryAdvanced.m */,
+				7728526825CBA0DB00579F2A /* GetApplistViewController.h */,
+				7728526925CBA0DB00579F2A /* GetApplistViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2168,6 +2173,7 @@
 				777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				333AAD11226B320F005736F0 /* ThirdLibViewController.m in Sources */,
+				7728526A25CBA0DB00579F2A /* GetApplistViewController.m in Sources */,
 				33BA97DB2306E59000BF181C /* ZHXCustomItemView.m in Sources */,
 				7751FF6624C54BDE0055FFEE /* SuspendTabTableViewCell.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
@@ -2541,6 +2547,7 @@
 				);
 				INFOPLIST_FILE = Custom/Orgin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2575,6 +2582,7 @@
 				);
 				INFOPLIST_FILE = Custom/Orgin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
