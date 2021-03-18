@@ -34,6 +34,8 @@
     [self.view addSubview:self.hideBtn];
     
     [self.view addGestureRecognizer:self.panGesture];
+    
+//    [self.slideView addObserver:self forKeyPath:@"limitPadding" options:(NSKeyValueObservingOptions) context:<#(nullable void *)#>]
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -46,6 +48,8 @@
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+
 #pragma mark - Getter Method
 - (UIView *)navigationView
 {

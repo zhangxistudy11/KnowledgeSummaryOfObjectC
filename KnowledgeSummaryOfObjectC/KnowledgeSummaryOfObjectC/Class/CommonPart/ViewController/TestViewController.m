@@ -29,6 +29,9 @@
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStylePlain target:self action:@selector(rightclick:)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
+
+    
+    
     [self  setUpView];
 }
 
@@ -104,7 +107,7 @@
                           {
                               NSLog(@"333");
                               NSLog(@"555");
-
+                              
                               NSLog(@"fccbbbc4h555hhh");
 
                           }
@@ -114,4 +117,7 @@
             break;
     }
 }
+
+
+
 @end
