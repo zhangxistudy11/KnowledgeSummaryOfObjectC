@@ -20,17 +20,19 @@
     self.navigationItem.title = @"UIStackView使用";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.titleArray = @[@"测试使用",@"dd",@"kk测试测试使用使用",@"测用"];
+//    self.titleArray = @[@"测试使用",@"dd",@"kk测试测试使用使用",@"测用"];
+    self.titleArray = @[@"测试使用",@"dd",@"ss"];
+
     [self addStackViewOne];
     
 }
 - (void)addStackViewOne {
     self.stackView = [[UIStackView alloc]init];
     [self.view addSubview:self.stackView];
-    self.stackView.backgroundColor = [UIColor redColor];
+    self.stackView.backgroundColor = [UIColor yellowColor];
     self.stackView.axis = UILayoutConstraintAxisHorizontal; //横向
-    self.stackView.distribution = UIStackViewDistributionFill; // 布满
-    self.stackView.alignment = UIStackViewAlignmentLastBaseline; //中间
+    self.stackView.distribution = UIStackViewDistributionEqualSpacing; // 布满
+    self.stackView.alignment = UIStackViewAlignmentLeading; //中间
     self.stackView.spacing = 5.0f; // 间距
 
     
@@ -43,7 +45,7 @@
     for (NSString *title in self.titleArray) {
         UILabel *lb=[[UILabel alloc]init];
         lb.backgroundColor = RandomColor;
-        lb.font = [UIFont systemFontOfSize:16];
+//        lb.font = [UIFont systemFontOfSize:16];
         lb.text = title;
         [self.stackView addArrangedSubview:lb];
 
@@ -51,6 +53,8 @@
             make.centerY.equalTo(self.stackView);
             make.height.mas_offset(60);
 //                        make.size.mas_equalTo(CGSizeMake(100, 100)).priorityLow();
+            //这里面的布局优先级最高
+            make.width.mas_equalTo(60);
         }];
     }
 //    for(int i = 0; i < 4; i++)

@@ -306,6 +306,7 @@
 		771DDC8023C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */; };
 		771DDC8823C35BD20021AD61 /* EventInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */; };
 		771DDC8923C35BD20021AD61 /* EventInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */; };
+		7728526A25CBA0DB00579F2A /* GetApplistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7728526925CBA0DB00579F2A /* GetApplistViewController.m */; };
 		772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */; };
 		772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D45234CA1D50000F5B2 /* ZHXSegmentBarView.m */; };
 		772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D6D48234CA2700000F5B2 /* ZXSegmentItemView.m */; };
@@ -315,6 +316,7 @@
 		7755F7882431EA4900955AC8 /* PopViewMansoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */; };
 		7755F78B2431EDFD00955AC8 /* PopMansoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F78A2431EDFD00955AC8 /* PopMansoryView.m */; };
 		7755F78C2431EDFD00955AC8 /* PopMansoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7755F78A2431EDFD00955AC8 /* PopMansoryView.m */; };
+		7761DFBE2592134D00050C11 /* TestUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761DFBD2592134D00050C11 /* TestUIViewController.m */; };
 		77639AD7217D71B9001325D9 /* CacheClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD6217D71B9001325D9 /* CacheClassController.m */; };
 		77639ADA217D7915001325D9 /* YYCacheUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639AD9217D7915001325D9 /* YYCacheUseController.m */; };
 		77639B1F217D9CF0001325D9 /* CacheTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639B1E217D9CF0001325D9 /* CacheTestModel.m */; };
@@ -326,6 +328,7 @@
 		777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618F7224C74DE00D51594 /* ProgressAnimationViewController.m */; };
 		777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777618FA224C80B100D51594 /* ProgressAnimationView.m */; };
 		777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */; };
+		777E8F1C2602EBCE009EDAD6 /* TestClolorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777E8F1B2602EBCE009EDAD6 /* TestClolorView.m */; };
 		778FDC92256E3B3E0078952C /* GetPrivateObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778FDC91256E3B3E0078952C /* GetPrivateObjViewController.m */; };
 		778FDC99256E3BA90078952C /* GetPrivateObjOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 778FDC98256E3BA90078952C /* GetPrivateObjOne.m */; };
 		778FDCA0256E3BBA0078952C /* GetPrivateObjTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 778FDC9F256E3BBA0078952C /* GetPrivateObjTwo.m */; };
@@ -358,6 +361,7 @@
 		77C39DEA241638BB002C8316 /* TTSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE8241638BB002C8316 /* TTSliderController.m */; };
 		77F3923C24249443009B8571 /* RACGrammarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F3923B24249443009B8571 /* RACGrammarViewController.m */; };
 		77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F4837D2361A76B00D7A1AD /* ShadowViewController.m */; };
+		77FECFC325F0B81900297770 /* Testaaa.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FECFC225F0B81900297770 /* Testaaa.m */; };
 		C84F4F28D022A06BD40E3113 /* libPods-TargetOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */; };
 		E57D49A832B0A9AD19E3A921 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1335E720CCB5D700187132 /* MethodSwizzlingViewController.m */; };
@@ -639,6 +643,8 @@
 		771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseicKnowledgeViewController.m; sourceTree = "<group>"; };
 		771DDC8623C35BD10021AD61 /* EventInteractionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInteractionViewController.m; sourceTree = "<group>"; };
 		771DDC8723C35BD20021AD61 /* EventInteractionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInteractionViewController.h; sourceTree = "<group>"; };
+		7728526825CBA0DB00579F2A /* GetApplistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetApplistViewController.h; sourceTree = "<group>"; };
+		7728526925CBA0DB00579F2A /* GetApplistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetApplistViewController.m; sourceTree = "<group>"; };
 		772D6D41234CA0760000F5B2 /* AnimationSegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationSegmentViewController.h; sourceTree = "<group>"; };
 		772D6D42234CA0760000F5B2 /* AnimationSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationSegmentViewController.m; sourceTree = "<group>"; };
 		772D6D44234CA1D50000F5B2 /* ZHXSegmentBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHXSegmentBarView.h; sourceTree = "<group>"; };
@@ -653,6 +659,8 @@
 		7755F7862431EA4900955AC8 /* PopViewMansoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewMansoryVC.m; sourceTree = "<group>"; };
 		7755F7892431EDFD00955AC8 /* PopMansoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMansoryView.h; sourceTree = "<group>"; };
 		7755F78A2431EDFD00955AC8 /* PopMansoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMansoryView.m; sourceTree = "<group>"; };
+		7761DFBC2592134D00050C11 /* TestUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUIViewController.h; sourceTree = "<group>"; };
+		7761DFBD2592134D00050C11 /* TestUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUIViewController.m; sourceTree = "<group>"; };
 		77639AD5217D71B9001325D9 /* CacheClassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheClassController.h; sourceTree = "<group>"; };
 		77639AD6217D71B9001325D9 /* CacheClassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheClassController.m; sourceTree = "<group>"; };
 		77639AD8217D7915001325D9 /* YYCacheUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCacheUseController.h; sourceTree = "<group>"; };
@@ -672,6 +680,8 @@
 		777618FA224C80B100D51594 /* ProgressAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimationView.m; sourceTree = "<group>"; };
 		777C1AD4215CD18D004CAB77 /* PopViewThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewThreeViewController.h; sourceTree = "<group>"; };
 		777C1AD5215CD18D004CAB77 /* PopViewThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewThreeViewController.m; sourceTree = "<group>"; };
+		777E8F1A2602EBCE009EDAD6 /* TestClolorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClolorView.h; sourceTree = "<group>"; };
+		777E8F1B2602EBCE009EDAD6 /* TestClolorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClolorView.m; sourceTree = "<group>"; };
 		778FDC90256E3B3E0078952C /* GetPrivateObjViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetPrivateObjViewController.h; sourceTree = "<group>"; };
 		778FDC91256E3B3E0078952C /* GetPrivateObjViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetPrivateObjViewController.m; sourceTree = "<group>"; };
 		778FDC97256E3BA90078952C /* GetPrivateObjOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GetPrivateObjOne.h; path = KnowledgeSummaryOfObjectC/Class/RunTimePractice/ViewController/GetPrivateObjOne.h; sourceTree = SOURCE_ROOT; };
@@ -712,6 +722,8 @@
 		77F3923B24249443009B8571 /* RACGrammarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACGrammarViewController.m; sourceTree = "<group>"; };
 		77F4837C2361A76B00D7A1AD /* ShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowViewController.h; sourceTree = "<group>"; };
 		77F4837D2361A76B00D7A1AD /* ShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowViewController.m; sourceTree = "<group>"; };
+		77FECFC125F0B81900297770 /* Testaaa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Testaaa.h; sourceTree = "<group>"; };
+		77FECFC225F0B81900297770 /* Testaaa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Testaaa.m; sourceTree = "<group>"; };
 		9BDADF155BF799571CCB56F6 /* libPods-TargetOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TargetOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06D0EEE88F72CBDC599B0AE /* Pods-TargetOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TargetOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TargetOne/Pods-TargetOne.debug.xcconfig"; sourceTree = "<group>"; };
 		BC5241152008B32581D9AE8E /* Pods-KnowledgeSummaryOfObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.release.xcconfig"; sourceTree = "<group>"; };
@@ -942,6 +954,8 @@
 				77C39DE8241638BB002C8316 /* TTSliderController.m */,
 				77C1A417242DA0A700EB50C1 /* MansoryAdvanced.h */,
 				77C1A418242DA0A700EB50C1 /* MansoryAdvanced.m */,
+				7728526825CBA0DB00579F2A /* GetApplistViewController.h */,
+				7728526925CBA0DB00579F2A /* GetApplistViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1407,6 +1421,8 @@
 				777618FA224C80B100D51594 /* ProgressAnimationView.m */,
 				771902FA22CA2964000926A9 /* CustomProgressView.h */,
 				771902FB22CA2964000926A9 /* CustomProgressView.m */,
+				77FECFC125F0B81900297770 /* Testaaa.h */,
+				77FECFC225F0B81900297770 /* Testaaa.m */,
 				771902FD22CB05B6000926A9 /* TailView.h */,
 				771902FE22CB05B6000926A9 /* TailView.m */,
 			);
@@ -1499,6 +1515,8 @@
 				3398DCE21F63FC2400D7A872 /* ViewController.m */,
 				7709A91A2449551500EA984B /* TestViewController.h */,
 				7709A91B2449551500EA984B /* TestViewController.m */,
+				7761DFBC2592134D00050C11 /* TestUIViewController.h */,
+				7761DFBD2592134D00050C11 /* TestUIViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1652,6 +1670,7 @@
 		771DDC7C23C3578B0021AD61 /* BasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				777E8F192602EBB9009EDAD6 /* View */,
 				771DDC7D23C357D60021AD61 /* BaseicKnowledgeViewController.h */,
 				771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */,
 				771DDC8723C35BD20021AD61 /* EventInteractionViewController.h */,
@@ -1699,6 +1718,15 @@
 				77639B1E217D9CF0001325D9 /* CacheTestModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		777E8F192602EBB9009EDAD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				777E8F1A2602EBCE009EDAD6 /* TestClolorView.h */,
+				777E8F1B2602EBCE009EDAD6 /* TestClolorView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		779748952435D719000FA83B /* DDIndexView */ = {
@@ -2187,6 +2215,7 @@
 				777618F8224C74DE00D51594 /* ProgressAnimationViewController.m in Sources */,
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				333AAD11226B320F005736F0 /* ThirdLibViewController.m in Sources */,
+				7728526A25CBA0DB00579F2A /* GetApplistViewController.m in Sources */,
 				33BA97DB2306E59000BF181C /* ZHXCustomItemView.m in Sources */,
 				7751FF6624C54BDE0055FFEE /* SuspendTabTableViewCell.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
@@ -2212,6 +2241,7 @@
 				3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */,
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
 				778FDC92256E3B3E0078952C /* GetPrivateObjViewController.m in Sources */,
+				7761DFBE2592134D00050C11 /* TestUIViewController.m in Sources */,
 				77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */,
 				777618FB224C80B100D51594 /* ProgressAnimationView.m in Sources */,
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
@@ -2242,9 +2272,11 @@
 				33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				7755F7872431EA4900955AC8 /* PopViewMansoryVC.m in Sources */,
+				777E8F1C2602EBCE009EDAD6 /* TestClolorView.m in Sources */,
 				33BA97E42306FCEB00BF181C /* NSString+ZTSize.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
 				333AAD14226B3402005736F0 /* MansoryStudyController.m in Sources */,
+				77FECFC325F0B81900297770 /* Testaaa.m in Sources */,
 				771C8856217B55BE0018F4D3 /* MemoryTestView.m in Sources */,
 				77C39DE9241638BB002C8316 /* TTSliderController.m in Sources */,
 				33673CD01F58FA6400ECE5D4 /* main.m in Sources */,
@@ -2561,6 +2593,7 @@
 				);
 				INFOPLIST_FILE = Custom/Orgin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.Knowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2595,6 +2628,7 @@
 				);
 				INFOPLIST_FILE = Custom/Orgin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.Knowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";

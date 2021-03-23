@@ -845,7 +845,10 @@
 }
 - (void)test19{
     /*
+     https://www.jianshu.com/p/49c8b655433a
      只要传入的信号发送完成或者subject2开始发送信号的时候,就不会再接收信号的内容
+     takeUntil需要一个信号作为标记，当标记的信号发送数据，就停止。
+
      */
     //takeUntil
     RACSubject *subject1 = [RACSubject subject];

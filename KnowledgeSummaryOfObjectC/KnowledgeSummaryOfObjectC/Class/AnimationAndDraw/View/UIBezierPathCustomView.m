@@ -69,6 +69,8 @@
     [path4 fill];
     [path4 stroke];
     
+    
+    
     // 5. 绘制椭圆
     UIBezierPath *path5 = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(self.center.x-100, kMargin*20, 200, 50)];
     [path5 fillWithBlendMode:kCGBlendModeOverlay alpha:0.5];

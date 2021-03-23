@@ -10,6 +10,7 @@
 #import "MansoryStudyController.h"
 #import "TTSliderController.h"
 #import "MansoryAdvanced.h"
+#import "GetApplistViewController.h"
 @interface ThirdLibViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -64,10 +65,10 @@
                       cell.textLabel.text = @"2-Mansory进阶";
                       return cell;
                       break;
-//        case 2:
-//            cell.textLabel.text = @"3-JavaScriptCore熟悉";
-//            return cell;
-//            break;
+        case 3:
+            cell.textLabel.text = @"3-获取其他applist";
+            return cell;
+            break;
 //        case 3:
 //            cell.textLabel.text = @"4-JavaScriptProtol熟悉";
 //            return cell;
@@ -103,12 +104,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-//        case 3:
-//        {
-//            JSProtocolViewController * vc = [[JSProtocolViewController alloc]init];
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//            break;
+        case 3:
+        {
+            GetApplistViewController * vc = [[GetApplistViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }
