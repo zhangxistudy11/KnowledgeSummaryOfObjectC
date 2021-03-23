@@ -231,8 +231,14 @@
 #pragma mark - Target Methods
 - (void)rightclick:(UIBarButtonItem *)sender
 {
+    NSString *str1 = @"abc";
+    NSString *str2 = [str1 copy];
+    str2 = @"4";
+    
     TestViewController * vc = [[TestViewController  alloc]init];
+//    UIViewController *  aa = [vc copy];
     [self.navigationController pushViewController:vc animated:YES];
+//    [TestViewController class];
 }
 
 @end

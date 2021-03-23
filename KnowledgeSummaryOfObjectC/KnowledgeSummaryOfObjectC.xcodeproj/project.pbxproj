@@ -11,6 +11,8 @@
 		3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330721292015E53700A320FA /* LoadHtmlViewController.m */; };
 		33186CDF2060DA4F002B2D20 /* RunTimeBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33186CDE2060DA4F002B2D20 /* RunTimeBasicViewController.m */; };
 		33186CE22060DBA4002B2D20 /* MethodPacticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33186CE12060DBA4002B2D20 /* MethodPacticeViewController.m */; };
+		331FA869260634C700FB5606 /* SonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 331FA868260634C700FB5606 /* SonModel.m */; };
+		331FA8702606EA1300FB5606 /* TestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 331FA86F2606EA1300FB5606 /* TestObj.m */; };
 		3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3325D4BB1FCFFB03002ED01E /* ARStudyViewController.m */; };
 		3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3325D4BE1FD00467002ED01E /* ARStudyPeimaryVC.m */; };
 		332B8A2D1F7B7DB100DE9C1A /* JSCallNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332B8A2C1F7B7DB100DE9C1A /* JSCallNativeViewController.m */; };
@@ -123,6 +125,7 @@
 		33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D61FBC6FFC0082B934 /* BaseTableViewCell.m */; };
 		33CD24DA1FBC73680082B934 /* SlideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24D91FBC73680082B934 /* SlideTableViewCell.m */; };
 		33CD24DD1FBC772B0082B934 /* SlideSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CD24DC1FBC772B0082B934 /* SlideSubView.m */; };
+		33CFEB8026025C24002EF108 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CFEB7F26025C24002EF108 /* TestModel.m */; };
 		33CFEC57238AB45F00ED424A /* TranslucentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB54C1EB20A741D40060FD9F /* TranslucentCellViewController.m */; };
 		33CFEC58238AB45F00ED424A /* DynamicImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */; };
 		33CFEC59238AB45F00ED424A /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C8851217B54F10018F4D3 /* MemoryLeakViewController.m */; };
@@ -279,6 +282,7 @@
 		33DA54EB1FBD335400EB3716 /* ranklist_item_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54E91FBD335400EB3716 /* ranklist_item_left@3x.png */; };
 		33DA54F11FBD7DF100EB3716 /* Back_Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54EF1FBD7DF100EB3716 /* Back_Arrow@2x.png */; };
 		33DA54F21FBD7DF100EB3716 /* Back_Arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DA54F01FBD7DF100EB3716 /* Back_Arrow@3x.png */; };
+		33E9033025F3866B002F64F8 /* UIBezierPathViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 3398DCD21F63FC2400D7A872 /* UIBezierPathViewController.h */; };
 		33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EABABE1F9EE22A00EEA2FC /* DynamicImageViewController.m */; };
 		33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778F420206C2A00581E5C /* SlideMenuDemoController.m */; };
 		33F778F820206F8100581E5C /* ic_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F778F620206F8100581E5C /* ic_back@2x.png */; };
@@ -286,6 +290,7 @@
 		33F778FC202071A300581E5C /* FiltrateSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F778FA202071A200581E5C /* FiltrateSlideView.m */; };
 		33F97A81240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */; };
 		33F97A82240BD5E8000ADA49 /* UpdateLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */; };
+		33FAF54B25FFACC000DF4FE9 /* MulThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FAF54A25FFACC000DF4FE9 /* MulThreadViewController.m */; };
 		5161741911F0F6354905088A /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2538995099BB6BEFDA8352 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 		7709A91C2449551500EA984B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7709A91B2449551500EA984B /* TestViewController.m */; };
 		771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F222C9D8C4000926A9 /* SuspendViewController.m */; };
@@ -399,6 +404,10 @@
 		33186CDE2060DA4F002B2D20 /* RunTimeBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeBasicViewController.m; sourceTree = "<group>"; };
 		33186CE02060DBA4002B2D20 /* MethodPacticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodPacticeViewController.h; sourceTree = "<group>"; };
 		33186CE12060DBA4002B2D20 /* MethodPacticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodPacticeViewController.m; sourceTree = "<group>"; };
+		331FA867260634C700FB5606 /* SonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonModel.h; sourceTree = "<group>"; };
+		331FA868260634C700FB5606 /* SonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonModel.m; sourceTree = "<group>"; };
+		331FA86E2606EA1300FB5606 /* TestObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObj.h; sourceTree = "<group>"; };
+		331FA86F2606EA1300FB5606 /* TestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObj.m; sourceTree = "<group>"; };
 		3325D4BA1FCFFB03002ED01E /* ARStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARStudyViewController.h; sourceTree = "<group>"; };
 		3325D4BB1FCFFB03002ED01E /* ARStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARStudyViewController.m; sourceTree = "<group>"; };
 		3325D4BD1FD00467002ED01E /* ARStudyPeimaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARStudyPeimaryVC.h; sourceTree = "<group>"; };
@@ -583,6 +592,8 @@
 		33CD24D91FBC73680082B934 /* SlideTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTableViewCell.m; sourceTree = "<group>"; };
 		33CD24DB1FBC772B0082B934 /* SlideSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideSubView.h; sourceTree = "<group>"; };
 		33CD24DC1FBC772B0082B934 /* SlideSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideSubView.m; sourceTree = "<group>"; };
+		33CFEB7E26025C24002EF108 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		33CFEB7F26025C24002EF108 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		33CFECF3238AB45F00ED424A /* TargetOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TargetOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CFED03238ABC9900ED424A /* TargetOne.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TargetOne.plist; sourceTree = "<group>"; };
 		33CFED05238ABD5600ED424A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -604,6 +615,8 @@
 		33F778FB202071A300581E5C /* FiltrateSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltrateSlideView.h; sourceTree = "<group>"; };
 		33F97A7F240BD5E8000ADA49 /* UpdateLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateLayoutController.h; sourceTree = "<group>"; };
 		33F97A80240BD5E8000ADA49 /* UpdateLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateLayoutController.m; sourceTree = "<group>"; };
+		33FAF54925FFACC000DF4FE9 /* MulThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MulThreadViewController.h; sourceTree = "<group>"; };
+		33FAF54A25FFACC000DF4FE9 /* MulThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MulThreadViewController.m; sourceTree = "<group>"; };
 		7709A91A2449551500EA984B /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		7709A91B2449551500EA984B /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		771902F122C9D8C4000926A9 /* SuspendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendViewController.h; sourceTree = "<group>"; };
@@ -1454,6 +1467,12 @@
 		3398DCDA1F63FC2400D7A872 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				33CFEB7E26025C24002EF108 /* TestModel.h */,
+				33CFEB7F26025C24002EF108 /* TestModel.m */,
+				331FA867260634C700FB5606 /* SonModel.h */,
+				331FA868260634C700FB5606 /* SonModel.m */,
+				331FA86E2606EA1300FB5606 /* TestObj.h */,
+				331FA86F2606EA1300FB5606 /* TestObj.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1647,6 +1666,8 @@
 				77746372248E3DFB0008A94C /* TableLeftSlideViewController.m */,
 				7751FF6724C56C310055FFEE /* ChangeTwoViewController.h */,
 				7751FF6824C56C310055FFEE /* ChangeTwoViewController.m */,
+				33FAF54925FFACC000DF4FE9 /* MulThreadViewController.h */,
+				33FAF54A25FFACC000DF4FE9 /* MulThreadViewController.m */,
 			);
 			path = BasicKnowledge;
 			sourceTree = "<group>";
@@ -1832,7 +1853,7 @@
 				TargetAttributes = {
 					33673CCA1F58FA6300ECE5D4 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = UNS8RSTG96;
+						DevelopmentTeam = MS8TX68Z59;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -2118,12 +2139,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E9033025F3866B002F64F8 /* UIBezierPathViewController.h in Sources */,
 				FB54C1EC20A741D40060FD9F /* TranslucentCellViewController.m in Sources */,
 				33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */,
 				771C8852217B54F10018F4D3 /* MemoryLeakViewController.m in Sources */,
 				336EFD001F7DF50C00B8246F /* RacAdvanceView.m in Sources */,
 				772D6D49234CA2700000F5B2 /* ZXSegmentItemView.m in Sources */,
 				334839B01F7CF02E00BD17EE /* RacPrimaryController.m in Sources */,
+				331FA8702606EA1300FB5606 /* TestObj.m in Sources */,
+				331FA869260634C700FB5606 /* SonModel.m in Sources */,
 				33AB8336235CA4AB00703D21 /* ParaPassView.m in Sources */,
 				7751FF6924C56C310055FFEE /* ChangeTwoViewController.m in Sources */,
 				3349578B1FBBE0E6006E89F7 /* SlideView.m in Sources */,
@@ -2172,6 +2196,7 @@
 				772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */,
 				771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */,
 				771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */,
+				33CFEB8026025C24002EF108 /* TestModel.m in Sources */,
 				3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */,
 				33CD24D71FBC6FFC0082B934 /* BaseTableViewCell.m in Sources */,
 				77673C142468FC9B007F958B /* ImageResizabVC.m in Sources */,
@@ -2182,6 +2207,7 @@
 				33186CDF2060DA4F002B2D20 /* RunTimeBasicViewController.m in Sources */,
 				77F3923C24249443009B8571 /* RACGrammarViewController.m in Sources */,
 				334839B11F7CF02E00BD17EE /* RACViewController.m in Sources */,
+				33FAF54B25FFACC000DF4FE9 /* MulThreadViewController.m in Sources */,
 				771902FF22CB05B6000926A9 /* TailView.m in Sources */,
 				3325D4BC1FCFFB03002ED01E /* ARStudyViewController.m in Sources */,
 				3398DCFD1F63FC2400D7A872 /* TransformViewController.m in Sources */,
@@ -2514,7 +2540,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UNS8RSTG96;
+				DEVELOPMENT_TEAM = MS8TX68Z59;
 				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -2536,7 +2562,7 @@
 				INFOPLIST_FILE = Custom/Orgin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
+				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.Knowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2553,7 +2579,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UNS8RSTG96;
+				DEVELOPMENT_TEAM = MS8TX68Z59;
 				GCC_PREFIX_HEADER = KnowledgeSummaryOfObjectC/Appdelegate/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2570,7 +2596,7 @@
 				INFOPLIST_FILE = Custom/Orgin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.KnowledgeSummaryOfObjectC;
+				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.Knowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

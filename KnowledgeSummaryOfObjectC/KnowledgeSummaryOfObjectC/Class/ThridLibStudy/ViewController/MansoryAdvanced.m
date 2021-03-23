@@ -29,7 +29,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title =@"Mansory进阶学习";
-    
     [self setUpView];
 }
 - (void)setUpView{

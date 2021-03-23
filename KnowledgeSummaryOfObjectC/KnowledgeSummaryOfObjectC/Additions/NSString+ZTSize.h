@@ -10,6 +10,7 @@
 
 @interface NSString (ZTSize)
 
+@property(nonatomic,strong) NSNumber * num;
 /**
  根据字体大小以及宽度计算文本高度
 

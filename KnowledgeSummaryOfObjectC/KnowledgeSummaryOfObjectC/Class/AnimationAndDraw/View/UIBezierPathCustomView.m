@@ -19,6 +19,8 @@
 
 - (void)drawRect:(CGRect)rect
 {
+    NSLog(@"22");
+
     //由于UIBezierPath绘制出来的是矢量图形(即layer路径)并不能真正的展示出来,因此,想让它显示在图层上,需要设置线条颜色
     [[UIColor orangeColor] set];
     
@@ -119,5 +121,7 @@
     [path10 stroke];
     
 }
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"11");
+}
 @end

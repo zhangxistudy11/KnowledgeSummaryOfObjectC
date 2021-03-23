@@ -13,6 +13,7 @@
 #import "StackViewUseController.h"
 #import "TableLeftSlideViewController.h"
 #import "ChangeTwoViewController.h"
+#import "MulThreadViewController.h"
 @interface BaseicKnowledgeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -79,6 +80,10 @@
             cell.textLabel.text = @"5-交换两个子view";
             return cell;
             break;
+        case 6:
+            cell.textLabel.text = @"6-多线程";
+            return cell;
+            break;
         default:
             break;
     }
@@ -128,7 +133,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-            
+        case 6:
+        {
+            MulThreadViewController * vc = [[MulThreadViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }

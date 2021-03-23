@@ -97,6 +97,7 @@
     GetPrivateObjTwo *test = [[GetPrivateObjTwo alloc]init];
     test = vname;
     [test eat];
+    
 }
 
 /*
