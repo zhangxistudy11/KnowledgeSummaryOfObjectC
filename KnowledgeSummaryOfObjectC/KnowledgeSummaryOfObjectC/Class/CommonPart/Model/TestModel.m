@@ -12,4 +12,7 @@
 - (void)printStr {
     NSLog(@"aaaa");
 }
++(BOOL)resolveInstanceMethod:(SEL)sel{
+    return NO;
+}
 @end
