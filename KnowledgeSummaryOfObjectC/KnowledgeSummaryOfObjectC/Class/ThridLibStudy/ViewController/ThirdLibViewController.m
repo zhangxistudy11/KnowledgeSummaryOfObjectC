@@ -11,6 +11,7 @@
 #import "TTSliderController.h"
 #import "MansoryAdvanced.h"
 #import "GetApplistViewController.h"
+#import "AutoLayoutViewController.h"
 @interface ThirdLibViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -25,7 +26,7 @@
     self.title = @"三方库的学习";
     self.view.backgroundColor = [UIColor  whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-      [self  setUpView];
+    [self  setUpView];
 }
 
 - (void)setUpView
@@ -61,18 +62,18 @@
             cell.textLabel.text = @"1-slide使用";
             return cell;
             break;
-            case 2:
-                      cell.textLabel.text = @"2-Mansory进阶";
-                      return cell;
-                      break;
+        case 2:
+            cell.textLabel.text = @"2-Mansory进阶";
+            return cell;
+            break;
         case 3:
             cell.textLabel.text = @"3-获取其他applist";
             return cell;
             break;
-//        case 3:
-//            cell.textLabel.text = @"4-JavaScriptProtol熟悉";
-//            return cell;
-//            break;
+        case 4:
+            cell.textLabel.text = @"4-AutoLayout学习";
+            return cell;
+            break;
         default:
             break;
     }
@@ -93,7 +94,7 @@
             break;
         case 1:
         {
-
+            
             TTSliderController * vc = [[TTSliderController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
@@ -110,6 +111,13 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 4:
+        {
+            AutoLayoutViewController * vc = [[AutoLayoutViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
         default:
             break;
     }

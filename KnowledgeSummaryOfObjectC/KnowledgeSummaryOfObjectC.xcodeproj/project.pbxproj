@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33010A5A26188CAD00709BA9 /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33010A5926188CAD00709BA9 /* AutoLayoutViewController.m */; };
 		33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33021DD01F65763500E49A29 /* CrashLocationViewController.m */; };
 		3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330721292015E53700A320FA /* LoadHtmlViewController.m */; };
 		33186CDF2060DA4F002B2D20 /* RunTimeBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33186CDE2060DA4F002B2D20 /* RunTimeBasicViewController.m */; };
@@ -400,6 +401,8 @@
 /* Begin PBXFileReference section */
 		0B1FBABE29897B8DFDBCA683 /* Pods-KnowledgeSummaryOfObjectC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.debug.xcconfig"; sourceTree = "<group>"; };
 		0C2538995099BB6BEFDA8352 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33010A5826188CAD00709BA9 /* AutoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
+		33010A5926188CAD00709BA9 /* AutoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
 		33021DCF1F65763500E49A29 /* CrashLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashLocationViewController.h; sourceTree = "<group>"; };
 		33021DD01F65763500E49A29 /* CrashLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashLocationViewController.m; sourceTree = "<group>"; };
 		330721282015E53700A320FA /* LoadHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadHtmlViewController.h; sourceTree = "<group>"; };
@@ -956,6 +959,8 @@
 				77C1A418242DA0A700EB50C1 /* MansoryAdvanced.m */,
 				7728526825CBA0DB00579F2A /* GetApplistViewController.h */,
 				7728526925CBA0DB00579F2A /* GetApplistViewController.m */,
+				33010A5826188CAD00709BA9 /* AutoLayoutViewController.h */,
+				33010A5926188CAD00709BA9 /* AutoLayoutViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2182,6 +2187,7 @@
 				33BB26991F669E5300CDFA92 /* WebPracticeViewController.m in Sources */,
 				7790FE4723D5875000FA5B70 /* RacLoginExampleController.m in Sources */,
 				3398DD011F63FC2400D7A872 /* ViewController.m in Sources */,
+				33010A5A26188CAD00709BA9 /* AutoLayoutViewController.m in Sources */,
 				771DDC8823C35BD20021AD61 /* EventInteractionViewController.m in Sources */,
 				FB1335E820CCB5D700187132 /* MethodSwizzlingViewController.m in Sources */,
 				3398DCFA1F63FC2400D7A872 /* CAShaplayerViewController.m in Sources */,
