@@ -293,6 +293,7 @@
 		33FAF54B25FFACC000DF4FE9 /* MulThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FAF54A25FFACC000DF4FE9 /* MulThreadViewController.m */; };
 		5161741911F0F6354905088A /* libPods-KnowledgeSummaryOfObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2538995099BB6BEFDA8352 /* libPods-KnowledgeSummaryOfObjectC.a */; };
 		7709A91C2449551500EA984B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7709A91B2449551500EA984B /* TestViewController.m */; };
+		770B5C69261D47AA0038818C /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 770B5C68261D47AA0038818C /* People.m */; };
 		771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F222C9D8C4000926A9 /* SuspendViewController.m */; };
 		771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F522C9DECC000926A9 /* SuspendTableController.m */; };
 		771902F922CA2813000926A9 /* CustomProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771902F822CA2813000926A9 /* CustomProgressController.m */; };
@@ -359,6 +360,7 @@
 		77C39DE624163862002C8316 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE324163862002C8316 /* TTRangeSlider.m */; };
 		77C39DE9241638BB002C8316 /* TTSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE8241638BB002C8316 /* TTSliderController.m */; };
 		77C39DEA241638BB002C8316 /* TTSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C39DE8241638BB002C8316 /* TTSliderController.m */; };
+		77E9BC43261D829D005A62A8 /* NSBundle+YJInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E9BC42261D829D005A62A8 /* NSBundle+YJInfo.m */; };
 		77F3923C24249443009B8571 /* RACGrammarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F3923B24249443009B8571 /* RACGrammarViewController.m */; };
 		77F4837E2361A76B00D7A1AD /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F4837D2361A76B00D7A1AD /* ShadowViewController.m */; };
 		77FECFC325F0B81900297770 /* Testaaa.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FECFC225F0B81900297770 /* Testaaa.m */; };
@@ -623,6 +625,8 @@
 		33FAF54A25FFACC000DF4FE9 /* MulThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MulThreadViewController.m; sourceTree = "<group>"; };
 		7709A91A2449551500EA984B /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		7709A91B2449551500EA984B /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		770B5C67261D47AA0038818C /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		770B5C68261D47AA0038818C /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 		771902F122C9D8C4000926A9 /* SuspendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendViewController.h; sourceTree = "<group>"; };
 		771902F222C9D8C4000926A9 /* SuspendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspendViewController.m; sourceTree = "<group>"; };
 		771902F422C9DECC000926A9 /* SuspendTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendTableController.h; sourceTree = "<group>"; };
@@ -718,6 +722,8 @@
 		77C39DE424163862002C8316 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRangeSlider.h; sourceTree = "<group>"; };
 		77C39DE7241638BB002C8316 /* TTSliderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSliderController.h; sourceTree = "<group>"; };
 		77C39DE8241638BB002C8316 /* TTSliderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSliderController.m; sourceTree = "<group>"; };
+		77E9BC41261D829D005A62A8 /* NSBundle+YJInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YJInfo.h"; sourceTree = "<group>"; };
+		77E9BC42261D829D005A62A8 /* NSBundle+YJInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YJInfo.m"; sourceTree = "<group>"; };
 		77F3923A24249443009B8571 /* RACGrammarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACGrammarViewController.h; sourceTree = "<group>"; };
 		77F3923B24249443009B8571 /* RACGrammarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACGrammarViewController.m; sourceTree = "<group>"; };
 		77F4837C2361A76B00D7A1AD /* ShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowViewController.h; sourceTree = "<group>"; };
@@ -956,6 +962,8 @@
 				77C1A418242DA0A700EB50C1 /* MansoryAdvanced.m */,
 				7728526825CBA0DB00579F2A /* GetApplistViewController.h */,
 				7728526925CBA0DB00579F2A /* GetApplistViewController.m */,
+				77E9BC41261D829D005A62A8 /* NSBundle+YJInfo.h */,
+				77E9BC42261D829D005A62A8 /* NSBundle+YJInfo.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1489,6 +1497,8 @@
 				331FA868260634C700FB5606 /* SonModel.m */,
 				331FA86E2606EA1300FB5606 /* TestObj.h */,
 				331FA86F2606EA1300FB5606 /* TestObj.m */,
+				770B5C67261D47AA0038818C /* People.h */,
+				770B5C68261D47AA0038818C /* People.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2224,6 +2234,7 @@
 				FBF2016720A58F6A00AFE27B /* FloatSlideViewController.m in Sources */,
 				772D6D46234CA1D50000F5B2 /* ZHXSegmentBarView.m in Sources */,
 				771902F322C9D8C4000926A9 /* SuspendViewController.m in Sources */,
+				770B5C69261D47AA0038818C /* People.m in Sources */,
 				771902F622C9DECC000926A9 /* SuspendTableController.m in Sources */,
 				33CFEB8026025C24002EF108 /* TestModel.m in Sources */,
 				3325D4BF1FD00467002ED01E /* ARStudyPeimaryVC.m in Sources */,
@@ -2247,6 +2258,7 @@
 				33673D261F59035000ECE5D4 /* AppDelegate.m in Sources */,
 				779CF5912576601D00ACDC22 /* OrderDetailView.m in Sources */,
 				772D6D43234CA0760000F5B2 /* AnimationSegmentViewController.m in Sources */,
+				77E9BC43261D829D005A62A8 /* NSBundle+YJInfo.m in Sources */,
 				778FDC99256E3BA90078952C /* GetPrivateObjOne.m in Sources */,
 				7797489C2435D726000FA83B /* DDIndexView.m in Sources */,
 				33F778F520206C2A00581E5C /* SlideMenuDemoController.m in Sources */,

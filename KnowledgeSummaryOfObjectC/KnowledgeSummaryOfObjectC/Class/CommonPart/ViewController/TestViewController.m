@@ -10,6 +10,8 @@
 #import <objc/runtime.h>
 #import <malloc/malloc.h>
 #import "SonModel.h"
+#import "People.h"
+#import "NSBundle+YJInfo.h"
 
 typedef void (^TestBlock)(void);
 @interface TestViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -17,6 +19,8 @@ typedef void (^TestBlock)(void);
     UITableView  * _tableView;
 }
 @property(nonatomic,copy) TestBlock tBlock;
+
+@property (nonatomic, strong) UIView *redView;
 @end
 
 @implementation TestViewController
@@ -43,6 +47,11 @@ typedef void (^TestBlock)(void);
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"testALG" style:UIBarButtonItemStylePlain target:self action:@selector(rightclick:)];
     self.navigationItem.rightBarButtonItem = rightItem;
+    
+    self.redView = [[UIView alloc]init];
+    [self.view addSubview:self.redView];
+    self.redView.backgroundColor = [UIColor redColor];
+//    self.redView.add
     
 }
 #pragma mark - UITableViewDataSource,UITableViewDelegate
@@ -133,17 +142,13 @@ void test() {
 #pragma mark - Target Methods
 - (void)rightclick:(UIBarButtonItem *)sender
 {
-//    TestModel *t1 = [[TestModel alloc]init];
-//    [t1 printStr];
-//    TestModel *t2 = [[SonModel alloc]init];
-//    [t2 printStr];
-//
-//    SonModel *s1 = [[TestModel alloc]init];
-//    [s1 printStr];
-//
-//    SonModel *s2 = [[SonModel alloc]init];
-//    [s2 printStr];
-
+ 
+    NSArray * arr1 = [NSBundle yj_bundleOwnClassesInfo];
+    NSLog(@"%@",arr1);
+    
+    NSArray * arr2 = [NSBundle yj_bundleAllClassesInfo];
+    NSLog(@"%@",arr2);
+   
 
 }
 - (void)testOne {
