@@ -14,6 +14,8 @@
 #import "TableLeftSlideViewController.h"
 #import "ChangeTwoViewController.h"
 #import "MulThreadViewController.h"
+#import "GetTopViewController.h"
+#import "HookKnowledgeViewController.h"
 @interface BaseicKnowledgeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -84,6 +86,14 @@
             cell.textLabel.text = @"6-多线程";
             return cell;
             break;
+        case 7:
+            cell.textLabel.text = @"7-获取最顶层VC";
+            return cell;
+            break;
+        case 8:
+            cell.textLabel.text = @"8-hook顺序处理";
+            return cell;
+            break;
         default:
             break;
     }
@@ -139,6 +149,21 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 7:
+        {
+            GetTopViewController * vc = [[GetTopViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 8:
+        {
+            HookKnowledgeViewController * vc = [[HookKnowledgeViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+            
+            
         default:
             break;
     }

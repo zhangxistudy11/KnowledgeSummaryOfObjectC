@@ -349,6 +349,11 @@
 		779CF5912576601D00ACDC22 /* OrderDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779CF5902576601D00ACDC22 /* OrderDetailView.m */; };
 		779CF59D257662BB00ACDC22 /* HomePageDetailInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 779CF59C257662BB00ACDC22 /* HomePageDetailInfoModel.m */; };
 		779CF5A42576639F00ACDC22 /* AllOrderPageInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 779CF5A32576639F00ACDC22 /* AllOrderPageInfoModel.m */; };
+		77A3026B261EE65300C6C042 /* GetTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3026A261EE65300C6C042 /* GetTopViewController.m */; };
+		77A30272261F29CC00C6C042 /* HookKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A30271261F29CC00C6C042 /* HookKnowledgeViewController.m */; };
+		77A3027A261F2A5000C6C042 /* HookFatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A30279261F2A5000C6C042 /* HookFatherModel.m */; };
+		77A30290261F2AD200C6C042 /* HookSonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3028F261F2AD200C6C042 /* HookSonModel.m */; };
+		77A30297261F2BB100C6C042 /* HookSonModel+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A30296261F2BB100C6C042 /* HookSonModel+Hook.m */; };
 		77AC8756247B5B55004210F0 /* BlockUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC8755247B5B55004210F0 /* BlockUseViewController.m */; };
 		77B57BA323BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
 		77B57BA423BF0D17000EB856 /* ExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B57BA223BF0D17000EB856 /* ExceptionController.m */; };
@@ -710,6 +715,16 @@
 		779CF59C257662BB00ACDC22 /* HomePageDetailInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageDetailInfoModel.m; sourceTree = "<group>"; };
 		779CF5A22576639F00ACDC22 /* AllOrderPageInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllOrderPageInfoModel.h; sourceTree = "<group>"; };
 		779CF5A32576639F00ACDC22 /* AllOrderPageInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllOrderPageInfoModel.m; sourceTree = "<group>"; };
+		77A30269261EE65300C6C042 /* GetTopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetTopViewController.h; sourceTree = "<group>"; };
+		77A3026A261EE65300C6C042 /* GetTopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetTopViewController.m; sourceTree = "<group>"; };
+		77A30270261F29CC00C6C042 /* HookKnowledgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookKnowledgeViewController.h; sourceTree = "<group>"; };
+		77A30271261F29CC00C6C042 /* HookKnowledgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookKnowledgeViewController.m; sourceTree = "<group>"; };
+		77A30278261F2A5000C6C042 /* HookFatherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookFatherModel.h; sourceTree = "<group>"; };
+		77A30279261F2A5000C6C042 /* HookFatherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookFatherModel.m; sourceTree = "<group>"; };
+		77A3028E261F2AD200C6C042 /* HookSonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookSonModel.h; sourceTree = "<group>"; };
+		77A3028F261F2AD200C6C042 /* HookSonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookSonModel.m; sourceTree = "<group>"; };
+		77A30295261F2BB100C6C042 /* HookSonModel+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HookSonModel+Hook.h"; sourceTree = "<group>"; };
+		77A30296261F2BB100C6C042 /* HookSonModel+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HookSonModel+Hook.m"; sourceTree = "<group>"; };
 		77AC8754247B5B55004210F0 /* BlockUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockUseViewController.h; sourceTree = "<group>"; };
 		77AC8755247B5B55004210F0 /* BlockUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockUseViewController.m; sourceTree = "<group>"; };
 		77B57BA123BF0D17000EB856 /* ExceptionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionController.h; sourceTree = "<group>"; };
@@ -1680,6 +1695,7 @@
 		771DDC7C23C3578B0021AD61 /* BasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				77A30277261F2A3100C6C042 /* Model */,
 				777E8F192602EBB9009EDAD6 /* View */,
 				771DDC7D23C357D60021AD61 /* BaseicKnowledgeViewController.h */,
 				771DDC7E23C357D60021AD61 /* BaseicKnowledgeViewController.m */,
@@ -1697,6 +1713,10 @@
 				7751FF6824C56C310055FFEE /* ChangeTwoViewController.m */,
 				33FAF54925FFACC000DF4FE9 /* MulThreadViewController.h */,
 				33FAF54A25FFACC000DF4FE9 /* MulThreadViewController.m */,
+				77A30269261EE65300C6C042 /* GetTopViewController.h */,
+				77A3026A261EE65300C6C042 /* GetTopViewController.m */,
+				77A30270261F29CC00C6C042 /* HookKnowledgeViewController.h */,
+				77A30271261F29CC00C6C042 /* HookKnowledgeViewController.m */,
 			);
 			path = BasicKnowledge;
 			sourceTree = "<group>";
@@ -1771,6 +1791,19 @@
 				779CF5A32576639F00ACDC22 /* AllOrderPageInfoModel.m */,
 			);
 			path = ProtocolUse;
+			sourceTree = "<group>";
+		};
+		77A30277261F2A3100C6C042 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77A30278261F2A5000C6C042 /* HookFatherModel.h */,
+				77A30279261F2A5000C6C042 /* HookFatherModel.m */,
+				77A3028E261F2AD200C6C042 /* HookSonModel.h */,
+				77A3028F261F2AD200C6C042 /* HookSonModel.m */,
+				77A30295261F2BB100C6C042 /* HookSonModel+Hook.h */,
+				77A30296261F2BB100C6C042 /* HookSonModel+Hook.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		77C39DE124163862002C8316 /* TTRangeSlider */ = {
@@ -2199,6 +2232,7 @@
 				3362C76C1FF09E1000F3EFA9 /* HUDViewController.m in Sources */,
 				771902FC22CA2964000926A9 /* CustomProgressView.m in Sources */,
 				779CF59D257662BB00ACDC22 /* HomePageDetailInfoModel.m in Sources */,
+				77A3027A261F2A5000C6C042 /* HookFatherModel.m in Sources */,
 				3343CF741FBAF85700653468 /* BaseTableView.m in Sources */,
 				771902F922CA2813000926A9 /* CustomProgressController.m in Sources */,
 				777C1AD6215CD18D004CAB77 /* PopViewThreeViewController.m in Sources */,
@@ -2211,6 +2245,7 @@
 				3398DCFC1F63FC2400D7A872 /* KeyFrameViewController.m in Sources */,
 				334839AF1F7CF02E00BD17EE /* RacPrimaryView.m in Sources */,
 				3398DCFE1F63FC2400D7A872 /* UIBezierPathViewController.m in Sources */,
+				77A3026B261EE65300C6C042 /* GetTopViewController.m in Sources */,
 				336A8E311FEB533300EFCF42 /* ButtonViewController.m in Sources */,
 				336EFD141F7E377700B8246F /* PopViewTwoController.m in Sources */,
 				3362C7B01FF0FFCE00F3EFA9 /* UIViewExt.m in Sources */,
@@ -2226,6 +2261,7 @@
 				3398DCF81F63FC2400D7A872 /* AnimationAndDrawViewController.m in Sources */,
 				333AAD11226B320F005736F0 /* ThirdLibViewController.m in Sources */,
 				7728526A25CBA0DB00579F2A /* GetApplistViewController.m in Sources */,
+				77A30290261F2AD200C6C042 /* HookSonModel.m in Sources */,
 				33BA97DB2306E59000BF181C /* ZHXCustomItemView.m in Sources */,
 				7751FF6624C54BDE0055FFEE /* SuspendTabTableViewCell.m in Sources */,
 				3398DD031F63FC2400D7A872 /* MemoryManageViewController.m in Sources */,
@@ -2284,8 +2320,10 @@
 				33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				7755F7872431EA4900955AC8 /* PopViewMansoryVC.m in Sources */,
+				77A30297261F2BB100C6C042 /* HookSonModel+Hook.m in Sources */,
 				777E8F1C2602EBCE009EDAD6 /* TestClolorView.m in Sources */,
 				33BA97E42306FCEB00BF181C /* NSString+ZTSize.m in Sources */,
+				77A30272261F29CC00C6C042 /* HookKnowledgeViewController.m in Sources */,
 				3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */,
 				333AAD14226B3402005736F0 /* MansoryStudyController.m in Sources */,
 				77FECFC325F0B81900297770 /* Testaaa.m in Sources */,

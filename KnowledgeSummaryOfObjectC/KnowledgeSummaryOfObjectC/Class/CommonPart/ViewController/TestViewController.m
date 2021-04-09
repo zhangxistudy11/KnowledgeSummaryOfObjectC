@@ -12,7 +12,7 @@
 #import "SonModel.h"
 #import "People.h"
 #import "NSBundle+YJInfo.h"
-
+#import "TestUIViewController.h"
 typedef void (^TestBlock)(void);
 @interface TestViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -148,6 +148,8 @@ void test() {
     
     NSArray * arr2 = [NSBundle yj_bundleAllClassesInfo];
     NSLog(@"%@",arr2);
+    TestUIViewController *vc = [[TestUIViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
    
 
 }
