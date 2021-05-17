@@ -10,6 +10,6 @@
 
 @implementation TestModel
 - (void)printStr {
-    NSLog(@"1111aaaagggggggff");
+    NSLog(@"1111aaaagggggggggggff");
 }
 @end
