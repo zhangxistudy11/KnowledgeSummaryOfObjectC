@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		33010A5A26188CAD00709BA9 /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33010A5926188CAD00709BA9 /* AutoLayoutViewController.m */; };
+		33010A88261984BA00709BA9 /* TestModel+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 33010A87261984BA00709BA9 /* TestModel+A.m */; };
+		33010A8F261984C500709BA9 /* TestModel+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 33010A8E261984C500709BA9 /* TestModel+B.m */; };
 		33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33021DD01F65763500E49A29 /* CrashLocationViewController.m */; };
 		3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330721292015E53700A320FA /* LoadHtmlViewController.m */; };
 		33186CDF2060DA4F002B2D20 /* RunTimeBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33186CDE2060DA4F002B2D20 /* RunTimeBasicViewController.m */; };
@@ -403,6 +405,10 @@
 		0C2538995099BB6BEFDA8352 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33010A5826188CAD00709BA9 /* AutoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
 		33010A5926188CAD00709BA9 /* AutoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
+		33010A86261984BA00709BA9 /* TestModel+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestModel+A.h"; sourceTree = "<group>"; };
+		33010A87261984BA00709BA9 /* TestModel+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestModel+A.m"; sourceTree = "<group>"; };
+		33010A8D261984C500709BA9 /* TestModel+B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestModel+B.h"; sourceTree = "<group>"; };
+		33010A8E261984C500709BA9 /* TestModel+B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestModel+B.m"; sourceTree = "<group>"; };
 		33021DCF1F65763500E49A29 /* CrashLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashLocationViewController.h; sourceTree = "<group>"; };
 		33021DD01F65763500E49A29 /* CrashLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashLocationViewController.m; sourceTree = "<group>"; };
 		330721282015E53700A320FA /* LoadHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadHtmlViewController.h; sourceTree = "<group>"; };
@@ -1490,6 +1496,10 @@
 			children = (
 				33CFEB7E26025C24002EF108 /* TestModel.h */,
 				33CFEB7F26025C24002EF108 /* TestModel.m */,
+				33010A86261984BA00709BA9 /* TestModel+A.h */,
+				33010A87261984BA00709BA9 /* TestModel+A.m */,
+				33010A8D261984C500709BA9 /* TestModel+B.h */,
+				33010A8E261984C500709BA9 /* TestModel+B.m */,
 				331FA867260634C700FB5606 /* SonModel.h */,
 				331FA868260634C700FB5606 /* SonModel.m */,
 				331FA86E2606EA1300FB5606 /* TestObj.h */,
@@ -2172,6 +2182,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33010A88261984BA00709BA9 /* TestModel+A.m in Sources */,
+				33010A8F261984C500709BA9 /* TestModel+B.m in Sources */,
 				33E9033025F3866B002F64F8 /* UIBezierPathViewController.h in Sources */,
 				FB54C1EC20A741D40060FD9F /* TranslucentCellViewController.m in Sources */,
 				33EABABF1F9EE22A00EEA2FC /* DynamicImageViewController.m in Sources */,

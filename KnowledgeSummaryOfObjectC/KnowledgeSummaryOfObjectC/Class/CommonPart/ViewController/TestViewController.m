@@ -10,13 +10,19 @@
 #import <objc/runtime.h>
 #import <malloc/malloc.h>
 #import "SonModel.h"
+#import "TestModel.h"
+#import "TestModel+A.h"
+#import "TestModel+B.h"
+#import "YYCache.h"
+
 
 typedef void (^TestBlock)(void);
-@interface TestViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface TestViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 {
     UITableView  * _tableView;
 }
 @property(nonatomic,copy) TestBlock tBlock;
+@property(nonatomic,copy) NSMutableArray * mulArr;
 @end
 
 @implementation TestViewController
@@ -50,7 +56,7 @@ typedef void (^TestBlock)(void);
 {
   
     
-    return 25;
+    return 40;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -71,7 +77,7 @@ typedef void (^TestBlock)(void);
     switch (indexPath.row) {
         case 0:
         {
-            [self testZero];
+            [self testZeroZero];
         }
             break;
         case 1:
@@ -110,6 +116,12 @@ typedef void (^TestBlock)(void);
             break;
     }
 }
+- (void)testZeroZero {
+    YYCache *aa = [[YYCache alloc]initWithName:@"ddddd"];
+    [aa containsObjectForKey:@"111"];
+    NSLog(@"我是老哥老哥老哥");
+    NSLog(@"%s",__FUNCTION__);
+}
 #pragma mark - Test Method
 
 void testaa(int a) {
@@ -133,8 +145,12 @@ void test() {
 #pragma mark - Target Methods
 - (void)rightclick:(UIBarButtonItem *)sender
 {
+    NSMutableArray * arr = [[NSMutableArray alloc]init];
+    [arr addObject:@"11"];
+    NSMutableArray * arr2 = [[NSMutableArray alloc]initWithArray:arr copyItems:YES];
+//    NSLog(@"%@",self.mulArr);
 //    TestModel *t1 = [[TestModel alloc]init];
-//    [t1 printStr];
+//    [t1 printName];
 //    TestModel *t2 = [[SonModel alloc]init];
 //    [t2 printStr];
 //
@@ -150,11 +166,30 @@ void test() {
     
     TestModel * tModel = [[TestModel alloc]init];
     
-    tModel.array = @[@"aa",@"bb"];
-    
-    tModel.obj = [[TestObj alloc]init];
+   
     
     [tModel printName];
     
+    NSMutableDictionary * aa = [[NSMutableDictionary alloc]init];
+    [aa setValue:@"aaa" forKey:@"aaa"];
+
+    
+    NSCache * cache = [[NSCache alloc]init];
+    [cache setObject:tModel forKey:tModel];
+    
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    float current = scrollView.contentOffset.y + scrollView.frame.size.height;
+    float total = scrollView.contentSize.height;
+    float ratio = current / total;
+    
+    NSLog(@"scrollView.contentOffset.y--%f",scrollView.contentOffset.y );
+    NSLog(@"total--%f",scrollView.contentSize.height );
+    NSLog(@"ratio--%f",ratio );
+    
+    if (ratio > 0.7) {
+        NSLog(@"走一次新的");
+    }
+
 }
 @end

@@ -11,8 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestModel : NSObject
-@property(nonatomic,strong) NSArray *array;
-@property(nonatomic,strong) TestObj *obj;
+
 
 - (void)printName;
 @end

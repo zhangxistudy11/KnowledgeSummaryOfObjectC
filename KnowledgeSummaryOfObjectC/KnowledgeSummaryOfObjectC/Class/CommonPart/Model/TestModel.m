@@ -9,10 +9,11 @@
 #import "TestModel.h"
 
 @implementation TestModel
-- (void)printStr {
-    NSLog(@"aaaa");
++ (void)load {
+    NSLog(@"1");
 }
-+(BOOL)resolveInstanceMethod:(SEL)sel{
-    return NO;
+- (void)printName {
+    NSLog(@"原类");
 }
+
 @end
