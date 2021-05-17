@@ -10,19 +10,17 @@
 #import <objc/runtime.h>
 #import <malloc/malloc.h>
 #import "SonModel.h"
-#import "TestModel.h"
-#import "TestModel+A.h"
-#import "TestModel+B.h"
-#import "YYCache.h"
-
-
+#import "People.h"
+#import "NSBundle+YJInfo.h"
+#import "TestUIViewController.h"
 typedef void (^TestBlock)(void);
-@interface TestViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
+@interface TestViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
 }
 @property(nonatomic,copy) TestBlock tBlock;
-@property(nonatomic,copy) NSMutableArray * mulArr;
+
+@property (nonatomic, strong) UIView *redView;
 @end
 
 @implementation TestViewController
@@ -50,13 +48,18 @@ typedef void (^TestBlock)(void);
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"testALG" style:UIBarButtonItemStylePlain target:self action:@selector(rightclick:)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
+    self.redView = [[UIView alloc]init];
+    [self.view addSubview:self.redView];
+    self.redView.backgroundColor = [UIColor redColor];
+//    self.redView.add
+    
 }
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
   
     
-    return 40;
+    return 25;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -77,7 +80,7 @@ typedef void (^TestBlock)(void);
     switch (indexPath.row) {
         case 0:
         {
-            [self testZeroZero];
+            [self testZero];
         }
             break;
         case 1:
@@ -116,12 +119,6 @@ typedef void (^TestBlock)(void);
             break;
     }
 }
-- (void)testZeroZero {
-    YYCache *aa = [[YYCache alloc]initWithName:@"ddddd"];
-    [aa containsObjectForKey:@"111"];
-    NSLog(@"我是老哥老哥老哥");
-    NSLog(@"%s",__FUNCTION__);
-}
 #pragma mark - Test Method
 
 void testaa(int a) {
@@ -145,51 +142,22 @@ void test() {
 #pragma mark - Target Methods
 - (void)rightclick:(UIBarButtonItem *)sender
 {
-    NSMutableArray * arr = [[NSMutableArray alloc]init];
-    [arr addObject:@"11"];
-    NSMutableArray * arr2 = [[NSMutableArray alloc]initWithArray:arr copyItems:YES];
-//    NSLog(@"%@",self.mulArr);
-//    TestModel *t1 = [[TestModel alloc]init];
-//    [t1 printName];
-//    TestModel *t2 = [[SonModel alloc]init];
-//    [t2 printStr];
-//
-//    SonModel *s1 = [[TestModel alloc]init];
-//    [s1 printStr];
-//
-//    SonModel *s2 = [[SonModel alloc]init];
-//    [s2 printStr];
-
+ 
+    NSArray * arr1 = [NSBundle yj_bundleOwnClassesInfo];
+    NSLog(@"%@",arr1);
+    
+    NSArray * arr2 = [NSBundle yj_bundleAllClassesInfo];
+    NSLog(@"%@",arr2);
+    TestUIViewController *vc = [[TestUIViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+   
 
 }
 - (void)testOne {
     
     TestModel * tModel = [[TestModel alloc]init];
     
-   
+  
     
-    [tModel printName];
-    
-    NSMutableDictionary * aa = [[NSMutableDictionary alloc]init];
-    [aa setValue:@"aaa" forKey:@"aaa"];
-
-    
-    NSCache * cache = [[NSCache alloc]init];
-    [cache setObject:tModel forKey:tModel];
-    
-}
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    float current = scrollView.contentOffset.y + scrollView.frame.size.height;
-    float total = scrollView.contentSize.height;
-    float ratio = current / total;
-    
-    NSLog(@"scrollView.contentOffset.y--%f",scrollView.contentOffset.y );
-    NSLog(@"total--%f",scrollView.contentSize.height );
-    NSLog(@"ratio--%f",ratio );
-    
-    if (ratio > 0.7) {
-        NSLog(@"走一次新的");
-    }
-
 }
 @end

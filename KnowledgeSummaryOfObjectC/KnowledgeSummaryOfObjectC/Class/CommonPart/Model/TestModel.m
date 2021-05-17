@@ -9,11 +9,7 @@
 #import "TestModel.h"
 
 @implementation TestModel
-+ (void)load {
-    NSLog(@"1");
+- (void)printStr {
+    NSLog(@"aaaa");
 }
-- (void)printName {
-    NSLog(@"原类");
-}
-
 @end

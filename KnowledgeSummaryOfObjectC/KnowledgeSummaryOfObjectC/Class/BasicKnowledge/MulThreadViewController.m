@@ -17,25 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"多线程";
-    NSLog(@"%@", [NSThread currentThread]);
+//    NSLog(@"%@", [NSThread currentThread]);
 
-    [self teset1];
+//    [self teset1];
 //    [self teset2];
 //    [self teset3];
 //    [self teset4];
-//    [self teset5];
-//    [self test6];
-//    [self test7];
-//    [self test8];
-
-//    [self teset2];
-//    [self teset3];
 }
 - (void)teset1{
     dispatch_queue_t queue =  dispatch_queue_create("aa", DISPATCH_QUEUE_SERIAL);
-    
     dispatch_async(queue,^{
-     
+      NSLog(@"queue");
+        NSLog(@"%@", [NSThread currentThread]);
+
     });
 }
 
@@ -56,181 +50,56 @@
 
     });
 }
-//多个异步任务执行后，执行下个任务
+//GCD 实现线程池
 - (void)teset4 {
-    // 创建队列组
-       dispatch_group_t group =  dispatch_group_create();
-       // 创建并发队列
-       dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
-    
-       // 开子线程，任务1
-       dispatch_group_async(group, queue, ^{
-           sleep(2.0);
-
-           NSLog(@"任务1 完成，线程：%@", [NSThread currentThread]);
-       });
-    
-       // 开子线程，任务2
-       dispatch_group_async(group, queue, ^{
-           sleep(2.0);
-
-           NSLog(@"任务2 完成，线程：%@", [NSThread currentThread]);
-       });
-    
-    dispatch_group_notify(group, queue, ^{
-         dispatch_async(dispatch_get_main_queue(), ^{
-             NSLog(@"全部完成，线程：%@", [NSThread currentThread]);
-         });
-     });
-
-    
- }
-- (void)teset5 {
-    NSURLSession *session = [NSURLSession sharedSession];
-     
-        // 创建队列组
-        dispatch_group_t group =  dispatch_group_create();
-        // 创建并发队列
-        dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
-     
-        // 任务1
-        dispatch_group_async(group, queue, ^{
-            NSURLSessionDataTask *task1 = [session dataTaskWithURL:[NSURL URLWithString:@"https://www.apple.com/105/media/us/imac-pro/2018/d0b63f9b_f0de_4dea_a993_62b4cb35ca96/hero/large.mp4"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-                NSLog(@"任务1 完成，线程：%@", [NSThread currentThread]);
-            }];
-            [task1 resume];
-        });
-     
-        // 任务2
-        dispatch_group_async(group, queue, ^{
-            NSURLSessionDataTask *task2 = [session dataTaskWithURL:[NSURL URLWithString:@"https://www.apple.com/105/media/us/imac-pro/2018/d0b63f9b_f0de_4dea_a993_62b4cb35ca96/thumbnails/erin-sarofsky/large.mp4"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-                NSLog(@"任务2 完成，线程：%@", [NSThread currentThread]);
-            }];
-            [task2 resume];
-        });
-     
-        // 全部完成
-        dispatch_group_notify(group, queue, ^{
-            dispatch_async(dispatch_get_main_queue(), ^{
-                NSLog(@"全部完成，线程：%@", [NSThread currentThread]);
-            });
-        });
-
-}
-- (void)test6 {
-    NSURLSession *session = [NSURLSession sharedSession];
-     
-        // 创建队列组
-        dispatch_group_t group = dispatch_group_create();
-     
-        // 任务1
-        dispatch_group_enter(group);
-        NSURLSessionDataTask *task1 = [session dataTaskWithURL:[NSURL URLWithString:@"https://www.apple.com/105/media/us/imac-pro/2018/d0b63f9b_f0de_4dea_a993_62b4cb35ca96/hero/large.mp4"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            NSLog(@"任务1 完成，线程：%@", [NSThread currentThread]);
-            dispatch_group_leave(group);
-        }];
-        [task1 resume];
-     
-        // 任务2
-        dispatch_group_enter(group);
-        NSURLSessionDataTask *task2 = [session dataTaskWithURL:[NSURL URLWithString:@"https://www.apple.com/105/media/us/imac-pro/2018/d0b63f9b_f0de_4dea_a993_62b4cb35ca96/thumbnails/erin-sarofsky/large.mp4"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            NSLog(@"任务2 完成，线程：%@", [NSThread currentThread]);
-            dispatch_group_leave(group);
-        }];
-        [task2 resume];
-     
-        // 全部完成
-        dispatch_group_notify(group, dispatch_get_main_queue(), ^(){
-            NSLog(@"全部完成，线程：%@", [NSThread currentThread]);
-        });
-
-
-}
-- (void)test7 {
-    // 初始化信号量
-        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-     
-        NSURLSession *session = [NSURLSession sharedSession];
-     
-        // 创建队列组
-        dispatch_group_t group =  dispatch_group_create();
-        // 创建并发队列
-        dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
-     
-        // 任务1
-        dispatch_group_async(group, queue, ^{
-            NSURLSessionDataTask *task1 = [session dataTaskWithURL:[NSURL URLWithString:@"https://www.apple.com/105/media/us/imac-pro/2018/d0b63f9b_f0de_4dea_a993_62b4cb35ca96/hero/large.mp4"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-                sleep(3);
-
-                NSLog(@"任务1 完成，线程：%@", [NSThread currentThread]);
-                // 发送信号，使信号量+1
-                dispatch_semaphore_signal(semaphore);
-            }];
-            [task1 resume];
-        });
-       
-     
-        // 任务2
-        dispatch_group_async(group, queue, ^{
-            NSURLSessionDataTask *task2 = [session dataTaskWithURL:[NSURL URLWithString:@"https://www.apple.com/105/media/us/imac-pro/2018/d0b63f9b_f0de_4dea_a993_62b4cb35ca96/thumbnails/erin-sarofsky/large.mp4"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-                NSLog(@"任务2 完成，线程：%@", [NSThread currentThread]);
-                dispatch_semaphore_signal(semaphore);
-            }];
-            [task2 resume];
-        });
-    // 任务3
-    dispatch_group_async(group, queue, ^{
-        NSURLSessionDataTask *task2 = [session dataTaskWithURL:[NSURL URLWithString:@"https://www.apple.com/105/media/us/imac-pro/2018/d0b63f9b_f0de_4dea_a993_62b4cb35ca96/thumbnails/erin-sarofsky/large.mp4"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            NSLog(@"任务3 完成，线程：%@", [NSThread currentThread]);
-            dispatch_semaphore_signal(semaphore);
-        }];
-        [task2 resume];
+    dispatch_queue_t workConcurrentQueue = dispatch_queue_create("cccccccc", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t serialQueue = dispatch_queue_create("sssssssss",DISPATCH_QUEUE_SERIAL);
+    //保证一开始会有3个任务进入
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(3);
+    for (NSInteger i = 0; i < 10; i++) {
+    dispatch_async(serialQueue, ^{
+        //串行队列开始（保证每次走三个）,放个wait，等待大于0 才能往后走
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    dispatch_async(workConcurrentQueue, ^{
+        //里面的任务是可以并发的
+        NSLog(@"thread-info:%@开始执行任务%d",[NSThread currentThread],(int)i);
+        sleep(1);
+        NSLog(@"thread-info:%@结束执行任务%d",[NSThread currentThread],(int)i);
+        //执行完一个，信号值加1
+        dispatch_semaphore_signal(semaphore);});
     });
-        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-    // 信号量等于0时会一直等待，大于0时正常执行，并让信号量-1
-    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-
-        // 全部完成
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"全部完成，线程：%@", [NSThread currentThread]);
-        });
-
- 
+    }
+    NSLog(@"主线程...!");
 }
-- (void)test8 {
-    // 创建队列
-        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-     
-        // 任务1
-        NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
-            [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://img-blog.csdn.net/20180421152137506"]];
-            NSLog(@"任务1 完成，线程：%@", [NSThread currentThread]);
-        }];
-     
-        // 任务2
-        NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
-            [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://img-blog.csdn.net/20170112145924755?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaGVyb193cWI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"]];
-            NSLog(@"任务2 完成，线程：%@", [NSThread currentThread]);
-        }];
-    // 任务3
-    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
-        [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://img-blog.csdn.net/20170112145924755?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaGVyb193cWI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"]];
-        NSLog(@"任务3 完成，线程：%@", [NSThread currentThread]);
+//如果为YES，则会阻塞当前线程直到指定的方法执行完成才返回。
+//如果为NO, 则会立即返回。
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) { // do
+        NSLog(@"A-在主队列");
+    } else {
+        NSLog(@"A-非主队列");
+    }
+    
+    NSThread *thread = [[NSThread alloc]initWithBlock:^{
+        NSLog(@"子线程工作");
+        if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) { // do
+            NSLog(@"B-在主队列");
+
+        } else {
+            NSLog(@"B-非主队列");
+
+        }
+
+        [[NSRunLoop currentRunLoop] run];
+        
     }];
-        // 添加操作依赖，注意不能循环依赖
-        [op1 addDependency:op2];
-    [op1 addDependency:op3];
+    [thread start];
+    [self performSelector:@selector(testM) onThread:thread withObject:self waitUntilDone:NO];
 
-        op1.completionBlock = ^{
-            NSLog(@"全部完成，线程：%@", [NSThread currentThread]);
-        };
-     
-        // 添加操作到队列
-        [queue addOperation:op1];
-        [queue addOperation:op2];
-    [queue addOperation:op3];
-
-  
+}
+- (void)testM {
+    NSLog(@"测试方法");
 }
 @end
