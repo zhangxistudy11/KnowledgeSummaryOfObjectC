@@ -103,7 +103,7 @@ typedef void (^TestBlock)(void);
                        int a = 10;
                        NSLog(@"%p %p %p",&obj,obj,a);
                        NSLog(@"aaa");
-                       NSLog(@"cccggggc");
+                       NSLog(@"cccfffggggc");
                        NSLog(@"bbgggggggb");
                    }
                        break;
