@@ -104,7 +104,7 @@ typedef void (^TestBlock)(void);
                        NSLog(@"%p %p %p",&obj,obj,a);
                        NSLog(@"aaa");
                        NSLog(@"cccggggc");
-                       NSLog(@"bbggggb");
+                       NSLog(@"bbgggggggb");
                    }
                        break;
             case 4:
