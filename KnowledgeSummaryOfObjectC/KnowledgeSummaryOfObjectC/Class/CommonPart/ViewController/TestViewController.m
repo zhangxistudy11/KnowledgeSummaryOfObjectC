@@ -63,12 +63,14 @@
         {
             NSLog(@"000dddggg33344");
             NSLog(@"adddssssagggggggaaaa1111");
+            NSLog(@"000dddggg333443333333");
+            NSLog(@"adddssssaaaaa1111");
             
         }
             break;
         case 1:
         {
-            NSLog(@"111333");
+            NSLog(@"111333ggg");
 
             NSLog(@"bfffbbb");
 
