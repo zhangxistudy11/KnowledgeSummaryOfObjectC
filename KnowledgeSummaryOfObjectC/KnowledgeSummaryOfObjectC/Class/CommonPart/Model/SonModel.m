@@ -10,7 +10,7 @@
 
 @implementation SonModel
 + (void)load {
-    NSLog(@"3");
+//    NSLog(@"3");
 }
 - (void)printStr{
     NSLog(@"bbb");

@@ -13,6 +13,7 @@
 #import "People.h"
 #import "NSBundle+YJInfo.h"
 #import "TestUIViewController.h"
+
 typedef void (^TestBlock)(void);
 @interface TestViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -32,7 +33,7 @@ typedef void (^TestBlock)(void);
     self.view.backgroundColor = [UIColor  whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    testaa(4);
+//    testaa(4);
     
     [self  setUpView];
 }
@@ -53,6 +54,10 @@ typedef void (^TestBlock)(void);
     self.redView.backgroundColor = [UIColor redColor];
 //    self.redView.add
     
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor greenColor]];
 }
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -92,7 +97,7 @@ typedef void (^TestBlock)(void);
 //               // 3.但不允许其调用NSData的方法，下面这里编译不通过给出红色报错
 //               [testObject base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
 
-            [self testOne];
+            [self testOne:@"刘能"];
         
 
         }
@@ -129,16 +134,46 @@ void test() {
     int b = 20;
     NSLog(@"%d",a+b);
 }
+
+
+
+- (void)testOne:(NSString *)text {
+    People * p1 = [[People alloc]init];
+    p1.name = text;
+    
+    [self checkDataWithPeople:p1];
+}
+
+
 - (void)testZero
 {
-  __block  int a = 10;
+    People * p0 = [[People alloc]init];
+    p0.name = @"张三";
+    [self checkDataWithPeople:p0];
     
-    self.tBlock = ^{
-        a = 30;
-    };
-    self.tBlock();
-    NSLog(@"%ld",a);
+    
+
 }
+
+
+- (void)checkDataWithPeople:(People *)people {
+    UILabel *lb = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 50, 50)];
+    lb.numberOfLines = 3;
+    [self.view addSubview:lb];
+    
+    SonModel *modle = [[SonModel alloc]init];
+//    people.sonModle = modle;
+    [people setSonModle:modle];
+    NSLog(@"Debug Here,people.name:%@",people.name);
+    NSLog(@"debug end");
+}
+
+
+
+
+
+
+
 #pragma mark - Target Methods
 - (void)rightclick:(UIBarButtonItem *)sender
 {
@@ -153,11 +188,5 @@ void test() {
    
 
 }
-- (void)testOne {
-    
-    TestModel * tModel = [[TestModel alloc]init];
-    
-  
-    
-}
+
 @end
