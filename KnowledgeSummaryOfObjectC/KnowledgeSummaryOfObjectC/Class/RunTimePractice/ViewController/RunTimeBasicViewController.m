@@ -10,6 +10,7 @@
 #import "MethodPacticeViewController.h"
 #import "MethodSwizzlingViewController.h"
 #import "GetPrivateObjViewController.h"
+#import "ZXSonViewController.h"
 
 @interface RunTimeBasicViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -61,6 +62,10 @@
             cell.textLabel.text = @"2-获取成员变量";
             return cell;
             break;
+        case 3:
+            cell.textLabel.text = @"3-修改私有属性";
+            return cell;
+            break;
         default:
             break;
     }
@@ -95,7 +100,8 @@
             break;
         case 3:
         {
-            
+            ZXSonViewController * vc = [[ZXSonViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
             
         }
             break;

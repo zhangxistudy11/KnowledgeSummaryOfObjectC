@@ -39,7 +39,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ReactiveCocoa.xcscheme</key>
+		<key>ReactiveObjC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -50,6 +50,11 @@
 			<false/>
 		</dict>
 		<key>YYCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZHXCommonPro.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

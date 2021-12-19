@@ -1,0 +1,6 @@
+module Pods_TargetOne {
+  umbrella header "Pods-TargetOne-umbrella.h"
+
+  export *
+  module * { export * }
+}

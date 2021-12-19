@@ -1,19 +1,19 @@
-platform :ios, '8.0'
+platform :ios, '11.0'
 
-source 'https://github.com/CocoaPods/Specs.git'
 
 
 
 def common_Pods
     pod 'MJRefresh'
-    pod 'ReactiveCocoa’,'~> 2.4.7’
-    pod 'Masonry’,'~> 1.1.0’
-    pod 'WebViewJavascriptBridge’,'~> 6.0.2’
-    pod 'FLAnimatedImage', '~> 1.0'
-    pod 'MBProgressHUD', '~> 1.0.0'
+    pod 'ReactiveObjC’
+    pod 'Masonry’
+    pod 'WebViewJavascriptBridge’
+    pod 'FLAnimatedImage'
+    pod 'MBProgressHUD'
     pod 'YYCache'
     pod 'BlocksKit’
-    pod 'ZHXIndexView', '~> 0.0.3'
+    pod 'ZHXIndexView'
+    pod 'ZHXCommonPro'
 
 end
 

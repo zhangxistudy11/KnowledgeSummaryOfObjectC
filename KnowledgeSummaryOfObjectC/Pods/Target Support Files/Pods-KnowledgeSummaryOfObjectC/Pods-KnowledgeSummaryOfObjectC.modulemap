@@ -1,0 +1,6 @@
+module Pods_KnowledgeSummaryOfObjectC {
+  umbrella header "Pods-KnowledgeSummaryOfObjectC-umbrella.h"
+
+  export *
+  module * { export * }
+}

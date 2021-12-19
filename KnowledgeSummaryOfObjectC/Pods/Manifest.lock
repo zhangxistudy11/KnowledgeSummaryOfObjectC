@@ -14,55 +14,53 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - FLAnimatedImage (1.0.12)
+  - FLAnimatedImage (1.0.16)
   - Masonry (1.1.0)
-  - MBProgressHUD (1.0.0)
-  - MJRefresh (3.1.13)
-  - ReactiveCocoa (2.4.7):
-    - ReactiveCocoa/UI (= 2.4.7)
-  - ReactiveCocoa/Core (2.4.7):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.4.7)
-  - ReactiveCocoa/UI (2.4.7):
-    - ReactiveCocoa/Core
-  - WebViewJavascriptBridge (6.0.2)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.5)
+  - ReactiveObjC (3.1.1)
+  - WebViewJavascriptBridge (6.0.3)
   - YYCache (1.0.4)
+  - ZHXCommonPro (0.2.6)
   - ZHXIndexView (0.0.3)
 
 DEPENDENCIES:
   - BlocksKit
-  - FLAnimatedImage (~> 1.0)
-  - Masonry (~> 1.1.0)
-  - MBProgressHUD (~> 1.0.0)
+  - FLAnimatedImage
+  - Masonry
+  - MBProgressHUD
   - MJRefresh
-  - ReactiveCocoa (~> 2.4.7)
-  - WebViewJavascriptBridge (~> 6.0.2)
+  - ReactiveObjC
+  - WebViewJavascriptBridge
   - YYCache
-  - ZHXIndexView (~> 0.0.3)
+  - ZHXCommonPro
+  - ZHXIndexView
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - BlocksKit
     - FLAnimatedImage
     - Masonry
     - MBProgressHUD
     - MJRefresh
-    - ReactiveCocoa
+    - ReactiveObjC
     - WebViewJavascriptBridge
     - YYCache
+    - ZHXCommonPro
     - ZHXIndexView
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  MJRefresh: 56a28aa628c9895e97a518dabaecf70b18f92f32
-  ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
-  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  ZHXCommonPro: 6abd1dde812d3f7737954ac6f46325d8d00f5bf5
   ZHXIndexView: e7bd78b850969061f33b2c3c2f878a5bc1702ad1
 
-PODFILE CHECKSUM: a27500a79e2783d77165528352094d20eab278b2
+PODFILE CHECKSUM: 1dc398223419c9c387b0782ac863a54577ccf480
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.1

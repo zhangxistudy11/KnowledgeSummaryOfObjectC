@@ -1,1 +1,1 @@
-../../../FLAnimatedImage/FLAnimatedImage/FLAnimatedImageView.h
+../../../FLAnimatedImage/FLAnimatedImage/include/FLAnimatedImageView.h
