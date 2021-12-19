@@ -13,6 +13,7 @@
 #import "People.h"
 #import "NSBundle+YJInfo.h"
 #import "TestUIViewController.h"
+#import "ZXNetWorkManager.h"
 
 typedef void (^TestBlock)(void);
 @interface TestViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -34,7 +35,7 @@ typedef void (^TestBlock)(void);
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
 //    testaa(4);
-    
+    ZXNetWorkManager * aa = [[ZXNetWorkManager alloc]init];
     [self  setUpView];
 }
 

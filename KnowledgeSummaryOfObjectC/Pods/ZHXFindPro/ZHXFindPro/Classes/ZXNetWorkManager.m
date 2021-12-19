@@ -12,7 +12,7 @@
 {
     self = [super init];
     if (self) {
-        NSLog(@"我是ZXNetWorkManager");
+        NSLog(@"我是111r");
     }
     return self;
 }
