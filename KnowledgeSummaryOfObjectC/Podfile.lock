@@ -21,7 +21,7 @@ PODS:
   - ReactiveObjC (3.1.1)
   - WebViewJavascriptBridge (6.0.3)
   - YYCache (1.0.4)
-  - ZHXCommonPro (0.2.6)
+  - ZHXFindPro (0.3.0)
   - ZHXIndexView (0.0.3)
 
 DEPENDENCIES:
@@ -33,11 +33,13 @@ DEPENDENCIES:
   - ReactiveObjC
   - WebViewJavascriptBridge
   - YYCache
-  - ZHXCommonPro
+  - ZHXFindPro
   - ZHXIndexView
 
 SPEC REPOS:
-  trunk:
+  "git@github.com:zhangxistudy11/ZHXFindRepos.git":
+    - ZHXFindPro
+  https://github.com/CocoaPods/Specs.git:
     - BlocksKit
     - FLAnimatedImage
     - Masonry
@@ -46,7 +48,6 @@ SPEC REPOS:
     - ReactiveObjC
     - WebViewJavascriptBridge
     - YYCache
-    - ZHXCommonPro
     - ZHXIndexView
 
 SPEC CHECKSUMS:
@@ -58,9 +59,9 @@ SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
-  ZHXCommonPro: 6abd1dde812d3f7737954ac6f46325d8d00f5bf5
+  ZHXFindPro: fe96e147582ea3ee1982dfb841f1e2fae49caef5
   ZHXIndexView: e7bd78b850969061f33b2c3c2f878a5bc1702ad1
 
-PODFILE CHECKSUM: 1dc398223419c9c387b0782ac863a54577ccf480
+PODFILE CHECKSUM: 90214bf76089d8f48e2d2e32f8ddc6a2e4a6b79c
 
 COCOAPODS: 1.9.1

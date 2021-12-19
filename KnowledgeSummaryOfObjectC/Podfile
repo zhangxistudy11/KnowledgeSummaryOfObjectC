@@ -1,7 +1,8 @@
-platform :ios, '11.0'
+platform :ios, '14.0'
 
 
-
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@github.com:zhangxistudy11/ZHXFindRepos.git'
 
 def common_Pods
     pod 'MJRefresh'
@@ -13,7 +14,7 @@ def common_Pods
     pod 'YYCache'
     pod 'BlocksKit’
     pod 'ZHXIndexView'
-    pod 'ZHXCommonPro'
+    pod 'ZHXFindPro'
 
 end
 

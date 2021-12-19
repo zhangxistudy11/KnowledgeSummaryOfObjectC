@@ -1,6 +1,0 @@
-framework module ZHXCommonProBinary {
-  umbrella header "ZHXCommonProBinary.h"
-
-  export *
-  module * { export * }
-}
