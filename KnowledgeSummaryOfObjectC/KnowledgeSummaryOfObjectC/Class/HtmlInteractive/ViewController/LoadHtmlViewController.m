@@ -28,6 +28,7 @@
     self.webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:self.webView];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:@"/Users/zhangxi/Desktop/OCSummary/KnowledgeSummaryOfObjectC/KnowledgeSummaryOfObjectC/Resources/Html/index.html"]]];
+    
    
     
 }

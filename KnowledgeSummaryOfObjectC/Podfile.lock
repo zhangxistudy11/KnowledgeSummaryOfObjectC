@@ -21,7 +21,7 @@ PODS:
   - ReactiveObjC (3.1.1)
   - WebViewJavascriptBridge (6.0.3)
   - YYCache (1.0.4)
-  - ZHXFindPro (0.3.3)
+  - ZHXFindPro (0.3.7)
   - ZHXIndexView (0.0.3)
 
 DEPENDENCIES:
@@ -33,7 +33,7 @@ DEPENDENCIES:
   - ReactiveObjC
   - WebViewJavascriptBridge
   - YYCache
-  - ZHXFindPro
+  - ZHXFindPro (= 0.3.7)
   - ZHXIndexView
 
 SPEC REPOS:
@@ -59,9 +59,9 @@ SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
-  ZHXFindPro: 3cbbc4ca9711fcba189ff3c000be55d3f6e93163
+  ZHXFindPro: c0f40307598d4404a34502fc7164c1c31b141dae
   ZHXIndexView: e7bd78b850969061f33b2c3c2f878a5bc1702ad1
 
-PODFILE CHECKSUM: 90214bf76089d8f48e2d2e32f8ddc6a2e4a6b79c
+PODFILE CHECKSUM: 9b35c2537d9636b37ac6559fb4bc628f4a84064e
 
 COCOAPODS: 1.9.1

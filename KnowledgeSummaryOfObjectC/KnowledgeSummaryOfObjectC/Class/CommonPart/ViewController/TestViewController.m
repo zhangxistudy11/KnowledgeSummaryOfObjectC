@@ -35,7 +35,6 @@ typedef void (^TestBlock)(void);
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
 //    testaa(4);
-    ZXNetWorkManager * aa = [[ZXNetWorkManager alloc]init];
     [self  setUpView];
 }
 
@@ -58,7 +57,7 @@ typedef void (^TestBlock)(void);
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar setBackgroundColor:[UIColor greenColor]];
+//    [self.navigationController.navigationBar setBackgroundColor:[UIColor greenColor]];
 }
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -86,21 +85,17 @@ typedef void (^TestBlock)(void);
     switch (indexPath.row) {
         case 0:
         {
-            [self testZero];
+            [self testZero:@"王二"];
         }
             break;
         case 1:
         {
-            // 1.编译时编译器认为testObject是一个NSString对象，这里赋给它一个NSData对象编译器给出黄色类型错误警告，但运行时却指向一个NSData对象
-//            instancetype testObject = [[NSData alloc]init];
-//               // 2.编译器认为testObject是NSString对象，所以允许其调用NSString的方法，这里编译通过无警告和错误
-//               [testObject stringByAppendingString:@"string"];
-//               // 3.但不允许其调用NSData的方法，下面这里编译不通过给出红色报错
-//               [testObject base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
-
-            [self testOne:@"刘能"];
-        
-
+            [self testZero:@"刘能"];
+        }
+            break;
+        case 2:
+        {
+            [self testZero:@"李四"];
         }
             break;
             case 3:
@@ -111,6 +106,8 @@ typedef void (^TestBlock)(void);
                        NSLog(@"aaa");
                        NSLog(@"cccgggggg放假啊可怜；fffggggc");
                        NSLog(@"bbgggggggb");
+                       ZXNetWorkManager * aa = [[ZXNetWorkManager alloc]init];
+
                    }
                        break;
             case 4:
@@ -146,12 +143,13 @@ void test() {
 }
 
 
-- (void)testZero
+- (void)testZero:(NSString *)str
 {
     People * p0 = [[People alloc]init];
-    p0.name = @"张三";
-    [self checkDataWithPeople:p0];
-    
+    p0.name = str;
+    NSLog(@"试一下试一下试一下");
+    NSLog(@"实际名字：%@",p0.name);
+//    [self checkDataWithPeople:p0];
     
 
 }

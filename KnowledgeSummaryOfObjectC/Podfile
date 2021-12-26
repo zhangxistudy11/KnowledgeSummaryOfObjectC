@@ -14,7 +14,7 @@ def common_Pods
     pod 'YYCache'
     pod 'BlocksKit’
     pod 'ZHXIndexView'
-    pod 'ZHXFindPro'
+    pod 'ZHXFindPro', '= 0.3.7'
 
 end
 
