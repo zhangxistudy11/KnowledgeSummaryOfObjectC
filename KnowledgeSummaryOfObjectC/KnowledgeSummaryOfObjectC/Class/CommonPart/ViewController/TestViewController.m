@@ -178,7 +178,7 @@ void test() {
 {
  
     NSArray * arr1 = [NSBundle yj_bundleOwnClassesInfo];
-    NSLog(@"%@1111222333aaabbbccceeee",arr1);
+    NSLog(@"%@2222",arr1);
     
     NSArray * arr2 = [NSBundle yj_bundleAllClassesInfo];
     NSLog(@"%@",arr2);
