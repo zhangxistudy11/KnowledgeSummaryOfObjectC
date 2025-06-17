@@ -14,26 +14,26 @@
 
 @implementation NSBundle (YJInfo)
 + (NSArray <Class> *)yj_bundleOwnClassesInfo {
-    
-    NSMutableArray *resultArray = [NSMutableArray array];
-    
-    unsigned int classCount;
-    const char **classes;
-    Dl_info info;
-    
-    dladdr(&_mh_execute_header, &info);
-    classes = objc_copyClassNamesForImage(info.dli_fname, &classCount);
-    
-    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
-    dispatch_apply(classCount, dispatch_get_global_queue(0, 0), ^(size_t index) {
-        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-        NSString *className = [NSString stringWithCString:classes[index] encoding:NSUTF8StringEncoding];
-        Class class = NSClassFromString(className);
-        [resultArray addObject:class];
-        dispatch_semaphore_signal(semaphore);
-    });
-    
-    return resultArray.mutableCopy;
+    return @[];
+//    NSMutableArray *resultArray = [NSMutableArray array];
+//    
+//    unsigned int classCount;
+//    const char **classes;
+//    Dl_info info;
+//    
+//    dladdr(&_mh_execute_header, &info);
+//    classes = objc_copyClassNamesForImage(info.dli_fname, &classCount);
+//    
+//    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+//    dispatch_apply(classCount, dispatch_get_global_queue(0, 0), ^(size_t index) {
+//        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+//        NSString *className = [NSString stringWithCString:classes[index] encoding:NSUTF8StringEncoding];
+//        Class class = NSClassFromString(className);
+//        [resultArray addObject:class];
+//        dispatch_semaphore_signal(semaphore);
+//    });
+//    
+//    return resultArray.mutableCopy;
 }
 
 + (NSArray <NSString *> *)yj_bundleAllClassesInfo {

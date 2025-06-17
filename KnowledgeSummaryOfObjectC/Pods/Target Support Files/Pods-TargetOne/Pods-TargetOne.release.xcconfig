@@ -1,9 +1,12 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/FLAnimatedImage" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/MJRefresh" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/ReactiveObjC" "${PODS_ROOT}/Headers/Public/WebViewJavascriptBridge" "${PODS_ROOT}/Headers/Public/YYCache" "${PODS_ROOT}/Headers/Public/ZHXFindPro" "${PODS_ROOT}/Headers/Public/ZHXIndexView"
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BlocksKit" "${PODS_CONFIGURATION_BUILD_DIR}/FLAnimatedImage" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC" "${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge" "${PODS_CONFIGURATION_BUILD_DIR}/YYCache" "${PODS_CONFIGURATION_BUILD_DIR}/ZHXFindPro" "${PODS_CONFIGURATION_BUILD_DIR}/ZHXIndexView"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"BlocksKit" -l"FLAnimatedImage" -l"MBProgressHUD" -l"MJRefresh" -l"Masonry" -l"ReactiveObjC" -l"WebViewJavascriptBridge" -l"YYCache" -l"ZHXFindPro" -l"ZHXIndexView" -l"sqlite3" -framework "CoreFoundation" -framework "CoreGraphics" -framework "Foundation" -framework "ImageIO" -framework "MessageUI" -framework "QuartzCore" -framework "UIKit" -framework "WebKit"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/BlocksKit" "-F${PODS_CONFIGURATION_BUILD_DIR}/FLAnimatedImage" "-F${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "-F${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh" "-F${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "-F${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC" "-F${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge" "-F${PODS_CONFIGURATION_BUILD_DIR}/YYCache" "-F${PODS_CONFIGURATION_BUILD_DIR}/ZHXFindPro" "-F${PODS_CONFIGURATION_BUILD_DIR}/ZHXIndexView"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
 USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
