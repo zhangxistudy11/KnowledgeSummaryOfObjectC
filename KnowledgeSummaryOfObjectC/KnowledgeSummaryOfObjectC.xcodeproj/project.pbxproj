@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22984C412E01A2BA00E2C086 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22984C402E01A2BA00E2C086 /* SecondViewController.m */; };
+		22984C422E01A2BA00E2C086 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22984C402E01A2BA00E2C086 /* SecondViewController.m */; };
 		33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33021DD01F65763500E49A29 /* CrashLocationViewController.m */; };
 		3307212A2015E53700A320FA /* LoadHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330721292015E53700A320FA /* LoadHtmlViewController.m */; };
 		33186CDF2060DA4F002B2D20 /* RunTimeBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33186CDE2060DA4F002B2D20 /* RunTimeBasicViewController.m */; };
@@ -409,6 +411,8 @@
 /* Begin PBXFileReference section */
 		0B1FBABE29897B8DFDBCA683 /* Pods-KnowledgeSummaryOfObjectC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.debug.xcconfig"; sourceTree = "<group>"; };
 		0C2538995099BB6BEFDA8352 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22984C3F2E01A2BA00E2C086 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		22984C402E01A2BA00E2C086 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		33021DCF1F65763500E49A29 /* CrashLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashLocationViewController.h; sourceTree = "<group>"; };
 		33021DD01F65763500E49A29 /* CrashLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashLocationViewController.m; sourceTree = "<group>"; };
 		330721282015E53700A320FA /* LoadHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadHtmlViewController.h; sourceTree = "<group>"; };
@@ -1545,6 +1549,8 @@
 		3398DCDC1F63FC2400D7A872 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				22984C3F2E01A2BA00E2C086 /* SecondViewController.h */,
+				22984C402E01A2BA00E2C086 /* SecondViewController.m */,
 				3398DCDD1F63FC2400D7A872 /* BaseViewController.h */,
 				3398DCDE1F63FC2400D7A872 /* BaseViewController.m */,
 				3398DCE11F63FC2400D7A872 /* ViewController.h */,
@@ -2330,6 +2336,7 @@
 				77746373248E3DFB0008A94C /* TableLeftSlideViewController.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				771DDC7F23C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */,
+				22984C422E01A2BA00E2C086 /* SecondViewController.m in Sources */,
 				33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
 				7755F7872431EA4900955AC8 /* PopViewMansoryVC.m in Sources */,
@@ -2451,6 +2458,7 @@
 				33CFEC8A238AB45F00ED424A /* TailView.m in Sources */,
 				33CFEC8B238AB45F00ED424A /* ARStudyViewController.m in Sources */,
 				33CFEC8C238AB45F00ED424A /* TransformViewController.m in Sources */,
+				22984C412E01A2BA00E2C086 /* SecondViewController.m in Sources */,
 				33CFEC8D238AB45F00ED424A /* ProgressAnimationView.m in Sources */,
 				33CFEC8E238AB45F00ED424A /* AppDelegate.m in Sources */,
 				33CFEC8F238AB45F00ED424A /* AnimationSegmentViewController.m in Sources */,

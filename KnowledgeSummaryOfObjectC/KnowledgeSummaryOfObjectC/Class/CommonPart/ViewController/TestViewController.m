@@ -14,15 +14,26 @@
 #import "NSBundle+YJInfo.h"
 #import "TestUIViewController.h"
 #import "ZXNetWorkManager.h"
+#import "SecondViewController.h"
 
-typedef void (^TestBlock)(void);
-@interface TestViewController ()<UITableViewDataSource,UITableViewDelegate>
+// 定义不同类型的 cell
+typedef NS_ENUM(NSInteger, CollectionViewCellType) {
+    CollectionViewCellTypeImage,
+    CollectionViewCellTypeText,
+    CollectionViewCellTypeVideo
+};
+
+#define RENDER_LOG(fmt, ...) NSLog((@"[RenderMonitor] " fmt), ##__VA_ARGS__)
+
+@interface TestViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
-    UITableView  * _tableView;
+    UICollectionView *_collectionView;
+    NSMutableArray *_dataSource;
+    NSInteger _currentPage;
+    NSTimer *_renderCheckTimer;
+    NSInteger _renderCount;
+    NSMutableSet *_visibleCells;
 }
-@property(nonatomic,copy) TestBlock tBlock;
-
-@property (nonatomic, strong) UIView *redView;
 @end
 
 @implementation TestViewController
@@ -30,162 +41,226 @@ typedef void (^TestBlock)(void);
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"TestVC";
-    self.view.backgroundColor = [UIColor  whiteColor];
+    self.navigationItem.title = @"Complex List";
+    self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-//    testaa(4);
-    [self  setUpView];
+    _visibleCells = [NSMutableSet set];
+    
+    // 添加右上角按钮
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Next" 
+                                                                   style:UIBarButtonItemStylePlain 
+                                                                  target:self 
+                                                                  action:@selector(rightButtonClicked)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+    
+    [self setupCollectionView];
+    [self setupRefreshControl];
+    [self setupRenderCheckTimer];
+    
+    // 延迟5秒后开始加载数据
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self loadInitialData];
+    });
 }
 
-- (void)setUpView
-{
-    _tableView = [[UITableView  alloc]initWithFrame:CGRectMake(0, 0, self.view.width
-                                                               , self.view.height + 100) style:UITableViewStylePlain];
-    _tableView.delegate =self;
-    _tableView.dataSource = self;
-    [self.view  addSubview:_tableView];
-    
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"testALG" style:UIBarButtonItemStylePlain target:self action:@selector(rightclick:)];
-    self.navigationItem.rightBarButtonItem = rightItem;
-    
-    self.redView = [[UIView alloc]init];
-    [self.view addSubview:self.redView];
-    self.redView.backgroundColor = [UIColor redColor];
-//    self.redView.add
-    
+- (void)setupRenderCheckTimer {
+    _renderCount = 0;
+    _renderCheckTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 
+                                                       target:self 
+                                                     selector:@selector(checkRenderStatus) 
+                                                     userInfo:nil 
+                                                      repeats:YES];
 }
-- (void)viewWillAppear:(BOOL)animated{
+
+- (void)checkRenderStatus {
+    RENDER_LOG(@"=== Render Status Check ===");
+    RENDER_LOG(@"Total Renders: %ld", (long)_renderCount);
+    RENDER_LOG(@"Data Source Count: %ld", (long)_dataSource.count);
+    
+    // 检查当前可见的 cells
+    NSArray *visibleCells = [_collectionView visibleCells];
+    RENDER_LOG(@"Visible Cells Count: %ld", (long)visibleCells.count);
+    
+    // 检查是否有新的 cell 变为可见
+    for (UICollectionViewCell *cell in visibleCells) {
+        if (![_visibleCells containsObject:cell]) {
+            RENDER_LOG(@"New cell became visible");
+            [_visibleCells addObject:cell];
+        }
+    }
+    
+    // 检查是否有 cell 变为不可见
+    NSMutableSet *currentVisibleCells = [NSMutableSet setWithArray:visibleCells];
+    NSMutableSet *disappearedCells = [_visibleCells mutableCopy];
+    [disappearedCells minusSet:currentVisibleCells];
+    
+    if (disappearedCells.count > 0) {
+        RENDER_LOG(@"Cells became invisible: %ld", (long)disappearedCells.count);
+        [_visibleCells minusSet:disappearedCells];
+    }
+    
+    RENDER_LOG(@"========================");
+}
+
+- (void)rightButtonClicked {
+    SecondViewController *secondVC = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:secondVC animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-//    [self.navigationController.navigationBar setBackgroundColor:[UIColor greenColor]];
-}
-#pragma mark - UITableViewDataSource,UITableViewDelegate
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-  
-    
-    return 25;
+    RENDER_LOG(@"View Will Appear");
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static  NSString *  CellIdentifier = @"CellIdentifier";
-  
-    UITableViewCell  * cell = [tableView  dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell  alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    RENDER_LOG(@"View Will Disappear");
+}
+
+- (void)dealloc {
+    [_renderCheckTimer invalidate];
+    _renderCheckTimer = nil;
+}
+
+- (void)setupCollectionView {
+    // 创建瀑布流布局
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.minimumLineSpacing = 10;
+    layout.minimumInteritemSpacing = 10;
+    layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    
+    // 创建 CollectionView
+    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    _collectionView.backgroundColor = [UIColor whiteColor];
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    
+    // 注册不同类型的 cell
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"ImageCell"];
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"TextCell"];
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"VideoCell"];
+    
+    [self.view addSubview:_collectionView];
+}
+
+- (void)setupRefreshControl {
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
+    _collectionView.refreshControl = refreshControl;
+}
+
+- (void)loadMoreData {
+    RENDER_LOG(@"Starting to load more data...");
+    
+    // 模拟网络请求
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSInteger startIndex = (_currentPage - 1) * 20;
+        for (NSInteger i = 0; i < 20; i++) {
+            NSInteger type = arc4random_uniform(3);
+            [_dataSource addObject:@(type)];
+        }
+        
+        _currentPage++;
+        [_collectionView reloadData];
+        [_collectionView.refreshControl endRefreshing];
+        RENDER_LOG(@"Finished loading more data. Total items: %ld", (long)_dataSource.count);
+    });
+}
+
+- (void)loadInitialData {
+    _dataSource = [NSMutableArray array];
+    _currentPage = 1;
+    [self loadMoreData];
+}
+
+- (void)handleRefresh:(UIRefreshControl *)refreshControl {
+    _currentPage = 1;
+    [_dataSource removeAllObjects];
+    [self loadMoreData];
+}
+
+#pragma mark - UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return _dataSource.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    _renderCount++;
+    RENDER_LOG(@"Rendering cell at index: %ld (Total renders: %ld)", (long)indexPath.item, (long)_renderCount);
+    
+    CollectionViewCellType cellType = [_dataSource[indexPath.item] integerValue];
+    NSString *identifier;
+    
+    switch (cellType) {
+        case CollectionViewCellTypeImage:
+            identifier = @"ImageCell";
+            break;
+        case CollectionViewCellTypeText:
+            identifier = @"TextCell";
+            break;
+        case CollectionViewCellTypeVideo:
+            identifier = @"VideoCell";
+            break;
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"test-index-%ld",indexPath.row];
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    
+    // 配置不同类型的 cell
+    switch (cellType) {
+        case CollectionViewCellTypeImage: {
+            cell.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0
+                                                  green:arc4random_uniform(255)/255.0
+                                                   blue:arc4random_uniform(255)/255.0
+                                                  alpha:1.0];
+            break;
+        }
+        case CollectionViewCellTypeText: {
+            cell.backgroundColor = [UIColor lightGrayColor];
+            break;
+        }
+        case CollectionViewCellTypeVideo: {
+            cell.backgroundColor = [UIColor darkGrayColor];
+            break;
+        }
+    }
+    
+    // 添加动画效果
+    cell.transform = CGAffineTransformMakeScale(0.8, 0.8);
+    [UIView animateWithDuration:0.3 animations:^{
+        cell.transform = CGAffineTransformIdentity;
+    }];
+    
     return cell;
-    
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CollectionViewCellType cellType = [_dataSource[indexPath.item] integerValue];
+    CGFloat width = (collectionView.bounds.size.width - 30) / 2;
     
-    switch (indexPath.row) {
-        case 0:
-        {
-            [self testZero:@"王二"];
-        }
-            break;
-        case 1:
-        {
-            [self testZero:@"刘能"];
-        }
-            break;
-        case 2:
-        {
-            [self testZero:@"李四"];
-        }
-            break;
-            case 3:
-                   {
-                       NSObject * obj = [[NSObject alloc]init];
-                       int a = 10;
-                       NSLog(@"%p %p %p",&obj,obj,a);
-                       NSLog(@"aaa");
-                       NSLog(@"cccgggggg放假啊可怜；fffggggc");
-                       NSLog(@"bbgggggggb");
-                       ZXNetWorkManager * aa = [[ZXNetWorkManager alloc]init];
-
-                   }
-                       break;
-            case 4:
-                          {
-                              NSLog(@"333");
-                              NSLog(@"fccbbbc4h555hhh");
-
-                          }
-                              break;
-            
-        default:
-            break;
+    switch (cellType) {
+        case CollectionViewCellTypeImage:
+            return CGSizeMake(width, width);
+        case CollectionViewCellTypeText:
+            return CGSizeMake(width, width * 0.5);
+        case CollectionViewCellTypeVideo:
+            return CGSizeMake(width, width * 1.2);
     }
 }
-#pragma mark - Test Method
 
-void testaa(int a) {
-    printf("%d",a);
-}
-void test() {
-    int a = 10;
-    int b = 20;
-    NSLog(@"%d",a+b);
-}
+#pragma mark - UIScrollViewDelegate
 
-
-
-- (void)testOne:(NSString *)text {
-    People * p1 = [[People alloc]init];
-    p1.name = text;
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat offsetY = scrollView.contentOffset.y;
+    CGFloat contentHeight = scrollView.contentSize.height;
+    CGFloat screenHeight = scrollView.bounds.size.height;
     
-    [self checkDataWithPeople:p1];
-}
-
-
-- (void)testZero:(NSString *)str
-{
-    People * p0 = [[People alloc]init];
-    p0.name = str;
-    NSLog(@"试一下试一下试一下");
-    NSLog(@"实际名字：%@",p0.name);
-//    [self checkDataWithPeople:p0];
-    
-
-}
-
-
-- (void)checkDataWithPeople:(People *)people {
-    UILabel *lb = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 50, 50)];
-    lb.numberOfLines = 3;
-    [self.view addSubview:lb];
-    
-    SonModel *modle = [[SonModel alloc]init];
-//    people.sonModle = modle;
-    [people setSonModle:modle];
-    NSLog(@"Debug Here,people.name:%@",people.name);
-    NSLog(@"debug end");
-}
-
-
-
-
-
-
-
-#pragma mark - Target Methods
-- (void)rightclick:(UIBarButtonItem *)sender
-{
- 
-    NSArray * arr1 = [NSBundle yj_bundleOwnClassesInfo];
-    NSLog(@"%@2222",arr1);
-    
-    NSArray * arr2 = [NSBundle yj_bundleAllClassesInfo];
-    NSLog(@"%@",arr2);
-    TestUIViewController *vc = [[TestUIViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-   
-
+    if (offsetY > contentHeight - screenHeight * 1.5) {
+        [self loadMoreData];
+    }
 }
 
 @end
