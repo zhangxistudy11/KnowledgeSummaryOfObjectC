@@ -56,6 +56,11 @@
     self.title = @"滑动手势";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    // 禁止右滑返回
+    if (self.navigationController) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
+    
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
