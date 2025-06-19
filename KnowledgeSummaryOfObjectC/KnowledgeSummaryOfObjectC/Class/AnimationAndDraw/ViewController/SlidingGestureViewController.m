@@ -95,6 +95,20 @@
     [self setupSwipeBackGesture];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (self.navigationController) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    if (self.navigationController) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    }
+}
+
 - (void)setupBackgroundView {
     // 创建背景视图（模拟上一个页面）
     self.backgroundView = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -235,7 +249,7 @@
             
             // 判断是否应该完成返回操作
             BOOL shouldComplete = NO;
-            if (translation.x > self.view.bounds.size.width * 0.3 || velocity.x > 500) {
+            if (translation.x > 70 || velocity.x > 500) {
                 shouldComplete = YES;
             }
             
