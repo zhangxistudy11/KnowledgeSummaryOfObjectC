@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225A8BEB2E03B74400D4D4D6 /* SlidingGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A8BEA2E03B74400D4D4D6 /* SlidingGestureViewController.m */; };
+		225A8BEC2E03B74400D4D4D6 /* SlidingGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A8BEA2E03B74400D4D4D6 /* SlidingGestureViewController.m */; };
 		22984C412E01A2BA00E2C086 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22984C402E01A2BA00E2C086 /* SecondViewController.m */; };
 		22984C422E01A2BA00E2C086 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22984C402E01A2BA00E2C086 /* SecondViewController.m */; };
 		33021DD11F65763500E49A29 /* CrashLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33021DD01F65763500E49A29 /* CrashLocationViewController.m */; };
@@ -411,6 +413,8 @@
 /* Begin PBXFileReference section */
 		0B1FBABE29897B8DFDBCA683 /* Pods-KnowledgeSummaryOfObjectC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeSummaryOfObjectC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeSummaryOfObjectC/Pods-KnowledgeSummaryOfObjectC.debug.xcconfig"; sourceTree = "<group>"; };
 		0C2538995099BB6BEFDA8352 /* libPods-KnowledgeSummaryOfObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowledgeSummaryOfObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		225A8BE92E03B74400D4D4D6 /* SlidingGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlidingGestureViewController.h; sourceTree = "<group>"; };
+		225A8BEA2E03B74400D4D4D6 /* SlidingGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlidingGestureViewController.m; sourceTree = "<group>"; };
 		22984C3F2E01A2BA00E2C086 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		22984C402E01A2BA00E2C086 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		33021DCF1F65763500E49A29 /* CrashLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashLocationViewController.h; sourceTree = "<group>"; };
@@ -1470,6 +1474,8 @@
 		3398DCC41F63FC2400D7A872 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				225A8BE92E03B74400D4D4D6 /* SlidingGestureViewController.h */,
+				225A8BEA2E03B74400D4D4D6 /* SlidingGestureViewController.m */,
 				3398DCC51F63FC2400D7A872 /* AnimationAndDrawViewController.h */,
 				3398DCC61F63FC2400D7A872 /* AnimationAndDrawViewController.m */,
 				3398DCC71F63FC2400D7A872 /* CAGradientLayerViewController.h */,
@@ -2336,6 +2342,7 @@
 				77746373248E3DFB0008A94C /* TableLeftSlideViewController.m in Sources */,
 				336EFD0E1F7E1E1100B8246F /* PopViewOneController.m in Sources */,
 				771DDC7F23C357D60021AD61 /* BaseicKnowledgeViewController.m in Sources */,
+				225A8BEC2E03B74400D4D4D6 /* SlidingGestureViewController.m in Sources */,
 				22984C422E01A2BA00E2C086 /* SecondViewController.m in Sources */,
 				33AD295B230925F40064ED6A /* UIColor+Extension.m in Sources */,
 				339884AF1F95B26C008C5646 /* CustomComplicateController.m in Sources */,
@@ -2430,6 +2437,7 @@
 				33CFEC73238AB45F00ED424A /* CrashLocationViewController.m in Sources */,
 				7797489D2435D726000FA83B /* DDIndexView.m in Sources */,
 				33CFEC74238AB45F00ED424A /* EarningsViewController.m in Sources */,
+				225A8BEB2E03B74400D4D4D6 /* SlidingGestureViewController.m in Sources */,
 				33CFEC75238AB45F00ED424A /* UIBezierPathCustomView.m in Sources */,
 				779748A32435DBB0000FA83B /* CollectionIndexCell.m in Sources */,
 				33CFEC76238AB45F00ED424A /* PopViewOne.m in Sources */,
@@ -2667,11 +2675,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.Knowledge;
+				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.Knowl333;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2702,10 +2715,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.Knowledge;
+				PRODUCT_BUNDLE_IDENTIFIER = www.zx.com.Knowl333;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

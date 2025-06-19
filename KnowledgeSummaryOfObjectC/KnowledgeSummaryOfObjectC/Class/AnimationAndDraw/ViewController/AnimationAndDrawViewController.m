@@ -20,6 +20,7 @@
 #import "CoverViewController.h"
 #import "ProgressAnimationViewController.h"
 #import "CustomProgressController.h"
+#import "SlidingGestureViewController.h"
 @interface AnimationAndDrawViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  * _tableView;
@@ -49,7 +50,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return 21;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -106,6 +107,10 @@
             break;
         case 11:
             cell.textLabel.text = @"11-自定义进度条";
+            return cell;
+            break;
+        case 12:
+            cell.textLabel.text = @"12-滑动手势";
             return cell;
             break;
         default:
@@ -191,6 +196,12 @@
         case 11:
         {
             CustomProgressController * vc = [[CustomProgressController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 12:
+        {
+            SlidingGestureViewController *vc = [[SlidingGestureViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
