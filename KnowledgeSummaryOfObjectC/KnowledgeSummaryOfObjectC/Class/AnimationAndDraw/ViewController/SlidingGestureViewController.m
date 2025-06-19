@@ -1,4 +1,5 @@
 #import "SlidingGestureViewController.h"
+#import <objc/runtime.h>
 
 @interface SlidingCell : UITableViewCell
 @property (nonatomic, strong) UIView *contentContainerView;
@@ -60,26 +61,199 @@
 
 @end
 
+@interface SlidingGestureViewController () <UIGestureRecognizerDelegate>
+@property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
+@property (nonatomic, strong) UIView *backgroundView;
+@property (nonatomic, assign) CGPoint initialTouchPoint;
+@property (nonatomic, assign) CGFloat initialViewCenterX;
+@property (nonatomic, assign) BOOL isInteractive;
+@end
+
 @implementation SlidingGestureViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"滑动手势";
+    self.title = @"滑动手势 + 右滑返回";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    // 禁止右滑返回
+    // 禁用系统右滑返回，使用自定义的
     if (self.navigationController) {
         self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     }
     
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    // 设置背景视图（模拟上一个页面）
+    [self setupBackgroundView];
+    
+    // 设置主内容视图
+    [self setupMainContentView];
+    
+    // 设置右滑手势
+    [self setupSwipeBackGesture];
+}
+
+- (void)setupBackgroundView {
+    // 创建背景视图（模拟上一个页面）
+    self.backgroundView = [[UIView alloc] initWithFrame:self.view.bounds];
+    self.backgroundView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0];
+    
+    // 添加背景内容
+    UILabel *backgroundLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, 300, 50)];
+    backgroundLabel.text = @"上一个页面";
+    backgroundLabel.font = [UIFont systemFontOfSize:24];
+    backgroundLabel.textColor = [UIColor darkGrayColor];
+    [self.backgroundView addSubview:backgroundLabel];
+    
+    [self.view addSubview:self.backgroundView];
+}
+
+- (void)setupMainContentView {
+    // 创建主内容容器
+    UIView *mainContainer = [[UIView alloc] initWithFrame:self.view.bounds];
+    mainContainer.backgroundColor = [UIColor whiteColor];
+    mainContainer.layer.shadowColor = [UIColor blackColor].CGColor;
+    mainContainer.layer.shadowOffset = CGSizeMake(-2, 0);
+    mainContainer.layer.shadowOpacity = 0;
+    mainContainer.layer.shadowRadius = 8;
+    [self.view addSubview:mainContainer];
+    
+    // 在容器中添加tableView
+    self.tableView = [[UITableView alloc] initWithFrame:mainContainer.bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:[SlidingCell class] forCellReuseIdentifier:@"SlidingCell"];
-    [self.view addSubview:self.tableView];
+    [mainContainer addSubview:self.tableView];
+    
+    // 保存主容器的引用，用于手势处理
+    objc_setAssociatedObject(self, "mainContainer", mainContainer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (void)setupSwipeBackGesture {
+    // 创建自定义的右滑手势
+    self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+    self.panGesture.delegate = self;
+    [self.view addGestureRecognizer:self.panGesture];
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    if (gestureRecognizer == self.panGesture) {
+        UIPanGestureRecognizer *pan = (UIPanGestureRecognizer *)gestureRecognizer;
+        CGPoint velocity = [pan velocityInView:self.view];
+        CGPoint translation = [pan translationInView:self.view];
+        
+        // 只响应向右的滑动
+        if (translation.x > 0 && fabs(velocity.x) > fabs(velocity.y)) {
+            // 检查是否在屏幕左边缘开始滑动
+            CGPoint location = [gestureRecognizer locationInView:self.view];
+            if (location.x <= 50) { // 左边缘50像素范围内
+                return YES;
+            }
+        }
+        return NO;
+    }
+    return YES;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    // 允许与滚动视图的手势同时识别
+    if ([otherGestureRecognizer.view isKindOfClass:[UIScrollView class]]) {
+        UIScrollView *scrollView = (UIScrollView *)otherGestureRecognizer.view;
+        
+        // 如果滚动视图在顶部且向右滑动，优先处理返回手势
+        if (scrollView.contentOffset.y <= 0) {
+            UIPanGestureRecognizer *pan = (UIPanGestureRecognizer *)gestureRecognizer;
+            CGPoint translation = [pan translationInView:self.view];
+            if (translation.x > 0) {
+                return NO; // 不允许多手势，优先处理返回手势
+            }
+        }
+        
+        // 如果滚动视图不在顶部，允许滚动
+        return YES;
+    }
+    return NO;
+}
+
+#pragma mark - Gesture Handling
+- (void)handlePanGesture:(UIPanGestureRecognizer *)gesture {
+    UIView *mainContainer = objc_getAssociatedObject(self, "mainContainer");
+    if (!mainContainer) return;
+    
+    CGPoint translation = [gesture translationInView:self.view];
+    CGPoint velocity = [gesture velocityInView:self.view];
+    
+    switch (gesture.state) {
+        case UIGestureRecognizerStateBegan: {
+            self.isInteractive = YES;
+            self.initialTouchPoint = [gesture locationInView:self.view];
+            self.initialViewCenterX = mainContainer.center.x;
+            break;
+        }
+            
+        case UIGestureRecognizerStateChanged: {
+            if (!self.isInteractive) return;
+            
+            // 计算新的位置，限制在合理范围内
+            CGFloat newCenterX = self.initialViewCenterX + translation.x;
+            newCenterX = MAX(newCenterX, self.initialViewCenterX);
+            
+            // 添加一些阻力，让滑动感觉更自然
+            CGFloat progress = translation.x / (self.view.bounds.size.width * 0.8);
+            progress = MIN(progress, 1.0);
+            
+            mainContainer.center = CGPointMake(newCenterX, mainContainer.center.y);
+            
+            // 添加阴影效果
+            mainContainer.layer.shadowOpacity = progress * 0.3;
+            
+            break;
+        }
+            
+        case UIGestureRecognizerStateEnded:
+        case UIGestureRecognizerStateCancelled: {
+            if (!self.isInteractive) return;
+            
+            self.isInteractive = NO;
+            
+            // 判断是否应该完成返回操作
+            BOOL shouldComplete = NO;
+            if (translation.x > self.view.bounds.size.width * 0.3 || velocity.x > 500) {
+                shouldComplete = YES;
+            }
+            
+            if (shouldComplete) {
+                [self completeTransition:mainContainer];
+            } else {
+                [self cancelTransition:mainContainer];
+            }
+            break;
+        }
+            
+        default:
+            break;
+    }
+}
+
+- (void)completeTransition:(UIView *)mainContainer {
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        mainContainer.center = CGPointMake(self.view.bounds.size.width * 1.5, mainContainer.center.y);
+        mainContainer.layer.shadowOpacity = 0;
+    } completion:^(BOOL finished) {
+        // 执行返回操作
+        if (self.navigationController) {
+            [self.navigationController popViewControllerAnimated:NO];
+        }
+    }];
+}
+
+- (void)cancelTransition:(UIView *)mainContainer {
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        mainContainer.center = CGPointMake(self.initialViewCenterX, mainContainer.center.y);
+        mainContainer.layer.shadowOpacity = 0;
+    } completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
