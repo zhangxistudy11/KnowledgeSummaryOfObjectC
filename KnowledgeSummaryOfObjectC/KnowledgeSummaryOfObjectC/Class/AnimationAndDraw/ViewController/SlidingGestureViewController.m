@@ -70,6 +70,7 @@
 @property (nonatomic, assign) CGPoint initialTouchPoint;
 @property (nonatomic, assign) CGFloat initialViewCenterX;
 @property (nonatomic, assign) BOOL isInteractive;
+@property (nonatomic, strong) UIBarButtonItem *progressBarItem;
 @end
 
 @implementation SlidingGestureViewController
@@ -79,6 +80,10 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.title = @"滑动手势 + 右滑返回";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    // 添加右上角进度提示
+    self.progressBarItem = [[UIBarButtonItem alloc] initWithTitle:@"0%" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.rightBarButtonItem = self.progressBarItem;
     
     // 禁用系统右滑返回，使用自定义的
     if (self.navigationController) {
@@ -225,19 +230,22 @@
         case UIGestureRecognizerStateChanged: {
             if (!self.isInteractive) return;
             
-            // 计算新的位置，限制在合理范围内
-            CGFloat newCenterX = self.initialViewCenterX + translation.x;
-            newCenterX = MAX(newCenterX, self.initialViewCenterX);
-            
-            // 添加一些阻力，让滑动感觉更自然
-            CGFloat progress = translation.x / (self.view.bounds.size.width * 0.8);
-            progress = MIN(progress, 1.0);
+            // 计算新的位置，限制最大为70
+            CGFloat offsetX = MIN(MAX(translation.x, 0), 70);
+            CGFloat newCenterX = self.initialViewCenterX + offsetX;
             
             mainContainer.center = CGPointMake(newCenterX, mainContainer.center.y);
             
             // 添加阴影效果
+            CGFloat progress = offsetX / 70.0;
             mainContainer.layer.shadowOpacity = progress * 0.3;
             
+            // 动态更新进度提示
+            if (offsetX >= 70) {
+                self.progressBarItem.title = @"已触发阈值";
+            } else {
+                self.progressBarItem.title = [NSString stringWithFormat:@"%.0f%%", progress * 100];
+            }
             break;
         }
             
@@ -249,15 +257,18 @@
             
             // 判断是否应该完成返回操作
             BOOL shouldComplete = NO;
-            if (translation.x > 70 || velocity.x > 500) {
+            if (translation.x >= 70) {
                 shouldComplete = YES;
             }
             
             if (shouldComplete) {
-                [self completeTransition:mainContainer];
+                self.progressBarItem.title = @"已触发阈值";
             } else {
-                [self cancelTransition:mainContainer];
+                CGFloat percent = MIN(translation.x / 70.0, 1.0);
+                self.progressBarItem.title = [NSString stringWithFormat:@"%.0f%%", percent * 100];
             }
+            // 不再自动pop返回
+            [self cancelTransition:mainContainer];
             break;
         }
             
