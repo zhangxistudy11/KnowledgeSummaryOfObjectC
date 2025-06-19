@@ -35,6 +35,9 @@
         _collectionView.showsHorizontalScrollIndicator = NO;
         // 设置contentInset确保边距正确
         _collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        // 禁用CollectionView的弹性效果，避免与右滑手势冲突
+        _collectionView.alwaysBounceHorizontal = NO;
+        _collectionView.alwaysBounceVertical = NO;
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"HorizontalCell"];
         [_contentContainerView addSubview:_collectionView];
     }
@@ -73,6 +76,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.title = @"滑动手势 + 右滑返回";
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -123,6 +127,12 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.tableView.backgroundColor = [UIColor whiteColor];
+    
+    // 禁用tableView的左右滑动，只允许垂直滚动
+    self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    self.tableView.alwaysBounceHorizontal = NO;
+    self.tableView.showsHorizontalScrollIndicator = NO;
+    
     [self.tableView registerClass:[SlidingCell class] forCellReuseIdentifier:@"SlidingCell"];
     [mainContainer addSubview:self.tableView];
     
@@ -158,7 +168,12 @@
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    // 允许与滚动视图的手势同时识别
+    // 如果是我们的右滑手势，不允许与其他手势同时识别
+    if (gestureRecognizer == self.panGesture) {
+        return NO;
+    }
+    
+    // 允许与滚动视图的手势同时识别（仅垂直滚动）
     if ([otherGestureRecognizer.view isKindOfClass:[UIScrollView class]]) {
         UIScrollView *scrollView = (UIScrollView *)otherGestureRecognizer.view;
         
@@ -171,7 +186,7 @@
             }
         }
         
-        // 如果滚动视图不在顶部，允许滚动
+        // 如果滚动视图不在顶部，允许垂直滚动
         return YES;
     }
     return NO;
